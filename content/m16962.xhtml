@@ -1,0 +1,2461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Confidence Intervals: Confidence Interval, Single Population Mean, Population Standard Deviation Known, Normal</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Confidence Intervals: Confidence Interval, Single Population Mean, Population Standard Deviation Known, Normal</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-548"
+      >Calculating the Confidence Interval</h1
+    ><p
+        class="para"
+        id="eip-id1171249700620"
+      >To construct a confidence interval for a single unknown population mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > <strong
+          class="emphasis"
+        > , where the population standard deviation is known,</strong
+      > we need <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <apply
+          > <conjugate
+          /> <ci
+            >x</ci
+          > </apply
+        > </math
+      > as an estimate for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > and we need the margin of error. Here, the margin of error is called the <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="ebpbound"
+        >error bound for a population mean</term
+      > (abbreviated <strong
+          class="emphasis"
+        >EBM</strong
+      >). The sample mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <apply
+          > <conjugate
+          /> <ci
+            >x</ci
+          > </apply
+        > </math
+      > is the <strong
+          class="emphasis"
+        >point estimate</strong
+      > of the unknown population mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      ></p
+    > <list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-id1171249555553"
+        data-list-type="labeled-item"
+        data-mark-suffix=""
+      ><div
+          xmlns=""
+          class="title"
+        >The confidence interval estimate will have the form:</div
+      > <li
+          xmlns=""
+          class="item"
+        >(point estimate - error bound, point estimate + error bound) or, in symbols,<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > <mo
+            >&#x2212;</mo
+          > <mi
+            >EBM</mi
+          > <mo
+            >,</mo
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > <mo
+            >+</mo
+          > <mi
+            >EBM</mi
+          > <mo
+            >)</mo
+          > </math
+        ></li
+      > </list
+    > <p
+        class="para"
+        id="eip-id1171253180187"
+      >The margin of error depends on the <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="conflevel"
+        >confidence level</term
+      > (abbreviated <strong
+          class="emphasis"
+        >CL</strong
+      >). The confidence level is often considered the probability that the calculated confidence interval estimate will contain the true population parameter. However, it is more accurate to state that the confidence level is the percent of confidence intervals that contain the true population parameter when repeated samples are taken. Most often, it is the choice of the person constructing the confidence interval to choose a confidence level of 90% or higher because that person wants to be reasonably certain of his or her conclusions. </p
+    ><p
+        class="para"
+        id="eip-id1171259743972"
+      >There is another probability called alpha (<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3B1;</mi
+        ></math
+      >). <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3B1;</mi
+        ></math
+      > is related to the confidence level CL. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3B1;</mi
+        ></math
+      > is the probability that the interval does not contain the unknown population parameter. <br
+      /> Mathematically, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3B1;</mi
+        ></math
+      > + CL = 1. </p
+    ><div
+        class="example"
+        id="eip-id1171253594561"
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="eip-37"
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+          >Suppose we have collected data from a sample. We know the sample mean but we do not know the mean for the entire population. </li
+        > <li
+            xmlns=""
+            class="item"
+          >The sample mean is 7 and the error bound for the mean is 2.5.</li
+        > </list
+      ><p
+          class="para"
+          id="eip-id1171253752196"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > <mo
+            >=</mo
+          > </math
+        > 7 and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mtext
+            >EBM</mtext
+          > <mo
+            >=</mo
+          > </math
+        > 2.5.</p
+      ><p
+          class="para"
+          id="eip-id1171253247744"
+        > The confidence interval is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >7</mn
+          > <mo
+            >-</mo
+          > <mn
+            >2.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >7</mn
+          > <mo
+            >+</mo
+          > <mn
+            >2.5</mn
+          > <mo
+            >)</mo
+          > </math
+        >; calculating the values gives <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >4.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >9.5</mn
+          > <mo
+            >)</mo
+          > </math
+        >.</p
+      ><p
+          class="para"
+          id="eip-id1171248980360"
+        >If the confidence level (CL) is 95%, then we say that "We estimate with 95% confidence that the true value of the population mean is between 4.5 and 9.5."</p
+      > </div
+    > <p
+        class="para"
+        id="eip-id1171249556158"
+      >A confidence interval for a population mean with a known standard deviation is based on the fact that the sample means follow an approximately normal distribution. Suppose that our sample has a mean of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <apply
+          > <conjugate
+          /> <ci
+            >x</ci
+          > </apply
+        > <mo
+          >=</mo
+        > <mn
+          >10</mn
+        > </math
+      > and we have constructed the 90% confidence interval (5, 15) where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mtext
+          >EBM</mtext
+        > <mo
+          >=</mo
+        > <mn
+          >5</mn
+        > </math
+      >. </p
+    ><p
+        class="para"
+        id="eip-id1171249132425"
+      >To get a 90% confidence interval, we must include the central 90% of the probability of the normal distribution. If we include the central 90%, we leave out a total of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3B1;</mi
+        ></math
+      > = 10% in both tails, or 5% in each tail, of the normal distribution. </p
+    ><p
+        class="para"
+        id="eip-id1171269418452"
+      ><span
+          class="media"
+          id="id1164459043434"
+          data-alt="Normal distribution curve with values of 5 and 15 on the x-axis. Vertical upward lines from points 5 and 15 extend to the curve. The confidence interval area between these two points is equal to 0.90."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            width="500"
+            print-width="5in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="eip-id1171253598112"
+      >To capture the central 90%, we must go out 1.645 "standard deviations" on either side of the calculated sample mean. 1.645 is the z-score from a Standard Normal probability distribution that puts an area of 0.90 in the center, an area of 0.05 in the far left tail, and an area of 0.05 in the far right tail. </p
+    ><p
+        class="para"
+        id="eip-id1171249345209"
+      >It is important that the "standard deviation" used must be appropriate for the parameter we are estimating. So in this section, we need to use the standard deviation that applies to sample means, which is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          > <mrow
+            > <mi
+              >&#x3C3;</mi
+            > </mrow
+          > <mrow
+            > <msqrt
+              > <mi
+                >n</mi
+              > </msqrt
+            > </mrow
+          > </mfrac
+        > </math
+      > . <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          > <mrow
+            > <mi
+              >&#x3C3;</mi
+            > </mrow
+          > <mrow
+            > <msqrt
+              > <mi
+                >n</mi
+              > </msqrt
+            > </mrow
+          > </mfrac
+        > </math
+      > is commonly called the "standard error of the mean" in order to clearly distinguish the standard deviation for a mean from the population standard deviation <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3C3;</mi
+        > </math
+      >.</p
+    ><ul
+        class="list"
+        data-id="eip-id1171260540557"
+        data-list-type="bulleted"
+      ><div
+          class="title"
+        >In summary, as a result of the Central Limit Theorem:</div
+      ><li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >X</ci
+            > </apply
+          > </math
+        > is normally distributed, that is, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >X</ci
+            > </apply
+          ></math
+        > ~ <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mn
+            >N</mn
+          > <mo
+            >(</mo
+          > <msub
+            > <mi
+              >&#x3BC;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > <mo
+            >,</mo
+          > <mfrac
+            > <mrow
+              > <mi
+                >&#x3C3;</mi
+              > </mrow
+            > <mrow
+              > <msqrt
+                > <mi
+                  >n</mi
+                > </msqrt
+              > </mrow
+            > </mfrac
+          > <mo
+            >).</mo
+          > <mspace
+              width="35pt"
+          /> </math
+        ></li
+      > <li
+          class="item"
+        > <strong
+            class="emphasis"
+          > When the population standard deviation <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3C3;</mi
+            > </math
+          > is known, we use a Normal distribution to calculate the error bound.</strong
+        ></li
+      ></ul
+    ><p
+        class="para"
+        id="eip-id1171249714712"
+      ><span
+          class="title"
+        >Calculating the Confidence Interval: </span
+      >To construct a confidence interval estimate for an unknown population mean, we need data from a random sample. The steps to construct and interpret the confidence interval are:</p
+    ><ul
+        class="list"
+        data-id="eip-id1171253322089"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        > Calculate the sample mean <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > </math
+        > from the sample data. Remember, in this section, we already know the population standard deviation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >&#x3C3;</mi
+          > </math
+        >.</li
+      > <li
+          class="item"
+        > Find the Z-score that corresponds to the confidence level.</li
+      > <li
+          class="item"
+        >Calculate the error bound EBM</li
+      > <li
+          class="item"
+        >Construct the confidence interval</li
+      > <li
+          class="item"
+        >Write a sentence that interprets the estimate in the context of the situation in the problem. (Explain what the confidence interval means, in the words of the problem.)</li
+      ></ul
+    ><p
+        class="para"
+        id="eip-id1171252935175"
+      >We will first examine each step in more detail, and then illustrate the process with some examples.</p
+    ><p
+        class="para"
+        id="eip-id1171265671814"
+      ><span
+          class="title"
+        >Finding z for the stated Confidence Level</span
+      >When we know the population standard deviation &#x3C3;, we use a standard normal distribution to calculate the error bound EBM and construct the confidence interval. We need to find the value of z that puts an area equal to the confidence level (in decimal form) in the middle of the standard normal distribution Z~N(0,1). </p
+    ><p
+        class="para"
+        id="eip-id1171249080440"
+      >The confidence level, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >CL</mi
+        ></math
+      >, is the area in the middle of the standard normal distribution. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >CL</mi
+        > <mo
+          >=</mo
+        > <mn
+          >1</mn
+        > <mo
+          >-</mo
+        > <mi
+          >&#x3B1;</mi
+        > </math
+      >. So <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3B1;</mi
+        ></math
+      > is the area that is split equally between the two tails. Each of the tails contains an area equal to <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mi
+            >&#x3B1;</mi
+          > <mn
+            >2</mn
+          > </mfrac
+        > </math
+      > .</p
+    ><p
+        class="para"
+        id="eip-id1171266449435"
+      >The z-score that has an area to the right of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          ><mn
+            >&#x3B1;</mn
+          ><mn
+            >2</mn
+          ></mfrac
+        > </math
+      > is denoted by <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mrow
+            > <mfrac
+              > <mi
+                >&#x3B1;</mi
+              > <mn
+                >2</mn
+              > </mfrac
+            > </mrow
+          > </msub
+        > </math
+      > </p
+    ><p
+        class="para"
+        id="eip-id1171258387350"
+      >For example, when <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >CL</mi
+        > <mo
+          >=</mo
+        > <mn
+          >0.95</mn
+        ></math
+      > then <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3B1;</mi
+        > <mo
+          >=</mo
+        > <mn
+          >0.05</mn
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          ><mi
+            >&#x3B1;</mi
+          > <mn
+            >2</mn
+          ></mfrac
+        > <mo
+          >=</mo
+        > <mn
+          >0.025</mn
+        > </math
+      > ; we write <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mrow
+            > <mfrac
+              > <mi
+                >&#x3B1;</mi
+              > <mn
+                >2</mn
+              > </mfrac
+            > </mrow
+          > </msub
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >z</mi
+          > <mn
+            >.025</mn
+          > </msub
+        > </math
+      > </p
+    ><p
+        class="para"
+        id="eip-id1171262711575"
+      >The area to the right of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mn
+            >.025</mn
+          > </msub
+        > </math
+      > is 0.025 and the area to the left of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mn
+            >.025</mn
+          > </msub
+        > </math
+      > is 1-0.025 = 0.975 </p
+    ><p
+        class="para"
+        id="eip-id1171249206094"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mrow
+            > <mfrac
+              > <mi
+                >&#x3B1;</mi
+              > <mn
+                >2</mn
+              > </mfrac
+            > </mrow
+          > </msub
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >z</mi
+          > <mn
+            >0.025</mn
+          > </msub
+        > <mo
+          >=</mo
+        > <mn
+          >1.96</mn
+        ></math
+      > , using a calculator, computer or a Standard Normal probability table.</p
+    ><p
+        class="para"
+        id="eip-id1171262752615"
+      >Using the TI83, TI83+ or TI84+ calculator: <code
+          class="code"
+        >invNorm</code
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >(</mo
+        ><mn
+          >0.975</mn
+        ><mo
+          >,</mo
+        ><mn
+          >0</mn
+        ><mo
+          >,</mo
+        ><mn
+          >1</mn
+        ><mo
+          >)</mo
+        ><mo
+          >=</mo
+        ><mn
+          >1.96</mn
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="eip-id1171252710483"
+      >CALCULATOR NOTE: Remember to use area to the LEFT of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mrow
+            > <mfrac
+              > <mi
+                >&#x3B1;</mi
+              > <mn
+                >2</mn
+              > </mfrac
+            > </mrow
+          > </msub
+        > </math
+      > ; in this chapter the last two inputs in the invNorm command are 0,1 because you are using a Standard Normal Distribution Z~N(0,1)</p
+    ><p
+        class="para"
+        id="eip-id1171249682085"
+      ><span
+          class="title"
+        >EBM: Error Bound </span
+      >The error bound formula for an unknown population mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > when the population standard deviation <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3C3;</mi
+        ></math
+      > is known is </p
+    ><ul
+        class="list"
+        data-id="eip-id1171249476212"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >EBM</mi
+          > <mo
+            >=</mo
+          > <msub
+            > <mi
+              >z</mi
+            > <mrow
+              > <mfrac
+                > <mi
+                  >&#x3B1;</mi
+                > <mn
+                  >2</mn
+                > </mfrac
+              > </mrow
+            > </msub
+          > <mo
+            >&#x22C5;</mo
+          > <mfrac
+            > <mi
+              >&#x3C3;</mi
+            > <mrow
+              > <msqrt
+                > <mi
+                  >n</mi
+                > </msqrt
+              > </mrow
+            > </mfrac
+          > </math
+        > </li
+      > </ul
+    ><ul
+        class="list"
+        data-id="eip-id1171248978481"
+        data-list-type="bulleted"
+      ><div
+          class="title"
+        >Constructing the Confidence Interval</div
+      ><li
+          class="item"
+        >The confidence interval estimate has the format <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > <mo
+            >&#x2212;</mo
+          > <mi
+            >EBM</mi
+          > <mo
+            >,</mo
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > <mo
+            >+</mo
+          > <mi
+            >EBM</mi
+          > <mo
+            >)</mo
+          > </math
+        >.</li
+      > </ul
+    ><p
+        class="para"
+        id="eip-id1171253190648"
+      >The graph gives a picture of the entire situation.</p
+    ><p
+        class="para"
+        id="eip-id1171259600150"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >CL</mi
+        > <mo
+          >+</mo
+        > <mfrac
+          > <mi
+            >&#x3B1;</mi
+          > <mn
+            >2</mn
+          > </mfrac
+        > <mo
+          >+</mo
+        > <mfrac
+          > <mi
+            >&#x3B1;</mi
+          > <mn
+            >2</mn
+          > </mfrac
+        > <mo
+          >=</mo
+        > <mi
+          >CL</mi
+        > <mo
+          >+</mo
+        > <mi
+          >&#x3B1;</mi
+        > <mo
+          >=</mo
+        > <mn
+          >1</mn
+        > </math
+      >.</p
+    ><p
+        class="para"
+        id="eip-id1171249018452"
+      ><span
+          class="media"
+          id="id1164466599913"
+          data-alt="Normal distribution curve displaying the confidence interval formulas and corresponding area formulas."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            width="300"
+            print-width="3in"
+        /></span
+      ></p
+    > <p
+        class="para"
+        id="eip-id1171265576442"
+      ><span
+          class="title"
+        >Writing the Interpretation</span
+      >The interpretation should clearly state the confidence level (CL), explain what population parameter is being estimated (here, a <strong
+          class="emphasis"
+        > population mean</strong
+      >), and should state the confidence interval (both endpoints). "We estimate with ___% confidence that the true population mean (include context of the problem) is between ___ and ___ (include appropriate units)." </p
+    ><div
+        class="example"
+        id="eip-id1171257291379"
+      ><p
+          class="para"
+          id="eip-id1171249543224"
+        >Suppose scores on exams in statistics are normally distributed with an unknown population mean and a population standard deviation of 3 points. A random sample of 36 scores is taken and gives a sample mean (sample mean score) of 68. Find a confidence interval estimate for the population mean exam score (the mean score on all exams).</p
+      ><div
+          class="exercise"
+          id="eip-id1171264272125"
+        ><div
+            class="problem"
+            id="id1164450499992"
+          > <p
+              class="para"
+              id="eip-id1171254920718"
+            >Find a 90% confidence interval for the true (population) mean of statistics exam scores. <br
+            /><br
+            /> </p
+          ></div
+        > <div
+            class="solution"
+            id="id1164449849393"
+          > <ul
+              class="list"
+              data-id="eip-id1170665387344"
+            > <li
+                class="item"
+              >You can use technology to directly calculate the confidence interval</li
+            > <li
+                class="item"
+              >The first solution is shown step-by-step (Solution A).</li
+            > <li
+                class="item"
+              >The second solution uses the TI-83, 83+ and 84+ calculators (Solution B).</li
+            > </ul
+          > <p
+              class="para"
+              id="eip-id1171260460763"
+            ><span
+                class="title"
+              >Solution A</span
+            > To find the confidence interval, you need the sample mean, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <apply
+                > <conjugate
+                /> <ci
+                  >x</ci
+                > </apply
+              > </math
+            >, and the EBM.</p
+          ><p
+              class="para"
+              id="eip-id1171259684785"
+            ><list
+                xmlns="http://cnx.rice.edu/cnxml"
+                data-id="eip-id1171249631187"
+                data-list-type="labeled-item"
+                data-mark-suffix=""
+              > <li
+                  xmlns=""
+                  class="item"
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >68</mn
+                  > </math
+                ></li
+              > <li
+                  xmlns=""
+                  class="item"
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >EBM</mi
+                  > <mo
+                    >=</mo
+                  > <msub
+                    > <mi
+                      >z</mi
+                    > <mrow
+                      > <mfrac
+                        > <mi
+                          >&#x3B1;</mi
+                        > <mn
+                          >2</mn
+                        > </mfrac
+                      > </mrow
+                    > </msub
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mfrac
+                    > <mi
+                      >&#x3C3;</mi
+                    > <mrow
+                      > <msqrt
+                        > <mi
+                          >n</mi
+                        > </msqrt
+                      > </mrow
+                    > </mfrac
+                  > <mo
+                    >)</mo
+                  > </math
+                > </li
+              > <li
+                  xmlns=""
+                  class="item"
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >3</mn
+                  > </math
+                > ; <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >n</mi
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >36</mn
+                  > </math
+                > ; The confidence level is 90% (CL=0.90)</li
+              ></list
+            ></p
+          ><p
+              class="para"
+              id="eip-id1171269290538"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >CL = 0.90</mi
+              > </math
+            > so <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >&#x3B1;</mi
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <mi
+                >CL</mi
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <mn
+                >0.90</mn
+              > <mo
+                >=</mo
+              > <mn
+                >0.10</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="eip-id1171249664419"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mrow
+                  > <mi
+                    >&#x3B1;</mi
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >2</mn
+                  > </mrow
+                > </mfrac
+              > <mo
+                >=</mo
+              > <mn
+                >0.05</mn
+              > <mspace
+                  width="20pt"
+              /> <msub
+                > <mi
+                  >z</mi
+                > <mfrac
+                  > <mrow
+                    > <mi
+                      >&#x3B1;</mi
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >2</mn
+                    > </mrow
+                  > </mfrac
+                > </msub
+              > <mo
+                >=</mo
+              > <msub
+                > <mi
+                  >z</mi
+                > <mn
+                  >.05</mn
+                > </msub
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="eip-id1171249710090"
+            >The area to the right of <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                ><mi
+                  >z</mi
+                ><mn
+                  >.05</mn
+                ></msub
+              > </math
+            > is 0.05 and the area to the left of <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                ><mi
+                  >z</mi
+                ><mn
+                  >.05</mn
+                ></msub
+              > </math
+            > is 1&#x2212;0.05=0.95 </p
+          ><p
+              class="para"
+              id="element-55"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                > <mi
+                  >z</mi
+                > <mfrac
+                  > <mrow
+                    > <mi
+                      >&#x3B1;</mi
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >2</mn
+                    > </mrow
+                  > </mfrac
+                > </msub
+              > <mo
+                >=</mo
+              > <msub
+                > <mi
+                  >z</mi
+                > <mn
+                  >.05</mn
+                > </msub
+              > <mo
+                >=</mo
+              > <mn
+                >1.645</mn
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="eip-id1171251216060"
+            >using invNorm(0.95,0,1) on the TI-83,83+,84+ calculators. This can also be found using appropriate commands on other calculators, using a computer, or using a probability table for the Standard Normal distribution.</p
+          ><p
+              class="para"
+              id="eip-id1171261548281"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >EBM</mi
+              > <mo
+                >=</mo
+              > <mn
+                >1.645</mn
+              > <mo
+                >&#x22C5;</mo
+              > <mo
+                >(</mo
+              > <mfrac
+                > <mn
+                  >3</mn
+                > <mrow
+                  > <msqrt
+                    > <mn
+                      >36</mn
+                    > </msqrt
+                  > </mrow
+                > </mfrac
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >0.8225</mn
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="eip-id1171249016439"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <apply
+                > <conjugate
+                /> <ci
+                  >x</ci
+                > </apply
+              > <mo
+                >-</mo
+              > <mi
+                >EBM</mi
+              > <mo
+                >=</mo
+              > <mn
+                >68</mn
+              > <mo
+                >-</mo
+              > <mn
+                >0.8225</mn
+              > <mo
+                >=</mo
+              > <mn
+                >67.1775</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="eip-id1171247927262"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <apply
+                > <conjugate
+                /> <ci
+                  >x</ci
+                > </apply
+              > <mo
+                >+</mo
+              > <mi
+                >EBM</mi
+              > <mo
+                >=</mo
+              > <mn
+                >68</mn
+              > <mo
+                >+</mo
+              > <mn
+                >0.8225</mn
+              > <mo
+                >=</mo
+              > <mn
+                >68.8225</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="eip-id1171262340763"
+            >The 90% confidence interval is <strong
+                class="emphasis"
+              >(67.1775, 68.8225).</strong
+            ></p
+          > </div
+        > </div
+      ><p
+          class="para"
+          id="eip-542"
+        ><span
+            class="title"
+          >Solution B</span
+        ><strong
+            class="emphasis"
+          >Using a function of the TI-83, TI-83+ or TI-84 calculators:</strong
+        > <br
+        /> <br
+        /> Press <code
+            class="code"
+          >STAT</code
+        > and arrow over to <code
+            class="code"
+          >TESTS</code
+        >. <br
+        /> Arrow down to <code
+            class="code"
+          >7:ZInterval</code
+        >. <br
+        /> Press <code
+            class="code"
+          >ENTER</code
+        >. <br
+        /> Arrow to <code
+            class="code"
+          >Stats</code
+        > and press <code
+            class="code"
+          >ENTER</code
+        >. <br
+        /> Arrow down and enter 3 for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >&#x3C3;</mi
+          ></math
+        >, 68 for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > </math
+        > , 36 for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >n</mi
+          ></math
+        >, and .90 for <code
+            class="code"
+          >C-level</code
+        >. <br
+        /> Arrow down to <code
+            class="code"
+          >Calculate</code
+        > and press <code
+            class="code"
+          >ENTER</code
+        >. <br
+        /> The confidence interval is (to 3 decimal places) (67.178, 68.822). </p
+      > <p
+          class="para"
+          id="eip-id1171248950887"
+        ><span
+            class="title"
+          >Interpretation</span
+        >We estimate with 90% confidence that the true population mean exam score for all statistics students is between 67.18 and 68.82.</p
+      > <p
+          class="para"
+          id="eip-id1171264042411"
+        ><span
+            class="title"
+          >Explanation of 90% Confidence Level</span
+        >90% of all confidence intervals constructed in this way contain the true mean statistics exam score. For example, if we constructed 100 of these confidence intervals, we would expect 90 of them to contain the true population mean exam score.</p
+      ></div
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-783"
+      >Changing the Confidence Level or Sample Size</h1
+    ><p
+        class="para"
+        id="eip-299"
+      ><div
+          class="example"
+          id="element-1217"
+        ><div
+            class="title"
+          >Changing the Confidence Level</div
+        ><div
+            class="exercise"
+            id="element-971"
+          ><div
+              class="problem"
+              id="id1164450104012"
+            > <p
+                class="para"
+                id="element-214"
+              ><span
+                  class="title"
+              />Suppose we change the original problem by using a 95% confidence level. Find a 95% confidence interval for the true (population) mean statistics exam score. </p
+            > </div
+          > <div
+              class="solution"
+              id="id1164461631257"
+            > <p
+                class="para"
+                id="element-701"
+              >To find the confidence interval, you need the sample mean, <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <apply
+                  > <conjugate
+                  /> <ci
+                    >x</ci
+                  > </apply
+                > </math
+              >, and the EBM.</p
+            ><list
+                xmlns="http://cnx.rice.edu/cnxml"
+                data-id="element-5"
+                data-list-type="labeled-item"
+                data-mark-suffix=""
+              > <li
+                  xmlns=""
+                  class="item"
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >68</mn
+                  > </math
+                ></li
+              > <li
+                  xmlns=""
+                  class="item"
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >EBM</mi
+                  > <mo
+                    >=</mo
+                  > <msub
+                    > <mi
+                      >z</mi
+                    > <mrow
+                      > <mfrac
+                        > <mi
+                          >&#x3B1;</mi
+                        > <mn
+                          >2</mn
+                        > </mfrac
+                      > </mrow
+                    > </msub
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mfrac
+                    > <mi
+                      >&#x3C3;</mi
+                    > <mrow
+                      > <msqrt
+                        > <mi
+                          >n</mi
+                        > </msqrt
+                      > </mrow
+                    > </mfrac
+                  > <mo
+                    >)</mo
+                  > </math
+                > </li
+              > <li
+                  xmlns=""
+                  class="item"
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >3</mn
+                  > </math
+                > ; <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >n</mi
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >36</mn
+                  > </math
+                > ; The confidence level is 95% (CL=0.95)</li
+              ></list
+            ><p
+                class="para"
+                id="element-547"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >CL = 0.95</mi
+                > </math
+              > so <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >&#x3B1;</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >-</mo
+                > <mi
+                  >CL</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >-</mo
+                > <mn
+                  >0.95</mn
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.05</mn
+                > </math
+              > </p
+            ><p
+                class="para"
+                id="element-769"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mfrac
+                  > <mrow
+                    > <mi
+                      >&#x3B1;</mi
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >2</mn
+                    > </mrow
+                  > </mfrac
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.025</mn
+                > <mspace
+                    width="20pt"
+                /> <msub
+                  > <mi
+                    >z</mi
+                  > <mfrac
+                    > <mrow
+                      > <mi
+                        >&#x3B1;</mi
+                      > </mrow
+                    > <mrow
+                      > <mn
+                        >2</mn
+                      > </mrow
+                    > </mfrac
+                  > </msub
+                > <mo
+                  >=</mo
+                > <msub
+                  > <mi
+                    >z</mi
+                  > <mn
+                    >.025</mn
+                  > </msub
+                > </math
+              ></p
+            ><p
+                class="para"
+                id="element-370"
+              >The area to the right of <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <msub
+                  ><mi
+                    >z</mi
+                  ><mn
+                    >.025</mn
+                  ></msub
+                > </math
+              > is 0.025 and the area to the left of <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <msub
+                  ><mi
+                    >z</mi
+                  ><mn
+                    >.025</mn
+                  ></msub
+                > </math
+              > is 1&#x2212;0.025=0.975 </p
+            ><p
+                class="para"
+                id="element-669"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <msub
+                  > <mi
+                    >z</mi
+                  > <mfrac
+                    > <mrow
+                      > <mi
+                        >&#x3B1;</mi
+                      > </mrow
+                    > <mrow
+                      > <mn
+                        >2</mn
+                      > </mrow
+                    > </mfrac
+                  > </msub
+                > <mo
+                  >=</mo
+                > <msub
+                  > <mi
+                    >z</mi
+                  > <mn
+                    >.025</mn
+                  > </msub
+                > <mo
+                  >=</mo
+                > <mn
+                  >1.96</mn
+                > </math
+              > </p
+            ><p
+                class="para"
+                id="element-639"
+              >using invnorm(.975,0,1) on the TI-83,83+,84+ calculators. (This can also be found using appropriate commands on other calculators, using a computer, or using a probability table for the Standard Normal distribution.)</p
+            ><p
+                class="para"
+                id="element-88"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >EBM</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >1.96</mn
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  > <mn
+                    >3</mn
+                  > <mrow
+                    > <msqrt
+                      > <mn
+                        >36</mn
+                      > </msqrt
+                    > </mrow
+                  > </mfrac
+                > <mo
+                  >)</mo
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.98</mn
+                > </math
+              > </p
+            ><p
+                class="para"
+                id="element-956"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <apply
+                  > <conjugate
+                  /> <ci
+                    >x</ci
+                  > </apply
+                > <mo
+                  >-</mo
+                > <mi
+                  >EBM</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >68</mn
+                > <mo
+                  >-</mo
+                > <mn
+                  >0.98</mn
+                > <mo
+                  >=</mo
+                > <mn
+                  >67.02</mn
+                > </math
+              > </p
+            ><p
+                class="para"
+                id="element-64"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <apply
+                  > <conjugate
+                  /> <ci
+                    >x</ci
+                  > </apply
+                > <mo
+                  >+</mo
+                > <mi
+                  >EBM</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >68</mn
+                > <mo
+                  >+</mo
+                > <mn
+                  >0.98</mn
+                > <mo
+                  >=</mo
+                > <mn
+                  >68.98</mn
+                > </math
+              > </p
+            > </div
+          > </div
+        ><p
+            class="para"
+            id="element-552"
+          ><span
+              class="title"
+            >Interpretation</span
+          >We estimate with 95 % confidence that the true population mean for all statistics exam scores is between 67.02 and 68.98. </p
+        ><p
+            class="para"
+            id="element-597"
+          ><span
+              class="title"
+            >Explanation of 95% Confidence Level</span
+          >95% of all confidence intervals constructed in this way contain the true value of the population mean statistics exam score.</p
+        ><p
+            class="para"
+            id="element-237"
+          ><span
+              class="title"
+            >Comparing the results</span
+          >The 90% confidence interval is (67.18, 68.82). The 95% confidence interval is (67.02, 68.98). The 95% confidence interval is wider. If you look at the graphs, because the area 0.95 is larger than the area 0.90, it makes sense that the 95% confidence interval is wider.</p
+        > <p
+            class="para"
+            id="element-567"
+          ><figure
+              id="conf_intvls_cfpm3"
+            ><figure
+                id="id1164454399276"
+              > <span
+                  class="media"
+                  id="id1164459044969"
+                  data-alt="Normal distribution curve with 0.90 confidence interval area blocked off and corresponding residual areas."
+                ><image
+                    xmlns="http://cnx.rice.edu/cnxml"
+                    width="250"
+                    print-width="3in"
+                /></span
+              > </figure
+            > <figure
+                id="id1164460029593"
+              > <span
+                  class="media"
+                  id="id1164465873022"
+                  data-alt="Normal distribution curve with 0.95 confidence interval area blocked off and corresponding residual areas."
+                ><image
+                    xmlns="http://cnx.rice.edu/cnxml"
+                    width="250"
+                    print-width="3in"
+                /></span
+              > </figure
+            ></figure
+          ></p
+        ><ul
+            class="list"
+            data-id="eip-703"
+          ><div
+              class="title"
+            >Summary: Effect of Changing the Confidence Level</div
+          ><li
+              class="item"
+            >Increasing the confidence level increases the error bound, making the confidence interval wider.</li
+          > <li
+              class="item"
+            >Decreasing the confidence level decreases the error bound, making the confidence interval narrower.</li
+          > </ul
+        > </div
+      ><div
+          class="example"
+          id="element-542"
+        ><div
+            class="title"
+          >Changing the Sample Size:</div
+        ><p
+            class="para"
+            id="element-338"
+          >Suppose we change the original problem to see what happens to the error bound if the sample size is changed.</p
+        ><div
+            class="exercise"
+            id="element-442"
+          ><div
+              class="problem"
+              id="id1164455008611"
+            > <p
+                class="para"
+                id="element-98"
+              >Leave everything the same except the sample size. Use the original 90% confidence level. What happens to the error bound and the confidence interval if we increase the sample size and use n=100 instead of n=36? What happens if we decrease the sample size to n=25 instead of n=36? </p
+            ><ul
+                class="list"
+                data-id="element-119"
+                data-list-type="bulleted"
+                data-mark-suffix=""
+              > <li
+                  class="item"
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >68</mn
+                  > </math
+                ></li
+              > <li
+                  class="item"
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >EBM</mi
+                  > <mo
+                    >=</mo
+                  > <msub
+                    > <mi
+                      >z</mi
+                    > <mrow
+                      > <mfrac
+                        > <mi
+                          >&#x3B1;</mi
+                        > <mn
+                          >2</mn
+                        > </mfrac
+                      > </mrow
+                    > </msub
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mfrac
+                    > <mi
+                      >&#x3C3;</mi
+                    > <mrow
+                      > <msqrt
+                        > <mi
+                          >n</mi
+                        > </msqrt
+                      > </mrow
+                    > </mfrac
+                  > <mo
+                    >)</mo
+                  > </math
+                > </li
+              > <li
+                  class="item"
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >3</mn
+                  > </math
+                > ; The confidence level is 90% (CL=0.90) ; <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <msub
+                    > <mi
+                      >z</mi
+                    > <mfrac
+                      > <mrow
+                        > <mi
+                          >&#x3B1;</mi
+                        > </mrow
+                      > <mrow
+                        > <mn
+                          >2</mn
+                        > </mrow
+                      > </mfrac
+                    > </msub
+                  > <mo
+                    >=</mo
+                  > <msub
+                    > <mi
+                      >z</mi
+                    > <mn
+                      >.05</mn
+                    > </msub
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >1.645</mn
+                  > </math
+                > </li
+              > </ul
+            > </div
+          > <div
+              class="solution"
+              id="id5851674"
+            > <p
+                class="para"
+                id="element-124"
+              >If we <strong
+                  class="emphasis"
+                >increase</strong
+              > the sample size <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >n</mi
+                > </math
+              > to 100, we <strong
+                  class="emphasis"
+                >decrease</strong
+              > the error bound.</p
+            ><p
+                class="para"
+                id="element-412"
+              >When <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >n</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >100</mn
+                > </math
+              > : <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >EBM</mi
+                > <mo
+                  >=</mo
+                > <msub
+                  > <mi
+                    >z</mi
+                  > <mrow
+                    > <mfrac
+                      > <mi
+                        >&#x3B1;</mi
+                      > <mn
+                        >2</mn
+                      > </mfrac
+                    > </mrow
+                  > </msub
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mrow
+                    > <msqrt
+                      > <mi
+                        >n</mi
+                      > </msqrt
+                    > </mrow
+                  > </mfrac
+                > <mo
+                  >)</mo
+                > <mo
+                  >=</mo
+                > <mn
+                  >1.645</mn
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  > <mi
+                    >3</mi
+                  > <mrow
+                    > <msqrt
+                      > <mn
+                        >100</mn
+                      > </msqrt
+                    > </mrow
+                  > </mfrac
+                > <mo
+                  >)</mo
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.4935</mn
+                > </math
+              ></p
+            > </div
+          > <div
+              class="solution"
+              id="id1164463763522"
+            > <p
+                class="para"
+                id="element-125"
+              >If we <strong
+                  class="emphasis"
+                >decrease</strong
+              > the sample size <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >n</mi
+                > </math
+              > to 25, we <strong
+                  class="emphasis"
+                >increase</strong
+              > the error bound. </p
+            ><p
+                class="para"
+                id="element-9"
+              >When <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >n</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >25</mn
+                > </math
+              > : <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >EBM</mi
+                > <mo
+                  >=</mo
+                > <msub
+                  > <mi
+                    >z</mi
+                  > <mrow
+                    > <mfrac
+                      > <mi
+                        >&#x3B1;</mi
+                      > <mn
+                        >2</mn
+                      > </mfrac
+                    > </mrow
+                  > </msub
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mrow
+                    > <msqrt
+                      > <mi
+                        >n</mi
+                      > </msqrt
+                    > </mrow
+                  > </mfrac
+                > <mo
+                  >)</mo
+                > <mo
+                  >=</mo
+                > <mn
+                  >1.645</mn
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  > <mi
+                    >3</mi
+                  > <mrow
+                    > <msqrt
+                      > <mn
+                        >25</mn
+                      > </msqrt
+                    > </mrow
+                  > </mfrac
+                > <mo
+                  >)</mo
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.987</mn
+                > </math
+              ></p
+            > </div
+          ></div
+        ><ul
+            class="list"
+            data-id="element-364"
+            data-list-type="bulleted"
+          ><div
+              class="title"
+            >Summary: Effect of Changing the Sample Size</div
+          ><li
+              class="item"
+            >Increasing the sample size causes the error bound to decrease, making the confidence interval narrower.</li
+          > <li
+              class="item"
+            >Decreasing the sample size causes the error bound to increase, making the confidence interval wider.</li
+          > </ul
+        > </div
+      > </p
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-710"
+      >Working Backwards to Find the Error Bound or Sample Mean</h1
+    ><p
+        class="para"
+        id="eip-719"
+      ><span
+          class="title"
+        >Working Bacwards to find the Error Bound or the Sample Mean</span
+      >When we calculate a confidence interval, we find the sample mean and calculate the error bound and use them to calculate the confidence interval. But sometimes when we read statistical studies, the study may state the confidence interval only. If we know the confidence interval, we can work backwards to find both the error bound and the sample mean. </p
+    ><ul
+        class="list"
+        data-id="eip-109"
+      ><div
+          class="title"
+        >Finding the Error Bound</div
+      ><li
+          class="item"
+        >From the upper value for the interval, subtract the sample mean</li
+      > <li
+          class="item"
+        >OR, From the upper value for the interval, subtract the lower value. Then divide the difference by 2.</li
+      > </ul
+    ><ul
+        class="list"
+        data-id="eip-364"
+      ><div
+          class="title"
+        >Finding the Sample Mean</div
+      ><li
+          class="item"
+        >Subtract the error bound from the upper value of the confidence interval</li
+      > <li
+          class="item"
+        >OR, Average the upper and lower endpoints of the confidence interval</li
+      ></ul
+    ><p
+        class="para"
+        id="eip-117"
+      >Notice that there are two methods to perform each calculation. You can choose the method that is easier to use with the information you know.</p
+    ><div
+        class="example"
+        id="eip-209"
+      ><p
+          class="para"
+          id="element-108"
+        >Suppose we know that a confidence interval is <strong
+            class="emphasis"
+          >(67.18, 68.82)</strong
+        > and we want to find the error bound. We may know that the sample mean is 68. Or perhaps our source only gave the confidence interval and did not tell us the value of the the sample mean. </p
+      ><ul
+          class="list"
+          data-id="element-733"
+          data-list-type="bulleted"
+        ><div
+            class="title"
+          >Calculate the Error Bound:</div
+        ><li
+            class="item"
+          >If we know that the sample mean is 68: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >EBM</mi
+            > <mo
+              >=</mo
+            > <mn
+              >68.82</mn
+            > <mo
+              >-</mo
+            > <mn
+              >68</mn
+            > <mo
+              >=</mo
+            > <mn
+              >0.82</mn
+            > <mspace
+                width="5pt"
+            /> </math
+          ></li
+        > <li
+            class="item"
+          >If we don't know the sample mean:<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mspace
+                width="5pt"
+            /> <mi
+              >EBM</mi
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mn
+                  >68.82</mn
+                > <mo
+                  >&#x2212;</mo
+                > <mn
+                  >67.18</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mrow
+                > <mn
+                  >2</mn
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >0.82</mn
+            > </math
+          ></li
+        ></ul
+      ><ul
+          class="list"
+          data-id="element-381"
+          data-list-type="bulleted"
+        ><div
+            class="title"
+          >Calculate the Sample Mean:</div
+        ><li
+            class="item"
+          >If we know the error bound: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><apply
+              > <conjugate
+              /> <ci
+                >x</ci
+              > </apply
+            > <mo
+              >=</mo
+            > <mn
+              >68.82</mn
+            > <mo
+              >-</mo
+            > <mn
+              >0.82</mn
+            > <mo
+              >=</mo
+            > <mn
+              >68</mn
+            > <mspace
+                width="5pt"
+            /> </math
+          ></li
+        > <li
+            class="item"
+          >If we don't know the error bound: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><apply
+              > <conjugate
+              /> <ci
+                >x</ci
+              > </apply
+            > <mo
+              >=</mo
+            > <mspace
+                width="5pt"
+            /> <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mn
+                  >67.18</mn
+                > <mo
+                  >+</mo
+                > <mn
+                  >68.82</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mrow
+                > <mn
+                  >2</mn
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >68</mn
+            > </math
+          ></li
+        ></ul
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-865"
+      >Calculating the Sample Size n</h1
+    ><p
+        class="para"
+        id="eip-630"
+      >If researchers desire a specific margin of error, then they can use the error bound formula to calculate the required sample size. </p
+    ><p
+        class="para"
+        id="eip-517"
+      >The error bound formula for a population mean when the population standard deviation is known is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >EBM</mi
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >z</mi
+          > <mrow
+            > <mfrac
+              > <mi
+                >&#x3B1;</mi
+              > <mn
+                >2</mn
+              > </mfrac
+            > </mrow
+          > </msub
+        > <mo
+          >&#x22C5;</mo
+        > <mo
+          >(</mo
+        > <mfrac
+          > <mi
+            >&#x3C3;</mi
+          > <mrow
+            > <msqrt
+              > <mi
+                >n</mi
+              > </msqrt
+            > </mrow
+          > </mfrac
+        > <mo
+          >)</mo
+        > </math
+      > </p
+    ><p
+        class="para"
+        id="eip-975"
+      >The formula for sample size is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+          data-display="display"
+        > <apply
+          > <eq
+          /> <ci
+            >n</ci
+          > <apply
+            > <divide
+            /> <apply
+              > <times
+              /> <apply
+                > <power
+                /> <ci
+                  >z</ci
+                > <cn
+                  >2</cn
+                > </apply
+              > <apply
+                > <power
+                /> <ci
+                  >&#x3C3;</ci
+                > <cn
+                  >2</cn
+                > </apply
+              > </apply
+            > <apply
+              > <power
+              /> <ci
+                >EBM</ci
+              > <cn
+                >2</cn
+              > </apply
+            > </apply
+          > </apply
+        > </math
+      >, found by solving the error bound formula for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          > n </mi
+        > </math
+      > </p
+    ><p
+        class="para"
+        id="eip-409"
+      >In this formula, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          > z </mi
+        > </math
+      > is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >z</mi
+          > <mfrac
+            > <mrow
+              > <mi
+                >&#x3B1;</mi
+              > </mrow
+            > <mrow
+              > <mn
+                >2</mn
+              > </mrow
+            > </mfrac
+          > </msub
+        ></math
+      >, corresponding to the desired confidence level. A researcher planning a study who wants a specified confidence level and error bound can use this formula to calculate the size of the sample needed for the study.</p
+    ><div
+        class="example"
+        id="eip-324"
+      ><p
+          class="para"
+          id="eip-796"
+        > The population standard deviation for the age of Foothill College students is 15 years. If we want to be 95% confident that the sample mean age is within 2 years of the true population mean age of Foothill College students , how many randomly selected Foothill College students must be surveyed? </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="eip-110"
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+          >From the problem, we know that <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3C3;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >15</mn
+            ></math
+          > and EBM=2</li
+        > <li
+            xmlns=""
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >z</mi
+            ><mo
+              >=</mo
+            > <msub
+              ><mi
+                >z</mi
+              ><mn
+                >.025</mn
+              ></msub
+            > <mo
+              >=</mo
+            > <mn
+              >1.96</mn
+            > </math
+          >, because the confidence level is 95%. </li
+        > </list
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="eip-501"
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+              data-display="display"
+            > <apply
+              > <eq
+              /> <ci
+                >n</ci
+              > <apply
+                > <divide
+                /> <apply
+                  > <times
+                  /> <apply
+                    > <power
+                    /> <ci
+                      >z</ci
+                    > <cn
+                      >2</cn
+                    > </apply
+                  > <apply
+                    > <power
+                    /> <ci
+                      >&#x3C3;</ci
+                    > <cn
+                      >2</cn
+                    > </apply
+                  > </apply
+                > <apply
+                  > <power
+                  /> <ci
+                    >EBM</ci
+                  > <cn
+                    >2</cn
+                  > </apply
+                > </apply
+              > </apply
+            ></math
+          > = <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <divide
+              /> <apply
+                > <times
+                /> <apply
+                  > <power
+                  /> <cn
+                    >1.96</cn
+                  > <cn
+                    >2</cn
+                  > </apply
+                > <apply
+                  > <power
+                  /> <cn
+                    >15</cn
+                  > <cn
+                    >2</cn
+                  > </apply
+                > </apply
+              > <apply
+                > <power
+                /> <cn
+                  >2</cn
+                > <cn
+                  >2</cn
+                > </apply
+              > </apply
+            > </math
+          > =216.09 using the sample size equation.</li
+        > <li
+            xmlns=""
+            class="item"
+          > Use <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ></math
+          > = 217: Always round the answer UP to the next higher integer to ensure that the sample size is large enough.</li
+        > </list
+      ><p
+          class="para"
+          id="eip-893"
+        >Therefore, 217 Foothill College students should be surveyed in order to be 95% confident that we are within 2 years of the true population mean age of Foothill College students.</p
+      ></div
+    > </div
+  ><p
+      class="para"
+      id="eip-708"
+    >**With contributions from Roberta Bloom</p
+  > </body
+>
+</html>

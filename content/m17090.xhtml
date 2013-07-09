@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: The Regression Equation</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: The Regression Equation</div
+  > <p
+      class="para"
+      id="delete_me"
+    >Data rarely fit a straight line exactly. Usually, you must be satisfied with rough predictions. Typically, you have a set of data whose scatter plot appears to <strong
+        class="emphasis"
+      >"fit"</strong
+    > a straight line. This is called a <strong
+        class="emphasis"
+      >Line of Best Fit or Least Squares Line</strong
+    >.</p
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-748"
+      >Optional Collaborative Classroom Activity</h1
+    > <p
+        class="para"
+        id="element-900"
+      > If you know a person's pinky (smallest) finger length, do you think you could predict that person's height? Collect data from your class (pinky finger length, in inches). The independent variable, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >, is pinky finger length and the dependent variable, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      >, is height. </p
+    ><p
+        class="para"
+        id="element-657"
+      >For each set of data, plot the points on graph paper. Make your graph big enough and <strong
+          class="emphasis"
+        >use a ruler</strong
+      >. Then "by eye" draw a line that appears to "fit" the data. For your line, pick two convenient points and use them to find the slope of the line. Find the y-intercept of the line by extending your lines so they cross the y-axis. Using the slopes and the y-intercepts, write your equation of "best fit". Do you think everyone will have the same equation? Why or why not?</p
+    ><p
+        class="para"
+        id="element-598"
+      >Using your equation, what is the predicted height for a pinky length of 2.5 inches?</p
+    ></div
+  ><div
+      class="example"
+      id="element-22"
+    ><p
+        class="para"
+        id="element-998"
+      > A random sample of 11 statistics students produced the following data where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > is the third exam score, out of 80, and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > is the final exam score, out of 200. Can you predict the final exam score of a random student if you know the third exam score? </p
+    > <figure
+        id="linrgs_regeq1"
+      ><figure
+          id="id8083493"
+        ><figcaption
+          >Table showing the scores on the final exam based on scores from the third exam.</figcaption
+        > <table
+            id="element-50"
+            summary=""
+          ><thead
+            > <tr
+              > <td
+                >x (third exam score)</td
+              > <td
+                >y (final exam score)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >65</td
+              > <td
+                >175</td
+              > </tr
+            > <tr
+              > <td
+                >67</td
+              > <td
+                >133</td
+              > </tr
+            > <tr
+              > <td
+                >71</td
+              > <td
+                >185</td
+              > </tr
+            > <tr
+              > <td
+                >71</td
+              > <td
+                >163</td
+              > </tr
+            > <tr
+              > <td
+                >66</td
+              > <td
+                >126</td
+              > </tr
+            > <tr
+              > <td
+                >75</td
+              > <td
+                >198</td
+              > </tr
+            > <tr
+              > <td
+                >67</td
+              > <td
+                >153</td
+              > </tr
+            > <tr
+              > <td
+                >70</td
+              > <td
+                >163</td
+              > </tr
+            > <tr
+              > <td
+                >71</td
+              > <td
+                >159</td
+              > </tr
+            > <tr
+              > <td
+                >69</td
+              > <td
+                >151</td
+              > </tr
+            > <tr
+              > <td
+                >69</td
+              > <td
+                >159</td
+              > </tr
+            > </tbody
+          ></table
+        > </figure
+      > <figure
+          id="id7881358"
+        ><figcaption
+          >Scatter plot showing the scores on the final exam based on scores from the third exam.</figcaption
+        > <span
+            class="media"
+            id="id1164262330756"
+            data-alt="Scatterplot of exam scores with the third exam score on the x-axis and the final exam score on the y-axis."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      ></figure
+    > </div
+  ><p
+      class="para"
+      id="eip-892"
+    >The third exam score, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    >, is the independent variable and the final exam score, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    >, is the dependent variable. We will plot a regression line that best "fits" the data. If each of you were to fit a line "by eye", you would draw different lines. We can use what is called a <strong
+        class="emphasis"
+      >least-squares regression line</strong
+    > to obtain the best fit line.</p
+  ><p
+      class="para"
+      id="element-644"
+    >Consider the following diagram. Each point of data is of the the form <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >(</mo
+      ><mi
+        >x</mi
+      ><mo
+        >,</mo
+      ><mi
+        >y</mi
+      ><mo
+        >)</mo
+      ></math
+    >and each point of the line of best fit using least-squares linear regression has the form <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mo
+        >(</mo
+      > <mi
+        >x</mi
+      > <mo
+        >,</mo
+      > <mover
+        > <mi
+          >y</mi
+        > <mo
+          >^</mo
+        > </mover
+      > <mo
+        >)</mo
+      > </math
+    >. </p
+  ><p
+      class="para"
+      id="element-51"
+    >The <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      ></math
+    > is read <strong
+        class="emphasis"
+      >"y hat"</strong
+    > and is the <strong
+        class="emphasis"
+      >estimated value of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      ></strong
+    >. It is the value of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > obtained using the regression line. It is not generally equal to <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > from data.</p
+  ><p
+      class="para"
+      id="element-530"
+    ><figure
+        id="linrgs_regeq2"
+      ><span
+          class="media"
+          id="id1164271221679"
+          data-alt="Scatterplot of the exam scores with a line of best fit tying in the relationship between the third exam and final exam scores. A specific point on the line, specific data point, and the distance between these two points are used in order to show an example of how to compute the sum of squared errors in order to find the points on the line of best fit."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="5in"
+        /></span
+      ></figure
+    ></p
+  ><p
+      class="para"
+      id="element-621"
+    >The term <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >y</mi
+        ><mn
+          >0</mn
+        ></msub
+      ><mo
+        >-</mo
+      ><msub
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mn
+          >0</mn
+        ></msub
+      ><mo
+        >=</mo
+      ><msub
+        ><mi
+          >&#x3B5;</mi
+        ><mn
+          >0</mn
+        ></msub
+      ></math
+    > is called the <strong
+        class="emphasis"
+      >"error" or residual</strong
+    >. It is not an error in the sense of a mistake. The <strong
+        class="emphasis"
+      >absolute value of a residual</strong
+    > measures the vertical distance between the actual value of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > and the estimated value of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    >. In other words, it measures the vertical distance between the actual data point and the predicted point on the line.</p
+  ><p
+      class="para"
+      id="eip-462"
+    >If the observed data point lies above the line, the residual is positive, and the line underestimates the actual data value for <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >y</mi
+      > </math
+    >. If the observed data point lies below the line, the residual is negative, and the line overestimates that actual data value for <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >y</mi
+      > </math
+    >.</p
+  ><p
+      class="para"
+      id="eip-104"
+    >In the diagram above, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >y</mi
+        ><mn
+          >0</mn
+        ></msub
+      ><mo
+        >-</mo
+      ><msub
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mn
+          >0</mn
+        ></msub
+      ><mo
+        >=</mo
+      ><msub
+        ><mi
+          >&#x3B5;</mi
+        ><mn
+          >0</mn
+        ></msub
+      ></math
+    > is the residual for the point shown. Here the point lies above the line and the residual is positive.</p
+  ><p
+      class="para"
+      id="element-756"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3B5;</mi
+      ></math
+    > = the Greek letter <strong
+        class="emphasis"
+      >epsilon</strong
+    ></p
+  ><p
+      class="para"
+      id="element-15"
+    >For each data point, you can calculate the residuals or errors, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >y</mi
+        ><mi
+          >i</mi
+        ></msub
+      ><mo
+        >-</mo
+      ><msub
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mi
+          >i</mi
+        ></msub
+      ><mo
+        >=</mo
+      ><msub
+        ><mi
+          >&#x3B5;</mi
+        ><mi
+          >i</mi
+        ></msub
+      ></math
+    > for <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >i</mi
+      ><mo
+        >=</mo
+      ><mtext
+        >1, 2, 3, ..., 11</mtext
+      ></math
+    >.</p
+  ><p
+      class="para"
+      id="element-670"
+    >Each <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >|</mo
+      ><mi
+        >&#x3B5;</mi
+      ><mo
+        >|</mo
+      ></math
+    > is a vertical distance.</p
+  ><p
+      class="para"
+      id="element-610"
+    >For the example about the third exam scores and the final exam scores for the 11 statistics students, there are 11 data points. Therefore, there are 11 <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3B5;</mi
+      ></math
+    > values. If you square each <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3B5;</mi
+      ></math
+    > and add, you get </p
+  ><p
+      class="para"
+      id="element-575"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mo
+        >(</mo
+      > <msub
+        > <mi
+          >&#x3B5;</mi
+        > <mn
+          >1</mn
+        > </msub
+      > <msup
+        > <mo
+          >)</mo
+        > <mn
+          >2</mn
+        > </msup
+      > <mo
+        >+</mo
+      > <mo
+        >(</mo
+      > <msub
+        > <mi
+          >&#x3B5;</mi
+        > <mn
+          >2</mn
+        > </msub
+      > <msup
+        > <mo
+          >)</mo
+        > <mn
+          >2</mn
+        > </msup
+      > <mo
+        >+</mo
+      > <mtext
+        >...</mtext
+      > <mo
+        >+</mo
+      > <mo
+        >(</mo
+      > <msub
+        > <mi
+          >&#x3B5;</mi
+        > <mn
+          >11</mn
+        > </msub
+      > <msup
+        > <mo
+          >)</mo
+        > <mn
+          >2</mn
+        > </msup
+      > <mo
+        >=</mo
+      > <mover
+        > <mrow
+          > <munder
+            > <mi
+              >&#x3A3;</mi
+            > <mtext
+              >i = 1</mtext
+            > </munder
+          > </mrow
+        > <mn
+          >11</mn
+        > </mover
+      > <msup
+        > <mi
+          >&#x3B5;</mi
+        > <mn
+          >2</mn
+        > </msup
+      > </math
+    ></p
+  ><p
+      class="para"
+      id="element-215"
+    >This is called the <strong
+        class="emphasis"
+      >Sum of Squared Errors (SSE)</strong
+    >.</p
+  > <p
+      class="para"
+      id="element-640"
+    >Using calculus, you can determine the values of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >a</mi
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >b</mi
+      ></math
+    > that make the <strong
+        class="emphasis"
+      >SSE</strong
+    > a minimum. When you make the <strong
+        class="emphasis"
+      >SSE</strong
+    > a minimum, you have determined the points that are on the line of best fit. It turns out that the line of best fit has the equation: </p
+  > <div
+      class="equation"
+      id="element-710"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mover
+        > <mi
+          >y</mi
+        > <mo
+          >^</mo
+        > </mover
+      > <mo
+        >=</mo
+      > <mi
+        >a</mi
+      > <mo
+        >+</mo
+      > <mtext
+        >bx</mtext
+      > </math
+    > </div
+  > <p
+      class="para"
+      id="element-716"
+    >where <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >a</mi
+      ><mo
+        >=</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mi
+          >&#xAF;</mi
+        ></mover
+      ><mo
+        >-</mo
+      ><mi
+        >b</mi
+      ><mo
+        >&#x22C5;</mo
+      ><mover
+        ><mi
+          >x</mi
+        ><mi
+          >&#xAF;</mi
+        ></mover
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >b</mi
+      ><mo
+        >=</mo
+      > <mfrac
+        > <mrow
+          > <mi
+            >&#x3A3;</mi
+          > <mo
+            >(</mo
+          > <mi
+            >x</mi
+          > <mo
+            >-</mo
+          > <mover
+            > <mi
+              >x</mi
+            > <mi
+              >&#xAF;</mi
+            > </mover
+          > <mo
+            >)</mo
+          > <mo
+            >&#x22C5;</mo
+          > <mo
+            >(</mo
+          > <mi
+            >y</mi
+          > <mo
+            >-</mo
+          > <mover
+            > <mi
+              >y</mi
+            > <mi
+              >&#xAF;</mi
+            > </mover
+          > <mo
+            >)</mo
+          > </mrow
+        > <mrow
+          > <msup
+            > <mrow
+              > <mi
+                >&#x3A3;</mi
+              > <mo
+                >(</mo
+              > <mi
+                >x</mi
+              > <mo
+                >-</mo
+              > <mover
+                > <mi
+                  >x</mi
+                > <mi
+                  >&#xAF;</mi
+                > </mover
+              > <mo
+                >)</mo
+              > </mrow
+            > <mrow
+              > <mn
+                >2</mn
+              > </mrow
+            > </msup
+          > </mrow
+        > </mfrac
+      > </math
+    >.</p
+  ><p
+      class="para"
+      id="element-153"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mover
+        ><mi
+          >x</mi
+        ><mi
+          >&#xAF;</mi
+        ></mover
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mover
+        ><mi
+          >y</mi
+        ><mi
+          >&#xAF;</mi
+        ></mover
+      ></math
+    > are the sample means of the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    > values and the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > values, respectively. The best fit line always passes through the point <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >(</mo
+      ><mover
+        ><mi
+          >x</mi
+        ><mi
+          >&#xAF;</mi
+        ></mover
+      ><mo
+        >,</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mi
+          >&#xAF;</mi
+        ></mover
+      ><mo
+        >)</mo
+      ></math
+    >.</p
+  ><p
+      class="para"
+      id="element-414"
+    >The slope <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >b</mi
+      ></math
+    > can be written as <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >b</mi
+      ><mo
+        >=</mo
+      ><mi
+        >r</mi
+      ><mo
+        >&#x22C5;</mo
+      ><mo
+        >(</mo
+      > <mfrac
+        ><mrow
+          > <msub
+            ><mi
+              >s</mi
+            ><mi
+              >y</mi
+            ></msub
+          ></mrow
+        > <mrow
+          > <msub
+            ><mi
+              >s</mi
+            ><mi
+              >x</mi
+            ></msub
+          ></mrow
+        ></mfrac
+      ><mo
+        >)</mo
+      ></math
+    > where <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >s</mi
+        ><mi
+          >y</mi
+        ></msub
+      ></math
+    > = the standard deviation of the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > values and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >s</mi
+        ><mi
+          >x</mi
+        ></msub
+      ></math
+    > = the standard deviation of the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    > values. <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >r</mi
+      ></math
+    > is the correlation coefficient which is discussed in the next section.</p
+  ><p
+      class="para"
+      id="eip-996"
+    ><span
+        class="title"
+      >Least Squares Criteria for Best Fit</span
+    >The process of fitting the best fit line is called <strong
+        class="emphasis"
+      > linear regression</strong
+    >. The idea behind finding the best fit line is based on the assumption that the data are scattered about a straight line. The criteria for the best fit line is that the sum of the squared errors (SSE) is minimized, that is made as small as possible. Any other line you might choose would have a higher SSE than the best fit line. This best fit line is called the <strong
+        class="emphasis"
+      > least squares regression line </strong
+    >.</p
+  ><div
+      class="note"
+      id="id1164273503037"
+    >Computer spreadsheets, statistical software, and many calculators can quickly calculate the best fit line and create the graphs. The calculations tend to be tedious if done by hand. Instructions to use the TI-83, TI-83+, and TI-84+ calculators to find the best fit line and create a scatterplot are shown at the end of this section. </div
+  ><p
+      class="para"
+      id="element-27"
+    ><span
+        class="title"
+      >THIRD EXAM vs FINAL EXAM EXAMPLE:</span
+    >The graph of the line of best fit for the third exam/final exam example is shown below:</p
+  ><figure
+      id="linrgs_regeq3"
+    ><span
+        class="media"
+        id="id1164250764889"
+        data-alt="Scatterplot of the third exam scores by final exam scores and its line of best fit."
+      ><image
+          xmlns="http://cnx.rice.edu/cnxml"
+          print-width="4in"
+      /></span
+    ></figure
+  ><p
+      class="para"
+      id="element-689"
+    >The least squares regression line (best fit line) for the third exam/final exam example has the equation:</p
+  ><div
+      class="equation"
+      id="element-643"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mover
+        > <mi
+          >y</mi
+        > <mo
+          >^</mo
+        > </mover
+      > <mo
+        >=</mo
+      > <mn
+        >-173.51</mn
+      > <mo
+        >+</mo
+      > <mtext
+        >4.83x</mtext
+      > <mspace
+          width="20pt"
+      /> </math
+    ></div
+  ><div
+      class="note"
+      id="eip-923"
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="id150181954"
+        data-list-type="labeled-item"
+      ><li
+          xmlns=""
+          class="item"
+        >Remember, it is always important to plot a scatter diagram first. If the scatter plot indicates that there is a linear relationship between the variables, then it is reasonable to use a best fit line to make predictions for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > given <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > within the domain of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        >-values in the sample data, <strong
+            class="emphasis"
+          >but not necessarily for <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          >-values outside that domain.</strong
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        > You could use the line to predict the final exam score for a student who earned a grade of 73 on the third exam.</li
+      > <li
+          xmlns=""
+          class="item"
+        >You should NOT use the line to predict the final exam score for a student who earned a grade of 50 on the third exam, because 50 is not within the domain of the x-values in the sample data, which are between 65 and 75. </li
+      ></list
+    ></div
+  ><p
+      class="para"
+      id="element-39"
+    ><span
+        class="title"
+      >UNDERSTANDING SLOPE</span
+    >The slope of the line, b, describes how changes in the variables are related. It is important to interpret the slope of the line in the context of the situation represented by the data. You should be able to write a sentence interpreting the slope in plain English.</p
+  ><p
+      class="para"
+      id="element-725"
+    ><strong
+        class="emphasis"
+      >INTERPRETATION OF THE SLOPE:</strong
+    > The slope of the best fit line tells us how the dependent variable (y) changes for every one unit increase in the independent (x) variable, on average. </p
+  ><list
+      xmlns="http://cnx.rice.edu/cnxml"
+      data-id="eip-553"
+      data-list-type="labeled-item"
+    ><div
+        xmlns=""
+        class="title"
+      >THIRD EXAM vs FINAL EXAM EXAMPLE</div
+    ><li
+        xmlns=""
+        class="item"
+      >Slope: The slope of the line is b = 4.83. </li
+    > <li
+        xmlns=""
+        class="item"
+      >Interpretation: For a one point increase in the score on the third exam, the final exam score increases by 4.83 points, on average.</li
+    > </list
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-349"
+      >Using the TI-83+ and TI-84+ Calculators</h1
+    ><ol
+        class="list"
+        data-id="eip-480"
+        data-list-type="enumerated"
+        data-number-style="arabic"
+        data-class="stepwise"
+      ><div
+          class="title"
+        >Using the Linear Regression T Test: LinRegTTest</div
+      ><li
+          class="item"
+        > In the STAT list editor, enter the X data in list L1 and the Y data in list L2, paired so that the corresponding (x,y) values are next to each other in the lists. (If a particular pair of values is repeated, enter it as many times as it appears in the data.)</li
+      > <li
+          class="item"
+        > On the STAT TESTS menu, scroll down with the cursor to select the LinRegTTest. (Be careful to select LinRegTTest as some calculators may also have a different item called LinRegTInt.)</li
+      > <li
+          class="item"
+        >On the LinRegTTest input screen enter: Xlist: L1 ; Ylist: L2 ; Freq: 1</li
+      > <li
+          class="item"
+        >On the next line, at the prompt &#x3B2; or &#x3C1;, highlight "&#x2260; 0" and press ENTER </li
+      > <li
+          class="item"
+        >Leave the line for "RegEq:" blank</li
+      > <li
+          class="item"
+        >Highlight Calculate and press ENTER.</li
+      ></ol
+    > <p
+        class="para"
+        id="element-5301"
+      ><figure
+          id="linregttestscreens"
+        ><span
+            class="media"
+            id="id53013501"
+            data-alt="1. Image of calculator input screen for LinRegTTest with input matching the instructions above. 2.Image of corresponding output calculator output screen for LinRegTTest: Output screen shows: Line 1. LinRegTTest; Line 2. y = a + bx; Line 3. beta does not equal 0 and rho does not equal 0; Line 4. t = 2.657560155; Line 5. df = 9; Line 6. a = &#xF02D;173.513363; Line 7. b = 4.827394209; Line 8. s = 16.41237711; Line 9. r squared = .4396931104; Line 10. r = .663093591"
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3.75in"
+          /></span
+        ></figure
+      ></p
+    > <p
+        class="para"
+        id="eip-640"
+      >The output screen contains a lot of information. For now we will focus on a few items from the output, and will return later to the other items.</p
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-720"
+        data-list-type="labeled-item"
+      ><li
+          xmlns=""
+          class="item"
+        >The second line says y=a+bx. Scroll down to find the values a=-173.513, and b=4.8273 ; the equation of the best fit line is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mover
+            > <mi
+              >y</mi
+            > <mo
+              >^</mo
+            > </mover
+          > <mo
+            >=</mo
+          > <mn
+            >-173.51</mn
+          > <mo
+            >+</mo
+          > <mtext
+            >4.83</mtext
+          ><mi
+            >x</mi
+          > <mspace
+              width="20pt"
+          /> </math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        >The two items at the bottom are <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <power
+            /> <ci
+              >r</ci
+            > <cn
+              >2</cn
+            > </apply
+          > </math
+        > = .43969 and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        >=.663. For now, just note where to find these values; we will discuss them in the next two sections.</li
+      ></list
+    > <ol
+        class="list"
+        data-id="eip-763"
+        data-list-type="enumerated"
+        data-number-style="arabic"
+        data-class="stepwise"
+      ><div
+          class="title"
+        >Graphing the Scatterplot and Regression Line</div
+      ><li
+          class="item"
+        >We are assuming your X data is already entered in list L1 and your Y data is in list L2</li
+      > <li
+          class="item"
+        >Press 2nd STATPLOT ENTER to use Plot 1</li
+      > <li
+          class="item"
+        >On the input screen for PLOT 1, highlight <strong
+            class="emphasis"
+          >On</strong
+        > and press ENTER</li
+      > <li
+          class="item"
+        >For TYPE: highlight the very first icon which is the scatterplot and press ENTER</li
+      > <li
+          class="item"
+        >Indicate Xlist: L1 and Ylist: L2</li
+      > <li
+          class="item"
+        >For Mark: it does not matter which symbol you highlight.</li
+      > <li
+          class="item"
+        > Press the ZOOM key and then the number 9 (for menu item "ZoomStat") ; the calculator will fit the window to the data </li
+      > <li
+          class="item"
+        > To graph the best fit line, press the "Y=" key and type the equation -173.5+4.83X into equation Y1. (The X key is immediately left of the STAT key). Press ZOOM 9 again to graph it. </li
+      > <li
+          class="item"
+        >Optional: If you want to change the viewing window, press the WINDOW key. Enter your desired window using Xmin, Xmax, Ymin, Ymax</li
+      ></ol
+    > </div
+  ><p
+      class="para"
+      id="eip-348"
+    >**With contributions from Roberta Bloom</p
+  > </body
+>
+</html>

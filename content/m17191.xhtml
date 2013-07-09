@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>The Chi-Square Distribution: Test of Independence</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >The Chi-Square Distribution: Test of Independence</div
+  > <p
+      class="para"
+      id="element-834"
+    >Tests of independence involve using a <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="contintable"
+      >contingency table</term
+    > of observed (data) values. You first saw a contingency table when you studied probability in the <a
+        href="/m16838"
+      >Probability Topics</a
+    > chapter.</p
+  ><p
+      class="para"
+      id="element-230"
+    >The test statistic for a test of independence is similar to that of a goodness-of-fit test:</p
+  ><div
+      class="equation"
+      id="element-164"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <munder
+        > <mi
+          >&#x3A3;</mi
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >i</mi
+          > <mo
+            >&#x22C5;</mo
+          > <mi
+            >j</mi
+          > <mo
+            >)</mo
+          > </mrow
+        > </munder
+      > <mfrac
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >O</mi
+          > <mo
+            >-</mo
+          > <mi
+            >E</mi
+          > <msup
+            > <mo
+              >)</mo
+            > <mn
+              >2</mn
+            > </msup
+          > </mrow
+        > <mrow
+          > <mi
+            >E</mi
+          > </mrow
+        > </mfrac
+      > </math
+    > </div
+  ><p
+      class="para"
+      id="element-874"
+    >where:</p
+  > <ul
+      class="list"
+      data-id="element-12123"
+      data-list-type="bulleted"
+    > <li
+        class="item"
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >O</mi
+        ></math
+      > = observed values </li
+    ><li
+        class="item"
+        id="element-323"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >E</mi
+        ></math
+      > = expected values </li
+    ><li
+        class="item"
+        id="element-173"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >i</mi
+        ></math
+      > = the number of rows in the table </li
+    ><li
+        class="item"
+        id="element-618"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >j</mi
+        ></math
+      > = the number of columns in the table</li
+    ></ul
+  ><p
+      class="para"
+      id="element-575"
+    >There are <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >i</mi
+      > <mo
+        > &#x22C5; </mo
+      > <mi
+        >j</mi
+      > </math
+    > terms of the form <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mfrac
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >O</mi
+          > <mo
+            >-</mo
+          > <mi
+            >E</mi
+          > <msup
+            > <mo
+              >)</mo
+            > <mn
+              >2</mn
+            > </msup
+          > </mrow
+        > <mrow
+          > <mi
+            >E</mi
+          > </mrow
+        > </mfrac
+      > </math
+    >. </p
+  ><p
+      class="para"
+      id="element-518"
+    ><strong
+        class="emphasis"
+      >A test of independence determines whether two factors are independent or not.</strong
+    > You first encountered the term independence in Chapter 3. As a review, consider the following example.</p
+  ><div
+      class="note"
+      id="eip-155"
+    >The expected value for each cell needs to be at least 5 in order to use this test.</div
+  ><div
+      class="example"
+      id="element-54"
+    ><p
+        class="para"
+        id="element-904"
+      >Suppose <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >A</mi
+        > </math
+      > = a speeding violation in the last year and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >B</mi
+        > </math
+      > = a cell phone user while driving. If <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >A</mi
+        > </math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >B</mi
+        > </math
+      > are independent then <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >P</mi
+        > <mo
+          >(</mo
+        > <mi
+          >A</mi
+        > <mo
+          > AND </mo
+        > <mi
+          >B</mi
+        > <mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mi
+          >P</mi
+        > <mo
+          >(</mo
+        > <mi
+          >A</mi
+        > <mo
+          >)</mo
+        > <mi
+          >P</mi
+        > <mo
+          >(</mo
+        > <mi
+          >B</mi
+        > <mo
+          >)</mo
+        > </math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >A</mi
+        > <mo
+          > AND </mo
+        > <mi
+          >B</mi
+        > </math
+      > is the event that a driver received a speeding violation last year and is also a cell phone user while driving. Suppose, in a study of drivers who received speeding violations in the last year and who uses cell phones while driving, that 755 people were surveyed. Out of the 755, 70 had a speeding violation and 685 did not; 305 were cell phone users while driving and 450 were not. </p
+    ><p
+        class="para"
+        id="element-427"
+      >Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > = expected number of drivers that use a cell phone while driving and received speeding violations.</p
+    ><p
+        class="para"
+        id="element-367"
+      >If <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >A</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >B</mi
+        ></math
+      > are independent, then <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >P</mi
+        > <mo
+          >(</mo
+        > <mi
+          >A</mi
+        > <mo
+          > AND </mo
+        > <mi
+          >B</mi
+        > <mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mi
+          >P</mi
+        > <mo
+          >(</mo
+        > <mi
+          >A</mi
+        > <mo
+          >)</mo
+        > <mi
+          >P</mi
+        > <mo
+          >(</mo
+        > <mi
+          >B</mi
+        > <mo
+          >)</mo
+        > </math
+      >. By substitution, </p
+    ><p
+        class="para"
+        id="element-329"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mi
+            >y</mi
+          > <mn
+            >755</mn
+          > </mfrac
+        > <mo
+          >=</mo
+        > <mfrac
+          > <mn
+            >70</mn
+          > <mn
+            >755</mn
+          > </mfrac
+        > <mo
+          >&#x22C5;</mo
+        > <mfrac
+          > <mn
+            >305</mn
+          > <mn
+            >755</mn
+          > </mfrac
+        > </math
+      > </p
+    ><p
+        class="para"
+        id="element-482"
+      >Solve for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >y</mi
+        > <mo
+          >:</mo
+        > <mi
+          >y</mi
+        > <mo
+          >=</mo
+        > <mfrac
+          > <mrow
+            > <mn
+              >70</mn
+            > <mo
+              >&#x22C5;</mo
+            > <mn
+              >305</mn
+            > </mrow
+          > <mn
+            >755</mn
+          > </mfrac
+        > <mo
+          >=</mo
+        > <mn
+          >28.3</mn
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-249"
+      >About 28 people from the sample are expected to be cell phone users while driving and to receive speeding violations.</p
+    ><p
+        class="para"
+        id="element-365"
+      >In a test of independence, we state the null and alternate hypotheses in words. Since the contingency table consists of <strong
+          class="emphasis"
+        >two factors</strong
+      >, the null hypothesis states that the factors are <strong
+          class="emphasis"
+        >independent</strong
+      > and the alternate hypothesis states that they are <strong
+          class="emphasis"
+        >not independent (dependent)</strong
+      >. If we do a test of independence using the example above, then the null hypothesis is:</p
+    ><p
+        class="para"
+        id="element-337"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >H</mi
+          > <mi
+            >o</mi
+          > </msub
+        > </math
+      >: Being a cell phone user while driving and receiving a speeding violation are independent events.</p
+    ><p
+        class="para"
+        id="element-903"
+      >If the null hypothesis were true, we would expect about 28 people to be cell phone users while driving and to receive a speeding violation.</p
+    ><p
+        class="para"
+        id="element-197"
+      ><strong
+          class="emphasis"
+        >The test of independence is always right-tailed</strong
+      > because of the calculation of the test statistic. If the expected and observed values are not close together, then the test statistic is very large and way out in the right tail of the chi-square curve, like goodness-of-fit.</p
+    ><p
+        class="para"
+        id="element-35"
+      >The degrees of freedom for the test of independence are:</p
+    > <p
+        class="para"
+        id="element-12412"
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mtext
+          >df = (number of columns - 1)(number of rows - 1)</mtext
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-928"
+      >The following formula calculates the <strong
+          class="emphasis"
+        >expected number</strong
+      > (<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >E</mi
+        ></math
+      >):</p
+    ><p
+        class="para"
+        id="element-32"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >E</mi
+        > <mo
+          >=</mo
+        > <mfrac
+          > <mtext
+            >(row total)(column total)</mtext
+          > <mtext
+            >total number surveyed</mtext
+          > </mfrac
+        > </math
+      > </p
+    > </div
+  ><div
+      class="example"
+      id="element-272"
+    ><p
+        class="para"
+        id="element-84"
+      > In a volunteer group, adults 21 and older volunteer from one to nine hours each week to spend time with a disabled senior citizen. The program recruits among community college students, four-year college students, and nonstudents. The following table is a <strong
+          class="emphasis"
+        >sample</strong
+      > of the adult volunteers and the number of hours they volunteer per week. </p
+    > <table
+        id="table-73248"
+        summary="This table presents the observed hours per week volunteered by type of volunteer. The first row represents community-college students, the second row represents four-year college students, and the third row represents non-students. The second column is 1-3 hours per week, the third column is 4-6 hours per week, and the fourth column is 7-9 hours per week."
+      ><caption
+        ><span
+            class="title"
+          >Number of Hours Worked Per Week by Volunteer Type (Observed)</span
+        >The table contains <strong
+            class="emphasis"
+          >observed (O)</strong
+        > values (data). </caption
+      ><thead
+          valign="top"
+        > <tr
+          > <td
+            >Type of Volunteer</td
+          > <td
+            >1-3 Hours</td
+          > <td
+            >4-6 Hours</td
+          > <td
+            >7-9 Hours</td
+          > <td
+            >Row Total</td
+          > </tr
+        > </thead
+      ><tbody
+          valign="top"
+        > <tr
+          > <td
+            >Community College Students</td
+          > <td
+            >111</td
+          > <td
+            >96</td
+          > <td
+            >48</td
+          > <td
+            >255</td
+          > </tr
+        > <tr
+          > <td
+            >Four-Year College Students</td
+          > <td
+            >96</td
+          > <td
+            >133</td
+          > <td
+            >61</td
+          > <td
+            >290</td
+          > </tr
+        > <tr
+          > <td
+            >Nonstudents</td
+          > <td
+            >91</td
+          > <td
+            >150</td
+          > <td
+            >53</td
+          > <td
+            >294</td
+          > </tr
+        > <tr
+          > <td
+            >Column Total</td
+          > <td
+            >298</td
+          > <td
+            >379</td
+          > <td
+            >162</td
+          > <td
+            >839</td
+          > </tr
+        > </tbody
+      ></table
+    > <div
+        class="exercise"
+        id="exercise102"
+      ><div
+          class="problem"
+          id="id8698829"
+        > <p
+            class="para"
+            id="element-2342"
+          > Are the number of hours volunteered <strong
+              class="emphasis"
+            >independent</strong
+          > of the type of volunteer? </p
+        > </div
+      > <div
+          class="solution"
+          id="id8698856"
+        > <p
+            class="para"
+            id="element-8768798723"
+          >The <strong
+              class="emphasis"
+            >observed table</strong
+          > and the question at the end of the problem, "Are the number of hours volunteered independent of the type of volunteer?" tell you this is a test of independence. The two factors are <strong
+              class="emphasis"
+            >number of hours volunteered</strong
+          > and <strong
+              class="emphasis"
+            >type of volunteer</strong
+          >. This test is always right-tailed.</p
+        ><p
+            class="para"
+            id="element-945"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >: The number of hours volunteered is <strong
+              class="emphasis"
+            >independent</strong
+          > of the type of volunteer.</p
+        ><p
+            class="para"
+            id="element-255"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: The number of hours volunteered is <strong
+              class="emphasis"
+            >dependent</strong
+          > on the type of volunteer.</p
+        ><p
+            class="para"
+            id="element-455"
+          >The expected table is: <table
+              id="table-73248a"
+              summary="This table presents the expected hours per week volunteered by type of volunteer. The first row represents community-college students, the second row represents four-year college students, and the third row represents non-students. The second column is 1-3 hours per week, the third column is 4-6 hours per week, and the fourth column is 7-9 hours per week."
+            ><caption
+              ><span
+                  class="title"
+                >Number of Hours Worked Per Week by Volunteer Type (Expected)</span
+              >The table contains <strong
+                  class="emphasis"
+                >expected</strong
+              > (<math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi
+                  >E</mi
+                ></math
+              >) values (data).</caption
+            ><thead
+                valign="top"
+              > <tr
+                > <td
+                  >Type of Volunteer</td
+                > <td
+                  >1-3 Hours</td
+                > <td
+                  >4-6 Hours</td
+                > <td
+                  >7-9 Hours</td
+                > </tr
+              > </thead
+            ><tbody
+                valign="top"
+              > <tr
+                > <td
+                  >Community College Students</td
+                > <td
+                  >90.57</td
+                > <td
+                  >115.19</td
+                > <td
+                  >49.24</td
+                > </tr
+              > <tr
+                > <td
+                  >Four-Year College Students</td
+                > <td
+                  >103.00</td
+                > <td
+                  >131.00</td
+                > <td
+                  >56.00</td
+                > </tr
+              > <tr
+                > <td
+                  >Nonstudents</td
+                > <td
+                  >104.42</td
+                > <td
+                  >132.81</td
+                > <td
+                  >56.77</td
+                > </tr
+              > </tbody
+            ></table
+          ></p
+        ><p
+            class="para"
+            id="element-720"
+          >For example, the calculation for the expected frequency for the top left cell is </p
+        ><p
+            class="para"
+            id="element-914"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >E</mi
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mtext
+                >(row total)(column total)</mtext
+              > <mtext
+                >total number surveyed</mtext
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mn
+                  >255</mn
+                > <mo
+                  >&#x22C5;</mo
+                > <mn
+                  >298</mn
+                > </mrow
+              > <mn
+                >839</mn
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >90.57</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-558"
+          ><strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >=</mo
+            > <mn
+              >12.99</mn
+            > <mspace
+                width="20pt"
+            /> </math
+          > (calculator or computer)</p
+        ><p
+            class="para"
+            id="element-775"
+          ><strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msubsup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >4</mn
+              > <mn
+                >2</mn
+              > </msubsup
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-580"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >df</mtext
+            ><mo
+              >=</mo
+            ><mo
+              >(</mo
+            ><mtext
+              >3 columns</mtext
+            ><mo
+              >-</mo
+            > <mn
+              >1</mn
+            ><mo
+              >)</mo
+            ><mo
+              >(</mo
+            ><mtext
+              >3 rows</mtext
+            ><mo
+              >-</mo
+            ><mn
+              >1</mn
+            ><mo
+              >)</mo
+            ><mo
+              >=</mo
+            > <mo
+              >(</mo
+            ><mn
+              >2</mn
+            ><mo
+              >)</mo
+            ><mo
+              >(</mo
+            ><mn
+              >2</mn
+            ><mo
+              >)</mo
+            ><mo
+              >=</mo
+            ><mn
+              >4</mn
+            ></math
+          ></p
+        ><p
+            class="para"
+            id="element-48"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          ></p
+        > <media
+            xmlns="http://cnx.rice.edu/cnxml"
+            id="id8547662"
+            data-alt="Nonsymmetrical chi-square curve with values of 0 and 12.99 on the x-axis representing the test statistic of number of hours worked by volunteers of different types. A vertical upward line extends from 12.99 to the curve and the area to the right of this is equal to the p-value."
+            data-display="block"
+          ><image
+              print-width="3in"
+          /></media
+        > <p
+            class="para"
+            id="element-117"
+          ><strong
+              class="emphasis"
+            >Probability statement:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><msup
+              ><mi
+                >&#x3C7;</mi
+              ><mn
+                >2 </mn
+              ></msup
+            ><mo
+              >&gt;</mo
+            ><mn
+              >12.99</mn
+            ><mo
+              >)</mo
+            ><mo
+              >=</mo
+            ><mn
+              >0.0113</mn
+            ></math
+          ></p
+        ><p
+            class="para"
+            id="element-347"
+          ><strong
+              class="emphasis"
+            >Compare <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3B1;</mi
+              ></math
+            > and the <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >p-value</mtext
+              ></math
+            >:</strong
+          > Since no <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ></math
+          > is given, assume <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.05</mn
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.0113</mn
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >.</p
+        ><p
+            class="para"
+            id="element-141"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >, reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          >. This means that the factors are not independent.</p
+        ><p
+            class="para"
+            id="element-590"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At a 5% level of significance, from the data, there is sufficient evidence to conclude that the number of hours volunteered and the type of volunteer are dependent on one another.</p
+        ><p
+            class="para"
+            id="element-956"
+          >For the above example, if there had been another type of volunteer, teenagers, what would the degrees of freedom be?</p
+        ><div
+            class="note"
+            id="element-574"
+          >Calculator instructions follow.</div
+        ><p
+            class="para"
+            id="element-854"
+          >TI-83+ and TI-84 calculator: Press the <code
+              class="code"
+            >MATRX</code
+          > key and arrow over to <code
+              class="code"
+            >EDIT</code
+          >. Press <code
+              class="code"
+            >1:[A]</code
+          >. Press <code
+              class="code"
+            >3 ENTER 3 ENTER</code
+          >. Enter the table values by row from Example 11-6. Press <code
+              class="code"
+            >ENTER</code
+          > after each. Press <code
+              class="code"
+            >2nd QUIT</code
+          >. Press <code
+              class="code"
+            >STAT</code
+          > and arrow over to <code
+              class="code"
+            >TESTS</code
+          >. Arrow down to <code
+              class="code"
+            >C:&#x3C7;2-TEST</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. You should see <code
+              class="code"
+            >Observed:[A] and Expected:[B]</code
+          >. Arrow down to <code
+              class="code"
+            >Calculate</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. The test statistic is 12.9909 and the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.0113</mn
+            ></math
+          >. Do the procedure a second time but arrow down to <code
+              class="code"
+            >Draw</code
+          > instead of <code
+              class="code"
+            >calculate</code
+          >. </p
+        > </div
+      ></div
+    ></div
+  ><div
+      class="example"
+      id="element-505"
+    ><p
+        class="para"
+        id="element-311"
+      >De Anza College is interested in the relationship between anxiety level and the need to succeed in school. A random sample of 400 students took a test that measured anxiety level and need to succeed in school. The table shows the results. De Anza College wants to know if anxiety level and need to succeed in school are independent events.</p
+    ><table
+        id="element-875"
+        summary="This table presents the need to succeed in school in the first column and the various anxiety levels (high to low) and the row total in the second to seventh columns. The first row is for high need, the second row is for medium need, third row is for low need, and the column total is in the fourth row."
+      ><caption
+        ><span
+            class="title"
+          >Need to Succeed in School vs. Anxiety Level</span
+        ></caption
+      ><thead
+          valign="top"
+        > <tr
+          > <td
+            >Need to Succeed in School</td
+          > <td
+            >High <br
+            />Anxiety</td
+          > <td
+            >Med-high <br
+            />Anxiety</td
+          > <td
+            >Medium <br
+            />Anxiety</td
+          > <td
+            >Med-low <br
+            />Anxiety</td
+          > <td
+            >Low <br
+            />Anxiety</td
+          > <td
+            >Row Total</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >High Need</td
+          > <td
+            >35</td
+          > <td
+            >42</td
+          > <td
+            >53</td
+          > <td
+            >15</td
+          > <td
+            >10</td
+          > <td
+            >155</td
+          > </tr
+        > <tr
+          > <td
+            >Medium Need</td
+          > <td
+            >18</td
+          > <td
+            >48</td
+          > <td
+            >63</td
+          > <td
+            >33</td
+          > <td
+            >31</td
+          > <td
+            >193</td
+          > </tr
+        > <tr
+          > <td
+            >Low Need</td
+          > <td
+            >4</td
+          > <td
+            >5</td
+          > <td
+            >11</td
+          > <td
+            >15</td
+          > <td
+            >17</td
+          > <td
+            >52</td
+          > </tr
+        > <tr
+          > <td
+            >Column Total</td
+          > <td
+            >57</td
+          > <td
+            >95</td
+          > <td
+            >127</td
+          > <td
+            >63</td
+          > <td
+            >58</td
+          > <td
+            >400</td
+          > </tr
+        > </tbody
+      ></table
+    ><div
+        class="exercise"
+        id="element-454"
+      ><div
+          class="problem"
+          id="id9399628"
+        > <p
+            class="para"
+            id="element-671"
+          > How many high anxiety level students are expected to have a high need to succeed in school? </p
+        > </div
+      > <div
+          class="solution"
+          id="id9399648"
+        > <p
+            class="para"
+            id="element-554"
+          >The column total for a high anxiety level is 57. The row total for high need to succeed in school is 155. The sample size or total surveyed is 400. </p
+        ><p
+            class="para"
+            id="element-495"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >E</mi
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mtext
+                >(row total)(column total)</mtext
+              > <mtext
+                >total surveyed</mtext
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mn
+                  >155</mn
+                > <mo
+                  >&#x22C5;</mo
+                > <mn
+                  >57</mn
+                > </mrow
+              > <mn
+                >400</mn
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >22.09</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-790"
+          >The expected number of students who have a high anxiety level and a high need to succeed in school is about 22.</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-804"
+      ><div
+          class="problem"
+          id="id8698448"
+        > <p
+            class="para"
+            id="element-683"
+          >If the two variables are independent, how many students do you expect to have a low need to succeed in school and a med-low level of anxiety? </p
+        > </div
+      > <div
+          class="solution"
+          id="id8698469"
+        > <p
+            class="para"
+            id="element-921"
+          >The column total for a med-low anxiety level is 63. The row total for a low need to succeed in school is 52. The sample size or total surveyed is 400.</p
+        > <div
+            class="exercise"
+            id="solution-sub-ex"
+          > <div
+              class="problem"
+              id="id7273926"
+            > <list
+                xmlns="http://cnx.rice.edu/cnxml"
+                data-id="element-176"
+                data-list-type="labeled-item"
+                data-mark-suffix="."
+              > <li
+                  xmlns=""
+                  class="item"
+                  data-label="a"
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >E</mi
+                  > <mo
+                    >=</mo
+                  > <mfrac
+                    > <mtext
+                      >(row total)(column total)</mtext
+                    > <mtext
+                      >total surveyed</mtext
+                    > </mfrac
+                  > </math
+                > = </li
+              > <li
+                  xmlns=""
+                  class="item"
+                  id="element-868"
+                  data-label="b"
+                > The expected number of students who have a med-low anxiety level and a low need to succeed in school is about: </li
+              > </list
+            > </div
+          > <div
+              class="solution"
+              id="id8469218"
+              print-placement="end"
+            > <list
+                xmlns="http://cnx.rice.edu/cnxml"
+                data-id="element-176s"
+                data-list-type="labeled-item"
+                data-mark-suffix="."
+              > <li
+                  xmlns=""
+                  class="item"
+                  data-label="a"
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mi
+                    >E</mi
+                  > <mo
+                    >=</mo
+                  > <mfrac
+                    > <mtext
+                      >(row total)(column total)</mtext
+                    > <mtext
+                      >total surveyed</mtext
+                    > </mfrac
+                  > <mo
+                    > = </mo
+                  > <mn
+                    >8.19</mn
+                  > </math
+                > </li
+              > <li
+                  xmlns=""
+                  class="item"
+                  data-label="b"
+                > 8 </li
+              > </list
+            > </div
+          > </div
+        > </div
+      > </div
+    > </div
+  > </body
+>
+</html>

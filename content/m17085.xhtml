@@ -1,0 +1,5261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Homework</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Homework</div
+  > <div
+      class="exercise"
+      id="element-367"
+    ><div
+        class="problem"
+        id="id44884101"
+      > <p
+          class="para"
+          id="element-921"
+        > For each situation below, state the independent variable and the dependent variable. </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-741"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >A study is done to determine if elderly drivers are involved in more motor vehicle fatalities than all other drivers. The number of fatalities per 100,000 drivers is compared to the age of drivers.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >A study is done to determine if the weekly grocery bill changes based on the number of family members.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Insurance companies base life insurance premiums partially on the age of the applicant.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Utility bills vary according to power consumption.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >A study is done to determine if a higher education reduces the crime rate in a population.</li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id44884342"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-99"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Independent: Age; Dependent: Fatalities</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Independent: Power Consumption; Dependent: Utility</li
+        > </list
+      > </div
+    > </div
+  > <div
+      class="note"
+      id="eip-957"
+    >For any prediction questions, the answers are calculated using the least squares (best fit) line equation cited in the solution.</div
+  ><div
+      class="exercise"
+      id="element-401"
+    ><div
+        class="problem"
+        id="id44884447"
+      > <p
+          class="para"
+          id="element-292"
+        >Recently, the annual number of driver deaths per 100,000 for the selected age groups was as follows (Source: <cite
+          ><span
+              class="cite-title"
+            >http:// </span
+          ></cite
+        ><a
+            href="http://www.census.gov/compendia/statab/cats/transportation/motor_vehicle_accidents_and_fatalities.html"
+          ><cite
+            ><span
+                class="cite-title"
+              >http://www.census.gov/compendia/statab/cats/transportation/motor_vehicle_accidents_and_fatalities.html</span
+            ></cite
+          ></a
+        >): </p
+      ><p
+          class="para"
+          id="element-45"
+        ><table
+            id="id108047k45"
+            summary="This table presents the age groups in the first column and the number of driver deaths per 100,000 in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Age</td
+              > <td
+                >Number of Driver Deaths per 100,000</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >16-19</td
+              > <td
+                >38</td
+              > </tr
+            > <tr
+              > <td
+                >20-24</td
+              > <td
+                >36</td
+              > </tr
+            > <tr
+              > <td
+                >25-34</td
+              > <td
+                >24</td
+              > </tr
+            > <tr
+              > <td
+                >35-54</td
+              > <td
+                >20</td
+              > </tr
+            > <tr
+              > <td
+                >55-74</td
+              > <td
+                >18</td
+              > </tr
+            > <tr
+              > <td
+                >75+</td
+              > <td
+                >28</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-119"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >For each age group, pick the midpoint of the interval for the x value. (For the 75+ group, use 80.)</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Using &#x201C;ages&#x201D; as the independent variable and &#x201C;Number of driver deaths per 100,000&#x201D; as the dependent variable, make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Calculate the least squares (best&#x2013;fit) line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Pick two ages and find the estimated fatality rates. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Use the two points in (e) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Based on the above data, is there a linear relationship between age of a driver and driver fatality rate?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        > </list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-793"
+    ><div
+        class="problem"
+        id="id44885338"
+      > <p
+          class="para"
+          id="element-815"
+        > The average number of people in a family that received welfare for various years is given below. (Source: <cite
+          ><span
+              class="cite-title"
+            >House Ways and Means Committee, Health and Human Services Department</span
+          ></cite
+        >) </p
+      ><p
+          class="para"
+          id="element-237"
+        ><table
+            id="id1034sdfa0215"
+            summary=""
+          ><thead
+            > <tr
+              > <td
+                >Year</td
+              > <td
+                >Welfare family size</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >1969</td
+              > <td
+                >4.0</td
+              > </tr
+            > <tr
+              > <td
+                >1973</td
+              > <td
+                >3.6</td
+              > </tr
+            > <tr
+              > <td
+                >1975</td
+              > <td
+                >3.2</td
+              > </tr
+            > <tr
+              > <td
+                >1979</td
+              > <td
+                >3.0</td
+              > </tr
+            > <tr
+              > <td
+                >1983</td
+              > <td
+                >3.0</td
+              > </tr
+            > <tr
+              > <td
+                >1988</td
+              > <td
+                >3.0</td
+              > </tr
+            > <tr
+              > <td
+                >1991</td
+              > <td
+                >2.9</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-905"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Using &#x201C;year&#x201D; as the independent variable and &#x201C;welfare family size&#x201D; as the dependent variable, make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Pick two years between 1969 and 1991 and find the estimated welfare family sizes. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Use the two points in (d) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Based on the above data, is there a linear relationship between the year and the average number of people in a welfare family?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Using the least squares line, estimate the welfare family sizes for 1960 and 1995. Does the least squares line give an accurate estimate for those years? Explain why or why not.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >What is the estimated average welfare family size for 1986? Does the least squares line give an accurate estimate for that year? Explain why or why not.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id44886370"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-715"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="b"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >88</mtext
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >7206</mtext
+                        > <mo
+                            stretchy="false"
+                          >&#x2212;</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >0432</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y="88" "." "7206" - 0 "." "0432"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >-0.8533, Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >No.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >2.93, Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >slope = -0.0432. As the year increases by one, the welfare family size tends to decrease by 0.0432 people.</li
+        > </list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-98"
+    ><div
+        class="problem"
+        id="id44886814"
+      > <p
+          class="para"
+          id="element-600"
+        >Use the AIDS data from the <a
+            href="/m17088#element-476"
+          >practice for this section</a
+        >, but this time use the columns &#x201C;year #&#x201D; and &#x201C;# new AIDS deaths in U.S.&#x201D; Answer all of the questions from the practice again, using the new columns. </p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-957"
+    ><div
+        class="problem"
+        id="id44886916"
+      > <p
+          class="para"
+          id="element-678"
+        > The height (sidewalk to roof) of notable tall buildings in America is compared to the number of stories of the building (beginning at street level). (Source: <cite
+          ><span
+              class="cite-title"
+            >Microsoft Bookshelf</span
+          ></cite
+        >) </p
+      ><p
+          class="para"
+          id="element-810"
+        ><table
+            id="id1aa0827143"
+            summary="This table presents building heights (in feet) in the first column and building stories in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Height (in feet)</td
+              > <td
+                >Stories</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >1050</td
+              > <td
+                >57</td
+              > </tr
+            > <tr
+              > <td
+                >428</td
+              > <td
+                >28</td
+              > </tr
+            > <tr
+              > <td
+                >362</td
+              > <td
+                >26</td
+              > </tr
+            > <tr
+              > <td
+                >529</td
+              > <td
+                >40</td
+              > </tr
+            > <tr
+              > <td
+                >790</td
+              > <td
+                >60</td
+              > </tr
+            > <tr
+              > <td
+                >401</td
+              > <td
+                >22</td
+              > </tr
+            > <tr
+              > <td
+                >380</td
+              > <td
+                >38</td
+              > </tr
+            > <tr
+              > <td
+                >1454</td
+              > <td
+                >110</td
+              > </tr
+            > <tr
+              > <td
+                >1127</td
+              > <td
+                >100</td
+              > </tr
+            > <tr
+              > <td
+                >700</td
+              > <td
+                >46</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-78"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Using &#x201C;stories&#x201D; as the independent variable and &#x201C;height&#x201D; as the dependent variable, make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Does it appear from inspection that there is a relationship between the variables?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the estimated heights for 32 stories and for 94 stories.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Use the two points in (e) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Based on the above data, is there a linear relationship between the number of stories in tall buildings and the height of the buildings?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Are there any outliers in the above data? If so, which point(s)?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >What is the estimated height of a building with 6 stories? Does the least squares line give an accurate estimate of height? Explain why or why not.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Based on the least squares line, adding an extra story is predicted to add about how many feet to a building?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      ></div
+    > <div
+        class="solution"
+        id="id44888264"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-212"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Yes </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >102</mtext
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >4287</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mtext
+                          >11</mtext
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >7585</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y="102" "." "4287"+"11" "." "7585"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >0.9436; yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >478.70 feet; 1207.73 feet</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Yes; <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mfenced
+                        open="("
+                        close=")"
+                      > <mrow
+                        > <mtext
+                          >57</mtext
+                        > <mi
+                          >,</mi
+                        > <mtext
+                          >1050</mtext
+                        > </mrow
+                      > </mfenced
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{ left ("57","1050" right )} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >172.98; No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >11.7585 feet</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >slope = 11.7585. As the number of stories increases by one, the height of the building tends to increase by 11.7585 feet.</li
+        > </list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-213"
+    ><div
+        class="problem"
+        id="id44888890"
+      > <p
+          class="para"
+          id="element-635"
+        > Below is the life expectancy for an individual born in the United States in certain years. (Source: <cite
+          ><span
+              class="cite-title"
+            >National Center for Health Statistics</span
+          ></cite
+        >) </p
+      ><p
+          class="para"
+          id="element-647"
+        ><table
+            id="idasdgf10411945"
+            summary="This table presents year of birth in the first column and life expectancy in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Year of Birth</td
+              > <td
+                >Life Expectancy</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >1930</td
+              > <td
+                >59.7</td
+              > </tr
+            > <tr
+              > <td
+                >1940</td
+              > <td
+                >62.9</td
+              > </tr
+            > <tr
+              > <td
+                >1950</td
+              > <td
+                >70.2</td
+              > </tr
+            > <tr
+              > <td
+                >1965</td
+              > <td
+                >69.7</td
+              > </tr
+            > <tr
+              > <td
+                >1973</td
+              > <td
+                >71.4</td
+              > </tr
+            > <tr
+              > <td
+                >1982</td
+              > <td
+                >74.5</td
+              > </tr
+            > <tr
+              > <td
+                >1987</td
+              > <td
+                >75</td
+              > </tr
+            > <tr
+              > <td
+                >1992</td
+              > <td
+                >75.7</td
+              > </tr
+            > <tr
+              > <td
+                >2010</td
+              > <td
+                >78.7</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-796"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Draw a scatter plot of the ordered pairs.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the estimated life expectancy for an individual born in 1950 and for one born in 1982.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Why aren&#x2019;t the answers to part (e) the values on the above chart that correspond to those years?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (e) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Based on the above data, is there a linear relationship between the year of birth and life expectancy?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Using the least squares line, find the estimated life expectancy for an individual born in 1850. Does the least squares line give an accurate estimate for that year? Explain why or why not.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-402"
+    ><div
+        class="problem"
+        id="id44890157"
+      > <p
+          class="para"
+          id="element-674"
+        > The percent of female wage and salary workers who are paid hourly rates is given below for the years 1979 - 1992. (Source: <cite
+          ><span
+              class="cite-title"
+            >Bureau of Labor Statistics, U.S. Dept. of Labor</span
+          ></cite
+        >) </p
+      ><p
+          class="para"
+          id="element-249"
+        ><table
+            id="id8522228278"
+            summary="This table presents the year in the first column and percent of workers paid hourly rates in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Year</td
+              > <td
+                >Percent of workers paid hourly rates</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >1979</td
+              > <td
+                >61.2</td
+              > </tr
+            > <tr
+              > <td
+                >1980</td
+              > <td
+                >60.7</td
+              > </tr
+            > <tr
+              > <td
+                >1981</td
+              > <td
+                >61.3</td
+              > </tr
+            > <tr
+              > <td
+                >1982</td
+              > <td
+                >61.3</td
+              > </tr
+            > <tr
+              > <td
+                >1983</td
+              > <td
+                >61.8</td
+              > </tr
+            > <tr
+              > <td
+                >1984</td
+              > <td
+                >61.7</td
+              > </tr
+            > <tr
+              > <td
+                >1985</td
+              > <td
+                >61.8</td
+              > </tr
+            > <tr
+              > <td
+                >1986</td
+              > <td
+                >62.0</td
+              > </tr
+            > <tr
+              > <td
+                >1987</td
+              > <td
+                >62.7</td
+              > </tr
+            > <tr
+              > <td
+                >1990</td
+              > <td
+                >62.8</td
+              > </tr
+            > <tr
+              > <td
+                >1992</td
+              > <td
+                >62.9</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-754"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Using &#x201C;year&#x201D; as the independent variable and &#x201C;percent&#x201D; as the dependent variable, make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the estimated percents for 1991 and 1988.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Use the two points in (e) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Based on the above data, is there a linear relationship between the year and the percent of female wage and salary earners who are paid hourly rates?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >What is the estimated percent for the year 2050? Does the least squares line give an accurate estimate for that year? Explain why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > <div
+        class="solution"
+        id="id44891550"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-571"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Yes </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                          > <mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          > <mtext
+                            >266</mtext
+                          > </mrow
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >8863</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >1656</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y= - "266" "." "8863"+0 "." "1656"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >0.9448; Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >62.8233; 62.3265</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          > yes; (1987, 62.7)</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >72.5937; No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >slope = 0.1656. As the year increases by one, the percent of workers paid hourly rates tends to increase by 0.1656.</li
+        ></list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-682"
+    ><div
+        class="problem"
+        id="id44892027"
+      > <p
+          class="para"
+          id="element-350"
+        >The maximum discount value of the Entertainment&#xAE; card for the &#x201C;Fine Dining&#x201D; section, Edition 10, for various pages is given below. </p
+      ><p
+          class="para"
+          id="element-481"
+        ><table
+            id="id9216hh080"
+            summary="This table presents the page number in the first column and the maximum value ($) in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Page number</td
+              > <td
+                >Maximum value ($)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >4</td
+              > <td
+                >16</td
+              > </tr
+            > <tr
+              > <td
+                >14</td
+              > <td
+                >19</td
+              > </tr
+            > <tr
+              > <td
+                >25</td
+              > <td
+                >15</td
+              > </tr
+            > <tr
+              > <td
+                >32</td
+              > <td
+                >17</td
+              > </tr
+            > <tr
+              > <td
+                >43</td
+              > <td
+                >19</td
+              > </tr
+            > <tr
+              > <td
+                >57</td
+              > <td
+                >15</td
+              > </tr
+            > <tr
+              > <td
+                >72</td
+              > <td
+                >16</td
+              > </tr
+            > <tr
+              > <td
+                >85</td
+              > <td
+                >15</td
+              > </tr
+            > <tr
+              > <td
+                >90</td
+              > <td
+                >17</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-86"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Draw a scatter plot of the ordered pairs.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the estimated maximum values for the restaurants on page 10 and on page 70.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Use the two points in (e) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Does it appear that the restaurants giving the maximum value are placed in the beginning of the &#x201C;Fine Dining&#x201D; section? How did you arrive at your answer?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Suppose that there were 200 pages of restaurants. What do you estimate to be the maximum value for a restaurant listed on page 200? </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Is the least squares line valid for page 200? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="id9018511"
+    ><strong
+        class="emphasis"
+      >The next two questions refer to the following data:</strong
+    > The cost of a leading liquid laundry detergent in different sizes is given below.</p
+  > <table
+      id="id10105430"
+      summary="This table presents the size of laundry detergent in ounces in the first column and cost in the second column. The third column is left blank for you to calculate the cost per ounce."
+    ><thead
+      > <tr
+        > <td
+          >Size (ounces)</td
+        > <td
+          >Cost ($)</td
+        > <td
+          >Cost per ounce</td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+          >16</td
+        > <td
+          >3.99</td
+        > <td
+        /> </tr
+      > <tr
+        > <td
+          >32</td
+        > <td
+          >4.99</td
+        > <td
+        /> </tr
+      > <tr
+        > <td
+          >64</td
+        > <td
+          >5.99</td
+        > <td
+        /> </tr
+      > <tr
+        > <td
+          >200</td
+        > <td
+          >10.99</td
+        > <td
+        /> </tr
+      > </tbody
+    ></table
+  > <div
+      class="exercise"
+      id="element-454"
+    ><div
+        class="problem"
+        id="id44893851"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-775"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Using &#x201C;size&#x201D; as the independent variable and &#x201C;cost&#x201D; as the dependent variable, make a scatter plot.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >If the laundry detergent were sold in a 40 ounce size, find the estimated cost.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >If the laundry detergent were sold in a 90 ounce size, find the estimated cost.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (e) and (f) to plot the least squares line on your graph from (a).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Is the least squares line valid for predicting what a 300 ounce size of the laundry detergent would cost? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > <div
+        class="solution"
+        id="id44894371"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-233"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Yes </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mn
+                          >3</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >5984</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >0371</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=3 "." "5984"+0 "." "0371"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >0.9986; Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >$5.08</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >$6.93</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Not valid</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >slope = 0.0371. As the number of ounces increases by one, the cost of liquid detergent tends to increase by $0.0371 or is predicted to increase by $0.0371 (about 4 cents).</li
+        ></list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-952"
+    ><div
+        class="problem"
+        id="id44894852"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-636"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Complete the above table for the cost per ounce of the different sizes.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Using &#x201C;Size&#x201D; as the independent variable and &#x201C;Cost per ounce&#x201D; as the dependent variable, make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >If the laundry detergent were sold in a 40 ounce size, find the estimated cost per ounce.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >If the laundry detergent were sold in a 90 ounce size, find the estimated cost per ounce.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Use the two points in (f) and (g) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >Is the least squares line valid for predicting what a 300 ounce size of the laundry detergent would cost per ounce? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="l"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-574"
+    ><div
+        class="problem"
+        id="id44895425"
+      > <p
+          class="para"
+          id="element-35"
+        > According to flyer by a Prudential Insurance Company representative, the costs of approximate probate fees and taxes for selected net taxable estates are as follows: </p
+      ><p
+          class="para"
+          id="element-722"
+        ><table
+            id="id1kkk0457049"
+            summary="This table presents the net taxable estate in the first column and the approximate probate fees and taxes in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Net Taxable Estate ($)</td
+              > <td
+                >Approximate Probate Fees and Taxes ($)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >600,000</td
+              > <td
+                >30,000</td
+              > </tr
+            > <tr
+              > <td
+                >750,000</td
+              > <td
+                >92,500</td
+              > </tr
+            > <tr
+              > <td
+                >1,000,000</td
+              > <td
+                >203,000</td
+              > </tr
+            > <tr
+              > <td
+                >1,500,000</td
+              > <td
+                >438,000</td
+              > </tr
+            > <tr
+              > <td
+                >2,000,000</td
+              > <td
+                >688,000</td
+              > </tr
+            > <tr
+              > <td
+                >2,500,000</td
+              > <td
+                >1,037,000</td
+              > </tr
+            > <tr
+              > <td
+                >3,000,000</td
+              > <td
+                >1,350,000</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-498"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Find the estimated total cost for a net taxable estate of $1,000,000. Find the cost for $2,500,000.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (f) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Based on the above, what would be the probate fees and taxes for an estate that does not have any assets?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > <div
+        class="solution"
+        id="id44844193"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-551"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                          > <mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          > <mtext
+                            >337</mtext
+                          > </mrow
+                        > </mrow
+                      > <mi
+                        >,</mi
+                      > <mtext
+                        >424</mtext
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >6478</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >5463</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y= - "337","424" "." "6478"+0 "." "5463"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >0.9964; Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >$208,875.35; $1,028,325.35</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >slope = 0.5463. As the net taxable estate increases by one dollar, the approximate probate fees and taxes tend to increase by 0.5463 dollars (about 55 cents).</li
+        > </list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-911"
+    ><div
+        class="problem"
+        id="id44844693"
+      > <p
+          class="para"
+          id="element-224"
+        > The following are advertised sale prices of color televisions at Anderson&#x2019;s. </p
+      ><p
+          class="para"
+          id="element-384"
+        ><table
+            id="id90742asdgfa85"
+            summary="This table presents the size of color televisions in inches in the first column and the sale price in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Size (inches)</td
+              > <td
+                >Sale Price ($)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >9</td
+              > <td
+                >147</td
+              > </tr
+            > <tr
+              > <td
+                >20</td
+              > <td
+                >197</td
+              > </tr
+            > <tr
+              > <td
+                >27</td
+              > <td
+                >297</td
+              > </tr
+            > <tr
+              > <td
+                >31</td
+              > <td
+                >447</td
+              > </tr
+            > <tr
+              > <td
+                >35</td
+              > <td
+                >1177</td
+              > </tr
+            > <tr
+              > <td
+                >40</td
+              > <td
+                >2177</td
+              > </tr
+            > <tr
+              > <td
+                >60</td
+              > <td
+                >2497</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-359"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Find the estimated sale price for a 32 inch television. Find the cost for a 50 inch television.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (f) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-188"
+    ><div
+        class="problem"
+        id="id44845835"
+      > <p
+          class="para"
+          id="element-654"
+        > Below are the average heights for American boys. (Source: <cite
+          ><span
+              class="cite-title"
+            >Physician&#x2019;s Handbook, 1990</span
+          ></cite
+        >) </p
+      ><p
+          class="para"
+          id="element-177"
+        ><table
+            id="id797832aawwee6"
+            summary="This table presents the boys' ages in years in the first column and average heights in centimeters in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Age (years)</td
+              > <td
+                >Height (cm)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >birth</td
+              > <td
+                >50.8</td
+              > </tr
+            > <tr
+              > <td
+                >2</td
+              > <td
+                >83.8</td
+              > </tr
+            > <tr
+              > <td
+                >3</td
+              > <td
+                >91.4</td
+              > </tr
+            > <tr
+              > <td
+                >5</td
+              > <td
+                >106.6</td
+              > </tr
+            > <tr
+              > <td
+                >7</td
+              > <td
+                >119.3</td
+              > </tr
+            > <tr
+              > <td
+                >10</td
+              > <td
+                >137.1</td
+              > </tr
+            > <tr
+              > <td
+                >14</td
+              > <td
+                >157.5</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-221"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. Is it significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Find the estimated average height for a one year&#x2013;old. Find the estimated average height for an eleven year&#x2013;old.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (f) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Are there any outliers in the above data?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Use the least squares line to estimate the average height for a sixty&#x2013;two year&#x2013;old man. Do you think that your answer is reasonable? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >What is the slope of the least squares (best-fit) line? Interpret the slope.</li
+        ></list
+      > </div
+    > <div
+        class="solution"
+        id="id44847011"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-441"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >65</mtext
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >0876</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mn
+                          >7</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >0948</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y="65" "." "0876"+7 "." "0948"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >0.9761; yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >72.2 cm; 143.13 cm</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Yes</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >505.0 cm; No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >slope = 7.0948. As the age of an American boy increases by one year, the average height tends to increase by 7.0948 cm.</li
+        > </list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-263"
+    ><div
+        class="problem"
+        id="id44847508"
+      > <p
+          class="para"
+          id="element-49"
+        > The following chart gives the gold medal times for every other Summer Olympics for the women&#x2019;s 100 meter freestyle (swimming). </p
+      ><p
+          class="para"
+          id="element-244"
+        ><table
+            id="id9978lok311"
+            summary="This table presents the summer olympics year in the first column and the women's 100 meter freestyle time in seconds in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Year</td
+              > <td
+                >Time (seconds)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >1912</td
+              > <td
+                >82.2</td
+              > </tr
+            > <tr
+              > <td
+                >1924</td
+              > <td
+                >72.4</td
+              > </tr
+            > <tr
+              > <td
+                >1932</td
+              > <td
+                >66.8</td
+              > </tr
+            > <tr
+              > <td
+                >1952</td
+              > <td
+                >66.8</td
+              > </tr
+            > <tr
+              > <td
+                >1960</td
+              > <td
+                >61.2</td
+              > </tr
+            > <tr
+              > <td
+                >1968</td
+              > <td
+                >60.0</td
+              > </tr
+            > <tr
+              > <td
+                >1976</td
+              > <td
+                >55.65</td
+              > </tr
+            > <tr
+              > <td
+                >1984</td
+              > <td
+                >55.92</td
+              > </tr
+            > <tr
+              > <td
+                >1992</td
+              > <td
+                >54.64</td
+              > </tr
+            > <tr
+              > <td
+                >2000</td
+              > <td
+                >53.8</td
+              > </tr
+            > <tr
+              > <td
+                >2008</td
+              > <td
+                >53.1</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-81"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. Is the decrease in times significant?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Find the estimated gold medal time for 1932. Find the estimated time for 1984.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Why are the answers from (f) different from the chart values?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Use the two points in (f) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Use the least squares line to estimate the gold medal time for the next Summer Olympics. Do you think that your answer is reasonable? Why or why not?</li
+        > </list
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="id10945546"
+    ><strong
+        class="emphasis"
+      >The next three questions use the following state information.</strong
+    ></p
+  > <table
+      id="id10945556"
+      summary="This table presents the state names in the first column, number of letters in the state name in the second column, year entered in the union in the third column, rank for entering the union in the fourth column, and state area in square miles in the last column."
+    ><thead
+      > <tr
+        > <td
+          >State</td
+        > <td
+          ># letters in name</td
+        > <td
+          >Year entered the Union</td
+        > <td
+          >Rank for entering the Union</td
+        > <td
+          >Area (square miles)</td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+          >Alabama</td
+        > <td
+          >7</td
+        > <td
+          >1819</td
+        > <td
+          >22</td
+        > <td
+          >52,423</td
+        > </tr
+      > <tr
+        > <td
+          >Colorado</td
+        > <td
+        /> <td
+          >1876</td
+        > <td
+          >38</td
+        > <td
+          >104,100</td
+        > </tr
+      > <tr
+        > <td
+          >Hawaii</td
+        > <td
+        /> <td
+          >1959</td
+        > <td
+          >50</td
+        > <td
+          >10,932</td
+        > </tr
+      > <tr
+        > <td
+          >Iowa</td
+        > <td
+        /> <td
+          >1846</td
+        > <td
+          >29</td
+        > <td
+          >56,276</td
+        > </tr
+      > <tr
+        > <td
+          >Maryland</td
+        > <td
+        /> <td
+          >1788</td
+        > <td
+          >7</td
+        > <td
+          >12,407</td
+        > </tr
+      > <tr
+        > <td
+          >Missouri</td
+        > <td
+        /> <td
+          >1821</td
+        > <td
+          >24</td
+        > <td
+          >69,709</td
+        > </tr
+      > <tr
+        > <td
+          >New Jersey</td
+        > <td
+        /> <td
+          >1787</td
+        > <td
+          >3</td
+        > <td
+          >8,722</td
+        > </tr
+      > <tr
+        > <td
+          >Ohio</td
+        > <td
+        /> <td
+          >1803</td
+        > <td
+          >17</td
+        > <td
+          >44,828</td
+        > </tr
+      > <tr
+        > <td
+          >South Carolina</td
+        > <td
+          >13</td
+        > <td
+          >1788</td
+        > <td
+          >8</td
+        > <td
+          >32,008</td
+        > </tr
+      > <tr
+        > <td
+          >Utah</td
+        > <td
+        /> <td
+          >1896</td
+        > <td
+          >45</td
+        > <td
+          >84,904</td
+        > </tr
+      > <tr
+        > <td
+          >Wisconsin</td
+        > <td
+        /> <td
+          >1848</td
+        > <td
+          >30</td
+        > <td
+          >65,499</td
+        > </tr
+      > </tbody
+    ></table
+  > <div
+      class="exercise"
+      id="element-512"
+    ><div
+        class="problem"
+        id="id44850206"
+      > <p
+          class="para"
+          id="element-336"
+        > We are interested in whether or not the number of letters in a state name depends upon the year the state entered the Union. </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-0"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Decide which variable should be the independent variable and which should be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. What does it imply about the significance of the relationship?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Find the estimated number of letters (to the nearest integer) a state would have if it entered the Union in 1900. Find the estimated number of letters a state would have if it entered the Union in 1940.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (f) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Use the least squares line to estimate the number of letters a new state that enters the Union this year would have. Can the least squares line be used to predict it? Why or why not?</li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id44850680"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-656"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >47</mtext
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >03</mtext
+                        > <mo
+                            stretchy="false"
+                          >&#x2212;</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >0216</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y="47" "." "03" - 0 "." "216"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >-0.4280</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >6; 5</li
+        > </list
+      ></div
+    > </div
+  > <div
+      class="exercise"
+      id="element-133"
+    ><div
+        class="problem"
+        id="id44851052"
+      > <p
+          class="para"
+          id="element-564"
+        > We are interested in whether there is a relationship between the ranking of a state and the area of the state. </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-104"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Let rank be the independent variable and area be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >What do you think the scatter plot will look like? Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Does it appear from inspection that there is a relationship between the variables? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. What does it imply about the significance of the relationship?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Find the estimated areas for Alabama and for Colorado. Are they close to the actual areas?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Use the two points in (f) to plot the least squares line on your graph from (b).</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Does it appear that a line is the best way to fit the data? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >Are there any outliers?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Use the least squares line to estimate the area of a new state that enters the Union. Can the least squares line be used to predict it? Why or why not?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="k"
+          >Delete &#x201C;Hawaii&#x201D; and substitute &#x201C;Alaska&#x201D; for it. Alaska is the fortieth state with an area of 656,424 square miles. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="l"
+          >Calculate the new least squares line.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="m"
+          >Find the estimated area for Alabama. Is it closer to the actual area with this new least squares line or with the previous one that included Hawaii? Why do you think that&#x2019;s the case?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="n"
+          >Do you think that, in general, newer states are larger than the original states? </li
+        > </list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-672"
+    ><div
+        class="problem"
+        id="id44851742"
+      > <p
+          class="para"
+          id="element-132"
+        > We are interested in whether there is a relationship between the rank of a state and the year it entered the Union. </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-518"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Let year be the independent variable and rank be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >What do you think the scatter plot will look like? Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Why must the relationship be positive between the variables?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. What does it imply about the significance of the relationship?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Let&#x2019;s say a fifty-first state entered the union. Based upon the least squares line, when should that have occurred? </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >Using the least squares line, how many states do we currently have? </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Why isn&#x2019;t the least squares line a good estimator for this year?</li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id44852175"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-338"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="d"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                          > <mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          > <mtext
+                            >480</mtext
+                          > </mrow
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >5845</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >2748</mtext
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y= - "480" "." "5845"+0 "." "2748"x} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >0.9553</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >1934</li
+        > </list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-696"
+    ><div
+        class="problem"
+        id="id44852542"
+      > <p
+          class="para"
+          id="element-765"
+        > Below are the percents of the U.S. labor force (excluding self-employed and unemployed ) that are members of a union. We are interested in whether the decrease is significant. (Source: <cite
+          ><span
+              class="cite-title"
+            >Bureau of Labor Statistics, U.S. Dept. of Labor</span
+          ></cite
+        >) </p
+      ><p
+          class="para"
+          id="element-26"
+        ><table
+            id="id10946lokh016"
+            summary="This table presents the year in the first column and the percent of the U.S. labor force that are members of a union in the second column."
+          ><thead
+            > <tr
+              > <td
+                >Year</td
+              > <td
+                >Percent</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >1945</td
+              > <td
+                >35.5</td
+              > </tr
+            > <tr
+              > <td
+                >1950</td
+              > <td
+                >31.5</td
+              > </tr
+            > <tr
+              > <td
+                >1960</td
+              > <td
+                >31.4</td
+              > </tr
+            > <tr
+              > <td
+                >1970</td
+              > <td
+                >27.3</td
+              > </tr
+            > <tr
+              > <td
+                >1980</td
+              > <td
+                >21.9</td
+              > </tr
+            > <tr
+              > <td
+                >1993</td
+              > <td
+                >15.8</td
+              > </tr
+            > <tr
+              > <td
+                >2011</td
+              > <td
+                >11.8</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-986"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Let year be the independent variable and percent be the dependent variable.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >What do you think the scatter plot will look like? Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Why will the relationship between the variables be negative?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >Find the correlation coefficient. What does it imply about the significance of the relationship?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Based on your answer to (e), do you think that the relationship can be said to be decreasing?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >If the trend continues, when will there no longer be any union members? Do you think that will happen?</li
+        > </list
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="id10847620"
+    ><strong
+        class="emphasis"
+      > The next two questions refer to the following information:</strong
+    > The data below reflects the 1991-92 Reunion Class Giving. (Source: <cite
+      ><span
+          class="cite-title"
+        >SUNY Albany alumni magazine</span
+      ></cite
+    >)</p
+  > <table
+      id="id10847639"
+      summary="This table presents the class year in the first column, average gift in the second column, and total giving in the third column."
+    ><thead
+      > <tr
+        > <td
+          >Class Year</td
+        > <td
+          >Average Gift</td
+        > <td
+          >Total Giving</td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+          >1922</td
+        > <td
+          >41.67</td
+        > <td
+          >125</td
+        > </tr
+      > <tr
+        > <td
+          >1927</td
+        > <td
+          >60.75</td
+        > <td
+          >1,215</td
+        > </tr
+      > <tr
+        > <td
+          >1932</td
+        > <td
+          >83.82</td
+        > <td
+          >3,772</td
+        > </tr
+      > <tr
+        > <td
+          >1937</td
+        > <td
+          >87.84</td
+        > <td
+          >5,710</td
+        > </tr
+      > <tr
+        > <td
+          >1947</td
+        > <td
+          >88.27</td
+        > <td
+          >6,003</td
+        > </tr
+      > <tr
+        > <td
+          >1952</td
+        > <td
+          >76.14</td
+        > <td
+          >5,254</td
+        > </tr
+      > <tr
+        > <td
+          >1957</td
+        > <td
+          >52.29</td
+        > <td
+          >4,393</td
+        > </tr
+      > <tr
+        > <td
+          >1962</td
+        > <td
+          >57.80</td
+        > <td
+          >4,451</td
+        > </tr
+      > <tr
+        > <td
+          >1972</td
+        > <td
+          >42.68</td
+        > <td
+          >18,093</td
+        > </tr
+      > <tr
+        > <td
+          >1976</td
+        > <td
+          >49.39</td
+        > <td
+          >22,473</td
+        > </tr
+      > <tr
+        > <td
+          >1981</td
+        > <td
+          >46.87</td
+        > <td
+          >20,997</td
+        > </tr
+      > <tr
+        > <td
+          >1986</td
+        > <td
+          >37.03</td
+        > <td
+          >12,590</td
+        > </tr
+      > </tbody
+    ></table
+  > <div
+      class="exercise"
+      id="element-620"
+    ><div
+        class="problem"
+        id="id44854822"
+      > <p
+          class="para"
+          id="element-533"
+        > We will use the columns &#x201C;class year&#x201D; and &#x201C;total giving&#x201D; for all questions, unless otherwise stated. </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-30"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >What do you think the scatter plot will look like? Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Find the correlation coefficient. What does it imply about the significance of the relationship?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >For the class of 1930, predict the total class gift. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >For the class of 1964, predict the total class gift. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >For the class of 1850, predict the total class gift. Why doesn&#x2019;t this value make any sense? </li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id44855198"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-254"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="b"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          ><mi
+                            >y</mi
+                          ><mo
+                              stretchy="false"
+                            >^</mo
+                          ></mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                          > <mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          > <mtext
+                            >569</mtext
+                          > </mrow
+                        > </mrow
+                      > <mi
+                        >,</mi
+                      > <mtext
+                        >770</mtext
+                      > <mtext
+                        >.</mtext
+                      > <mrow
+                        > <mtext
+                          >2796</mtext
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mtext
+                          >296</mtext
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >0351</mtext
+                      ><mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{y= - "569","770" "." "2796"+"296" "." "0351"} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >0.8302</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >$1577.46</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >$11,642.66</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >-$22,105.34</li
+        > </list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-5"
+    ><div
+        class="problem"
+        id="id44855640"
+      > <p
+          class="para"
+          id="element-805"
+        > We will use the columns &#x201C;class year&#x201D; and &#x201C;average gift&#x201D; for all questions, unless otherwise stated. </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-130"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >What do you think the scatter plot will look like? Make a scatter plot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Calculate the least squares line. Put the equation in the form of: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                        ><mi
+                          >a</mi
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mstyle
+                            fontstyle="italic"
+                          ><mrow
+                            ><mtext
+                              >bx</mtext
+                            ></mrow
+                          ></mstyle
+                        ></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y=a+ ital "bx"} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Find the correlation coefficient. What does it imply about the significance of the relationship?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >For the class of 1930, predict the average class gift. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >For the class of 1964, predict the average class gift. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >For the class of 2010, predict the average class gift. Why doesn&#x2019;t this value make any sense?</li
+        > </list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="eip-173"
+    ><div
+        class="problem"
+        id="eip-686"
+      > <p
+          class="para"
+          id="eip-107"
+        >We are interested in exploring the relationship between the weight of a vehicle and its fuel efficiency (gasoline mileage). The data in the table show the weights, in pounds, and fuel efficiency, measured in miles per gallon, for a sample of 12 vehicles. </p
+      ><p
+          class="para"
+          id="element-6861"
+        ><table
+            id="id6861"
+            summary="This table presents the weight of the vehicle in the first column and the fuele efficiency in the second column. Weight is given in pounds; fuel efficiency is given in miles per gallon."
+          ><thead
+            > <tr
+              > <td
+                >Weight</td
+              > <td
+                >Fuel Efficiency</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >2715</td
+              > <td
+                >24</td
+              > </tr
+            > <tr
+              > <td
+                >2570</td
+              > <td
+                >28</td
+              > </tr
+            > <tr
+              > <td
+                >2610</td
+              > <td
+                >29</td
+              > </tr
+            > <tr
+              > <td
+                >2750</td
+              > <td
+                >38</td
+              > </tr
+            > <tr
+              > <td
+                >3000</td
+              > <td
+                >25</td
+              > </tr
+            > <tr
+              > <td
+                >3410</td
+              > <td
+                >22</td
+              > </tr
+            > <tr
+              > <td
+                >3640</td
+              > <td
+                >20</td
+              > </tr
+            > <tr
+              > <td
+                >3700</td
+              > <td
+                >26</td
+              > </tr
+            > <tr
+              > <td
+                >3880</td
+              > <td
+                >21</td
+              > </tr
+            > <tr
+              > <td
+                >3900</td
+              > <td
+                >18</td
+              > </tr
+            > <tr
+              > <td
+                >4060</td
+              > <td
+                >18</td
+              > </tr
+            > <tr
+              > <td
+                >4710</td
+              > <td
+                >15</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-6863"
+          data-mark-suffix="."
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Graph a scatterplot of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Find the correlation coefficient and determine if it is significant.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="c"
+          >Find the equation of the best fit line.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="d"
+          >Write the sentence that interprets the meaning of the slope of the line in the context of the data.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="e"
+          >What percent of the variation in fuel efficiency is explained by the variation in the weight of the vehicles, using the regression line? (State your answer in a complete sentence in the context of the data.)</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="f"
+          >Accurately graph the best fit line on your scatterplot.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="g"
+          >For the vehicle that weights 3000 pounds, find the residual (y-yhat). Does the value predicted by the line underestimate or overestimate the observed data value?</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="h"
+          >Identify any outliers, using either the graphical or numerical procedure demonstrated in the textbook.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="i"
+          >The outlier is a hybrid car that runs on gasoline and electric technology, but all other vehicles in the sample have engines that use gasoline only. Explain why it would be appropriate to remove the outlier from the data in this situation. Remove the outlier from the sample data. Find the new correlation coefficient, coefficient of determination, and best fit line. </li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="j"
+          >Compare the correlation coefficients and coefficients of determination before and after removing the outlier, and explain in complete sentences what these numbers indicate about how the model has changed. </li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="eip-814"
+      > <p
+          class="para"
+          id="eip-83"
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-6865"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >r = -0.8, significant</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >yhat = 48.4-0.00725x</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="d"
+            >For every one pound increase in weight, the fuel efficiency tends to decrease (or is predicted to decrease) by 0.00725 miles per gallon. (For every one thousand pounds increase in weight, the fuel efficiency tends to decrease by 7.25 miles per gallon.)</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="e"
+            >64% of the variation in fuel efficiency is explained by the variation in weight using the regression line.</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="g"
+            >yhat=48.4-0.00725(3000)=26.65 mpg. y-yhat=25-26.65=-1.65. Because yhat=26.5 is greater than y=25, the line overestimates the observed fuel efficiency.</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="h"
+            >(2750,38) is the outlier. Be sure you know how to justify it using the requested graphical or numerical methods, not just by guessing. </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="i"
+            >yhat = 42.4-0.00578x</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="j"
+            >Without outlier, r=-0.885, rsquare=0.76; with outlier, r=-0.8, rsquare=0.64. The new linear model is a better fit, after the outlier is removed from the data, because the new correlation coefficient is farther from 0 and the new coefficient of determination is larger.</li
+          > </list
+        ></p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="eip-1"
+    ><div
+        class="problem"
+        id="eip-86"
+      > <p
+          class="para"
+          id="id1165823212560"
+        >The four data sets below were created by statistician Francis Anscomb. They show why it is important to examine the scatterplots for your data, in addition to finding the correlation coefficient, in order to evaluate the appropriateness of fitting a linear model.</p
+      > <table
+          id="id1165817439435"
+          summary=""
+        ><tbody
+          > <tr
+            > <td
+              >Set 1</td
+            > <td
+            /> <td
+            /> <td
+              >Set 2</td
+            > <td
+            /> <td
+            /> <td
+              >Set 3</td
+            > <td
+            /> <td
+            /> <td
+              >Set 4</td
+            > <td
+            /> </tr
+          > <tr
+            > <td
+              >x</td
+            > <td
+              >y</td
+            > <td
+            /> <td
+              >x</td
+            > <td
+              >y</td
+            > <td
+            /> <td
+              >x</td
+            > <td
+              >y</td
+            > <td
+            /> <td
+              >x</td
+            > <td
+              >y</td
+            > </tr
+          > <tr
+            > <td
+              >10</td
+            > <td
+              >8.04</td
+            > <td
+            /> <td
+              >10</td
+            > <td
+              >9.14</td
+            > <td
+            /> <td
+              >10</td
+            > <td
+              >7.46</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >6.58</td
+            > </tr
+          > <tr
+            > <td
+              >8</td
+            > <td
+              >6.95</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >8.14</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >6.77</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >5.76</td
+            > </tr
+          > <tr
+            > <td
+              >13</td
+            > <td
+              >7.58</td
+            > <td
+            /> <td
+              >13</td
+            > <td
+              >8.74</td
+            > <td
+            /> <td
+              >13</td
+            > <td
+              >12.74</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >7.71</td
+            > </tr
+          > <tr
+            > <td
+              >9</td
+            > <td
+              >8.81</td
+            > <td
+            /> <td
+              >9</td
+            > <td
+              >8.77</td
+            > <td
+            /> <td
+              >9</td
+            > <td
+              >7.11</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >8.84</td
+            > </tr
+          > <tr
+            > <td
+              >11</td
+            > <td
+              >8.33</td
+            > <td
+            /> <td
+              >11</td
+            > <td
+              >9.26</td
+            > <td
+            /> <td
+              >11</td
+            > <td
+              >7.81</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >8.47</td
+            > </tr
+          > <tr
+            > <td
+              >14</td
+            > <td
+              >9.96</td
+            > <td
+            /> <td
+              >14</td
+            > <td
+              >8.10</td
+            > <td
+            /> <td
+              >14</td
+            > <td
+              >8.84</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >7.04</td
+            > </tr
+          > <tr
+            > <td
+              >6</td
+            > <td
+              >7.24</td
+            > <td
+            /> <td
+              >6</td
+            > <td
+              >6.13</td
+            > <td
+            /> <td
+              >6</td
+            > <td
+              >6.08</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >5.25</td
+            > </tr
+          > <tr
+            > <td
+              >4</td
+            > <td
+              >4.26</td
+            > <td
+            /> <td
+              >4</td
+            > <td
+              >3.10</td
+            > <td
+            /> <td
+              >4</td
+            > <td
+              >5.39</td
+            > <td
+            /> <td
+              >19</td
+            > <td
+              >12.50</td
+            > </tr
+          > <tr
+            > <td
+              >12</td
+            > <td
+              >10.84</td
+            > <td
+            /> <td
+              >12</td
+            > <td
+              >9.13</td
+            > <td
+            /> <td
+              >12</td
+            > <td
+              >8.15</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >5.56</td
+            > </tr
+          > <tr
+            > <td
+              >7</td
+            > <td
+              >4.82</td
+            > <td
+            /> <td
+              >7</td
+            > <td
+              >7.26</td
+            > <td
+            /> <td
+              >7</td
+            > <td
+              >6.42</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >7.91</td
+            > </tr
+          > <tr
+            > <td
+              >5</td
+            > <td
+              >5.68</td
+            > <td
+            /> <td
+              >5</td
+            > <td
+              >4.74</td
+            > <td
+            /> <td
+              >5</td
+            > <td
+              >5.73</td
+            > <td
+            /> <td
+              >8</td
+            > <td
+              >6.89</td
+            > </tr
+          > </tbody
+        ></table
+      > <p
+          class="para"
+          id="id1165819606219"
+        >a. For each data set, find the least squares regression line and the correlation coefficient. What did you discover about the lines and values of r?</p
+      > <p
+          class="para"
+          id="id1165816511630"
+        >For each data set, create a scatter plot and graph the least squares regression line. Use the graphs to answer the following questions: <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-55789"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >For which data set does it appear that a curve would be a more appropriate model than a line?</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >Which data set has an <strong
+                class="emphasis"
+              >influential point </strong
+            > (point close to or on the line that greatly influences the best fit line)? </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="d"
+            >Which data set has an <strong
+                class="emphasis"
+              >outlier </strong
+            >(obviously visible on the scatter plot with best fit line graphed)?</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="e"
+            >Which data set appears to be the most appropriate to model using the least squares regression line?</li
+          > </list
+        ></p
+      > </div
+    > <div
+        class="solution"
+        id="eip-664"
+      > <p
+          class="para"
+          id="id1165816073400"
+        >a. All four data sets have the same correlation coefficient r=0.816 and the same least squares regression line yhat=3+0.5x</p
+      > <p
+          class="para"
+          id="id1165816632741"
+        >b. Set 2 ; c. Set 4 ; d. Set 3 ; e. Set 1 </p
+      > <figure
+          id="id1165815817198"
+        ><span
+            class="media"
+            id="id1165815817198_media"
+            data-alt=""
+          > <img
+              src="../resources/graphics1(1).png"
+              data-mime-type="image/png"
+              alt=""
+              id="id1165815817198__onlineimage"
+              height="300"
+              width="800"
+          /> </span
+        > </figure
+      > </div
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="id44856030"
+      >Try these multiple choice questions</h1
+    > <div
+        class="exercise"
+        id="element-860"
+      ><div
+          class="problem"
+          id="id44856080"
+        > <p
+            class="para"
+            id="element-141"
+          > A correlation coefficient of -0.95 means there is a ____________ between the two variables. </p
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-492"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          ><li
+              xmlns=""
+              class="item"
+              data-label="A"
+            >Strong positive correlation</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="B"
+            >Weak negative correlation</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="C"
+            >Strong negative correlation</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="D"
+            >No Correlation</li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id44856264"
+        > <p
+            class="para"
+            id="element-163"
+          >C </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-725"
+      ><div
+          class="problem"
+          id="id44856333"
+        > <p
+            class="para"
+            id="element-712"
+          >According to the data reported by the New York State Department of Health regarding West Nile Virus <strong
+              class="emphasis"
+            > (http://www.health.state.ny.us/nysdoh/westnile/update/update.htm)</strong
+          > for the years 2000-2008, the least squares line equation for the number of reported dead birds (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{x} {}</annotation
+              ></semantics
+            ></math
+          >) versus the number of human West Nile virus cases (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >y</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y} {}</annotation
+              ></semantics
+            ></math
+          >) is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mrow
+                        ><mrow
+                          ><mover
+                              accent="true"
+                            ><mi
+                              >y</mi
+                            ><mo
+                                stretchy="false"
+                              >^</mo
+                            ></mover
+                          ></mrow
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                          ><mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          ><mtext
+                            >10</mtext
+                          ></mrow
+                        ></mrow
+                      ><mtext
+                        >.</mtext
+                      ><mrow
+                        ><mtext
+                          >2638</mtext
+                        ><mo
+                            stretchy="false"
+                          >+</mo
+                        ><mn
+                          >0</mn
+                        ></mrow
+                      ><mtext
+                        >.</mtext
+                      ><mtext
+                        >0491</mtext
+                      ><mi
+                        >x</mi
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{y - ital "hat"= "19" "." "2399"+0 "." "0257"x} {}</annotation
+              ></semantics
+            ></math
+          >. If the number of dead birds reported in a year is 732, how many human cases of West Nile virus can be expected? <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+              ><mi
+                >r</mi
+              ><mo
+                >=</mo
+              ><mn
+                >0.5490</mn
+              ></mrow
+            ></math
+          > </p
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-250"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="A"
+            >No prediction can be made.</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="B"
+            >19.6</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="C"
+            >15</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="D"
+            >38.1</li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id44856737"
+        > <p
+            class="para"
+            id="element-27"
+          >A</p
+        > </div
+      > </div
+    > <p
+        class="para"
+        id="id10289023"
+      ><strong
+          class="emphasis"
+        >The next three questions refer to the following data:</strong
+      > (showing the number of hurricanes by category to directly strike the mainland U.S. each decade) obtained from <a
+          href="http://www.nhc.noaa.gov/gifs/table6.gif"
+        ><cite
+          ><span
+              class="cite-title"
+            >www.nhc.noaa.gov/gifs/table6.gif</span
+          ></cite
+        ></a
+      > A major hurricane is one with a strength rating of 3, 4 or 5.</p
+    > <table
+        id="id10289055"
+        summary="This table presents the decade in the first column, total number of hurricanes in the second column, and the number of major hurricanes in the third column."
+      ><thead
+        > <tr
+          > <td
+            >Decade</td
+          > <td
+            >Total Number of Hurricanes</td
+          > <td
+            >Number of Major Hurricanes </td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >1941-1950</td
+          > <td
+            >24</td
+          > <td
+            >10</td
+          > </tr
+        > <tr
+          > <td
+            >1951-1960</td
+          > <td
+            >17</td
+          > <td
+            >8</td
+          > </tr
+        > <tr
+          > <td
+            >1961-1970</td
+          > <td
+            >14</td
+          > <td
+            >6</td
+          > </tr
+        > <tr
+          > <td
+            >1971-1980</td
+          > <td
+            >12</td
+          > <td
+            >4</td
+          > </tr
+        > <tr
+          > <td
+            >1981-1990</td
+          > <td
+            >15</td
+          > <td
+            >5</td
+          > </tr
+        > <tr
+          > <td
+            >1991-2000</td
+          > <td
+            >14</td
+          > <td
+            >5</td
+          > </tr
+        > <tr
+          > <td
+            >2001 &#x2013; 2004</td
+          > <td
+            >9</td
+          > <td
+            >3</td
+          > </tr
+        > </tbody
+      ></table
+    > <div
+        class="exercise"
+        id="element-91"
+      ><div
+          class="problem"
+          id="id44857682"
+        > <p
+            class="para"
+            id="element-618"
+          > Using only completed decades (1941 &#x2013; 2000), calculate the least squares line for the number of major hurricanes expected based upon the total number of hurricanes. </p
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-266"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          ><li
+              xmlns=""
+              class="item"
+              data-label="A"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              ><mi
+                                >y</mi
+                              ><mo
+                                  stretchy="false"
+                                >^</mo
+                              ></mover
+                            > </mrow
+                          > <mo
+                              stretchy="false"
+                            >=</mo
+                          > <mrow
+                            > <mo
+                                stretchy="false"
+                              >&#x2212;</mo
+                            > <mn
+                              >1</mn
+                            > </mrow
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >67</mtext
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >+</mo
+                          > <mn
+                            >0</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mn
+                          >5</mn
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{y - ital "hat"= - 1 "." "67"x+0 "." 5} {}</annotation
+                > </semantics
+              > </math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="B"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              ><mi
+                                >y</mi
+                              ><mo
+                                  stretchy="false"
+                                >^</mo
+                              ></mover
+                            > </mrow
+                          > <mo
+                              stretchy="false"
+                            >=</mo
+                          > <mn
+                            >0</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mrow
+                          > <mn
+                            >5x</mn
+                          > <mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          > <mn
+                            >1</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >67</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{y - ital "hat"=0 "." 5x - 1 "." "67"} {}</annotation
+                > </semantics
+              > </math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="C"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              ><mi
+                                >y</mi
+                              ><mo
+                                  stretchy="false"
+                                >^</mo
+                              ></mover
+                            > </mrow
+                          > <mo
+                              stretchy="false"
+                            >=</mo
+                          > <mn
+                            >0</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >94</mtext
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >&#x2212;</mo
+                          > <mn
+                            >1</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >67</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{y - ital "hat"=0 "." "94"x - 1 "." "67"} {}</annotation
+                > </semantics
+              > </math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="D"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mrow
+                          > <mover
+                              accent="true"
+                            ><mi
+                              >y</mi
+                            ><mo
+                                stretchy="false"
+                              >^</mo
+                            ></mover
+                          > </mrow
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                          > <mrow
+                            > <mo
+                                stretchy="false"
+                              >&#x2212;</mo
+                            > <mn
+                              >2x</mn
+                            > </mrow
+                          > <mo
+                              stretchy="false"
+                            >+</mo
+                          > <mn
+                            >1</mn
+                          > </mrow
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{y - ital "hat"= - 2x+1} {}</annotation
+                > </semantics
+              > </math
+            > </li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id44858629"
+        > <p
+            class="para"
+            id="element-142"
+          >B</p
+        ></div
+      > </div
+    > <div
+        class="exercise"
+        id="element-524"
+      ><div
+          class="problem"
+          id="id44858683"
+        > <p
+            class="para"
+            id="element-330"
+          > The correlation coefficient is 0.942. Is this considered significant? Why or why not? </p
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-556"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          ><li
+              xmlns=""
+              class="item"
+              data-label="A"
+            >No, because 0.942 is greater than the critical value of 0.707</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="B"
+            >Yes, because 0.942 is greater than the critical value of 0.707</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="C"
+            >No, because 0942 is greater than the critical value of 0.811</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="D"
+            >Yes, because 0.942 is greater than the critical value of 0.811</li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id44858884"
+        > <p
+            class="para"
+            id="element-978"
+          >D</p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-231"
+      ><div
+          class="problem"
+          id="id44858938"
+        > <p
+            class="para"
+            id="element-749"
+          > The data for 2001-2004 show 9 hurricanes have hit the mainland United States. The line of best fit predicts 2.83 major hurricanes to hit mainland U.S. Can the least squares line be used to make this prediction? </p
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-298"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          ><li
+              xmlns=""
+              class="item"
+              data-label="A"
+            >No, because 9 lies outside the independent variable values</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="B"
+            >Yes, because, in fact, there have been 3 major hurricanes this decade</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="C"
+            >No, because 2.83 lies outside the dependent variable values</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="D"
+            >Yes, because how else could we predict what is going to happen this decade.</li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id44859154"
+        > <p
+            class="para"
+            id="element-147"
+          >A</p
+        > </div
+      > </div
+    > </div
+  ><p
+      class="para"
+      id="eip-869"
+    >**Exercises 21 and 22 contributed by Roberta Bloom</p
+  > </body
+>
+</html>

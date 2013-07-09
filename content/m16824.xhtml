@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Discrete Random Variables: Hypergeometric (optional)</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Discrete Random Variables: Hypergeometric (optional)</div
+  > <p
+      class="para"
+      id="element-408"
+    >The characteristics of a hypergeometric experiment are: <ol
+        class="list"
+        data-id="element-999"
+        data-list-type="enumerated"
+      ><li
+          class="item"
+        >You take samples from <strong
+            class="emphasis"
+          >2</strong
+        > groups.</li
+      > <li
+          class="item"
+        >You are concerned with a group of interest, called the first group.</li
+      > <li
+          class="item"
+        >You sample <strong
+            class="emphasis"
+          >without replacement</strong
+        > from the combined groups. For example, you want to choose a softball team from a combined group of 11 men and 13 women. The team consists of 10 players.</li
+      > <li
+          class="item"
+        >Each pick is <strong
+            class="emphasis"
+          >not</strong
+        > independent, since sampling is without replacement. In the softball example, the probability of picking a women first is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            ><mn
+              >13</mn
+            ><mn
+              >24</mn
+            ></mfrac
+          ></math
+        >. The probability of picking a man second is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            ><mn
+              >11</mn
+            ><mn
+              >23</mn
+            ></mfrac
+          ></math
+        > if a woman was picked first. It is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            ><mn
+              >10</mn
+            ><mn
+              >23</mn
+            ></mfrac
+          ></math
+        > if a man was picked first. The probability of the second pick depends on what happened in the first pick.</li
+      > <li
+          class="item"
+        >You are <strong
+            class="emphasis"
+          >not</strong
+        > dealing with Bernoulli Trials.</li
+      > </ol
+    > The outcomes of a hypergeometric experiment fit a <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="hypergeoprob"
+      >hypergeometric probability</term
+    > distribution. The random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ><mo
+        >=</mo
+      ></math
+    > the number of items from the group of interest. The mean and variance are given in the summary.</p
+  ><div
+      class="example"
+      id="element-84"
+    ><p
+        class="para"
+        id="element-88"
+      >A candy dish contains 100 jelly beans and 80 gumdrops. Fifty candies are picked at random. What is the probability that 35 of the 50 are gumdrops? The two groups are jelly beans and gumdrops. Since the probability question asks for the probability of picking gumdrops, the group of interest (first group) is gumdrops. The size of the group of interest (first group) is 80. The size of the second group is 100. The size of the sample is 50 (jelly beans or gumdrops). Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of gumdrops in the sample of 50. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > = 0, 1, 2, ..., 50. The probability question is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><mrow
+            ><mi
+              >P</mi
+            > <mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          ><mrow
+            ><mn
+              >35</mn
+            > <mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      >. </p
+    ></div
+  ><div
+      class="example"
+      id="element-968"
+    ><p
+        class="para"
+        id="element-661"
+      >Suppose a shipment of 100 VCRs is known to have 10 defective VCRs. An inspector randomly chooses 12 for inspection. He is interested in determining the probability that, among the 12, at most 2 are defective. The two groups are the 90 non-defective VCRs and the 10 defective VCRs. The group of interest (first group) is the defective group because the probability question asks for the probability of at most 2 defective VCRs. The size of the sample is 12 VCRs. (They may be non-defective or defective.) Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of defective VCRs in the sample of 12. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values 0, 1, 2, ..., 10. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > may not take on the values 11 or 12. The sample size is 12, but there are only 10 defective VCRs. The inspector wants to know <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /><mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          ><mrow
+            ><mn
+              >2</mn
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      > ("At most" means "less than or equal to"). </p
+    ></div
+  ><div
+      class="example"
+      id="element-582"
+    ><p
+        class="para"
+        id="element-885"
+      >You are president of an on-campus special events organization. You need a committee of 7 to plan a special birthday party for the president of the college. Your organization consists of 18 women and 15 men. You are interested in the number of men on your committee. If the members of the committee are randomly selected, what is the probability that your committee has more than 4 men? </p
+    > <p
+        class="para"
+        id="element-990"
+      >This is a hypergeometric problem because you are choosing your committee from two groups (men and women). </p
+    > <div
+        class="exercise"
+        id="element-720"
+      ><div
+          class="problem"
+          id="id43788540"
+        > <p
+            class="para"
+            id="element-965"
+          > Are you choosing with or without replacement? </p
+        > </div
+      > <div
+          class="solution"
+          id="id43788559"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-142"
+          > Without </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-154"
+      ><div
+          class="problem"
+          id="id43788588"
+        > <p
+            class="para"
+            id="element-356"
+          > What is the group of interest? </p
+        > </div
+      > <div
+          class="solution"
+          id="id43788607"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-80"
+          > The men </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-78"
+      ><div
+          class="problem"
+          id="id43788636"
+        > <p
+            class="para"
+            id="element-378"
+          > How many are in the group of interest? </p
+        > </div
+      > <div
+          class="solution"
+          id="id43788655"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-597"
+          > 15 men </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-801"
+      ><div
+          class="problem"
+          id="id43788684"
+        > <p
+            class="para"
+            id="element-730"
+          > How many are in the other group? </p
+        > </div
+      > <div
+          class="solution"
+          id="id43788703"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-465"
+          > 18 women </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-675"
+      ><div
+          class="problem"
+          id="id43788731"
+        > <p
+            class="para"
+            id="element-304"
+          > Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = _________ on the committee. What values does <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > take on? </p
+        > </div
+      > <div
+          class="solution"
+          id="id43788760"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-529"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = <strong
+              class="emphasis"
+            >the number of men</strong
+          > on the committee. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > = 0, 1, 2, &#x2026;, 7. </p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-1231"
+      > <div
+          class="problem"
+          id="id43780639"
+        ><p
+            class="para"
+            id="element-49"
+          >The probability question is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(_______)</mtext
+            ></math
+          >.</p
+        ></div
+      > <div
+          class="solution"
+          id="id43780660"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-0836"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(x&gt;4)</mtext
+            ></math
+          > </p
+        ></div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-516"
+      >Notation for the Hypergeometric: H = Hypergeometric Probability Distribution Function</h1
+    ><p
+        class="para"
+        id="element-870"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      >~<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >H(r, b, n)</mi
+        ></math
+      ></p
+    > <p
+        class="para"
+        id="element-869"
+      >Read this as "<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is a random variable with a hypergeometric distribution." The parameters are <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      >, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >b</mi
+        ></math
+      >, and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > = the size of the group of interest (first group), <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >b</mi
+        ></math
+      > = the size of the second group, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > = the size of the chosen sample </p
+    > </div
+  > <div
+      class="example"
+      id="element-180"
+    ><p
+        class="para"
+        id="element-874"
+      >A school site committee is to be chosen randomly from 6 men and 5 women. If the committee consists of 4 members chosen randomly, what is the probability that 2 of them are men? How many men do you expect to be on the committee? </p
+    ><p
+        class="para"
+        id="element-875"
+      >Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of men on the committee of 4. The men are the group of interest (first group). </p
+    > <p
+        class="para"
+        id="element-876"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values 0, 1, 2, 3, 4, where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ><mo
+          >=</mo
+        ><mi
+          >6</mi
+        ></math
+      >, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >b</mi
+        ><mo
+          >=</mo
+        ><mi
+          >5</mi
+        ></math
+      > , and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ><mo
+          >=</mo
+        ><mi
+          >4</mi
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ><mo
+          >~</mo
+        ><mn
+          >H(6, 5, 4)</mn
+        ></math
+      > </p
+    > <p
+        class="para"
+        id="element-877"
+      >Find <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><mrow
+            ><mi
+              >P</mi
+            > <mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          ><mrow
+            ><mn
+              >2</mn
+            > <mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mi
+                >P</mi
+              > <mo
+                >(</mo
+              ><mi
+                >x</mi
+              ></mrow
+            ><mrow
+              ><mn
+                >2</mn
+              > <mo
+                >)</mo
+              ></mrow
+            ></reln
+          > <mrow
+            ><mn
+              >0.4545</mn
+            ></mrow
+          > </reln
+        > </math
+      > (calculator or computer)</p
+    ><div
+        class="note"
+        id="id43780917"
+      >Currently, the TI-83+ and TI-84 do not have hypergeometric probability functions. There are a number of computer packages, including Microsoft Excel, that do. </div
+    > <p
+        class="para"
+        id="element-879"
+      > The probability that there are 2 men on the committee is about 0.45. </p
+    ><p
+        class="para"
+        id="element-136"
+      >The graph of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      >~<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mn
+          >H(6, 5, 4)</mn
+        ></math
+      > is: </p
+    ><p
+        class="para"
+        id="element-831"
+      ><span
+          class="media"
+          id="id43780967"
+          data-alt="The hypergeometric probability distribution function graph has five bars that are slightly normally distributed with an x-axis of 0-4 and a y-axis of 0-0.5 in increments of 0.1. The x-axis is equal to the number of men on the committee of 4."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="4in"
+        /></span
+      > </p
+    ><p
+        class="para"
+        id="element-704"
+      >The <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      >-axis contains the probability of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      >, where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of men on the committee.</p
+    ><p
+        class="para"
+        id="element-369"
+      >You would expect <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >m</mi
+        ><mo
+          >=</mo
+        ><mi
+          >2.18</mi
+        ></math
+      >(about 2) men on the committee.</p
+    ><p
+        class="para"
+        id="element-702"
+      >The formula for the mean is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <reln
+              ><eq
+              /> <mrow
+                ><mi
+                  >&#x3BC;</mi
+                ></mrow
+              > <mrow
+                ><mfrac
+                  > <mrow
+                    ><mi
+                      >n</mi
+                    ><mo
+                      >&#x22C5;</mo
+                    ><mi
+                      >r</mi
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >r</mi
+                    ><mo
+                      >+</mo
+                    ><mi
+                      >b</mi
+                    ></mrow
+                  > </mfrac
+                ></mrow
+              > </reln
+            > <mrow
+              ><mfrac
+                > <mrow
+                  ><mn
+                    >4</mn
+                  ><mo
+                    >&#x22C5;</mo
+                  ><mn
+                    >6</mn
+                  ></mrow
+                > <mrow
+                  ><mn
+                    >6</mn
+                  ><mo
+                    >+</mo
+                  ><mn
+                    >5</mn
+                  ></mrow
+                > </mfrac
+              ></mrow
+            > </reln
+          > <mrow
+            ><mn
+              >2.18</mn
+            ></mrow
+          > </reln
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-294"
+      >The formula for the variance is fairly complex. You will find it in the <a
+          href="/m16833"
+        >Summary of the Discrete Probability Functions Chapter</a
+      >.</p
+    ></div
+  > </body
+>
+</html>

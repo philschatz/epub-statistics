@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Central Limit Theorem: Central Limit Theorem for Sample Means</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Central Limit Theorem: Central Limit Theorem for Sample Means</div
+  > <p
+      class="para"
+      id="delete_me"
+    >Suppose <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > is a random variable with a distribution that may be known or unknown (it can be any distribution). Using a subscript that matches the random variable, suppose: <list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="list-1"
+        data-list-type="labeled-item"
+        data-mark-suffix="."
+      ><li
+          xmlns=""
+          class="item"
+          data-label="a"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3BC;</mi
+            ><mi
+              >X</mi
+            ></msub
+          ></math
+        > = the mean of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+          data-label="b"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3C3;</mi
+            ><mi
+              >X</mi
+            ></msub
+          ></math
+        > = the standard deviation of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        ></li
+      > </list
+    > If you draw random samples of size <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    >, then as <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    > increases, the random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >X</ci
+        > </apply
+      > </math
+    > which consists of sample means, tends to be <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="nrmdist"
+      >normally distributed</term
+    > and</p
+  ><p
+      class="para"
+      id="element-810"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <mi
+          >X</mi
+        > </apply
+      ></math
+    > ~ <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >N</mi
+      > <mo
+        >(</mo
+      > <msub
+        > <mi
+          >&#x3BC;</mi
+        > <mi
+          >X</mi
+        > </msub
+      > <mo
+        >,</mo
+      > <mfrac
+        > <mrow
+          > <msub
+            > <mi
+              >&#x3C3;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > </mrow
+        > <mrow
+          > <msqrt
+            > <mi
+              >n</mi
+            > </msqrt
+          > </mrow
+        > </mfrac
+      > <mo
+        >)</mo
+      > </math
+    ></p
+  ><p
+      class="para"
+      id="element-489"
+    ><term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="centlimit"
+      >The Central Limit Theorem </term
+    > for Sample Means says that if you keep drawing larger and larger samples (like rolling 1, 2, 5, and, finally, 10 dice) and <strong
+        class="emphasis"
+      >calculating their means</strong
+    > the sample means form their own <strong
+        class="emphasis"
+      >normal distribution</strong
+    > (the sampling distribution). The normal distribution has the same mean as the original distribution and a variance that equals the original variance divided by <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    >, the sample size. <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    > is the number of values that are averaged together not the number of times the experiment is done. <br
+    /><br
+    /> To put it more formally, if you draw random samples of size <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    >,the distribution of the random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >X</ci
+        > </apply
+      > </math
+    >, which consists of sample means, is called the <strong
+        class="emphasis"
+      >sampling distribution of the mean</strong
+    >. The sampling distribution of the mean approaches a normal distribution as <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    >, the sample size, increases. </p
+  ><p
+      class="para"
+      id="element-54"
+    >The random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >X</ci
+        > </apply
+      > </math
+    > has a different z-score associated with it than the random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    >. <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >x</ci
+        > </apply
+      ></math
+    > is the value of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >X</ci
+        > </apply
+      > </math
+    > in one sample.</p
+  ><div
+      class="equation"
+      id="element-684"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >z</mi
+      > <mo
+        >=</mo
+      > <mfrac
+        > <mrow
+          > <apply
+            > <conjugate
+            /> <ci
+              >x</ci
+            > </apply
+          > <mo
+            >-</mo
+          > <msub
+            > <mi
+              >&#x3BC;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > </mrow
+        > <mrow
+          > <mo
+            >(</mo
+          > <mfrac
+            > <mrow
+              > <msub
+                > <mi
+                  >&#x3C3;</mi
+                > <mi
+                  >X</mi
+                > </msub
+              > </mrow
+            > <mrow
+              > <msqrt
+                > <mi
+                  >n</mi
+                > </msqrt
+              > </mrow
+            > </mfrac
+          > <mo
+            >)</mo
+          > </mrow
+        > </mfrac
+      > </math
+    ></div
+  ><p
+      class="para"
+      id="element-686"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >&#x3BC;</mi
+        ><mi
+          >X</mi
+        ></msub
+      ></math
+    > is both the average of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > and of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >X</ci
+        > </apply
+      > </math
+    >.</p
+  ><p
+      class="para"
+      id="element-455"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <msub
+        > <mi
+          >&#x3C3;</mi
+        > <apply
+          > <conjugate
+          /> <ci
+            >X</ci
+          > </apply
+        > </msub
+      > <mo
+        >=</mo
+      > <mfrac
+        > <mrow
+          > <msub
+            > <mi
+              >&#x3C3;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > </mrow
+        > <mrow
+          > <msqrt
+            > <mi
+              >n</mi
+            > </msqrt
+          > </mrow
+        > </mfrac
+      > <mo
+        >=</mo
+      > </math
+    > standard deviation of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <ci
+          >X</ci
+        > </apply
+      > </math
+    > and is called the <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="stdmean"
+      > standard error of the mean.</term
+    ></p
+  ><div
+      class="example"
+      id="element-469"
+    ><p
+        class="para"
+        id="element-961"
+      >An unknown distribution has a mean of 90 and a standard deviation of 15. Samples of size <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > = 25 are drawn randomly from the population. </p
+    ><div
+        class="exercise"
+        id="element-705"
+      ><div
+          class="problem"
+          id="id5873867"
+        > <p
+            class="para"
+            id="element-704"
+          > Find the probability that the <strong
+              class="emphasis"
+            >sample mean</strong
+          > is between 85 and 92. </p
+        > </div
+      > <div
+          class="solution"
+          id="id5873893"
+        > <p
+            class="para"
+            id="element-843"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = one value from the original unknown population. The probability question asks you to find a probability for the <strong
+              class="emphasis"
+            >sample mean</strong
+          >. </p
+        ><p
+            class="para"
+            id="element-126"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <ci
+                >X</ci
+              > </apply
+            > <mo
+              >=</mo
+            > </math
+          > the mean of a sample of size 25. Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <mn
+              >90</mn
+            > </math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <mn
+              >15</mn
+            > </math
+          >, and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >n</mi
+              > <mi
+              /> </msub
+            > <mo
+              >=</mo
+            > <mn
+              >25</mn
+            > </math
+          >;</p
+        ><p
+            class="para"
+            id="element-756"
+          >then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <ci
+                >X</ci
+              > </apply
+            ></math
+          > ~ <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >N</mi
+            > <mo
+              >(</mo
+            > <mn
+              >90</mn
+            > <mo
+              >,</mo
+            > <mfrac
+              > <mn
+                >15</mn
+              > <mrow
+                > <msqrt
+                  > <mn
+                    >25</mn
+                  > </msqrt
+                > </mrow
+              > </mfrac
+            > <mo
+              >)</mo
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-181"
+          >Find <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <reln
+              ><lt
+              /> <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >85</mn
+                  > </mrow
+                > <mrow
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > </reln
+              > <mrow
+                > <mn
+                  >92</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > </reln
+            > <mspace
+                width="20pt"
+            /> </math
+          > Draw a graph.</p
+        ><p
+            class="para"
+            id="element-196"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <reln
+              ><lt
+              /> <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >85</mn
+                  > </mrow
+                > <mrow
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > </reln
+              > <mrow
+                > <mn
+                  >92</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > </reln
+            > <mo
+              >=</mo
+            > <mn
+              >0.6997</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-594"
+          >The probability that the sample mean is between 85 and 92 is 0.6997.</p
+        ><p
+            class="para"
+            id="element-88"
+          ><span
+              class="media"
+              id="id5864797"
+              data-alt="Normal distribution curve from -&#x221E; to &#x221E; and an x-axis with the values of 85, 90, and 92. The x-axis is equal to the mean of a sample size of 25. A vertical upward line extends from points 85 and 92 to the curve. The probability area is between 85 and 92."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></p
+        ><p
+            class="para"
+            id="element-868"
+          ><strong
+              class="emphasis"
+            > TI-83 or 84: </strong
+          ><code
+              class="code"
+            >normalcdf</code
+          >(lower value, upper value, mean, standard error of the mean)</p
+        ><p
+            class="para"
+            id="element-106"
+          >The parameter list is abbreviated (lower value, upper value, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3BC;</mi
+            ></math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mfrac
+              > <mi
+                >&#x3C3;</mi
+              > <mrow
+                > <msqrt
+                  > <mi
+                    >n</mi
+                  > </msqrt
+                > </mrow
+              > </mfrac
+            > </math
+          >)</p
+        ><p
+            class="para"
+            id="element-77"
+          ><code
+              class="code"
+            >normalcdf</code
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >(85,92,90, </mi
+            ><mfrac
+              ><mn
+                >15</mn
+              > <mrow
+                > <msqrt
+                  > <mn
+                    >25</mn
+                  > </msqrt
+                > </mrow
+              > </mfrac
+            > <mi
+              >) = 0.6997</mi
+            > </math
+          ></p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-808"
+      ><div
+          class="problem"
+          id="id5864943"
+        > <p
+            class="para"
+            id="element-638"
+          >Find the value that is 2 standard deviations above the expected value (it is 90) of the sample mean. </p
+        ></div
+      > <div
+          class="solution"
+          id="id5864961"
+        > <p
+            class="para"
+            id="element-91"
+          >To find the value that is 2 standard deviations above the expected value 90, use the formula </p
+        ><p
+            class="para"
+            id="element-79"
+          >value = <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >+</mo
+            > <mtext
+              >(#ofSTDEVs)</mtext
+            > <mo
+              >(</mo
+            > <mfrac
+              > <mrow
+                > <msub
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mi
+                    >X</mi
+                  > </msub
+                > </mrow
+              > <mrow
+                > <msqrt
+                  > <mi
+                    >n</mi
+                  > </msqrt
+                > </mrow
+              > </mfrac
+            > <mo
+              >)</mo
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-852"
+          >value = <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mn
+              >90</mn
+            > <mo
+              >+</mo
+            > <mn
+              >2</mn
+            > <mo
+              >&#x22C5;</mo
+            > <mfrac
+              > <mn
+                >15</mn
+              > <mrow
+                > <msqrt
+                  > <mn
+                    >25</mn
+                  > </msqrt
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >96</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-564"
+          >So, the value that is 2 standard deviations above the expected value is 96.</p
+        ></div
+      > </div
+    > </div
+  ><div
+      class="example"
+      id="element-708"
+    ><p
+        class="para"
+        id="element-24"
+      >The length of time, in hours, it takes an "over 40" group of people to play one soccer match is normally distributed with a <strong
+          class="emphasis"
+        >mean of 2 hours</strong
+      > and a <strong
+          class="emphasis"
+        >standard deviation of 0.5 hours</strong
+      >. A <strong
+          class="emphasis"
+        >sample of size <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        > = 50</strong
+      > is drawn randomly from the population. </p
+    ><div
+        class="exercise"
+        id="element-794"
+      ><div
+          class="problem"
+          id="id5865146"
+        > <p
+            class="para"
+            id="element-859"
+          > Find the probability that the <strong
+              class="emphasis"
+            >sample mean</strong
+          > is between 1.8 hours and 2.3 hours. </p
+        > </div
+      > <div
+          class="solution"
+          id="id5865170"
+        > <p
+            class="para"
+            id="element-723"
+          > Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the time, in hours, it takes to play one soccer match. </p
+        ><p
+            class="para"
+            id="element-302"
+          >The probability question asks you to find a probability for the <strong
+              class="emphasis"
+            >sample mean time, in hours</strong
+          >, it takes to play one soccer match.</p
+        ><p
+            class="para"
+            id="element-849"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <ci
+                >X</ci
+              > </apply
+            > </math
+          > = the <term
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-target-id="mean"
+            >mean</term
+          > time, in hours, it takes to play one soccer match. <br
+          /><br
+          /> If <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > </math
+          > _________, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > </math
+          > __________, and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ><mo
+              >=</mo
+            ></math
+          > ___________, then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <ci
+                >X</ci
+              > </apply
+            > <mo
+              >~</mo
+            > <mi
+              >N</mi
+            > <mtext
+              >(______, ______)</mtext
+            > </math
+          > by the Central Limit Theorem for Means. <br
+          /><br
+          /> <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > </math
+          > <strong
+              class="emphasis"
+            >2</strong
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > </math
+          > <strong
+              class="emphasis"
+            >0.5</strong
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ><mo
+              >=</mo
+            ></math
+          > <strong
+              class="emphasis"
+            >50</strong
+          >, and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >X</mi
+            > <mo
+              >~</mo
+            > <mi
+              >N</mi
+            > <mo
+              >(</mo
+            > <mn
+              >2</mn
+            > <mo
+              > , </mo
+            > <mfrac
+              > <mn
+                >0.5</mn
+              > <msqrt
+                > <mn
+                  >50</mn
+                > </msqrt
+              > </mfrac
+            > <mo
+              >)</mo
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-773"
+          >Find <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <reln
+              ><lt
+              /> <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >1.8</mn
+                  > </mrow
+                > <mrow
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > </reln
+              > <mrow
+                > <mn
+                  >2.3</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > </reln
+            > </math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mspace
+                width="20pt"
+            /> </math
+          > Draw a graph.</p
+        ><p
+            class="para"
+            id="element-832"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <reln
+              ><lt
+              /> <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >1.8</mn
+                  > </mrow
+                > <mrow
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > </reln
+              > <mrow
+                > <mn
+                  >2.3</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > </reln
+            > <mo
+              >=</mo
+            > <mn
+              >0.9977</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-290"
+          ><code
+              class="code"
+            >normalcdf</code
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >(1.8,2.3,2, </mi
+            ><mfrac
+              ><mn
+                >.5</mn
+              > <mrow
+                > <msqrt
+                  > <mn
+                    >50</mn
+                  > </msqrt
+                > </mrow
+              > </mfrac
+            > <mi
+              >) = 0.9977</mi
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-13"
+          >The probability that the mean time is between 1.8 hours and 2.3 hours is ______.</p
+        ></div
+      > </div
+    > </div
+  > </body
+>
+</html>

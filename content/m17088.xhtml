@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Practice</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Practice</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-217"
+      >Student Learning Outcomes</h1
+    > <ul
+        class="list"
+        data-id="list-23453"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >The student will evaluate bivariate data and determine if a line is an appropriate fit to the data.</li
+      > </ul
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-476"
+      >Given</h1
+    > <p
+        class="para"
+        id="element-532"
+      >Below are real data for the first two decades of AIDS reporting. (<cite
+        ><span
+            class="cite-title"
+          >Source: Centers for Disease Control and Prevention, National Center for HIV, STD, and TB Prevention</span
+        ></cite
+      >) </p
+    ><table
+        id="element-806"
+        summary="This table presents the year of reporting AIDS cases and deaths in the first column, number of AIDS cases diagnosed in the second column, and number of AIDS deaths in the third column."
+      ><caption
+        ><span
+            class="title"
+          >Adults and Adolescents only, United States </span
+        ></caption
+      ><tbody
+        > <tr
+          > <td
+            > <strong
+                class="emphasis"
+              >Year </strong
+            > </td
+          > <td
+            > <strong
+                class="emphasis"
+              ># AIDS cases diagnosed</strong
+            > </td
+          > <td
+            > <strong
+                class="emphasis"
+              ># AIDS deaths </strong
+            > </td
+          > </tr
+        > <tr
+          > <td
+            >Pre-1981</td
+          > <td
+            >91</td
+          > <td
+            >29</td
+          > </tr
+        > <tr
+          > <td
+            >1981</td
+          > <td
+            >319</td
+          > <td
+            >121</td
+          > </tr
+        > <tr
+          > <td
+            >1982</td
+          > <td
+            >1,170</td
+          > <td
+            >453</td
+          > </tr
+        > <tr
+          > <td
+            >1983</td
+          > <td
+            >3,076</td
+          > <td
+            >1,482</td
+          > </tr
+        > <tr
+          > <td
+            >1984</td
+          > <td
+            >6,240</td
+          > <td
+            >3,466</td
+          > </tr
+        > <tr
+          > <td
+            >1985</td
+          > <td
+            >11,776</td
+          > <td
+            >6,878</td
+          > </tr
+        > <tr
+          > <td
+            >1986</td
+          > <td
+            >19,032</td
+          > <td
+            >11,987</td
+          > </tr
+        > <tr
+          > <td
+            >1987</td
+          > <td
+            >28,564</td
+          > <td
+            >16,162</td
+          > </tr
+        > <tr
+          > <td
+            >1988</td
+          > <td
+            >35,447</td
+          > <td
+            >20,868</td
+          > </tr
+        > <tr
+          > <td
+            >1989</td
+          > <td
+            >42,674</td
+          > <td
+            >27,591</td
+          > </tr
+        > <tr
+          > <td
+            >1990</td
+          > <td
+            >48,634</td
+          > <td
+            >31,335</td
+          > </tr
+        > <tr
+          > <td
+            >1991</td
+          > <td
+            >59,660</td
+          > <td
+            >36,560</td
+          > </tr
+        > <tr
+          > <td
+            >1992</td
+          > <td
+            >78,530</td
+          > <td
+            >41,055</td
+          > </tr
+        > <tr
+          > <td
+            >1993</td
+          > <td
+            >78,834</td
+          > <td
+            >44,730</td
+          > </tr
+        > <tr
+          > <td
+            >1994</td
+          > <td
+            >71,874</td
+          > <td
+            >49,095</td
+          > </tr
+        > <tr
+          > <td
+            >1995</td
+          > <td
+            >68,505</td
+          > <td
+            >49,456</td
+          > </tr
+        > <tr
+          > <td
+            >1996</td
+          > <td
+            >59,347</td
+          > <td
+            >38,510</td
+          > </tr
+        > <tr
+          > <td
+            >1997</td
+          > <td
+            >47,149</td
+          > <td
+            >20,736</td
+          > </tr
+        > <tr
+          > <td
+            >1998</td
+          > <td
+            >38,393</td
+          > <td
+            >19,005</td
+          > </tr
+        > <tr
+          > <td
+            >1999</td
+          > <td
+            >25,174</td
+          > <td
+            >18,454</td
+          > </tr
+        > <tr
+          > <td
+            >2000</td
+          > <td
+            >25,522</td
+          > <td
+            >17,347</td
+          > </tr
+        > <tr
+          > <td
+            >2001</td
+          > <td
+            >25,643</td
+          > <td
+            >17,402</td
+          > </tr
+        > <tr
+          > <td
+            >2002</td
+          > <td
+            >26,464</td
+          > <td
+            >16,371</td
+          > </tr
+        > <tr
+          > <td
+            > <strong
+                class="emphasis"
+              >Total</strong
+            > </td
+          > <td
+            > <strong
+                class="emphasis"
+              >802,118</strong
+            > </td
+          > <td
+            > <strong
+                class="emphasis"
+              >489,093</strong
+            > </td
+          > </tr
+        > </tbody
+      ></table
+    ><div
+        class="note"
+        id="id3286141"
+      >We will use the columns &#x201C;year&#x201D; and &#x201C;# AIDS cases diagnosed&#x201D; for all questions unless otherwise stated.</div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-718"
+      >Graphing</h1
+    > <p
+        class="para"
+        id="element-85"
+      >Graph &#x201C;year&#x201D; vs. &#x201C;# AIDS cases diagnosed.&#x201D; <strong
+          class="emphasis"
+        >Plot the points on the graph located below in the section titled "Plot" </strong
+      >. Do not include pre-1981. Label both axes with words. Scale both axes. </p
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-1"
+      >Data</h1
+    > <div
+        class="exercise"
+        id="element-54"
+      ><div
+          class="problem"
+          id="id4187966"
+        > <p
+            class="para"
+            id="element-930"
+          > Enter your data into your calculator or computer. The pre-1981 data should not be included. Why is that so? </p
+        > </div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-341"
+      >Linear Equation</h1
+    > <p
+        class="para"
+        id="element-730"
+      >Write the linear equation below, rounding to 4 decimal places: <div
+          class="note"
+          id="eip-id1164297263742"
+        >For any prediction questions, the answers are calculated using the least squares (best fit) line equation cited in the solution.</div
+      > </p
+    ><div
+        class="exercise"
+        id="element-222"
+      ><div
+          class="problem"
+          id="id4176091"
+        > <p
+            class="para"
+            id="element-50234233422"
+          > Calculate the following: <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-234"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >a</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{a={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >b</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{b={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mstyle
+                              fontstyle="italic"
+                            ><mrow
+                              ><mtext
+                                >corr</mtext
+                              ></mrow
+                            ></mstyle
+                          ><mrow
+                            ><mtext
+                              >.</mtext
+                            ><mo
+                                stretchy="false"
+                              >=</mo
+                            ><mrow
+                            /></mrow
+                          ></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{ ital "corr" "." ={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="d"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >n</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{n={}} {}</annotation
+                  ></semantics
+                ></math
+              >(# of pairs)</li
+            ></list
+          ></p
+        > </div
+      > <div
+          class="solution"
+          id="id3370668"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-345"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >a</mi
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >-3,448,225</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{a="-3,448,225"} {}</annotation
+                > </semantics
+              > </math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >b</mi
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >1750</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{b="1750"} {}</annotation
+                > </semantics
+              > </math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mstyle
+                            fontstyle="italic"
+                          > <mrow
+                            > <mtext
+                              >corr</mtext
+                            > </mrow
+                          > </mstyle
+                        > <mrow
+                          > <mtext
+                            >.</mtext
+                          > <mo
+                              stretchy="false"
+                            >=</mo
+                          > <mn
+                            >0</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >4526</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{ ital "corr" "." =0 "." "4526"} {}</annotation
+                > </semantics
+              > </math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="d"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >n</mi
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mtext
+                          >22</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{n="22"} {}</annotation
+                > </semantics
+              > </math
+            > </li
+          > </list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-537"
+      ><div
+          class="problem"
+          id="id3371067"
+        > <p
+            class="para"
+            id="element-803"
+          >equation: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >y</mi
+                        ><mo
+                            stretchy="false"
+                          >^</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ { hat {y}}={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id3238552"
+        > <p
+            class="para"
+            id="element-747"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mover
+                          accent="true"
+                        > <mi
+                          >y</mi
+                        > <mo
+                            stretchy="false"
+                          >^</mo
+                        > </mover
+                      > <mo
+                          stretchy="false"
+                        >=</mo
+                      > <mtext
+                        >-3,448,225</mtext
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{ { hat {y}}="-3,448,225"} {}</annotation
+              > </semantics
+            > </math
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mo
+                            stretchy="false"
+                          >+</mo
+                        > <mtext
+                          >1750</mtext
+                        > </mrow
+                      > <mi
+                        >x</mi
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{+"1750"x} {}</annotation
+              > </semantics
+            > </math
+          > </p
+        > </div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-653"
+      >Solve</h1
+    > <div
+        class="exercise"
+        id="element-578"
+      ><div
+          class="problem"
+          id="id3231872"
+        > <p
+            class="para"
+            id="element-632"
+          > Solve. <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-2352634"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              > When <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mtext
+                            >1985</mtext
+                          ></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{x="1985"} {}</annotation
+                  ></semantics
+                ></math
+              >, <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mover
+                              accent="true"
+                            ><mi
+                              >y</mi
+                            ><mo
+                                stretchy="false"
+                              >^</mo
+                            ></mover
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{ { hat {y}}={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              > When <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mtext
+                            >1990</mtext
+                          ></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{x="1990"} {}</annotation
+                  ></semantics
+                ></math
+              >, <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mover
+                              accent="true"
+                            ><mi
+                              >y</mi
+                            ><mo
+                                stretchy="false"
+                              >^</mo
+                            ></mover
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{ { hat {y}}={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > </list
+          ></p
+        > </div
+      > <div
+          class="solution"
+          id="id3763418"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-3463146"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > 25,525</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            > 34,275</li
+          > </list
+        ></div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-478"
+      >Plot</h1
+    > <p
+        class="para"
+        id="element-263"
+      > Plot the 2 above points on the graph below. Then, connect the 2 points to form the regression line. </p
+    > <media
+        xmlns="http://cnx.rice.edu/cnxml"
+        id="id4253169"
+        data-alt="Blank graph with horizontal and vertical axes."
+        data-display="block"
+      ><image
+          print-width="4in"
+      /></media
+    > <p
+        class="para"
+        id="element-2352642"
+      > Obtain the graph on your calculator or computer. </p
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-163"
+      >Discussion Questions</h1
+    > <p
+        class="para"
+        id="element-844"
+      >Look at the graph above. </p
+    ><div
+        class="exercise"
+        id="element-508"
+      ><div
+          class="problem"
+          id="id4193945"
+        > <p
+            class="para"
+            id="element-348"
+          > Does the line seem to fit the data? Why or why not? </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-717"
+      ><div
+          class="problem"
+          id="id4247751"
+        > <p
+            class="para"
+            id="element-160"
+          > Do you think a linear fit is best? Why or why not? </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-593"
+      ><div
+          class="problem"
+          id="id3281976"
+        > <p
+            class="para"
+            id="element-659"
+          >Hand draw a smooth curve on the graph above that shows the flow of the data. </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-658"
+      ><div
+          class="problem"
+          id="id4227065"
+        > <p
+            class="para"
+            id="element-893"
+          > What does the correlation imply about the relationship between time (years) and the number of diagnosed AIDS cases reported in the U.S.? </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-352"
+      ><div
+          class="problem"
+          id="id3310573"
+        > <p
+            class="para"
+            id="element-843"
+          > Why is &#x201C;year&#x201D; the independent variable and &#x201C;# AIDS cases diagnosed.&#x201D; the dependent variable (instead of the reverse)? </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-560"
+      ><div
+          class="problem"
+          id="id3724131"
+        > <p
+            class="para"
+            id="element-457"
+          >Solve. <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-23526"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              >When <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mtext
+                            >1970</mtext
+                          ></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{x="1970"} {}</annotation
+                  ></semantics
+                ></math
+              >, <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mover
+                              accent="true"
+                            ><mi
+                              >y</mi
+                            ><mo
+                                stretchy="false"
+                              >^</mo
+                            ></mover
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{ { hat {y}}={}} {}</annotation
+                  ></semantics
+                ></math
+              >:</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              >Why doesn&#x2019;t this answer make sense?</li
+            > </list
+          ></p
+        > </div
+      > <div
+          class="solution"
+          id="id3606176"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-9726435"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > -725 </li
+          > </list
+        ></div
+      > </div
+    ></div
+  > </body
+>
+</html>

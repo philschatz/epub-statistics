@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+
+<title>The Chi-Square Distribution: Test for Homogeneity</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml"
+          mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>http://cnx.org/content</md:repository>
+  <md:content-url>http://cnx.org/content/m43655/latest</md:content-url>
+  <md:content-id>m43655</md:content-id>
+  <md:title>The Chi-Square Distribution: Test for Homogeneity</md:title>
+  <md:version>1.2</md:version>
+  <md:created>2012/06/17 08:39:47 GMT-5</md:created>
+  <md:revised>2012/06/29 09:08:12 GMT-5</md:revised>
+  <md:actors>
+    <md:person userid="sdean">
+      <md:firstname>Susan</md:firstname>
+      <md:surname>Dean</md:surname>
+      <md:fullname>Susan Dean</md:fullname>
+      <md:email>deansusan@deanza.edu</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">sdean</md:role>
+    <md:role type="maintainer">sdean</md:role>
+    <md:role type="licensor">sdean</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/3.0/" />
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:keywordlist>
+    <md:keyword>homogeneity</md:keyword>
+    <md:keyword>Test for Homogeneity</md:keyword>
+  </md:keywordlist>
+  <md:subjectlist>
+    <md:subject>Mathematics and Statistics</md:subject>
+  </md:subjectlist>
+  <md:abstract>The Test for Homogeneity is used to make a conclusion about whether two populations have the same distribution.  To calculate the test statistic for a test for homogeneity, follow the same procedure as with the Test of Independence.</md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content>
+  <para id="delete_me">The Goodness of Fit test can be used to decide whether a population fits a given distribution, but the Goodness of Fit test will not suffice to compare whether two populations follow the same unknown distribution.  A different test, called the Test for Homogeneity, can be used to make a conclusion about whether two populations have the same distribution.  To calculate the test statistic for a test for homogeneity, follow the same procedure as with the Test of Independence.
+  </para><note id="eip-195">The expected value for each cell needs to be at least 5 in order to
+use this test.</note><para id="eip-705"><title>Hypotheses</title><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>o</m:mi>
+</m:msub>
+</m:math>: 
+The distributions of the two populations are the same.
+<newline/><newline/> 
+<m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub>
+</m:math>: 
+The distributions of the two populations are not the same.
+</para><para id="eip-703"><title>Test Statistic</title>Use a <m:math>
+<m:msup>
+<m:mi>χ</m:mi>
+<m:mn>2</m:mn>
+</m:msup></m:math> 
+test statistic.  It is computed in the same way as the test for independence.  </para><para id="eip-577"><title>Degrees of Freedom (df)</title>df = number of columns - 1</para><para id="eip-572"><title>Requirements</title>All values in the table must be greater than or equal to 5.
+</para><para id="eip-66"><title>Common Uses</title>Comparing two populations.  For example:  men versus women, before vs. after, east vs. west.
+  The variable is categorical with more than two possible response values.
+</para><example id="eip-101"><para id="eip-520">Do male and female college students have the same distribution of living conditions?  Use a level of significance of 0.05.  Suppose that 250 randomly selected male college students and 300 randomly selected female college students were asked about their living conditions:  Dormitory, Apartment, With Parents, Other.  The results are shown in the table below.
+</para>
+
+<table id="eip-924" summary="The table contains the distribution of living conditions for college males and college females. First row: Males 72 Dorm; 84 Apt.; 49 Parents; 45 Other; Second row: Females, 91 Dorm; 86 Apt.; 88 Parents; 35 Other;"><title>Distribution of Living Conditions for College Males and College Females</title>
+<tgroup cols="5"><tbody>
+  <row>
+    <entry/>
+    <entry><emphasis>Dormitory</emphasis></entry>
+    <entry><emphasis>Apartment</emphasis></entry>
+    <entry><emphasis>With Parents</emphasis></entry>
+    <entry><emphasis>Other</emphasis></entry> 	
+  </row>
+  <row>
+    <entry><emphasis>Males</emphasis></entry>
+    <entry>72</entry>
+    <entry>84</entry>
+    <entry>49</entry>
+    <entry>45</entry>
+  </row>
+  <row>
+    <entry><emphasis>Females</emphasis></entry>
+    <entry>91</entry>
+    <entry>86</entry>
+    <entry>88</entry>
+    <entry>35</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+
+<exercise id="eip-790"><problem id="eip-886">
+  <para id="eip-818">Do male and female college students have the same distribution of living conditions?
+  </para></problem>
+
+<solution id="eip-996">
+  <para id="eip-724"><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>o</m:mi>
+</m:msub>
+</m:math>: 
+The distribution of living conditions for male college students is the same as the distribution of living conditions for female college students.
+
+<newline/><newline/> 
+<m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub>
+</m:math>: 
+The distribution of living conditions for male college students is not the same as the distribution of living conditions for female college students.
+<newline/><newline/>
+
+<emphasis>Degrees of Freedom (df):</emphasis><newline/>
+df = number of columns - 1 = 4 - 1 = 3
+<newline/><newline/>
+
+<emphasis>Distribution for the test:</emphasis> 
+<m:math>
+<m:msubsup>
+<m:mi>χ</m:mi>
+<m:mn>3</m:mn>
+<m:mn>2</m:mn>
+</m:msubsup>
+</m:math>
+
+<newline/><newline/>
+<emphasis>Calculate the test statistic:</emphasis>
+<m:math>
+<m:msup>
+<m:mi>χ</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mn>10.1287</m:mn>
+<m:mspace width="20pt"/>
+</m:math>(calculator or computer)
+
+<newline/><newline/>
+<emphasis>Probability statement:</emphasis> <m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:msup><m:mi>χ</m:mi><m:mn>2 </m:mn></m:msup><m:mo>&gt;</m:mo><m:mn>10.1287</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.0175</m:mn></m:math>
+
+<newline/><newline/>
+TI-83+ and TI-84 calculator: Press the <code>MATRX</code> key and arrow over to
+<code>EDIT</code>. Press <code>1:[A]</code>. Press <code>2 ENTER 4 ENTER</code>. Enter the table values by
+row. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press
+<code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press
+<code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. Arrow down to
+<code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 10.1287 and the <m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mn>0.0175</m:mn></m:math>. Do the procedure a second time but arrow down to <code>Draw</code> instead of
+<code>calculate</code>. 
+
+<newline/><newline/>
+<emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mtext>p-value</m:mtext></m:math>:</emphasis> Since no <m:math><m:mi>α</m:mi></m:math> is given, assume <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>.
+<m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mn>0.0175</m:mn></m:math>. <m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mtext>p-value</m:mtext></m:math>.
+
+<newline/><newline/>
+<emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mtext>p-value</m:mtext></m:math>, reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>.
+This means that the distributions are not the same.
+
+<newline/><newline/>
+<emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence
+to 
+conclude that the distributions of living conditions for male and female college students are not the same.
+
+<newline/><newline/>
+Notice that the conclusion is only that the distributions are not the same.  We cannot use the Test for Homogeneity to make any conclusions about how they differ.
+
+  
+
+  </para></solution>
+</exercise></example><example id="eip-151"><para id="eip-558">Both before and after a recent earthquake,  surveys were conducted asking voters which of the three candidates they planned on voting for in the upcoming city council election.  Has there been a change since the earthquake?  Use a level of significance of 0.05.  The table below shows the results of the survey.
+</para><table id="eip-422" summary="The table contains the number of votes 3 candidates (Perez, Chung, Stevens) could receive before and after an earthquake from a survey. First row: 167; 128; 135; Second row: 214; 197; 225;">
+<tgroup cols="4"><tbody>
+  <row>
+    <entry/>
+    <entry><emphasis>Perez</emphasis></entry>
+    <entry><emphasis>Chung</emphasis></entry>
+    <entry><emphasis>Stevens</emphasis></entry>
+  </row>
+  <row>
+    <entry><emphasis>Before</emphasis></entry>
+    <entry>167</entry>
+    <entry>128</entry>
+    <entry>135</entry>
+  </row>
+  <row>
+    <entry><emphasis>After</emphasis></entry>
+    <entry>214</entry>
+    <entry>197</entry>
+    <entry>225</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table><exercise id="eip-692"><problem id="eip-44">
+  <para id="eip-987">Has there been a change in the distribution of voter preferences since the earthquake?
+  </para></problem>
+
+<solution id="eip-156">
+  <para id="eip-969"><m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>o</m:mi>
+</m:msub>
+</m:math>: The distribution of voter preferences was the same before and after the earthquake.
+
+<newline/><newline/>
+<m:math>
+<m:msub>
+<m:mi>H</m:mi>
+<m:mi>a</m:mi>
+</m:msub>
+</m:math>: The distribution of voter preferences was not the same before and after the earthquake.
+
+<newline/><newline/>
+<emphasis>Degrees of Freedom (df):</emphasis><newline/>
+df = number of columns - 1 = 3 - 1 = 2
+<newline/><newline/>
+
+<emphasis>Distribution for the test:</emphasis> 
+<m:math>
+<m:msubsup>
+<m:mi>χ</m:mi>
+<m:mn>2</m:mn>
+<m:mn>2</m:mn>
+</m:msubsup>
+</m:math>
+
+<newline/><newline/>
+<emphasis>Calculate the test statistic:</emphasis>
+<m:math>
+<m:msup>
+<m:mi>χ</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mn>3.2603</m:mn>
+<m:mspace width="20pt"/>
+</m:math>(calculator or computer)
+
+<newline/><newline/>
+<emphasis>Probability statement:</emphasis> <m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:msup><m:mi>χ</m:mi><m:mn>2 </m:mn></m:msup><m:mo>&gt;</m:mo><m:mn>3.2603</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.1959</m:mn></m:math>
+
+<newline/><newline/>
+TI-83+ and TI-84 calculator: Press the <code>MATRX</code> key and arrow over to
+<code>EDIT</code>. Press <code>1:[A]</code>. Press <code>2 ENTER 3 ENTER</code>. Enter the table values by
+row. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press
+<code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press
+<code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. Arrow down to
+<code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 3.2603 and the <m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mn>0.1959</m:mn></m:math>. Do the procedure a second time but arrow down to <code>Draw</code> instead of
+<code>calculate</code>. 
+
+<newline/><newline/>
+<emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mtext>p-value</m:mtext></m:math>:</emphasis>   <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and the 
+<m:math><m:mtext>p-value</m:mtext><m:mo>=</m:mo><m:mn>0.1959</m:mn></m:math>. <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo><m:mtext>p-value</m:mtext></m:math>.
+
+<newline/><newline/>
+<emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo><m:mtext>p-value</m:mtext></m:math>, do not reject <m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub></m:math>.
+
+
+<newline/><newline/>
+<emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is insufficient evidence
+to 
+conclude that the distribution of voter preferences was not the same before and after the earthquake.
+
+
+
+
+  </para></solution>
+</exercise></example><para id="eip-205">** Contributed by Dr. Larry Green</para></content>
+
+</document>

@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Confidence Intervals: Practice 2</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Confidence Intervals: Practice 2</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-705"
+      >Student Learning Outcomes</h1
+    ><ul
+        class="list"
+        data-id="list-2356124"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        > The student will calculate confidence intervals for means when the population standard deviation is unknown.</li
+      > </ul
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-306"
+      >Given</h1
+    > <p
+        class="para"
+        id="element-59"
+      >The following real data are the result of a random survey of 39 national flags (with replacement between picks) from various countries. We are interested in finding a confidence interval for the true mean number of colors on a national flag. Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><semantics
+          ><mrow
+            ><mstyle
+                fontsize="12pt"
+              ><mrow
+                ><mrow
+                  ><mi
+                    >X</mi
+                  ><mo
+                      stretchy="false"
+                    >=</mo
+                  ><mrow
+                  /></mrow
+                ></mrow
+              ></mstyle
+            ><mrow
+            /></mrow
+          ><annotation
+              encoding="StarMath 5.0"
+            > size 12{X={}} {}</annotation
+          ></semantics
+        ></math
+      > the number of colors on a national flag. </p
+    ><table
+        id="element-181"
+        summary="This table presents the X values (1-5) in the first column and the frequency in the second column."
+      ><thead
+        > <tr
+          > <td
+            >X</td
+          > <td
+            >Freq.</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >1</td
+          > <td
+            >1</td
+          > </tr
+        > <tr
+          > <td
+            >2</td
+          > <td
+            >7</td
+          > </tr
+        > <tr
+          > <td
+            >3</td
+          > <td
+            >18</td
+          > </tr
+        > <tr
+          > <td
+            >4</td
+          > <td
+            >7</td
+          > </tr
+        ><tr
+          > <td
+            >5</td
+          > <td
+            >6</td
+          > </tr
+        > </tbody
+      ></table
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-666"
+      >Calculating the Confidence Interval</h1
+    ><div
+        class="exercise"
+        id="element-953"
+      ><div
+          class="problem"
+          id="id45583482"
+        > <p
+            class="para"
+            id="element-234525"
+          > Calculate the following: <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-87678"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mover
+                              accent="true"
+                            ><mi
+                              >x</mi
+                            ><mo
+                              >&#xAF;</mo
+                            ></mover
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{ {overline {x}} ={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><msub
+                            ><mi
+                              >s</mi
+                            ><mstyle
+                                fontsize="8pt"
+                              ><mrow
+                                ><mi
+                                  >x</mi
+                                ></mrow
+                              ></mstyle
+                            ></msub
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{s rSub { size 8{x} } ={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >n</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{n={}} {}</annotation
+                  ></semantics
+                ></math
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+              /></li
+            > </list
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id45593982"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-827634"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >3.26</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >1.02</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >39</li
+          > </list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-62"
+      ><div
+          class="problem"
+          id="id45594056"
+        > <p
+            class="para"
+            id="element-588"
+          >Define the Random Variable, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mover
+                        accent="true"
+                      ><mi
+                        >X</mi
+                      ><mo
+                        >&#xAF;</mo
+                      ></mover
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ {overline {X}} } {}</annotation
+              ></semantics
+            ></math
+          >, in words. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mover
+                          accent="true"
+                        ><mi
+                          >X</mi
+                        ><mo
+                          >&#xAF;</mo
+                        ></mover
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ {overline {X}} ={}} {}</annotation
+              ></semantics
+            ></math
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >__________________________</mtext
+            ></math
+          ></p
+        > </div
+      > <div
+          class="solution"
+          id="id45594131"
+        > <p
+            class="para"
+            id="element-21"
+          >the mean number of colors of 39 flags</p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-212"
+      ><div
+          class="problem"
+          id="id45594158"
+        > <p
+            class="para"
+            id="element-703"
+          > What is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mover
+                        accent="true"
+                      ><mi
+                        >x</mi
+                      ><mo
+                        >&#xAF;</mo
+                      ></mover
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ {overline {x}} } {}</annotation
+              ></semantics
+            ></math
+          > estimating? </p
+        > </div
+      > <div
+          class="solution"
+          id="id45594200"
+        > <p
+            class="para"
+            id="element-760"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >&#x3BC;</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3BC;} {}</annotation
+              > </semantics
+            > </math
+          > </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-704"
+      ><div
+          class="problem"
+          id="id45594258"
+        > <p
+            class="para"
+            id="element-695"
+          > Is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >&#x3C3;</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3C3; rSub { size 8{x} } } {}</annotation
+              ></semantics
+            ></math
+          > known? </p
+        > </div
+      > <div
+          class="solution"
+          id="id45594302"
+        > <p
+            class="para"
+            id="element-909"
+          >No </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-164"
+      ><div
+          class="problem"
+          id="id45594330"
+        > <p
+            class="para"
+            id="element-339"
+          > As a result of your answer to (4), state the exact distribution to use when calculating the Confidence Interval. </p
+        > </div
+      > <div
+          class="solution"
+          id="id45594350"
+        > <p
+            class="para"
+            id="element-875"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <msub
+                      > <mi
+                        >t</mi
+                      > <mstyle
+                          fontsize="8pt"
+                        > <mrow
+                          > <mtext
+                            >38</mtext
+                          > </mrow
+                        > </mstyle
+                      > </msub
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{t rSub { size 8{"38"} } } {}</annotation
+              > </semantics
+            > </math
+          > </p
+        > </div
+      > </div
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-88"
+      >Confidence Interval for the True Mean Number </h1
+    ><p
+        class="para"
+        id="element-548"
+      >Construct a 95% Confidence Interval for the true mean number of colors on national flags.</p
+    ><div
+        class="exercise"
+        id="element-425"
+      ><div
+          class="problem"
+          id="id45959436"
+        > <p
+            class="para"
+            id="element-325"
+          >How much area is in both tails (combined)? <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >&#x3B1;</mi
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id45959479"
+        > <p
+            class="para"
+            id="element-980"
+          >0.05</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-945"
+      ><div
+          class="problem"
+          id="id45959507"
+        > <p
+            class="para"
+            id="element-260"
+          >How much area is in each tail? <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mfrac
+                        ><mi
+                          >&#x3B1;</mi
+                        ><mn
+                          >2</mn
+                        ></mfrac
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ { {&#x3B1;} over {2} } ={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id45959554"
+        > <p
+            class="para"
+            id="element-697"
+          >0.025</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-526"
+      ><div
+          class="problem"
+          id="id45959582"
+        > <p
+            class="para"
+            id="element-2354253"
+          >Calculate the following: <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-76787865"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              >lower limit =</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              >upper limit =</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              >error bound =</li
+            > </list
+          ></p
+        > </div
+      > <div
+          class="solution"
+          id="id45959657"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-23512"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > 2.93</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >3.59</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >0.33</li
+          > </list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-363"
+      ><div
+          class="problem"
+          id="id45959730"
+        > <p
+            class="para"
+            id="element-434"
+          >The 95% Confidence Interval is: </p
+        > </div
+      > <div
+          class="solution"
+          id="id45959750"
+        > <p
+            class="para"
+            id="element-350"
+          >2.93; 3.59</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-188"
+      ><div
+          class="problem"
+          id="id45959778"
+        > <p
+            class="para"
+            id="element-726"
+          >Fill in the blanks on the graph with the areas, upper and lower limits of the Confidence Interval and the sample mean. <figure
+              id="five5"
+            ><span
+                class="media"
+                id="id45959805"
+                data-alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></figure
+          ></p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-499"
+      ><div
+          class="problem"
+          id="id45959843"
+        > <p
+            class="para"
+            id="element-46"
+          > In one complete sentence, explain what the interval means. </p
+        > </div
+      > </div
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-388"
+      >Discussion Questions</h1
+    > <div
+        class="exercise"
+        id="element-542"
+      ><div
+          class="problem"
+          id="id46274989"
+        > <p
+            class="para"
+            id="one"
+          > Using the same <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mover
+                        accent="true"
+                      ><mi
+                        >x</mi
+                      ><mo
+                        >&#xAF;</mo
+                      ></mover
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ {overline {x}} } {}</annotation
+              ></semantics
+            ></math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >s</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{s rSub { size 8{x} } } {}</annotation
+              ></semantics
+            ></math
+          >, and level of confidence, suppose that <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >n</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{n} {}</annotation
+              ></semantics
+            ></math
+          > were 69 instead of 39. Would the error bound become larger or smaller? How do you know?</p
+        ></div
+      ></div
+    ><div
+        class="exercise"
+        id="element-939"
+      ><div
+          class="problem"
+          id="id46275081"
+        > <p
+            class="para"
+            id="element-111"
+          >Using the same <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mover
+                        accent="true"
+                      ><mi
+                        >x</mi
+                      ><mo
+                        >&#xAF;</mo
+                      ></mover
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ {overline {x}} } {}</annotation
+              ></semantics
+            ></math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >s</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{s rSub { size 8{x} } } {}</annotation
+              ></semantics
+            ></math
+          >, and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >n</mi
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mtext
+                        >39</mtext
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{n="39"} {}</annotation
+              ></semantics
+            ></math
+          >, how would the error bound change if the confidence level were reduced to 90%? Why? </p
+        > </div
+      > </div
+    ></div
+  > </body
+>
+</html>

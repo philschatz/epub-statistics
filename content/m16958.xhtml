@@ -1,0 +1,2719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Central Limit Theorem: Using the Central Limit Theorem</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Central Limit Theorem: Using the Central Limit Theorem</div
+  > <p
+      class="para"
+      id="delete_me"
+    >It is important for you to understand when to use the <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="centlimit"
+      >CLT</term
+    >. If you are being asked to find the probability of the mean, use the CLT for the mean. If you are being asked to find the probability of a sum or total, use the CLT for sums. This also applies to percentiles for means and sums.</p
+  ><div
+      class="note"
+      id="id11030776"
+    >If you are being asked to find the probability of an <strong
+        class="emphasis"
+      >individual</strong
+    > value, do <strong
+        class="emphasis"
+      >not</strong
+    > use the CLT. <strong
+        class="emphasis"
+      >Use the distribution of its random variable.</strong
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-733"
+      >Examples of the Central Limit Theorem</h1
+    > <p
+        class="para"
+        id="eip-158"
+      ><strong
+          class="emphasis"
+        >Law of Large Numbers</strong
+      ></p
+    ><p
+        class="para"
+        id="element-349"
+      >The <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="Law_Large_Numbers"
+        >Law of Large Numbers</term
+      > says that if you take samples of larger and larger size from any population, then the mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <apply
+          > <conjugate
+          /> <ci
+            >x</ci
+          > </apply
+        > </math
+      > of the sample tends to get closer and closer to <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      >. From the Central Limit Theorem, we know that as <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > gets larger and larger, the sample means follow a normal distribution. The larger n gets, the smaller the standard deviation gets. (Remember that the standard deviation for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <apply
+          > <conjugate
+          /> <ci
+            >X</ci
+          > </apply
+        > </math
+      > is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mi
+            >&#x3C3;</mi
+          > <mrow
+            > <msqrt
+              > <mi
+                >n</mi
+              > </msqrt
+            > </mrow
+          > </mfrac
+        > </math
+      > .) This means that the sample mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <apply
+          > <conjugate
+          /> <ci
+            >x</ci
+          > </apply
+        > </math
+      > must be close to the population mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      >. We can say that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > is the value that the sample means approach as <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > gets larger. The Central Limit Theorem illustrates the Law of Large Numbers. </p
+    ><p
+        class="para"
+        id="eip-832"
+      ><strong
+          class="emphasis"
+        >Central Limit Theorem for the Mean and Sum Examples</strong
+      ></p
+    ><div
+        class="example"
+        id="element-482"
+      ><p
+          class="para"
+          id="element-361"
+        >A study involving stress is done on a college campus among the students. <strong
+            class="emphasis"
+          >The stress scores follow a uniform distribution</strong
+        > with the lowest stress score equal to 1 and the highest equal to 5. Using a sample of 75 students, find: </p
+      ><ol
+          class="list"
+          data-id="element-847"
+          data-list-type="enumerated"
+        ><li
+            class="item"
+          >The probability that the <strong
+              class="emphasis"
+            >mean stress score</strong
+          > for the 75 students is less than 2.</li
+        > <li
+            class="item"
+          >The 90th percentile for the <strong
+              class="emphasis"
+            >mean stress score</strong
+          > for the 75 students.</li
+        > <li
+            class="item"
+          >The probability that the <strong
+              class="emphasis"
+            >total of the 75 stress scores</strong
+          > is less than 200.</li
+        > <li
+            class="item"
+          >The 90th percentile for the <strong
+              class="emphasis"
+            >total stress score</strong
+          > for the 75 students.</li
+        > </ol
+      ><p
+          class="para"
+          id="element-294"
+        >Let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > = one stress score.</p
+      ><p
+          class="para"
+          id="element-632"
+        >Problems 1. and 2. ask you to find a probability or a percentile for a <term
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-target-id="mean"
+          >mean</term
+        >. Problems 3 and 4 ask you to find a probability or a percentile for a <strong
+            class="emphasis"
+          >total or sum</strong
+        >. The sample size, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        >, is equal to 75.</p
+      ><p
+          class="para"
+          id="element-494"
+        >Since the individual stress scores follow a uniform distribution, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > ~ <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >U</mi
+          ><mo
+            >(</mo
+          ><mn
+            >1</mn
+          ><mo
+            >,</mo
+          > <mn
+            >5</mn
+          ><mo
+            >)</mo
+          ></math
+        > where <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >a</mi
+          ><mo
+            >=</mo
+          ><mn
+            >1</mn
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >b</mi
+          ><mo
+            >=</mo
+          ><mn
+            >5</mn
+          ></math
+        > (See <a
+            href="/m16808"
+          >Continuous Random Variables</a
+        > for the uniform).</p
+      ><p
+          class="para"
+          id="element-35"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msub
+            > <mi
+              >&#x3BC;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > <mo
+            >=</mo
+          > <mfrac
+            > <mrow
+              > <mi
+                >a</mi
+              > <mo
+                >+</mo
+              > <mi
+                >b</mi
+              > </mrow
+            > <mrow
+              > <mn
+                >2</mn
+              > </mrow
+            > </mfrac
+          > <mo
+            >=</mo
+          > <mfrac
+            > <mrow
+              > <mn
+                >1</mn
+              > <mo
+                >+</mo
+              > <mn
+                >5</mn
+              > </mrow
+            > <mrow
+              > <mn
+                >2</mn
+              > </mrow
+            > </mfrac
+          > <mo
+            >=</mo
+          > <mn
+            >3</mn
+          > </math
+        ></p
+      ><p
+          class="para"
+          id="element-200"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msub
+            > <mi
+              >&#x3C3;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > <mo
+            >=</mo
+          > <msqrt
+            > <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mi
+                  >b</mi
+                > <mo
+                  >-</mo
+                > <mi
+                  >a</mi
+                > <msup
+                  > <mo
+                    >)</mo
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > <mrow
+                > <mn
+                  >12</mn
+                > </mrow
+              > </mfrac
+            > </msqrt
+          > <mo
+            >=</mo
+          > <msqrt
+            > <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mn
+                  >5</mn
+                > <mo
+                  >-</mo
+                > <mn
+                  >1</mn
+                > <msup
+                  > <mo
+                    >)</mo
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > <mrow
+                > <mn
+                  >12</mn
+                > </mrow
+              > </mfrac
+            > </msqrt
+          > <mo
+            >=</mo
+          > <mn
+            >1.15</mn
+          > </math
+        ></p
+      ><p
+          class="para"
+          id="element-591"
+        >For problems 1. and 2., let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >X</ci
+            > </apply
+          > </math
+        > = the mean stress score for the 75 students. Then,</p
+      ><p
+          class="para"
+          id="element-257"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >X</ci
+            > </apply
+          ></math
+        > ~ <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >N</mi
+          > <mo
+            >(</mo
+          > <mn
+            >3</mn
+          > <mo
+            >,</mo
+          > <mfrac
+            > <mn
+              >1.15</mn
+            > <mrow
+              > <msqrt
+                > <mn
+                  >75</mn
+                > </msqrt
+              > </mrow
+            > </mfrac
+          > <mo
+            >)</mo
+          > <mspace
+              width="25pt"
+          /> </math
+        > where <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n = 75</mi
+          ></math
+        >.</p
+      ><div
+          class="exercise"
+          id="element-197"
+        ><div
+            class="problem"
+            id="id10355852"
+          > <p
+              class="para"
+              id="element-549"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >2</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > </math
+            >. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mspace
+                  width="20pt"
+              /> </math
+            > Draw the graph.</p
+          ></div
+        > <div
+            class="solution"
+            id="id10355911"
+          > <p
+              class="para"
+              id="element-146"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >2</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >0</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-870"
+            >The probability that the mean stress score is less than 2 is about 0.</p
+          ><p
+              class="para"
+              id="element-546"
+            ><span
+                class="media"
+                id="id10559440"
+                data-alt="Normal distribution curve for the average with values of 2 and 3 on the x-axis. A vertical upward line extends from point 2 up to the curve. The probability area occurs from the beginning of the curve to point 2."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            > </p
+          ><p
+              class="para"
+              id="element-852"
+            ><code
+                class="code"
+              >normalcdf</code
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mo
+                >(</mo
+              > <mn
+                >1</mn
+              > <mo
+                >,</mo
+              > <mn
+                >2</mn
+              > <mo
+                >,</mo
+              > <mn
+                >3</mn
+              > <mo
+                >,</mo
+              > <mfrac
+                > <mn
+                  >1.15</mn
+                > <mrow
+                  > <msqrt
+                    > <mn
+                      >75</mn
+                    > </msqrt
+                  > </mrow
+                > </mfrac
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >0</mn
+              > </math
+            ></p
+          > <div
+              class="note"
+              id="note-1"
+              data-type="Reminder"
+              data-label="Reminder"
+            >The smallest stress score is 1. Therefore, the smallest mean for 75 stress scores is 1. </div
+          ></div
+        > </div
+      ><div
+          class="exercise"
+          id="element-523"
+        ><div
+            class="problem"
+            id="id10559554"
+          > <p
+              class="para"
+              id="element-199"
+            >Find the 90th percentile for the mean of 75 stress scores. Draw a graph.</p
+          ></div
+        > <div
+            class="solution"
+            id="id10559572"
+          > <p
+              class="para"
+              id="element-647"
+            >Let <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > </math
+            > = the 90th precentile.</p
+          ><p
+              class="para"
+              id="element-179"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            > where <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >k</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >0.90</mn
+              > </math
+            >.</p
+          ><p
+              class="para"
+              id="element-54"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > <mo
+                >=</mo
+              > <mn
+                >3.2</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-50"
+            ><span
+                class="media"
+                id="id11181476"
+                data-alt="Normal distribution curve graph with a vertical upward line at point k on the x-axis. The probability area under the curve before k is equal to 0.90. k is equal to the 90th percentile."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  width="300"
+                  print-width="3in"
+              /></span
+            > </p
+          ><p
+              class="para"
+              id="element-776"
+            >The 90th percentile for the mean of 75 scores is about 3.2. This tells us that 90% of all the means of 75 stress scores are at most 3.2 and 10% are at least 3.2.</p
+          ><p
+              class="para"
+              id="element-992"
+            ><code
+                class="code"
+              >invNorm</code
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mo
+                >(</mo
+              > <mn
+                >.90</mn
+              > <mo
+                >,</mo
+              > <mn
+                >3</mn
+              > <mo
+                >,</mo
+              > <mfrac
+                > <mn
+                  >1.15</mn
+                > <mrow
+                  > <msqrt
+                    > <mn
+                      >75</mn
+                    > </msqrt
+                  > </mrow
+                > </mfrac
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >3.2</mn
+              > </math
+            ></p
+          > </div
+        > </div
+      ><p
+          class="para"
+          id="element-445"
+        >For problems c and d, let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3A3;X</mi
+          ></math
+        > = the sum of the 75 stress scores. Then, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >&#x3A3;X</mi
+          ></math
+        > ~ <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >N</mi
+          > <mo
+            >[</mo
+          > <mo
+            >(</mo
+          > <mi
+            >75</mi
+          > <mo
+            >)</mo
+          > <mo
+            >&#x22C5;</mo
+          > <mo
+            >(</mo
+          > <mi
+            >3</mi
+          > <mo
+            >)</mo
+          > <mo
+            >,</mo
+          > <msqrt
+            > <mn
+              >75</mn
+            > </msqrt
+          > <mo
+            >&#x22C5;</mo
+          > <mn
+            >1.15</mn
+          > <mo
+            >]</mo
+          > </math
+        ></p
+      ><div
+          class="exercise"
+          id="element-888"
+        ><div
+            class="problem"
+            id="id11181656"
+          > <p
+              class="para"
+              id="element-293"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >&#x3A3;x</mi
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >200</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > </math
+            >. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mspace
+                  width="20pt"
+              /> </math
+            > Draw the graph.</p
+          ></div
+        > <div
+            class="solution"
+            id="id11181711"
+          > <p
+              class="para"
+              id="element-700"
+            >The mean of the sum of 75 stress scores is <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mn
+                >75</mn
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >3</mn
+              > <mo
+                >=</mo
+              > <mn
+                >225</mn
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="element-28"
+            >The standard deviation of the sum of 75 stress scores is <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msqrt
+                > <mn
+                  >75</mn
+                > </msqrt
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >1.15</mn
+              > <mo
+                >=</mo
+              > <mn
+                >9.96</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-510"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >&#x3A3;x</mi
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >200</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >0</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-476"
+            ><span
+                class="media"
+                id="id10985583"
+                data-alt="Normal distribution curve of the sum x with values of 200 and 225 on the x-axis. A vertical upward line extends from point 200 to the curve. The probability area begins from the beginning of the curve to point 200."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          ><p
+              class="para"
+              id="element-456"
+            >The probability that the total of 75 scores is less than 200 is about 0.</p
+          ><p
+              class="para"
+              id="element-273"
+            ><code
+                class="code"
+              >normalcdf</code
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mo
+                >(</mo
+              > <mn
+                >75</mn
+              > <mo
+                >,</mo
+              > <mn
+                >200</mn
+              > <mo
+                >,</mo
+              > <mn
+                >75</mn
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >3</mn
+              > <mo
+                >,</mo
+              > <msqrt
+                > <mn
+                  >75</mn
+                > </msqrt
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >1.15</mn
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >0</mn
+              > </math
+            >.</p
+          > <div
+              class="note"
+              id="note-2"
+              data-type="Reminder"
+              data-label="Reminder"
+            > The smallest total of 75 stress scores is 75 since the smallest single score is 1.</div
+          > </div
+        > </div
+      ><div
+          class="exercise"
+          id="element-681"
+        ><div
+            class="problem"
+            id="id10985710"
+          > <p
+              class="para"
+              id="element-698"
+            >Find the 90th percentile for the total of 75 stress scores. Draw a graph. </p
+          > </div
+        > <div
+            class="solution"
+            id="id10985728"
+          > <p
+              class="para"
+              id="element-308"
+            >Let <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > </math
+            > = the 90th percentile. </p
+          ><p
+              class="para"
+              id="element-780"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > </math
+            > where <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >&#x3A3;x</mi
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >k</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >0.90</mn
+              > </math
+            >.</p
+          ><p
+              class="para"
+              id="element-724"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > <mo
+                >=</mo
+              > <mn
+                >237.8</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-513"
+            ><span
+                class="media"
+                id="id10985827"
+                data-alt="Normal distribution curve of sum x with k on the x-axis. Vertical upward line extends from k to the curve. The probability area under the curve from the beginning of the curve to k is equal to 0.90."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          ><p
+              class="para"
+              id="element-229"
+            >The 90th percentile for the sum of 75 scores is about 237.8. This tells us that 90% of all the sums of 75 scores are no more than 237.8 and 10% are no less than 237.8.</p
+          ><p
+              class="para"
+              id="element-210"
+            ><code
+                class="code"
+              >invNorm</code
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mo
+                >(</mo
+              > <mn
+                >.90</mn
+              > <mo
+                >,</mo
+              > <mn
+                >75</mn
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >3</mn
+              > <mo
+                >,</mo
+              > <msqrt
+                > <mn
+                  >75</mn
+                > </msqrt
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >1.15</mn
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >237.8</mn
+              > </math
+            ></p
+          > </div
+        > </div
+      > </div
+    ><div
+        class="example"
+        id="element-381"
+      ><p
+          class="para"
+          id="eip-id1171180958925"
+        >Suppose that a market research analyst for a cell phone company conducts a study of their customers who exceed the time allowance included on their basic cell phone contract; the analyst finds that for those people who exceed the time included in their basic contract, the <strong
+            class="emphasis"
+          >excess time used</strong
+        > follows an <term
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-target-id="expdist"
+          >exponential distribution</term
+        > with a mean of 22 minutes. </p
+      ><p
+          class="para"
+          id="eip-id1171181431405"
+        >Consider a random sample of 80 customers who exceed the time allowance included in their basic cell phone contract.</p
+      ><p
+          class="para"
+          id="eip-id1171181123857"
+        >Let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > = the excess time used by one INDIVIDUAL cell phone customer who exceeds his contracted time allowance. </p
+      ><p
+          class="para"
+          id="eip-id1171182604485"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > ~ <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >Exp</mi
+          ><mo
+            >(</mo
+          ><mfrac
+            ><mrow
+              ><mn
+                >1</mn
+              ></mrow
+            ><mrow
+              ><mn
+                >22</mn
+              ></mrow
+            ></mfrac
+          ><mo
+            >)</mo
+          ></math
+        > From Chapter 5, we know that <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3BC;</mi
+          ><mo
+            >=</mo
+          ><mn
+            >22</mn
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C3;</mi
+          ><mo
+            >=</mo
+          ><mn
+            >22</mn
+          ></math
+        >. </p
+      ><p
+          class="para"
+          id="eip-id1171180995295"
+        >Let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <mi
+              >X</mi
+            > </apply
+          > </math
+        > = the mean excess time used by a sample of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >n </mi
+          > <mo
+            >= </mo
+          > <mn
+            >80 </mn
+          ></math
+        > customers who exceed their contracted time allowance. </p
+      ><p
+          class="para"
+          id="eip-id1171181077126"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <ci
+              >X</ci
+            > </apply
+          ></math
+        > ~ <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >N</mi
+          > <mo
+            >(</mo
+          > <mn
+            >22</mn
+          > <mo
+            >,</mo
+          > <mfrac
+            > <mn
+              >22</mn
+            > <mrow
+              > <msqrt
+                > <mn
+                  >80</mn
+                > </msqrt
+              > </mrow
+            > </mfrac
+          > <mo
+            >)</mo
+          > </math
+        > by the CLT for Sample Means </p
+      ><div
+          class="exercise"
+          id="eip-id8136792"
+        ><div
+            class="problem"
+            id="eip-id8760885"
+          > <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="eip-id1171180795181"
+              data-mark-suffix="."
+              data-list-type="labeled-item"
+            ><div
+                xmlns=""
+                class="title"
+              >Using the CLT to find Probability:</div
+            ><li
+                xmlns=""
+                class="item"
+                data-label="a"
+              >Find the probability that the mean excess time used by the 80 customers in the sample is longer than 20 minutes. This is asking us to find <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <reln
+                  ><gt
+                  /> <mrow
+                    > <mi
+                      >P</mi
+                    > <mo
+                      >(</mo
+                    > <apply
+                      > <conjugate
+                      /> <ci
+                        >x</ci
+                      > </apply
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >20</mn
+                    > <mo
+                      >)</mo
+                    > </mrow
+                  > </reln
+                > <mspace
+                    width="20pt"
+                /> </math
+              > Draw the graph. </li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              > Suppose that one customer who exceeds the time limit for his cell phone contract is randomly selected. Find the probability that this individual customer's excess time is longer than 20 minutes. This is asking us to find <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <reln
+                  ><gt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >20</mi
+                    ><mo
+                      >)</mo
+                    ></mrow
+                  ></reln
+                > </math
+              > </li
+            ><li
+                xmlns=""
+                class="item"
+                data-label="c"
+              > Explain why the probabilities in (a) and (b) are different.</li
+            > </list
+          ></div
+        > <div
+            class="solution"
+            id="eip-id1171181279568"
+          > <p
+              class="para"
+              id="eip-id7836757"
+            ><span
+                class="title"
+              >Part a.</span
+            >Find: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><gt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >20</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="eip-id1171181565299"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><gt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >20</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >0.7919 </mn
+              > </math
+            > using <code
+                class="code"
+              >normalcdf</code
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mo
+                >(</mo
+              > <mn
+                >20</mn
+              > <mo
+                >,</mo
+              > <mi
+                >1E99</mi
+              > <mo
+                >,</mo
+              > <mn
+                >22</mn
+              > <mo
+                >,</mo
+              > <mfrac
+                > <mn
+                  >22</mn
+                > <mrow
+                  > <msqrt
+                    > <mn
+                      >80</mn
+                    > </msqrt
+                  > </mrow
+                > </mfrac
+              > <mo
+                >)</mo
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="eip-id1171180808191"
+            >The probability is 0.7919 that the mean excess time used is more than 20 minutes, for a sample of 80 customers who exceed their contracted time allowance.</p
+          ><p
+              class="para"
+              id="eip-id1171181787887"
+            ><span
+                class="media"
+                id="id1164895099196"
+                data-alt="Normal distribution curve with values of 20 and 22 on the x-axis. Vertical upward line extends from point 20 to curve. The probability area begins from point 20 to the end of the curve."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            > </p
+          > <div
+              class="note"
+              id="note-5"
+              data-type="Reminder"
+              data-label="Reminder"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >1E99</mi
+              > <mo
+                >=</mo
+              > <msup
+                > <mn
+                  >10</mn
+                > <mn
+                  >99</mn
+                > </msup
+              > <mtext
+                > and</mtext
+              > <mi
+                >-1E99</mi
+              > <mo
+                >=</mo
+              > <mo
+                >-</mo
+              > <msup
+                > <mn
+                  >10</mn
+                > <mn
+                  >99</mn
+                > </msup
+              > </math
+            >. Press the <code
+                class="code"
+              >EE</code
+            > key for E. Or just use 10^99 instead of 1E99.</div
+          ><p
+              class="para"
+              id="element-260"
+            ><span
+                class="title"
+              >Part b.</span
+            >Find P(x&gt;20) . Remember to use the exponential distribution for an <strong
+                class="emphasis"
+              >individual: X~Exp(1/22)</strong
+            >. </p
+          ><p
+              class="para"
+              id="eip-id1171180979364"
+            >P(X&gt;20) = e^(&#x2013;(1/22)*20) or e^(&#x2013;.04545*20) = 0.4029 </p
+          ><list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="eip-id1171181135515"
+              data-mark-suffix=""
+              data-list-type="labeled-item"
+            ><div
+                xmlns=""
+                class="title"
+              >Part c. Explain why the probabilities in (a) and (b) are different.</div
+            ><li
+                xmlns=""
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <reln
+                  ><gt
+                  /> <mrow
+                    > <mi
+                      >P</mi
+                    > <mo
+                      >(</mo
+                    > <mi
+                      >x</mi
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >20</mn
+                    > <mo
+                      >)</mo
+                    > </mrow
+                  > </reln
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.4029</mn
+                > </math
+              > but <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <reln
+                  ><gt
+                  /> <mrow
+                    > <mi
+                      >P</mi
+                    > <mo
+                      >(</mo
+                    > <apply
+                      > <conjugate
+                      /> <ci
+                        >x</ci
+                      > </apply
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >20</mn
+                    > <mo
+                      >)</mo
+                    > </mrow
+                  > </reln
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.7919</mn
+                > </math
+              > </li
+            > <li
+                xmlns=""
+                class="item"
+              >The probabilities are not equal because we use different distributions to calculate the probability for individuals and for means.</li
+            > <li
+                xmlns=""
+                class="item"
+              >When asked to find the probability of an individual value, use the stated distribution of its random variable; do not use the CLT. Use the CLT with the normal distribution when you are being asked to find the probability for an mean.</li
+            ></list
+          ></div
+        > </div
+      ><div
+          class="exercise"
+          id="eip-id1171180910907"
+        ><div
+            class="problem"
+            id="eip-id1171181151372"
+          > <p
+              class="para"
+              id="eip-id1171180876381"
+            ><span
+                class="title"
+              >Using the CLT to find Percentiles:</span
+            >Find the 95th percentile for the <strong
+                class="emphasis"
+              >sample mean excess time</strong
+            > for samples of 80 customers who exceed their basic contract time allowances. Draw a graph. </p
+          ></div
+        > <div
+            class="solution"
+            id="eip-id1171181126592"
+          > <p
+              class="para"
+              id="eip-id1171181699771"
+            >Let <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            > = the 95th percentile. Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            > where <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <apply
+                    > <conjugate
+                    /> <ci
+                      >x</ci
+                    > </apply
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >k</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >0.95</mn
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="eip-id1171180867272"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > <mo
+                >=</mo
+              > <mn
+                >26.0</mn
+              > </math
+            > using <code
+                class="code"
+              > invNorm</code
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mo
+                >(</mo
+              > <mn
+                >.95</mn
+              > <mo
+                >,</mo
+              > <mn
+                >22</mn
+              > <mo
+                >,</mo
+              > <mfrac
+                > <mn
+                  >22</mn
+                > <mrow
+                  > <msqrt
+                    > <mn
+                      >80</mn
+                    > </msqrt
+                  > </mrow
+                > </mfrac
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >26.0</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="eip-id1171181153268"
+            ><span
+                class="media"
+                id="id1164881078203"
+                data-alt="Normal distribution curve with value of k on x-axis. Vertical upward line extends from k to curve. Probability area from the beginning of the curve to point k is equal to 0.95."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            > </p
+          ><p
+              class="para"
+              id="element-987"
+            >The 95th percentile for the <strong
+                class="emphasis"
+              > sample mean excess time used </strong
+            > is about 26.0 minutes for random samples of 80 customers who exceed their contractual allowed time. </p
+          ><p
+              class="para"
+              id="eip-id1171181013130"
+            >95% of such samples would have means under 26 minutes; only 5% of such samples would have means above 26 minutes.</p
+          ></div
+        > </div
+      > </div
+    ><div
+        class="note"
+        id="eip-713"
+      ><strong
+          class="emphasis"
+        >(HISTORICAL): Normal Approximation to the Binomial</strong
+      > </div
+    ><p
+        class="para"
+        id="eip-614"
+      >Historically, being able to compute binomial probabilities was one of the most important applications of the Central Limit Theorem. Binomial probabilities were displayed in a table in a book with a small value for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > (say, 20). To calculate the probabilities with large values of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      >, you had to use the binomial formula which could be very complicated. Using the <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="norm_approx_to_bi"
+        >Normal Approximation to the Binomial</term
+      > simplified the process. To compute the Normal Approximation to the Binomial, take a simple random sample from a population. You must meet the conditions for a <strong
+          class="emphasis"
+        >binomial distribution</strong
+      >: <ul
+          class="list"
+          data-id="norm_bi_approx"
+          data-mark-suffix="."
+          data-list-type="bulleted"
+          data-bullet-style="bullet"
+        > <li
+            class="item"
+          >there are a certain number <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ></math
+          > of independent trials</li
+        > <li
+            class="item"
+          >the outcomes of any trial are success or failure</li
+        > <li
+            class="item"
+          >each trial has the same probability of a success <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >p</mi
+            ></math
+          ></li
+        > </ul
+      > Recall that if <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is the binomial random variable, then <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        >~<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >B</mi
+          > <mo
+            >(</mo
+          > <mi
+            >n</mi
+          > <mo
+            >,</mo
+          > <mi
+            >p</mi
+          > <mo
+            >)</mo
+          ></math
+        ></strong
+      >. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ><mi
+          >p</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ><mi
+          >q</mi
+        ></math
+      > must both be greater than five (<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ><mi
+          >p</mi
+        ><mo
+          >&gt;</mo
+        ><mn
+          >5</mn
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ><mi
+          >q</mi
+        ><mo
+          >&gt;</mo
+        ><mn
+          >5</mn
+        ></math
+      >; the approximation is better if they are both greater than or equal to 10). Then the binomial can be approximated by the normal distribution with mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ><mo
+          >=</mo
+        ><mrow
+          > <mi
+            >n</mi
+          > <mi
+            >p</mi
+          > <mi
+            > </mi
+          > </mrow
+        ></math
+      > and standard deviation <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3C3;</mi
+        ><mo
+          >=</mo
+        > <msqrt
+          > <mrow
+            > <mi
+              >n</mi
+            > <mi
+              >p</mi
+            > <mi
+              >q</mi
+            > </mrow
+          > </msqrt
+        > <mi
+          >.</mi
+        > <mi
+          > </mi
+        > </math
+      > Remember that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >q</mi
+        ><mo
+          >=</mo
+        ><mn
+          >1</mn
+        ><mo
+          >-</mo
+        ><mi
+          >p</mi
+        ><mi
+          >. </mi
+        ><mi
+          > </mi
+        ></math
+      > In order to get the best approximation, add 0.5 to <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          > </mi
+        ><mi
+          >x</mi
+        ><mi
+          > </mi
+        ></math
+      > or subtract 0.5 from <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          > </mi
+        ><mi
+          >x</mi
+        ><mi
+          > </mi
+        ></math
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          > (</mi
+        ></math
+      >use <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mrow
+          ><mi
+            >x</mi
+          ><mo
+            >+</mo
+          ><mi
+            >0.5</mi
+          ></mrow
+        ></math
+      > or <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mrow
+          ><mi
+            >x</mi
+          ><mo
+            >-</mo
+          ><mi
+            >0.5</mi
+          ></mrow
+        ></math
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >)</mi
+        ></math
+      >. The number <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >0.5</mi
+        ></math
+      > is called the <strong
+          class="emphasis"
+        ><term
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-target-id="con_cor_factor"
+          >continuity correction factor</term
+        ></strong
+      >. </p
+    ><div
+        class="example"
+        id="eip-831"
+      ><p
+          class="para"
+          id="eip-926"
+        >Suppose in a local Kindergarten through 12th grade (K - 12) school district, 53 percent of the population favor a charter school for grades K - 5. A simple random sample of 300 is surveyed. </p
+      ><ol
+          class="list"
+          data-id="eip-306"
+          data-list-type="enumerated"
+          data-number-style="arabic"
+        ><li
+            class="item"
+          >Find the probability that <strong
+              class="emphasis"
+            >at least 150</strong
+          > favor a charter school.</li
+        > <li
+            class="item"
+          >Find the probability that <strong
+              class="emphasis"
+            >at most 160</strong
+          > favor a charter school.</li
+        > <li
+            class="item"
+          >Find the probability that <strong
+              class="emphasis"
+            >more than 155</strong
+          > favor a charter school.</li
+        > <li
+            class="item"
+          >Find the probability that <strong
+              class="emphasis"
+            >less than 147</strong
+          > favor a charter school.</li
+        > <li
+            class="item"
+          >Find the probability that <strong
+              class="emphasis"
+            >exactly 175</strong
+          > favor a charter school.</li
+        > </ol
+      ><p
+          class="para"
+          id="eip-778"
+        >Let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ><mi
+            >=</mi
+          ></math
+        > the number that favor a charter school for grades K - 5. <strong
+            class="emphasis"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          >~<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >B</mi
+            > <mo
+              >(</mo
+            > <mi
+              >n</mi
+            > <mo
+              >,</mo
+            > <mi
+              >p</mi
+            > <mo
+              >)</mo
+            ></math
+          ></strong
+        > where <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mo
+            >=</mo
+          ><mo
+            >300</mo
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ><mo
+            >=</mo
+          ><mi
+            >0.53</mi
+          ><mi
+            >. </mi
+          ></math
+        > Since <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mi
+            >p</mi
+          ><mo
+            >&gt;</mo
+          ><mn
+            >5</mn
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mi
+            >q</mi
+          ><mo
+            >&gt;</mo
+          ><mn
+            >5</mn
+          ><mi
+            >, </mi
+          ></math
+        > use the normal approximation to the binomial. The formulas for the mean and standard deviation are <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3BC;</mi
+          ><mo
+            >=</mo
+          ><mrow
+            > <mi
+              >n</mi
+            > <mi
+              >p</mi
+            > <mi
+              > </mi
+            > </mrow
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C3;</mi
+          ><mo
+            >=</mo
+          > <msqrt
+            > <mrow
+              > <mi
+                >n</mi
+              > <mi
+                >p</mi
+              > <mi
+                >q</mi
+              > </mrow
+            > </msqrt
+          > <mi
+            > </mi
+          ><mo
+            >.</mo
+          > </math
+        > The mean is 159 and the standard deviation is 8.6447. The random variable for the normal distribution is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >Y</mi
+          ></math
+        >. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mrow
+            ><mi
+              >Y</mi
+            ><mo
+              >~</mo
+            ><mi
+              >N</mi
+            > <mo
+              >(</mo
+            > <mn
+              >159</mn
+            > <mo
+              >,</mo
+            > <mi
+              >8.6447</mi
+            > <mo
+              >)</mo
+            ></mrow
+          ></math
+        >. See <strong
+            class="emphasis"
+          >The Normal Distribution</strong
+        > for help with calculator instructions.</p
+      ><p
+          class="para"
+          id="eip-214"
+        >For Problem 1., you <strong
+            class="emphasis"
+          >include 150</strong
+        > so <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><geq
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >150</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        > has normal approximation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><geq
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >Y</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >149.5</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > <mi
+            > </mi
+          ><mi
+            >=</mi
+          ><mi
+            > </mi
+          ><mi
+            >0.8641</mi
+          > </math
+        >. </p
+      ><p
+          class="para"
+          id="eip-554"
+        ><code
+            class="code"
+          >normalcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >149.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >10^99</mn
+          > <mo
+            >,</mo
+          > <mn
+            >159</mn
+          > <mo
+            >,</mo
+          > <mn
+            >8.6447</mn
+          > <mo
+            >)</mo
+          > <mo
+            >=</mo
+          > <mn
+            >0.8641</mn
+          > </math
+        >.</p
+      ><p
+          class="para"
+          id="eip-323"
+        >For Problem 2., you <strong
+            class="emphasis"
+          >include 160</strong
+        > so <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><leq
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >160</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        > has normal approximation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><leq
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >Y</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >160.5</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > <mi
+            > </mi
+          ><mi
+            >=</mi
+          ><mi
+            > </mi
+          ><mi
+            >0.5689</mi
+          > </math
+        >. </p
+      ><p
+          class="para"
+          id="eip-162"
+        ><code
+            class="code"
+          >normalcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >0</mn
+          > <mo
+            >,</mo
+          > <mn
+            >160.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >159</mn
+          > <mo
+            >,</mo
+          > <mn
+            >8.6447</mn
+          > <mo
+            >)</mo
+          > <mo
+            >=</mo
+          > <mn
+            >0.5689</mn
+          > </math
+        ></p
+      ><p
+          class="para"
+          id="eip-630"
+        >For Problem 3., you <strong
+            class="emphasis"
+          >exclude 155</strong
+        > so <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><gt
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >155</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        > has normal approximation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><gt
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >y</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >155.5</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > <mi
+            > </mi
+          ><mi
+            >=</mi
+          ><mi
+            > </mi
+          ><mi
+            >0.6572</mi
+          > </math
+        >. </p
+      ><p
+          class="para"
+          id="eip-763"
+        ><code
+            class="code"
+          >normalcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >155.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >10^99</mn
+          > <mo
+            >,</mo
+          > <mn
+            >159</mn
+          > <mo
+            >,</mo
+          > <mn
+            >8.6447</mn
+          > <mo
+            >)</mo
+          > <mo
+            >=</mo
+          > <mn
+            >0.6572</mn
+          > </math
+        ></p
+      ><p
+          class="para"
+          id="eip-955"
+        >For Problem 4., you <strong
+            class="emphasis"
+          >exclude 147</strong
+        > so <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><lt
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >147</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        > has normal approximation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><lt
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >Y</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >146.5</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > <mi
+            > </mi
+          ><mi
+            >=</mi
+          ><mi
+            > </mi
+          ><mi
+            >0.0741</mi
+          > </math
+        >. </p
+      ><p
+          class="para"
+          id="eip-555"
+        ><code
+            class="code"
+          >normalcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >0</mn
+          > <mo
+            >,</mo
+          > <mn
+            >146.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >159</mn
+          > <mo
+            >,</mo
+          > <mn
+            >8.6447</mn
+          > <mo
+            >)</mo
+          > <mo
+            >=</mo
+          > <mn
+            >0.0741</mn
+          > </math
+        ></p
+      ><p
+          class="para"
+          id="eip-788"
+        >For Problem 5., <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mrow
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <ci
+              >x</ci
+            > <mi
+              >=</mi
+            > <mn
+              >175</mn
+            > <mo
+              >)</mo
+            > </mrow
+          > </math
+        > has normal approximation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >P</mi
+          > <mo
+            >(</mo
+          > <mn
+            >174.5</mn
+          > <mo
+            >&lt;</mo
+          > <mi
+            >y</mi
+          > <mo
+            >&lt;</mo
+          > <mn
+            >175.5</mn
+          > <mo
+            >)</mo
+          > <mi
+            > </mi
+          ><mi
+            >=</mi
+          ><mi
+            > </mi
+          ><mi
+            >0.0083</mi
+          > </math
+        >. </p
+      ><p
+          class="para"
+          id="eip-680"
+        ><code
+            class="code"
+          >normalcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >174.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >175.5</mn
+          > <mo
+            >,</mo
+          > <mn
+            >159</mn
+          > <mo
+            >,</mo
+          > <mn
+            >8.6447</mn
+          > <mo
+            >)</mo
+          > <mo
+            >=</mo
+          > <mn
+            >0.0083</mn
+          > </math
+        ></p
+      ><p
+          class="para"
+          id="eip-863"
+        ><strong
+            class="emphasis"
+          >Because of calculators and computer software</strong
+        > that easily let you calculate binomial probabilities for large values of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        >, it is not necessary to use the the Normal Approximation to the Binomial provided you have access to these technology tools. Most school labs have Microsoft Excel, an example of computer software that calculates binomial probabilities. Many students have access to the TI-83 or 84 series calculators and they easily calculate probabilities for the binomial. In an Internet browser, if you type in "binomial probability distribution calculation," you can find at least one online calculator for the binomial. </p
+      ><p
+          class="para"
+          id="eip-251"
+        >For <strong
+            class="emphasis"
+          >Example 3</strong
+        >, the probabilities are calculated using the binomial (<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mi
+            >=</mi
+          ><mn
+            >300</mn
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ><mi
+            >=</mi
+          ><mn
+            >0.53</mn
+          ></math
+        >) below. Compare the binomial and normal distribution answers. See <strong
+            class="emphasis"
+          >Discrete Random Variables</strong
+        > for help with calculator instructions for the binomial. </p
+      ><p
+          class="para"
+          id="eip-67"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><geq
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >150</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        >: <code
+            class="code"
+          >1 - binomialcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >300</mn
+          > <mo
+            >,</mo
+          > <mn
+            >0.53</mn
+          > <mo
+            >,</mo
+          > <mn
+            >149</mn
+          > <mo
+            >)</mo
+          > <mi
+            >=</mi
+          ><mn
+            >0.8641</mn
+          ></math
+        ></p
+      ><p
+          class="para"
+          id="eip-560"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><leq
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >160</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        >: <code
+            class="code"
+          >binomialcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >300</mn
+          > <mo
+            >,</mo
+          > <mn
+            >0.53</mn
+          > <mo
+            >,</mo
+          > <mn
+            >160</mn
+          > <mo
+            >)</mo
+          > <mi
+            >=</mi
+          ><mn
+            >0.5684</mn
+          ></math
+        ></p
+      ><p
+          class="para"
+          id="eip-727"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><gt
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >155</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        >: <code
+            class="code"
+          >1 - binomialcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >300</mn
+          > <mo
+            >,</mo
+          > <mn
+            >0.53</mn
+          > <mo
+            >,</mo
+          > <mn
+            >155</mn
+          > <mo
+            >)</mo
+          > <mi
+            >=</mi
+          ><mn
+            >0.6576</mn
+          ></math
+        ></p
+      ><p
+          class="para"
+          id="eip-122"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><lt
+            /> <mrow
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <ci
+                >x</ci
+              > </mrow
+            > <mrow
+              > <mn
+                >147</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > </math
+        >: <code
+            class="code"
+          >binomialcdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >300</mn
+          > <mo
+            >,</mo
+          > <mn
+            >0.53</mn
+          > <mo
+            >,</mo
+          > <mn
+            >146</mn
+          > <mo
+            >)</mo
+          > <mi
+            >=</mi
+          ><mn
+            >0.0742</mn
+          ></math
+        ></p
+      ><p
+          class="para"
+          id="eip-267"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mrow
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <ci
+              >x</ci
+            > <mi
+              >=</mi
+            > <mn
+              >175</mn
+            > <mo
+              >)</mo
+            > </mrow
+          > </math
+        >: (You use the binomial pdf.) <code
+            class="code"
+          >binomialpdf</code
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mo
+            >(</mo
+          > <mn
+            >175</mn
+          > <mo
+            >,</mo
+          > <mn
+            >0.53</mn
+          > <mo
+            >,</mo
+          > <mn
+            >146</mn
+          > <mo
+            >)</mo
+          > <mi
+            >=</mi
+          ><mn
+            >0.0083</mn
+          ></math
+        ></p
+      ></div
+    ><p
+        class="para"
+        id="eip-3"
+      >**Contributions made to Example 2 by Roberta Bloom</p
+    ></div
+  > </body
+>
+</html>

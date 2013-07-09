@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Confidence Intervals: Practice 3</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Confidence Intervals: Practice 3</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-271"
+      >Student Learning Outcomes</h1
+    > <ul
+        class="list"
+        data-id="list-2356124"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >The student will calculate confidence intervals for proportions.</li
+      > </ul
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-58"
+      >Given</h1
+    > <p
+        class="para"
+        id="element-391"
+      >The Ice Chalet offers dozens of different beginning ice-skating classes. All of the class names are put into a bucket. The 5 P.M., Monday night, ages 8 - 12, beginning ice-skating class was picked. In that class were 64 girls and 16 boys. Suppose that we are interested in the true proportion of girls, ages 8 - 12, in all beginning ice-skating classes at the Ice Chalet. Assume that the children in the selected class is a random sample of the population.</p
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-602"
+      >Estimated Distribution</h1
+    > <div
+        class="exercise"
+        id="element-193"
+      ><div
+          class="problem"
+          id="id8180231"
+        > <p
+            class="para"
+            id="element-79"
+          > What is being counted? </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-708"
+      ><div
+          class="problem"
+          id="id3220390"
+        > <p
+            class="para"
+            id="element-976"
+          >In words, define the Random Variable <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >X</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{X} {}</annotation
+              ></semantics
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >X</mi
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{X={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id8706949"
+        > <p
+            class="para"
+            id="element-974"
+          >The number of girls, age 8-12, in the beginning ice skating class</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-138"
+      ><div
+          class="problem"
+          id="id9755908"
+        > <p
+            class="para"
+            id="element-23523"
+          > Calculate the following: <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-98276324"
+              data-mark-suffix="."
+              data-list-type="labeled-item"
+            ><li
+                xmlns=""
+                class="item"
+                data-label="a"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >x</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{x={}} {}</annotation
+                  ></semantics
+                ></math
+              > </li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >n</mi
+                          ><mo
+                              stretchy="false"
+                            >=</mo
+                          ><mrow
+                          /></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{n={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><semantics
+                  ><mrow
+                    ><mstyle
+                        fontsize="12pt"
+                      ><mrow
+                        ><mrow
+                          ><mi
+                            >p</mi
+                          ><mrow
+                            ><mo
+                              >'</mo
+                            ><mo
+                                stretchy="false"
+                              >=</mo
+                            ><mrow
+                            /></mrow
+                          ></mrow
+                        ></mrow
+                      ></mstyle
+                    ><mrow
+                    /></mrow
+                  ><annotation
+                      encoding="StarMath 5.0"
+                    > size 12{p'={}} {}</annotation
+                  ></semantics
+                ></math
+              ></li
+            > </list
+          ></p
+        > </div
+      > <div
+          class="solution"
+          id="id3263628"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-765764"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >64</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >80</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >0.8</li
+          > </list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-296"
+      ><div
+          class="problem"
+          id="id8027106"
+        > <p
+            class="para"
+            id="element-99"
+          >State the estimated distribution of <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >X</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{X} {}</annotation
+              ></semantics
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > ~ </p
+        > </div
+      > <div
+          class="solution"
+          id="id3767797"
+        > <p
+            class="para"
+            id="element-421"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >B</mi
+            > <mo
+              >(</mo
+            > <mn
+              >80</mn
+            > <mo
+              >,</mo
+            > <mn
+              >0.80</mn
+            > <mo
+              >)</mo
+            > </math
+          ></p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-324"
+      ><div
+          class="problem"
+          id="id3370663"
+        > <p
+            class="para"
+            id="element-84"
+          >Define a new Random Variable <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >P</mi
+                      ><mo
+                        >'</mo
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{P'} {}</annotation
+              ></semantics
+            ></math
+          >. What is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >p</mi
+                      ><mo
+                        >'</mo
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{p'} {}</annotation
+              ></semantics
+            ></math
+          > estimating? </p
+        ></div
+      > <div
+          class="solution"
+          id="id3301619"
+        > <p
+            class="para"
+            id="element-393"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >p</mi
+            > </math
+          ></p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-257"
+      ><div
+          class="problem"
+          id="id3304622"
+        > <p
+            class="para"
+            id="element-442"
+          >In words, define the Random Variable <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >P</mi
+                      ><mo
+                        >'</mo
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{P'} {}</annotation
+              ></semantics
+            ></math
+          > . <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >P</mi
+                      ><mrow
+                        ><mo
+                          >'</mo
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{P'={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        ></div
+      > <div
+          class="solution"
+          id="id3479462"
+        > <p
+            class="para"
+            id="element-725"
+          >The proportion of girls, age 8-12, in the beginning ice skating class.</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-759"
+      ><div
+          class="problem"
+          id="id9812677"
+        > <p
+            class="para"
+            id="element-678"
+          >State the estimated distribution of <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >P</mi
+                      ><mo
+                        >'</mo
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{P'} {}</annotation
+              ></semantics
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >P</mi
+            ><mo
+              >'</mo
+            ></math
+          > ~</p
+        ></div
+      > </div
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-957"
+      >Explaining the Confidence Interval</h1
+    > <p
+        class="para"
+        id="element-788"
+      >Construct a 92% Confidence Interval for the true proportion of girls in the age 8 - 12 beginning ice-skating classes at the Ice Chalet. </p
+    ><div
+        class="exercise"
+        id="element-669"
+      ><div
+          class="problem"
+          id="id9812907"
+        > <p
+            class="para"
+            id="element-480"
+          >How much area is in both tails (combined)? <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >&#x3B1;</mi
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id3566988"
+        > <p
+            class="para"
+            id="element-715"
+          >1 - 0.92 = 0.08</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-364"
+      ><div
+          class="problem"
+          id="id3366191"
+        > <p
+            class="para"
+            id="element-382"
+          >How much area is in each tail? <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mfrac
+                        ><mi
+                          >&#x3B1;</mi
+                        ><mn
+                          >2</mn
+                        ></mfrac
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mrow
+                      /></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ { {&#x3B1;} over {2} } ={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id3371993"
+        > <p
+            class="para"
+            id="element-176"
+          >0.04</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-709"
+      ><div
+          class="problem"
+          id="id3722586"
+        > <p
+            class="para"
+            id="element-23487325"
+          > Calculate the following: <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-876238746"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              >lower limit =</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              >upper limit =</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              >error bound =</li
+            > </list
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id3553152"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-876234597"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >0.72</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >0.88</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >0.08</li
+          > </list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-846"
+      ><div
+          class="problem"
+          id="id8490179"
+        > <p
+            class="para"
+            id="element-622"
+          >The 92% Confidence Interval is: </p
+        > </div
+      > <div
+          class="solution"
+          id="id9759141"
+        > <p
+            class="para"
+            id="element-255"
+          >(0.72; 0.88) </p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-592"
+      ><div
+          class="problem"
+          id="id9759165"
+        > <p
+            class="para"
+            id="element-373"
+          ><figure
+              id="five-Ohno"
+            ><figcaption
+              ><div
+                  class="title"
+                > Fill in the blanks on the graph with the areas, upper and lower limits of the Confidence Interval, and the sample proportion.</div
+              ></figcaption
+            ><span
+                class="media"
+                id="id7994111"
+                data-alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></figure
+          > </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-733"
+      ><div
+          class="problem"
+          id="id9811149"
+        > <p
+            class="para"
+            id="element-17"
+          > In one complete sentence, explain what the interval means. </p
+        > </div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-297"
+      >Discussion Questions</h1
+    > <div
+        class="exercise"
+        id="element-577"
+      ><div
+          class="problem"
+          id="id5516509"
+        > <p
+            class="para"
+            id="element-707"
+          >Using the same <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >p</mi
+                      ><mo
+                        >'</mo
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{p'} {}</annotation
+              ></semantics
+            ></math
+          > and level of confidence, suppose that n were increased to 100. Would the error bound become larger or smaller? How do you know? </p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-478"
+      ><div
+          class="problem"
+          id="id9923031"
+        > <p
+            class="para"
+            id="element-717"
+          >Using the same <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >p</mi
+                      ><mo
+                        >'</mo
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{p'} {}</annotation
+              ></semantics
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mi
+                        >n</mi
+                      ><mo
+                          stretchy="false"
+                        >=</mo
+                      ><mtext
+                        >80</mtext
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{n="80"} {}</annotation
+              ></semantics
+            ></math
+          >, how would the error bound change if the confidence level were increased to 98%? Why? </p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-154"
+      ><div
+          class="problem"
+          id="id3186484"
+        > <p
+            class="para"
+            id="element-588"
+          > If you decreased the allowable error bound, why would the minimum sample size increase (keeping the same level of confidence)? </p
+        > </div
+      > </div
+    ></div
+  > </body
+>
+</html>

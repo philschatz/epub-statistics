@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Continuous Random Variables: The Exponential Distribution</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Continuous Random Variables: The Exponential Distribution</div
+  > <p
+      class="para"
+      id="delete_me"
+    >The <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="expdist"
+      >exponential</term
+    > distribution is often concerned with the amount of time until some specific event occurs. For example, the amount of time (beginning now) until an earthquake occurs has an exponential distribution. Other examples include the length, in minutes, of long distance business telephone calls, and the amount of time, in months, a car battery lasts. It can be shown, too, that the value of the change that you have in your pocket or purse approximately follows an exponential distribution. </p
+  ><p
+      class="para"
+      id="element-865"
+    >Values for an exponential random variable occur in the following way. There are fewer large values and more small values. For example, the amount of money customers spend in one trip to the supermarket follows an exponential distribution. There are more people that spend less money and fewer people that spend large amounts of money.</p
+  ><p
+      class="para"
+      id="element-71"
+    >The exponential distribution is widely used in the field of reliability. Reliability deals with the amount of time a product lasts.</p
+  ><div
+      class="example"
+      id="element-891"
+    ><p
+        class="para"
+        id="element-294"
+      > <strong
+          class="emphasis"
+        >Illustrates the exponential distribution:</strong
+      > Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = amount of time (in minutes) a postal clerk spends with his/her customer. The time is known to have an exponential distribution with the average amount of time equal to 4 minutes. </p
+    ><p
+        class="para"
+        id="element-782"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is a <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="continrv"
+        >continuous random variable</term
+      > since time is measured. It is given that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > = 4 minutes. To do any calculations, you must know <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >m</mi
+        ></math
+      >, the decay parameter.</p
+    ><p
+        class="para"
+        id="element-802"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >m</mi
+        ><mo
+          >=</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mi
+            >&#x3BC;</mi
+          ></mfrac
+        > </math
+      >. Therefore, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >m</mi
+        ><mo
+          >=</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >4</mn
+          ></mfrac
+        > <mo
+          >=</mo
+        ><mn
+          >0.25</mn
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-648"
+      >The standard deviation, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3C3;</mi
+        ></math
+      >, is the same as the mean. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ><mo
+          >=</mo
+        ><mi
+          >&#x3C3;</mi
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="eip-814"
+      >The distribution notation is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><semantics
+          ><mrow
+            ><mstyle
+                fontsize="12pt"
+              ><mrow
+                ><mrow
+                  ><mi
+                    >X</mi
+                  ><mtext
+                    >~</mtext
+                  ><mstyle
+                      fontstyle="italic"
+                    ><mrow
+                      ><mtext
+                        >Exp</mtext
+                      ></mrow
+                    ></mstyle
+                  ><mo
+                      stretchy="false"
+                    >(</mo
+                  ><mi
+                    >m</mi
+                  ><mo
+                      stretchy="false"
+                    >)</mo
+                  ></mrow
+                ></mrow
+              ></mstyle
+            ><mrow
+            /></mrow
+          ><annotation
+              encoding="StarMath 5.0"
+            > size 12{X "~" ital "Exp" \( m \) } {}</annotation
+          ></semantics
+        ></math
+      >. Therefore, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><semantics
+          ><mrow
+            ><mstyle
+                fontsize="12pt"
+              ><mrow
+                ><mrow
+                  ><mi
+                    >X</mi
+                  ><mtext
+                    >~</mtext
+                  ><mstyle
+                      fontstyle="italic"
+                    ><mrow
+                      ><mtext
+                        >Exp</mtext
+                      ></mrow
+                    ></mstyle
+                  ><mo
+                      stretchy="false"
+                    >(</mo
+                  ><mo
+                    >0.25</mo
+                  ><mo
+                      stretchy="false"
+                    >)</mo
+                  ></mrow
+                ></mrow
+              ></mstyle
+            ><mrow
+            /></mrow
+          ><annotation
+              encoding="StarMath 5.0"
+            > size 12{X "~" ital "Exp" \( m \) } {}</annotation
+          ></semantics
+        ></math
+      >. </p
+    ><p
+        class="para"
+        id="element-267"
+      >The probability density function is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >f</mi
+        ><mo
+          >(</mo
+        ><mi
+          >x</mi
+        ><mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mi
+          >m</mi
+        > <mo
+          >&#x22C5;</mo
+        > <msup
+          > <mi
+            >e</mi
+          > <mi
+            >-m&#x22C5;x</mi
+          > </msup
+        > </math
+      > The number <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >e</mi
+        ></math
+      > = 2.71828182846... It is a number that is used often in mathematics. Scientific calculators have the key "<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msup
+          ><mi
+            >e</mi
+          ><mi
+            >x</mi
+          ></msup
+        ></math
+      >." If you enter 1 for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >, the calculator will display the value <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >e</mi
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-962"
+      >The curve is:</p
+    ><p
+        class="para"
+        id="element-244"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >f</mi
+        > <mo
+          >(</mo
+        > <mi
+          >x</mi
+        > <mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mn
+          >0.25</mn
+        > <mo
+          >&#x22C5;</mo
+        > <msup
+          > <mi
+            >e</mi
+          > <mi
+            >&#x2212; 0.25&#x22C5;x</mi
+          > </msup
+        > </math
+      > where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > is at least 0 and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >m</mi
+        ></math
+      > = 0.25.</p
+    ><p
+        class="para"
+        id="element-460"
+      >For example, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >f</mi
+        > <mo
+          >(</mo
+        > <mi
+          >5</mi
+        > <mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mn
+          >0.25</mn
+        > <mo
+          >&#x22C5;</mo
+        > <msup
+          > <mi
+            >e</mi
+          > <mi
+            >&#x2212; 0.25&#x22C5;5</mi
+          > </msup
+        > <mo
+          >=</mo
+        > <mn
+          >0.072</mn
+        > </math
+      > </p
+    ><p
+        class="para"
+        id="element-100"
+      >The graph is as follows:</p
+    ><p
+        class="para"
+        id="element-683"
+      ><span
+          class="media"
+          id="id12596375"
+          data-alt="Exponential graph with increments of 2 from 0-20 on the x-axis of &#x3BC; = 4 and increments of 0.05 from 0.05-0.25 on the y-axis of m = 0.25. The curved line begins at the top at point (0, 0.25) and curves down to point (20, 0). The x-axis is equal to a continuous random variable."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-680"
+      >Notice the graph is a declining curve. When <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > = 0,</p
+    ><p
+        class="para"
+        id="element-332"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >f</mi
+        > <mo
+          >(</mo
+        > <mi
+          >x</mi
+        > <mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mn
+          >0.25</mn
+        > <mo
+          >&#x22C5;</mo
+        > <msup
+          > <mi
+            >e</mi
+          > <mi
+            >&#x2212; 0.25&#x22C5;0</mi
+          > </msup
+        > <mo
+          >=</mo
+        > <mn
+          >0.25</mn
+        > <mo
+          >&#x22C5;</mo
+        > <mn
+          >1</mn
+        > <mo
+          >=</mo
+        > <mn
+          >0.25</mn
+        > <mo
+          >=</mo
+        > <mi
+          >m</mi
+        > </math
+      ></p
+    ><div
+        class="example"
+        id="element-861"
+      ><div
+          class="exercise"
+          id="element-779"
+        ><div
+            class="problem"
+            id="id6854066"
+          > <p
+              class="para"
+              id="element-511"
+            > Find the probability that a clerk spends four to five minutes with a randomly selected customer. </p
+          > </div
+        > <div
+            class="solution"
+            id="id11513595"
+          > <p
+              class="para"
+              id="element-25"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <reln
+                  ><lt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mn
+                      >4</mn
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></reln
+                > <mrow
+                  ><mn
+                    >5</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > </math
+            >. </p
+          ><p
+              class="para"
+              id="element-545"
+            >The <term
+                xmlns="http://cnx.rice.edu/cnxml"
+                data-target-id="the_cdf"
+              >cumulative distribution function (CDF)</term
+            > gives the area to the left.</p
+          ><p
+              class="para"
+              id="element-973"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >x</mi
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >x</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                ></reln
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-m&#x22C5;x</mi
+                > </msup
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-799"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >x</mi
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >5</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                ></reln
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-0.25&#x22C5;5</mi
+                > </msup
+              > <mo
+                >=</mo
+              > <mn
+                >0.7135</mn
+              > </math
+            > and <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >x</mi
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >4</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                ></reln
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-0.25&#x22C5;4</mi
+                > </msup
+              > <mo
+                >=</mo
+              > <mn
+                >0.6321</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-102"
+            ><span
+                class="media"
+                id="id5631989"
+                data-alt="Exponential graph with the curved line beginning at point (0, 0.25) and curves down towards point (&#x221E;, 0). Two vertical upward lines extend from points 4 and 5 to the curved line. The probability is in the area between points 4 and 5."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          ><div
+              class="note"
+              id="id11054666"
+            >You can do these calculations easily on a calculator.</div
+          ><p
+              class="para"
+              id="element-588"
+            >The probability that a postal clerk spends four to five minutes with a randomly selected customer is</p
+          ><p
+              class="para"
+              id="element-654"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <reln
+                  ><lt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mn
+                      >4</mn
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></reln
+                > <mrow
+                  ><mn
+                    >5</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > <mo
+                >=</mo
+              > <reln
+                ><lt
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mi
+                    >x</mi
+                  ></mrow
+                > <mrow
+                  ><mn
+                    >5</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > <mo
+                >-</mo
+              > <reln
+                ><lt
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mi
+                    >x</mi
+                  ></mrow
+                > <mrow
+                  ><mn
+                    >4</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > <mo
+                >=</mo
+              > <mn
+                >0.7135</mn
+              > <mo
+                >&#x2212;</mo
+              > <mn
+                >0.6321</mn
+              > <mo
+                >=</mo
+              > <mn
+                >0.0814</mn
+              > </math
+            > </p
+          ><div
+              class="note"
+              id="id11634960"
+            >TI-83+ and TI-84: On the home screen, enter (1-e^(-.25*5))-(1-e^(-.25*4)) or enter e^(-.25*4)-e^(-.25*5).</div
+          > </div
+        > </div
+      ><div
+          class="exercise"
+          id="element-212"
+        ><div
+            class="problem"
+            id="id3845724"
+          > <p
+              class="para"
+              id="element-523"
+            > Half of all customers are finished within how long? (Find the 50th percentile) </p
+          > </div
+        > <div
+            class="solution"
+            id="id6549325"
+          > <p
+              class="para"
+              id="element-179"
+            > Find the 50th percentile. </p
+          ><p
+              class="para"
+              id="element-532"
+            ><span
+                class="media"
+                id="id7897978"
+                data-alt="Exponential graph with the curved line beginning at point (0, 0.25) and curves down towards point (&#x221E;, 0). A vertical upward line extends from point k to the curved line. The probability area from 0-k is equal to 0.50."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          ><p
+              class="para"
+              id="element-553"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><eq
+                /> <reln
+                  ><lt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >k</mi
+                    ><mo
+                      >)</mo
+                    ></mrow
+                  ></reln
+                > <mrow
+                  ><mn
+                    >0.50</mn
+                  ></mrow
+                ></reln
+              > </math
+            >, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            > = 2.8 minutes (calculator or computer)</p
+          ><p
+              class="para"
+              id="element-833"
+            >Half of all customers are finished within 2.8 minutes.</p
+          ><p
+              class="para"
+              id="element-54"
+            >You can also do the calculation as follows:</p
+          ><p
+              class="para"
+              id="element-574"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><eq
+                /> <reln
+                  ><lt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >k</mi
+                    ><mo
+                      >)</mo
+                    ></mrow
+                  ></reln
+                > <mrow
+                  ><mn
+                    >0.50</mn
+                  ></mrow
+                ></reln
+              > </math
+            > and <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >x</mi
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >k</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mrow
+                > <mo
+                  >=</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >-</mo
+                > <msup
+                  > <mi
+                    >e</mi
+                  > <mi
+                    >-0.25&#x22C5;k</mi
+                  > </msup
+                > </mrow
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-607"
+            >Therefore, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mn
+                >0.50</mn
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >&#x2212;</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >&#x2212;0.25&#x22C5;k</mi
+                > </msup
+              > </math
+            > and <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >&#x2212;0.25&#x22C5;k</mi
+                > </msup
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >&#x2212;</mo
+              > <mn
+                >0.50</mn
+              > <mo
+                >=</mo
+              > <mn
+                >0.5</mn
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-319"
+            >Take natural logs: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >ln</mi
+              > <mo
+                >(</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >&#x2212;0.25&#x22C5;k</mi
+                > </msup
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mi
+                >ln</mi
+              > <mo
+                >(</mo
+              > <mn
+                >0.50</mn
+              > <mo
+                >)</mo
+              > </math
+            >. So, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >&#x2212;0.25&#x22C5;k</mi
+              > <mo
+                >=</mo
+              > <mi
+                >ln</mi
+              > <mo
+                >(</mo
+              > <mn
+                >0.50</mn
+              > <mo
+                >)</mo
+              > </math
+            ></p
+          ><p
+              class="para"
+              id="element-284"
+            >Solve for <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > <mo
+                >=</mo
+              > <mfrac
+                > <mi
+                  >ln(.50)</mi
+                > <mi
+                  >-0.25</mi
+                > </mfrac
+              > <mo
+                >=</mo
+              > <mi
+                >2.8</mi
+              > </math
+            > minutes</p
+          ><div
+              class="note"
+              id="id18090119"
+            >A formula for the percentile <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            > is <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mi
+                  >LN(1&#x2212;AreaToTheLeft)</mi
+                > <mi
+                  >&#x2212;m</mi
+                ></mfrac
+              ></math
+            > where LN is the natural log.</div
+          ><div
+              class="note"
+              id="id3322348"
+            >TI-83+ and TI-84: On the home screen, enter LN(1-.50)/-.25. Press the (-) for the negative.</div
+          > </div
+        > </div
+      ><div
+          class="exercise"
+          id="element-452"
+        ><div
+            class="problem"
+            id="id3833662"
+          > <p
+              class="para"
+              id="element-859"
+            > Which is larger, the mean or the median? </p
+          > </div
+        > <div
+            class="solution"
+            id="id3619956"
+          > <p
+              class="para"
+              id="element-130"
+            > Is the mean or median larger? </p
+          ><p
+              class="para"
+              id="element-515"
+            >From part b, the median or 50th percentile is 2.8 minutes. The theoretical mean is 4 minutes. The mean is larger.</p
+          > </div
+        > </div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-481"
+      >Optional Collaborative Classroom Activity</h1
+    > <p
+        class="para"
+        id="element-330"
+      > Have each class member count the change he/she has in his/her pocket or purse. Your instructor will record the amounts in dollars and cents. Construct a histogram of the data taken by the class. Use 5 intervals. Draw a smooth curve through the bars. The graph should look approximately exponential. Then calculate the mean. </p
+    > <p
+        class="para"
+        id="element-331"
+      > Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the amount of money a student in your class has in his/her pocket or purse. </p
+    > <p
+        class="para"
+        id="element-335"
+      >The distribution for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is approximately exponential with mean, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > = _______ and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >m</mi
+        ></math
+      > = _______. The standard deviation, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3C3;</mi
+        ></math
+      > = ________. </p
+    > <p
+        class="para"
+        id="element-333"
+      >Draw the appropriate exponential graph. You should label the x and y axes, the decay rate, and the mean. Shade the area that represents the probability that one student has less than $.40 in his/her pocket or purse. (Shade <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><lt
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >0.40</mn
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        > </math
+      >). </p
+    ><div
+        class="example"
+        id="element-774"
+      ><p
+          class="para"
+          id="element-503"
+        > On the average, a certain computer part lasts 10 years. The length of time the computer part lasts is exponentially distributed. </p
+      ><div
+          class="exercise"
+          id="element-292"
+        ><div
+            class="problem"
+            id="id4048640"
+          > <p
+              class="para"
+              id="element-673"
+            > What is the probability that a computer part lasts more than 7 years? </p
+          > </div
+        > <div
+            class="solution"
+            id="id16306345"
+          > <p
+              class="para"
+              id="element-420"
+            >Let <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            > = the amount of time (in years) a computer part lasts. </p
+          ><p
+              class="para"
+              id="element-421"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3BC;</mi
+              ><mo
+                >=</mo
+              ><mn
+                >10</mn
+              ></math
+            > so <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >m</mi
+              ><mo
+                >=</mo
+              > <mfrac
+                > <mn
+                  >1</mn
+                > <mi
+                  >&#x3BC;</mi
+                > </mfrac
+              > <mo
+                >=</mo
+              > <mfrac
+                > <mn
+                  >1</mn
+                > <mn
+                  >10</mn
+                > </mfrac
+              > <mo
+                >=</mo
+              > <mn
+                >0.1</mn
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="element-909"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><gt
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mi
+                    >x</mi
+                  ></mrow
+                > <mrow
+                  ><mn
+                    >7</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              ></math
+            >. Draw a graph.</p
+          ><p
+              class="para"
+              id="element-851"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >P</mi
+              ><mo
+                >(</mo
+              ><mi
+                >x</mi
+              > <mo
+                >&gt;</mo
+              ><mn
+                >7</mn
+              ><mo
+                >)</mo
+              ><mo
+                >=</mo
+              > <mn
+                >1</mn
+              ><mo
+                >-</mo
+              ><mi
+                >P</mi
+              ><mo
+                >(</mo
+              ><mi
+                >x</mi
+              ><mo
+                >&lt;</mo
+              > <mn
+                >7</mn
+              ><mo
+                >)</mo
+              ></math
+            >.</p
+          ><p
+              class="para"
+              id="element-604"
+            >Since <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >X</mi
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >x</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-mx</mi
+                > </msup
+              > </math
+            > then <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><gt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >X</mi
+                  > </mrow
+                > <mrow
+                  > <mi
+                    >x</mi
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <mo
+                >(</mo
+              > <mn
+                >1</mn
+              > <mo
+                >-</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-m&#x22C5;x</mi
+                > </msup
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-m&#x22C5;x</mi
+                > </msup
+              > </math
+            > </p
+          ><p
+              class="para"
+              id="element-556"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><gt
+                /> <mrow
+                  > <mi
+                    >P</mi
+                  > <mo
+                    >(</mo
+                  > <mi
+                    >x</mi
+                  > </mrow
+                > <mrow
+                  > <mn
+                    >7</mn
+                  > <mo
+                    >)</mo
+                  > </mrow
+                > </reln
+              > <mo
+                >=</mo
+              > <msup
+                > <mi
+                  >e</mi
+                > <mi
+                  >-0.1&#x22C5;7</mi
+                > </msup
+              > <mo
+                >=</mo
+              > <mn
+                >0.4966</mn
+              > </math
+            >. The probability that a computer part lasts more than 7 years is 0.4966.</p
+          ><div
+              class="note"
+              id="id13997446"
+            >TI-83+ and TI-84: On the home screen, enter e^(-.1*7).</div
+          ><p
+              class="para"
+              id="element-423"
+            ><span
+                class="media"
+                id="id7466308"
+                data-alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (&#x221E;, 0). A vertical upward line extends from point 1 to the curved line. The probability area occurs from point 1 to the end of the curve. The x-axis is equal to the amount of time a computer part lasts."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          > </div
+        > </div
+      ><div
+          class="exercise"
+          id="element-792"
+        ><div
+            class="problem"
+            id="id4079175"
+          > <p
+              class="para"
+              id="element-831"
+            > On the average, how long would 5 computer parts last if they are used one after another? </p
+          > </div
+        > <div
+            class="solution"
+            id="id16267798"
+          > <p
+              class="para"
+              id="element-394"
+            > On the average, 1 computer part lasts 10 years. Therefore, 5 computer parts, if they are used one right after the other would last, on the average, </p
+          ><p
+              class="para"
+              id="element-619"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mn
+                >5</mn
+              ><mo
+                >)</mo
+              > <mo
+                >(</mo
+              ><mn
+                >10</mn
+              ><mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >50</mn
+              > </math
+            > years.</p
+          > </div
+        > </div
+      ><div
+          class="exercise"
+          id="element-306"
+        ><div
+            class="problem"
+            id="id15606064"
+          > <p
+              class="para"
+              id="element-106"
+            > Eighty percent of computer parts last at most how long? </p
+          > </div
+        > <div
+            class="solution"
+            id="id10251680"
+          > <p
+              class="para"
+              id="element-756"
+            > Find the 80th percentile. Draw a graph. Let <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            > = the 80th percentile. </p
+          ><p
+              class="para"
+              id="element-770"
+            ><span
+                class="media"
+                id="id3813314"
+                data-alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (&#x221E;, 0). A vertical upward line extends from point k to the curved line. k is the 80th percentile. The probability area from 0-k is equal to 0.80."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          ><p
+              class="para"
+              id="element-755"
+            >Solve for <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >k</mi
+              ></math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >k</mi
+              > <mo
+                >=</mo
+              > <mfrac
+                > <mi
+                  >ln(1-.80)</mi
+                > <mi
+                  >-0.1</mi
+                > </mfrac
+              > <mo
+                >=</mo
+              > <mi
+                >16.1</mi
+              > </math
+            > years</p
+          ><p
+              class="para"
+              id="element-988"
+            >Eighty percent of the computer parts last at most 16.1 years.</p
+          ><div
+              class="note"
+              id="id5223089"
+            >TI-83+ and TI-84: On the home screen, enter LN(1 - .80)/-.1</div
+          > </div
+        > </div
+      ><div
+          class="exercise"
+          id="element-150"
+        ><div
+            class="problem"
+            id="id12336480"
+          > <p
+              class="para"
+              id="element-771"
+            > What is the probability that a computer part lasts between 9 and 11 years? </p
+          > </div
+        > <div
+            class="solution"
+            id="id17180064"
+          > <p
+              class="para"
+              id="element-476"
+            >Find <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /> <reln
+                  ><lt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mn
+                      >9</mn
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></reln
+                > <mrow
+                  ><mn
+                    >11</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > </math
+            >. Draw a graph. </p
+          ><p
+              class="para"
+              id="element-534"
+            ><span
+                class="media"
+                id="id14141127"
+                data-alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (&#x221E;, 0). Two vertical upward lines extend from point 9 and 11 to the curved line. The probability area occurs between point 9 and 11."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></p
+          ><p
+              class="para"
+              id="element-582"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <reln
+                ><eq
+                /> <reln
+                  ><eq
+                  /> <reln
+                    ><lt
+                    /> <reln
+                      ><lt
+                      /> <mrow
+                        ><mi
+                          >P</mi
+                        ><mo
+                          >(</mo
+                        ><mn
+                          >9</mn
+                        ></mrow
+                      > <mrow
+                        ><mi
+                          >x</mi
+                        ></mrow
+                      ></reln
+                    > <mrow
+                      ><mn
+                        >11</mn
+                      ><mo
+                        >)</mo
+                      ></mrow
+                    ></reln
+                  > <mrow
+                    ><reln
+                      ><lt
+                      /><mrow
+                        ><mi
+                          >P</mi
+                        > <mo
+                          >(</mo
+                        ><mi
+                          >x</mi
+                        ></mrow
+                      ><mrow
+                        > <mn
+                          >11</mn
+                        ><mo
+                          >)</mo
+                        ></mrow
+                      ></reln
+                    > <mo
+                      >-</mo
+                    ><reln
+                      ><lt
+                      /><mrow
+                        ><mi
+                          >P</mi
+                        > <mo
+                          >(</mo
+                        ><mi
+                          >x</mi
+                        ></mrow
+                      ><mrow
+                        > <mn
+                          >9</mn
+                        ><mo
+                          >)</mo
+                        ></mrow
+                      ></reln
+                    > </mrow
+                  ></reln
+                > <mrow
+                  ><mo
+                    >(</mo
+                  ><mn
+                    >1</mn
+                  ><mo
+                    >-</mo
+                  > <msup
+                    ><mi
+                      >e</mi
+                    ><mi
+                      >&#x2212;0.1&#x22C5;11</mi
+                    ></msup
+                  ><mo
+                    >)</mo
+                  > <mo
+                    >-</mo
+                  > <mo
+                    >(</mo
+                  ><mn
+                    >1</mn
+                  ><mo
+                    >-</mo
+                  > <msup
+                    ><mi
+                      >e</mi
+                    ><mi
+                      >&#x2212;0.1&#x22C5;9</mi
+                    ></msup
+                  ><mo
+                    >)</mo
+                  > </mrow
+                ></reln
+              > <mo
+                >=</mo
+              ><mn
+                >0.6671</mn
+              ><mo
+                >-</mo
+              ><mn
+                >0.5934</mn
+              > <mo
+                >=</mo
+              ><mn
+                >0.0737</mn
+              > </math
+            >. (calculator or computer) </p
+          ><p
+              class="para"
+              id="element-922"
+            >The probability that a computer part lasts between 9 and 11 years is 0.0737.</p
+          ><div
+              class="note"
+              id="id6580458"
+            >TI-83+ and TI-84: On the home screen, enter e^(-.1*9) - e^(-.1*11).</div
+          > </div
+        > </div
+      > </div
+    ><div
+        class="example"
+        id="element-506"
+      ><p
+          class="para"
+          id="element-446"
+        >Suppose that the length of a phone call, in minutes, is an exponential random variable with decay parameter = <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            ><mn
+              >1</mn
+            ><mn
+              >12</mn
+            ></mfrac
+          ></math
+        >. If another person arrives at a public telephone just before you, find the probability that you will have to wait more than 5 minutes. Let <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > = the length of a phone call, in minutes. </p
+      ><div
+          class="exercise"
+          id="element-260"
+        > <div
+            class="problem"
+            id="id14916588"
+          > <p
+              class="para"
+              id="element-247"
+            > What is <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >m</mi
+              ></math
+            >, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3BC;</mi
+              ></math
+            >, and <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3C3;</mi
+              ></math
+            >? The probability that you must wait more than 5 minutes is _______ . </p
+          > </div
+        > <div
+            class="solution"
+            id="id6858725"
+            print-placement="end"
+          > <ul
+              class="list"
+              data-id="element-74"
+              data-list-type="bulleted"
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi
+                  >m</mi
+                ></math
+              > = <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mfrac
+                  ><mn
+                    >1</mn
+                  ><mn
+                    >12</mn
+                  ></mfrac
+                ></math
+              > </li
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi
+                  >&#x3BC;</mi
+                ></math
+              > = 12</li
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi
+                  >&#x3C3;</mi
+                ></math
+              > = 12</li
+            > </ul
+          > <p
+              class="para"
+              id="element-23235"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >P</mi
+              > <mo
+                >(</mo
+              > <mi
+                >x</mi
+              > <mo
+                >&#xA0;&gt;&#xA0;</mo
+              > <mn
+                >5</mn
+              > <mo
+                >)</mo
+              > <mo
+                >&#xA0;=&#xA0;</mo
+              > <mn
+                >0.6592</mn
+              > </math
+            ></p
+          ></div
+        > </div
+      ><div
+          class="note"
+          id="id5189963"
+        >A summary for exponential distribution is available in "<a
+            href="/m16813"
+          >Summary of The Uniform and Exponential Probability Distributions</a
+        >".</div
+      > </div
+    ></div
+  > </body
+>
+</html>

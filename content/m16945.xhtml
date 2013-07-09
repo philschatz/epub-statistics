@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Central Limit Theorem: Central Limit Theorem Lab II</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Central Limit Theorem: Central Limit Theorem Lab II</div
+  > <p
+      class="para"
+      id="id5609695"
+    >Class Time: </p
+  > <p
+      class="para"
+      id="id5609702"
+    >Names:</p
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="id-254418160865"
+      >Student Learning Outcomes:</h1
+    ><ul
+        class="list"
+        data-id="list-2397864897"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >The student will demonstrate and compare properties of the Central Limit Theorem.</li
+      > </ul
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-530"
+      >Given: </h1
+    ><p
+        class="para"
+        id="element-743"
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        > </math
+      > = length of time (in days) that a cookie recipe lasted at the Olmstead Homestead. (Assume that each of the different recipes makes the same quantity of cookies.) </p
+    ><table
+        id="tableones23"
+        summary="This table presents recipe data in the first column and X length of days data in the second column of 15 rows. These two columns repeat three more times in the same table."
+      ><thead
+        > <tr
+          > <td
+            >Recipe #</td
+          > <td
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mi
+                        >X</mi
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{X} {}</annotation
+                > </semantics
+              > </math
+            > </td
+          > <td
+          /> <td
+            >Recipe #</td
+          > <td
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mi
+                        >X</mi
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{X} {}</annotation
+                > </semantics
+              > </math
+            > </td
+          > <td
+          /> <td
+            >Recipe #</td
+          > <td
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mi
+                        >X</mi
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{X} {}</annotation
+                > </semantics
+              > </math
+            > </td
+          > <td
+          /> <td
+            >Recipe #</td
+          > <td
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mi
+                        >X</mi
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{X} {}</annotation
+                > </semantics
+              > </math
+            > </td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >1</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >16</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >31</td
+          > <td
+            >3</td
+          > <td
+          /> <td
+            >46</td
+          > <td
+            >2</td
+          > </tr
+        > <tr
+          > <td
+            >2</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >17</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >32</td
+          > <td
+            >4</td
+          > <td
+          /> <td
+            >47</td
+          > <td
+            >2</td
+          > </tr
+        > <tr
+          > <td
+            >3</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >18</td
+          > <td
+            >4</td
+          > <td
+          /> <td
+            >33</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >48</td
+          > <td
+            >11</td
+          > </tr
+        > <tr
+          > <td
+            >4</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >19</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >34</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >49</td
+          > <td
+            >5</td
+          > </tr
+        > <tr
+          > <td
+            >5</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >20</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >35</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >50</td
+          > <td
+            >5</td
+          > </tr
+        > <tr
+          > <td
+            >6</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >21</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >36</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >51</td
+          > <td
+            >4</td
+          > </tr
+        > <tr
+          > <td
+            >7</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >22</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >37</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >52</td
+          > <td
+            >6</td
+          > </tr
+        > <tr
+          > <td
+            >8</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >23</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >38</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >53</td
+          > <td
+            >5</td
+          > </tr
+        > <tr
+          > <td
+            >9</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >24</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >39</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >54</td
+          > <td
+            >1</td
+          > </tr
+        > <tr
+          > <td
+            >10</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >25</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >40</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >55</td
+          > <td
+            >1</td
+          > </tr
+        > <tr
+          > <td
+            >11</td
+          > <td
+            >5</td
+          > <td
+          /> <td
+            >26</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >41</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >56</td
+          > <td
+            >2</td
+          > </tr
+        > <tr
+          > <td
+            >12</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >27</td
+          > <td
+            >4</td
+          > <td
+          /> <td
+            >42</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >57</td
+          > <td
+            >4</td
+          > </tr
+        > <tr
+          > <td
+            >13</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >28</td
+          > <td
+            >1</td
+          > <td
+          /> <td
+            >43</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >58</td
+          > <td
+            >3</td
+          > </tr
+        > <tr
+          > <td
+            >14</td
+          > <td
+            >3</td
+          > <td
+          /> <td
+            >29</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >44</td
+          > <td
+            >6</td
+          > <td
+          /> <td
+            >59</td
+          > <td
+            >6</td
+          > </tr
+        > <tr
+          > <td
+            >15</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >30</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >45</td
+          > <td
+            >2</td
+          > <td
+          /> <td
+            >60</td
+          > <td
+            >5</td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="element-538"
+      >Calculate the following: <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="list-2396953"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        > <li
+            xmlns=""
+            class="item"
+            data-label="a"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >x</mi
+              > </msub
+            > <mo
+              >=</mo
+            > </math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >x</mi
+              > </msub
+            > <mo
+              >=</mo
+            > </math
+          ></li
+        > </list
+      ></p
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-73"
+      >Collect the Data</h1
+    ><p
+        class="para"
+        id="element-453"
+      >Use a random number generator to randomly select 4 samples of size <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ><mo
+          >=</mo
+        ><mn
+          >5</mn
+        ></math
+      > from the given population. Record your samples below. Then, for each sample, calculate the mean to the nearest tenth. Record them in the spaces provided. Record the sample means for the rest of the class. </p
+    > <ol
+        class="list"
+        data-id="list-98698565"
+        data-list-type="enumerated"
+        data-mark-suffix="."
+      ><li
+          class="item"
+        > Complete the table: <table
+            id="id701l975ok6688"
+            summary="Partially filled table with samples (4) in columns and 5 blank rows plus a blank Means row."
+          ><thead
+            > <tr
+              > <td
+              /> <td
+                >Sample 1</td
+              > <td
+                >Sample 2</td
+              > <td
+                >Sample 3</td
+              > <td
+                >Sample 4</td
+              > <td
+                >Sample means from other groups:</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+                >Means:</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+              /> </tr
+            > </tbody
+          ></table
+        ></li
+      > <li
+          class="item"
+        >Calculate the following: <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-175"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><semantics
+                ><mrow
+                  ><mstyle
+                      fontsize="12pt"
+                    ><mrow
+                      ><mrow
+                        ><mover
+                            accent="true"
+                          ><mi
+                            >x</mi
+                          ><mo
+                            >&#xAF;</mo
+                          ></mover
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mstyle
+                  ><mrow
+                  /></mrow
+                ><annotation
+                    encoding="StarMath 5.0"
+                  > size 12{ {overline {x}} ={}} {}</annotation
+                ></semantics
+              ></math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><semantics
+                ><mrow
+                  ><mstyle
+                      fontsize="12pt"
+                    ><mrow
+                      ><mrow
+                        ><msub
+                          ><mi
+                            >s</mi
+                          ><mstyle
+                              fontsize="8pt"
+                            ><mrow
+                              ><mover
+                                  accent="true"
+                                ><mi
+                                  >x</mi
+                                ><mo
+                                  >&#xAF;</mo
+                                ></mover
+                              ></mrow
+                            ></mstyle
+                          ></msub
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mstyle
+                  ><mrow
+                  /></mrow
+                ><annotation
+                    encoding="StarMath 5.0"
+                  > size 12{s rSub { size 8{ {overline {x}} } } ={}} {}</annotation
+                ></semantics
+              ></math
+            > </li
+          > </list
+        > </li
+      > <li
+          class="item"
+        > Again, use a random number generator to randomly select 4 samples from the population. This time, make the samples of size <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><semantics
+            ><mrow
+              ><mstyle
+                  fontsize="12pt"
+                ><mrow
+                  ><mrow
+                    ><mi
+                      >n</mi
+                    ><mo
+                        stretchy="false"
+                      >=</mo
+                    ><mtext
+                      >10</mtext
+                    ></mrow
+                  ></mrow
+                ></mstyle
+              ><mrow
+              /></mrow
+            ><annotation
+                encoding="StarMath 5.0"
+              > size 12{n="10"} {}</annotation
+            ></semantics
+          ></math
+        >. Record the samples below. As before, for each sample, calculate the mean to the nearest tenth. Record them in the spaces provided. Record the sample means for the rest of the class. <table
+            id="id70asdfa07355773570"
+            summary="Same as the above table except with 10 blank rows and a means row."
+          ><thead
+            > <tr
+              > <td
+              /> <td
+                >Sample 1</td
+              > <td
+                >Sample 2</td
+              > <td
+                >Sample 3</td
+              > <td
+                >Sample 4</td
+              > <td
+                >Sample means from other groups:</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+                >Means:</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mrow
+                            > <mover
+                                accent="true"
+                              > <mi
+                                >x</mi
+                              > <mo
+                                >&#xAF;</mo
+                              > </mover
+                            > <mo
+                                stretchy="false"
+                              >=</mo
+                            > <mrow
+                            /> </mrow
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} ={}} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+              /> </tr
+            > </tbody
+          ></table
+        ></li
+      > <li
+          class="item"
+        >Calculate the following: <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-8475643"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><semantics
+                ><mrow
+                  ><mstyle
+                      fontsize="12pt"
+                    ><mrow
+                      ><mrow
+                        ><mover
+                            accent="true"
+                          ><mi
+                            >x</mi
+                          ><mo
+                            >&#xAF;</mo
+                          ></mover
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mstyle
+                  ><mrow
+                  /></mrow
+                ><annotation
+                    encoding="StarMath 5.0"
+                  > size 12{ {overline {x}} ={}} {}</annotation
+                ></semantics
+              ></math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><semantics
+                ><mrow
+                  ><mstyle
+                      fontsize="12pt"
+                    ><mrow
+                      ><mrow
+                        ><msub
+                          ><mi
+                            >s</mi
+                          ><mstyle
+                              fontsize="8pt"
+                            ><mrow
+                              ><mover
+                                  accent="true"
+                                ><mi
+                                  >x</mi
+                                ><mo
+                                  >&#xAF;</mo
+                                ></mover
+                              ></mrow
+                            ></mstyle
+                          ></msub
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mstyle
+                  ><mrow
+                  /></mrow
+                ><annotation
+                    encoding="StarMath 5.0"
+                  > size 12{s rSub { size 8{ {overline {x}} } } ={}} {}</annotation
+                ></semantics
+              ></math
+            ></li
+          > </list
+        > </li
+      > <li
+          class="item"
+        >For the original population, construct a histogram. Make intervals with bar width = 1 day. Sketch the graph using a ruler and pencil. Scale the axes. <figure
+            id="id6597795"
+          ><span
+              class="media"
+              id="id6597799"
+              data-alt="Blank graph with frequency on the vertical axis and time in days on the horizontal axis."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></figure
+        ></li
+      > <li
+          class="item"
+        >Draw a smooth curve through the tops of the bars of the histogram. Use 1 &#x2013; 2 complete sentences to describe the general shape of the curve.</li
+      > </ol
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-426"
+      >Repeat the Procedure for n=5</h1
+    ><ol
+        class="list"
+        data-id="list-2646"
+        data-list-type="enumerated"
+      ><li
+          class="item"
+        >For the sample of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mo
+            >=</mo
+          ><mtext
+            >5 days</mtext
+          ></math
+        > averaged together, construct a histogram of the averages (your means together with the means of the other groups). Make intervals with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >bar widths =</mtext
+          ><mfrac
+            ><mrow
+              ><mn
+                >1</mn
+              ></mrow
+            ><mrow
+              ><mn
+                >2</mn
+              ></mrow
+            ></mfrac
+          ><mtext
+            >day</mtext
+          ></math
+        >. Sketch the graph using a ruler and pencil. Scale the axes. <figure
+            id="id6597892"
+          > <span
+              class="media"
+              id="id6597897"
+              data-alt="Blank graph with frequency on the vertical axis and time in days on the horizontal axis."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></figure
+        > </li
+      > <li
+          class="item"
+        > Draw a smooth curve through the tops of the bars of the histogram. Use 1 &#x2013; 2 complete sentences to describe the general shape of the curve.</li
+      > </ol
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-402"
+      >Repeat the Procedure for n=10</h1
+    ><ol
+        class="list"
+        data-id="list-2764646"
+        data-list-type="enumerated"
+      ><li
+          class="item"
+        >For the sample of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mo
+            >=</mo
+          ><mtext
+            >10 days</mtext
+          ></math
+        > averaged together, construct a histogram of the averages (your means together with the means of the other groups). Make intervals with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >bar widths =</mtext
+          ><mfrac
+            ><mrow
+              ><mn
+                >1</mn
+              ></mrow
+            ><mrow
+              ><mn
+                >2</mn
+              ></mrow
+            ></mfrac
+          ><mtext
+            >day</mtext
+          ></math
+        >. Sketch the graph using a ruler and pencil. Scale the axes.<figure
+            id="id6597991"
+          > <span
+              class="media"
+              id="id6597997"
+              data-alt="Blank graph with frequency on the vertical axis and time in days on the horizontal axis."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></figure
+        > </li
+      > <li
+          class="item"
+        > Draw a smooth curve through the tops of the bars of the histogram. Use 1 &#x2013; 2 complete sentences to describe the general shape of the curve.</li
+      > </ol
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-851"
+      >Discussion Questions</h1
+    ><ol
+        class="list"
+        data-id="list-2937597532"
+        data-list-type="enumerated"
+        data-mark-suffix="."
+      ><li
+          class="item"
+        >Compare the three histograms you have made, the one for the population and the two for the sample means. In three to five sentences, describe the similarities and differences.</li
+      > <li
+          class="item"
+        >State the theoretical (according to the CLT) distributions for the sample means. <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-239875697325"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >n</mi
+              > <mo
+                >=</mo
+              > <mn
+                >5</mn
+              > </math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <apply
+                > <conjugate
+                /> <ci
+                  >X</ci
+                > </apply
+              > </math
+            > ~</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >n</mi
+              > <mo
+                >=</mo
+              > <mn
+                >10</mn
+              > </math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <apply
+                > <conjugate
+                /> <ci
+                  >X</ci
+                > </apply
+              > </math
+            > ~</li
+          > </list
+        ></li
+      > <li
+          class="item"
+        >Are the sample means for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >n = 5</mtext
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >n = 10</mtext
+          ></math
+        > &#x201C;close&#x201D; to the theoretical mean, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3BC;</mi
+            ><mi
+              >x</mi
+            ></msub
+          ></math
+        >? Explain why or why not.</li
+      > <li
+          class="item"
+        >Which of the two distributions of sample means has the smaller standard deviation? Why?</li
+      > <li
+          class="item"
+        >As n changed, why did the shape of the distribution of the data change? Use 1 &#x2013; 2 complete sentences to explain what happened.</li
+      > </ol
+    ></div
+  ><div
+      class="note"
+      id="id6598204"
+    ><cite
+      ><span
+          class="cite-title"
+        >This lab was designed and contributed by Carol Olmstead.</span
+      ></cite
+    > </div
+  > </body
+>
+</html>

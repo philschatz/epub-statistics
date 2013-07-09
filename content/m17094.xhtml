@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Outliers</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Outliers</div
+  > <p
+      class="para"
+      id="delete_me"
+    >In some data sets, there are values <strong
+        class="emphasis"
+      >(observed data points)</strong
+    > called <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="outlier"
+      >outliers</term
+    >. <strong
+        class="emphasis"
+      >Outliers are observed data points that are far from the least squares line.</strong
+    > They have large "errors", where the "error" or residual is the vertical distance from the line to the point. </p
+  ><p
+      class="para"
+      id="eip-502"
+    >Outliers need to be examined closely. Sometimes, for some reason or another, they should not be included in the analysis of the data. It is possible that an outlier is a result of erroneous data. Other times, an outlier may hold valuable information about the population under study and should remain included in the data. The key is to carefully examine what causes a data point to be an outlier.</p
+  ><p
+      class="para"
+      id="eip-224"
+    >Besides outliers, a sample may contain one or a few points that are called <strong
+        class="emphasis"
+      > influential points</strong
+    >. Influential points are observed data points that are far from the other observed data points in the horizontal direction. These points may have a big effect on the slope of the regression line. To begin to identify an influential point, you can remove it from the data set and see if the slope of the regression line is changed significantly.</p
+  ><p
+      class="para"
+      id="eip-755"
+    >Computers and many calculators can be used to identify outliers from the data. Computer output for regression analysis will often identify both outliers and influential points so that you can examine them.</p
+  ><p
+      class="para"
+      id="eip-511"
+    ><span
+        class="title"
+      >Identifying Outliers</span
+    >We could guess at outliers by looking at a graph of the scatterplot and best fit line. However we would like some guideline as to how far away a point needs to be in order to be considered an outlier. <strong
+        class="emphasis"
+      > As a rough rule of thumb, we can flag any point that is located further than two standard deviations above or below the best fit line as an outlier</strong
+    >. The standard deviation used is the standard deviation of the residuals or errors. </p
+  ><p
+      class="para"
+      id="eip-526"
+    >We can do this visually in the scatterplot by drawing an extra pair of lines that are two standard deviations above and below the best fit line. Any data points that are outside this extra pair of lines are flagged as potential outliers. Or we can do this numerically by calculating each residual and comparing it to twice the standard deviation. On the TI-83, 83+, or 84+, the graphical approach is easier. The graphical procedure is shown first, followed by the numerical calculations. You would generally only need to use one of these methods.</p
+  ><div
+      class="example"
+      id="eip-837"
+    ><div
+        class="exercise"
+        id="element-12987"
+      ><div
+          class="problem"
+          id="id1170949520848"
+        > <p
+            class="para"
+            id="element-631"
+          >In the <a
+              href="/m17092#element-22"
+            >third exam/final exam example</a
+          >, you can determine if there is an outlier or not. If there is an outlier, as an exercise, delete it and fit the remaining data to a new line. For this example, the new line ought to fit the remaining data better. This means the <strong
+              class="emphasis"
+            >SSE</strong
+          > should be smaller and the correlation coefficient ought to be closer to 1 or -1. </p
+        > </div
+      > <div
+          class="solution"
+          id="id1170917505276"
+        > <p
+            class="para"
+            id="element-435"
+          ><span
+              class="title"
+            >Graphical Identification of Outliers</span
+          >With the TI-83,83+,84+ graphing calculators, it is easy to identify the outlier graphically and visually. If we were to measure the vertical distance from any data point to the corresponding point on the line of best fit and that distance was equal to <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mn
+              >2</mn
+            ><mi
+              >s</mi
+            ></math
+          > or farther, then we would consider the data point to be "too far" from the line of best fit. We need to find and graph the lines that are two standard deviations below and above the regression line. Any points that are outside these two lines are outliers. We will call these lines Y2 and Y3:</p
+        > <p
+            class="para"
+            id="element-20965"
+          >As we did with the equation of the regression line and the correlation coefficient, we will use technology to calculate this standard deviation for us. Using the <strong
+              class="emphasis"
+            >LinRegTTest</strong
+          > with this data, scroll down through the output screens to find <strong
+              class="emphasis"
+            >s=16.412</strong
+          ></p
+        > <p
+            class="para"
+            id="element-208"
+          >Line Y2=-173.5+4.83<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          >-2(16.4) and line Y3=-173.5+4.83<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          >+2(16.4) <br
+          /><br
+          /> where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            ></math
+          >=-173.5+4.83x is the line of best fit. Y2 and Y3 have the same slope as the line of best fit. </p
+        ><p
+            class="para"
+            id="element-129853"
+          >Graph the scatterplot with the best fit line in equation Y1, then enter the two extra lines as Y2 and Y3 in the "Y="equation editor and press ZOOM 9. You will find that the only data point that is not between lines Y2 and Y3 is the point x=65, y=175. On the calculator screen it is just barely outside these lines. The outlier is the student who had a grade of 65 on the third exam and 175 on the final exam; this point is further than 2 standard deviations away from the best fit line.</p
+        ><p
+            class="para"
+            id="element-664"
+          >Sometimes a point is so close to the lines used to flag outliers on the graph that it is difficult to tell if the point is between or outside the lines. On a computer, enlarging the graph may help; on a small calculator screen, zooming in may make the graph clearer. Note that when the graph does not give a clear enough picture, you can use the numerical comparisons to identify outliers. </p
+        ><p
+            class="para"
+            id="element-1298531"
+          ><figure
+              id="linrgout1ier"
+            ><span
+                class="media"
+                id="id1170917557779"
+                data-alt="Scatterplot of data and best fit line of the exam score data, showing the lines two standard deviations above and below the best fit line. The data value (65,175) lies slightly above the upper line identifying it as an outlier."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3.0in"
+              /></span
+            ></figure
+          ></p
+        > <p
+            class="para"
+            id="element-1763"
+          ><span
+              class="title"
+            >Numerical Identification of Outliers</span
+          >In the table below, the first two columns are the third exam and final exam data. The third column shows the predicted <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            ></math
+          > values calculated from the line of best fit: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            ></math
+          >=-173.5+4.83<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          >. The residuals, or errors, have been calculated in the fourth column of the table: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >observed y value</mtext
+            ><mo
+              >&#x2212;</mo
+            ><mtext
+              >predicted y value</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >y</mi
+            ><mo
+              >&#x2212;</mo
+            ><mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            ></math
+          >. </p
+        ><p
+            class="para"
+            id="element-973"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ></math
+          > is the standard deviation of all the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mo
+            /><mi
+              >y</mi
+            ><mo
+              >-</mo
+            ><mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            ><mo
+            /><mo
+              >=</mo
+            ><mi
+              > &#x3B5; </mi
+            ></math
+          > values where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            > </math
+          > = the total number of data points. If each residual is calculated and squared, and the results are added, we get the SSE. The standard deviation of the residuals is calculated from the SSE as: </p
+        ><p
+            class="para"
+            id="element-797"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ><mo
+              >=</mo
+            > <msqrt
+              > <mfrac
+                > <mrow
+                  ><mtext
+                    >SSE</mtext
+                  ></mrow
+                > <mrow
+                  ><mi
+                    >n</mi
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >2</mn
+                  ></mrow
+                > </mfrac
+              > </msqrt
+            > </math
+          ></p
+        > <p
+            class="para"
+            id="element-42"
+          >Rather than calculate the value of <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ></math
+          > ourselves, we can find <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ></math
+          > using the computer or calculator. For this example, the calculator function LinRegTTest found <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s = 16.4</mi
+            ></math
+          > as the standard deviation of the residuals <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="set-list2"
+              data-list-type="labeled-item"
+              data-display="inline"
+            > <li
+                xmlns=""
+                class="item"
+              >35</li
+            > <li
+                xmlns=""
+                class="item"
+              >-17</li
+            > <li
+                xmlns=""
+                class="item"
+              >16</li
+            > <li
+                xmlns=""
+                class="item"
+              >-6</li
+            > <li
+                xmlns=""
+                class="item"
+              >-19</li
+            > <li
+                xmlns=""
+                class="item"
+              >9</li
+            > <li
+                xmlns=""
+                class="item"
+              >3</li
+            > <li
+                xmlns=""
+                class="item"
+              >-1</li
+            > <li
+                xmlns=""
+                class="item"
+              >-10</li
+            > <li
+                xmlns=""
+                class="item"
+              >-9</li
+            > <li
+                xmlns=""
+                class="item"
+              >-1</li
+            > </list
+          >. </p
+        ><table
+            id="element-4662"
+            summary="The table contains 4 columns and 11 rows of calculation. The first two columns contain the x and y data values. The third column contains the values predicted by the regression line. The fourth column contains the errors or residuals, calculated as the observed y value minus the predicted value."
+          ><thead
+            > <tr
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >x</mi
+                  ></math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >y</mi
+                  ></math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mover
+                    ><mi
+                      >y</mi
+                    ><mo
+                      >^</mo
+                    ></mover
+                  ></math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >y</mi
+                  ><mo
+                    >-</mo
+                  ><mover
+                    ><mi
+                      >y</mi
+                    ><mo
+                      >^</mo
+                    ></mover
+                  ></math
+                ></td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >65 </td
+              > <td
+                >175 </td
+              > <td
+                >140 </td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >175</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >140</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >35</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >67</td
+              > <td
+                >133</td
+              > <td
+                >150</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >133</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >150</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-17</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >71</td
+              > <td
+                >185</td
+              > <td
+                >169</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >185</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >169</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >16</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >71</td
+              > <td
+                >163</td
+              > <td
+                >169</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >163</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >169</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-6</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >66</td
+              > <td
+                >126</td
+              > <td
+                >145</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >126</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >145</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-19</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >75</td
+              > <td
+                >198</td
+              > <td
+                >189</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >198</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >189</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >9</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >67</td
+              > <td
+                >153</td
+              > <td
+                >150</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >153</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >150</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >3</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >70</td
+              > <td
+                >163</td
+              > <td
+                >164</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >163</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >164</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-1</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >71</td
+              > <td
+                >159</td
+              > <td
+                >169</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >159</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >169</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-10</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >69</td
+              > <td
+                >151</td
+              > <td
+                >160</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >151</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >160</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-9</mn
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >69</td
+              > <td
+                >159</td
+              > <td
+                >160</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mn
+                    >159</mn
+                  ><mo
+                    >-</mo
+                  ><mn
+                    >160</mn
+                  ><mo
+                    >=</mo
+                  ><mn
+                    >-1</mn
+                  ></math
+                ></td
+              > </tr
+            > </tbody
+          ></table
+        > <p
+            class="para"
+            id="element-508"
+          >We are looking for all data points for which the residual is greater than <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >2s</mi
+            ></math
+          >=2(16.4)=32.8 or less than -32.8. Compare these values to the residuals in column 4 of the table. The only such data point is the student who had a grade of 65 on the third exam and 175 on the final exam; the residual for this student is 35.</p
+        ><p
+            class="para"
+            id="element-8021"
+          ><span
+              class="title"
+            >How does the outlier affect the best fit line?</span
+          >Numerically and graphically, we have identified the point (65,175) as an outlier. We should re-examine the data for this point to see if there are any problems with the data. If there is an error we should fix the error if possible, or delete the data. If the data is correct, we would leave it in the data set. <strong
+              class="emphasis"
+            > For this problem, we will suppose that we examined the data and found that this outlier data was an error. Therefore we will continue on and delete the outlier, so that we can explore how it affects the results, as a learning experience. </strong
+          > </p
+        ><p
+            class="para"
+            id="element-6691"
+          ><span
+              class="title"
+            >Compute a new best-fit line and correlation coefficient using the 10 remaining points:</span
+          >On the TI-83, TI-83+, TI-84+ calculators, delete the outlier from L1 and L2. Using the LinRegTTest, the new line of best fit and the correlation coefficient are:</p
+        > <p
+            class="para"
+            id="element-669"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            > <mo
+              >=</mo
+            ><mn
+              >-355.19</mn
+            ><mo
+              >+</mo
+            ><mtext
+              >7.39x</mtext
+            > </math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.9121</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-101"
+          >The new line with <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.9121</mn
+            ></math
+          > is a stronger correlation than the original (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          >=0.6631) because <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.9121</mn
+            ></math
+          > is closer to 1. This means that the new line is a better fit to the 10 remaining data values. The line can better predict the final exam score given the third exam score.</p
+        > </div
+      > </div
+    ></div
+  ><p
+      class="para"
+      id="eip-424"
+    ><span
+        class="title"
+      >Numerical Identification of Outliers: Calculating <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >s</mi
+        ></math
+      > and Finding Outliers Manually</span
+    ></p
+  ><p
+      class="para"
+      id="eip-819"
+    >If you do not have the function LinRegTTest, then you can calculate the outlier in the first example by doing the following. <br
+    /><br
+    /> First, <strong
+        class="emphasis"
+      >square each <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >|</mo
+        ><mi
+          >y</mi
+        ><mo
+          >-</mo
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mo
+          >|</mo
+        ></math
+      ></strong
+    > (See the TABLE above): </p
+  ><p
+      class="para"
+      id="eip-152"
+    >The squares are <list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="list1"
+        data-list-type="labeled-item"
+        data-display="inline"
+      ><li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >35</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >17</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >16</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >6</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >19</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >9</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >3</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >1</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >10</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >9</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            ><mn
+              >1</mn
+            ><mn
+              >2</mn
+            ></msup
+          ></math
+        ></li
+      > </list
+    ></p
+  ><p
+      class="para"
+      id="eip-912"
+    ><strong
+        class="emphasis"
+      > Then, add (sum) all the <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >|</mo
+        ><mi
+          >y</mi
+        ><mo
+          >-</mo
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mo
+          >|</mo
+        ></math
+      > squared terms</strong
+    > using the formula</p
+  ><p
+      class="para"
+      id="eip-187"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mover
+        > <mrow
+          > <munder
+            > <mi
+              >&#x3A3;</mi
+            > <mtext
+              >i = 1</mtext
+            > </munder
+          > </mrow
+        > <mn
+          >11</mn
+        > </mover
+      > <mo
+        >(</mo
+      ><mo
+        >|</mo
+      ><msub
+        ><mi
+          >y</mi
+        ><mi
+          >i</mi
+        ></msub
+      ><mo
+        >-</mo
+      ><msub
+        ><mrow
+          ><mover
+            ><mi
+              >y</mi
+            ><mo
+              >^</mo
+            ></mover
+          ></mrow
+        ><mrow
+          ><mi
+            >i</mi
+          ></mrow
+        ></msub
+      ><mo
+        >|</mo
+      ><msup
+        ><mo
+          >)</mo
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >=</mo
+      > <mover
+        > <mrow
+          > <munder
+            > <mi
+              >&#x3A3;</mi
+            > <mtext
+              >i = 1</mtext
+            > </munder
+          > </mrow
+        > <mn
+          >11</mn
+        > </mover
+      ><msup
+        ><msub
+          ><mi
+            >&#x3B5;</mi
+          ><mi
+            >i</mi
+          ></msub
+        ><mn
+          >2</mn
+        ></msup
+      > <mspace
+          width="20pt"
+      /> </math
+    > (Recall that <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >y</mi
+        ><mi
+          >i</mi
+        ></msub
+      ><mo
+        >-</mo
+      ><msub
+        ><mrow
+          ><mover
+            ><mi
+              >y</mi
+            ><mo
+              >^</mo
+            ></mover
+          ></mrow
+        ><mrow
+          ><mi
+            >i</mi
+          ></mrow
+        ></msub
+      ><mo
+        >=</mo
+      ><msub
+        ><mi
+          >&#x3B5;</mi
+        ><mi
+          >i</mi
+        ></msub
+      ></math
+    >.)</p
+  ><p
+      class="para"
+      id="eip-977"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >=</mo
+      ><msup
+        ><mn
+          >35</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >17</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >16</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >6</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >19</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >9</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >3</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >1</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >10</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >9</mn
+        ><mn
+          >2</mn
+        ></msup
+      > <mo
+        >+</mo
+      ><msup
+        ><mn
+          >1</mn
+        ><mn
+          >2</mn
+        ></msup
+      ></math
+    > </p
+  ><p
+      class="para"
+      id="eip-684"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >=</mo
+      ><mn
+        >2440</mn
+      ><mo
+        >=</mo
+      ></math
+    > <strong
+        class="emphasis"
+      >SSE</strong
+    >. The result, <strong
+        class="emphasis"
+      >SSE</strong
+    > is the Sum of Squared Errors.</p
+  ><p
+      class="para"
+      id="eip-961"
+    ><strong
+        class="emphasis"
+      >Next, calculate <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >s</mi
+        ></math
+      >, the standard deviation of all the <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ><mo
+          >-</mo
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mo
+          >=</mo
+        ><mi
+          >&#x3B5;</mi
+        ></math
+      > values where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > = the total number of data points.</strong
+    > </p
+  ><p
+      class="para"
+      id="eip-454"
+    >The calculation is <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >s</mi
+      ><mo
+        >=</mo
+      > <msqrt
+        > <mfrac
+          > <mrow
+            ><mtext
+              >SSE</mtext
+            ></mrow
+          > <mrow
+            ><mi
+              >n</mi
+            ><mo
+              >-</mo
+            ><mn
+              >2</mn
+            ></mrow
+          > </mfrac
+        > </msqrt
+      > </math
+    ></p
+  ><p
+      class="para"
+      id="eip-284"
+    >For the third exam/final exam problem, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >s</mi
+      ><mo
+        >=</mo
+      > <msqrt
+        > <mfrac
+          > <mrow
+            ><mn
+              >2440</mn
+            ></mrow
+          > <mrow
+            ><mn
+              >11</mn
+            ><mo
+              >-</mo
+            ><mn
+              >2</mn
+            ></mrow
+          > </mfrac
+        > </msqrt
+      > <mo
+        >=</mo
+      ><mn
+        >16.47</mn
+      > </math
+    ></p
+  ><p
+      class="para"
+      id="eip-799"
+    >Next, multiply <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >s</mi
+      ></math
+    > by <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mn
+        >1.9</mn
+      ></math
+    >: <br
+    /> <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >(</mo
+      ><mn
+        >1.9</mn
+      ><mo
+        >)</mo
+      ><mo
+        >&#x22C5;</mo
+      ><mo
+        >(</mo
+      ><mn
+        >16.47</mn
+      ><mo
+        >)</mo
+      ><mo
+        >=</mo
+      ><mn
+        >31.29</mn
+      ></math
+    > <br
+    /> 31.29 is almost 2 standard deviations away from the mean of the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ><mo
+        >-</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      ></math
+    > values.</p
+  ><p
+      class="para"
+      id="eip-28"
+    >If we were to measure the vertical distance from any data point to the corresponding point on the line of best fit and that distance is at least <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mn
+        >1.9</mn
+      ><mi
+        >s</mi
+      ></math
+    >, then we would consider the data point to be "too far" from the line of best fit. We call that point a <strong
+        class="emphasis"
+      >potential outlier</strong
+    >.</p
+  ><p
+      class="para"
+      id="eip-130"
+    >For the example, if any of the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >|</mo
+      ><mi
+        >y</mi
+      ><mo
+        >-</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      ><mo
+        >|</mo
+      ></math
+    > values are <strong
+        class="emphasis"
+      >at least</strong
+    > 31.29, the corresponding <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >(</mo
+      ><mi
+        >x</mi
+      ><mo
+        >,</mo
+      ><mi
+        >y</mi
+      ><mo
+        >)</mo
+      ></math
+    > data point is a potential outlier.</p
+  ><p
+      class="para"
+      id="eip-696"
+    >For the third exam/final exam problem, all the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >|</mo
+      ><mi
+        >y</mi
+      ><mo
+        >-</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      ><mo
+        >|</mo
+      ></math
+    >'s are less than 31.29 except for the first one which is 35.</p
+  ><p
+      class="para"
+      id="eip-994"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mn
+        >35</mn
+      ><mo
+        >&gt;</mo
+      ><mn
+        >31.29</mn
+      ><mspace
+          width="20pt"
+      /></math
+    > That is, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >|</mo
+      ><mi
+        >y</mi
+      ><mo
+        >-</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      ><mo
+        >|</mo
+      ><mo
+        >&#x2265;</mo
+      ><mo
+        >(</mo
+      ><mn
+        >1.9</mn
+      ><mo
+        >)</mo
+      ><mo
+        >&#x22C5;</mo
+      ><mo
+        >(</mo
+      ><mi
+        >s</mi
+      ><mo
+        >)</mo
+      ></math
+    ></p
+  ><p
+      class="para"
+      id="eip-980"
+    >The point which corresponds to <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >|</mo
+      ><mi
+        >y</mi
+      ><mo
+        >-</mo
+      ><mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      ><mo
+        >|</mo
+      ><mo
+        >=</mo
+      ><mn
+        >35 </mn
+      ></math
+    > is <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >(</mo
+      ><mn
+        >65</mn
+      ><mo
+        >,</mo
+      ><mn
+        >175</mn
+      ><mo
+        >)</mo
+      ></math
+    >. <strong
+        class="emphasis"
+      >Therefore, the data point <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >(</mo
+        ><mn
+          >65</mn
+        ><mo
+          >,</mo
+        ><mn
+          >175</mn
+        ><mo
+          >)</mo
+        ></math
+      > is a potential outlier.</strong
+    > For this example, we will delete it. (Remember, we do not always delete an outlier.) <br
+    /><br
+    />The next step is to compute a new best-fit line using the 10 remaining points. The new line of best fit and the correlation coefficient are:</p
+  ><p
+      class="para"
+      id="eip-451"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mover
+        ><mi
+          >y</mi
+        ><mo
+          >^</mo
+        ></mover
+      > <mo
+        >=</mo
+      ><mn
+        >-355.19</mn
+      ><mo
+        >+</mo
+      ><mtext
+        >7.39</mtext
+      ><mi
+        >x</mi
+      > </math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >r</mi
+      ><mo
+        >=</mo
+      ><mn
+        >0.9121</mn
+      > </math
+    ></p
+  ><div
+      class="example"
+      id="element-824"
+    ><div
+        class="exercise"
+        id="element-12623"
+      > <div
+          class="problem"
+          id="id1171155161094"
+        > <p
+            class="para"
+            id="element-802"
+          >Using this new line of best fit (based on the remaining 10 data points), what would a student who receives a 73 on the third exam expect to receive on the final exam? Is this the same as the prediction made using the original line? </p
+        > </div
+      > <div
+          class="solution"
+          id="id1171158788502"
+          print-placement="here"
+        > <p
+            class="para"
+            id="element-12623s"
+          >Using the new line of best fit, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            > <mo
+              >=</mo
+            ><mn
+              >-355.19</mn
+            ><mo
+              >+</mo
+            ><mtext
+              >7.39(73)</mtext
+            > <mo
+              > = 184.28</mo
+            ></math
+          >. A student who scored 73 points on the third exam would expect to earn 184 points on the final exam. <br
+          /><br
+          /> The original line predicted <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mover
+              ><mi
+                >y</mi
+              ><mo
+                >^</mo
+              ></mover
+            > <mo
+              >=</mo
+            ><mn
+              >-173.51</mn
+            ><mo
+              >+</mo
+            ><mtext
+              >4.83(73)</mtext
+            > <mo
+              > = 179.08</mo
+            ></math
+          > so the prediction using the new line with the outlier eliminated differs from the original prediction. </p
+        ></div
+      > </div
+    > </div
+  ><div
+      class="example"
+      id="element-986"
+    ><p
+        class="para"
+        id="element-719"
+      >(<cite
+        ><span
+            class="cite-title"
+          >From The Consumer Price Indexes Web site</span
+        ></cite
+      >) The Consumer Price Index (CPI) measures the average change over time in the prices paid by urban consumers for consumer goods and services. The CPI affects nearly all Americans because of the many ways it is used. One of its biggest uses is as a measure of inflation. By providing information about price changes in the Nation's economy to government, business, and labor, the CPI helps them to make economic decisions. The President, Congress, and the Federal Reserve Board use the CPI's trends to formulate monetary and fiscal policies. In the following table, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > is the year and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > is the CPI. </p
+    ><table
+        id="element-127"
+        summary=""
+      ><caption
+        ><span
+            class="title"
+          >Data:</span
+        ></caption
+      ><thead
+        > <tr
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >y</mi
+              ></math
+            ></td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >1915&#xA0;&#xA0;</td
+          > <td
+            >10.1&#xA0;&#xA0;</td
+          > </tr
+        > <tr
+          > <td
+            >1926</td
+          > <td
+            >17.7</td
+          > </tr
+        > <tr
+          > <td
+            >1935</td
+          > <td
+            >13.7</td
+          > </tr
+        > <tr
+          > <td
+            >1940</td
+          > <td
+            >14.7</td
+          > </tr
+        > <tr
+          > <td
+            >1947</td
+          > <td
+            >24.1</td
+          > </tr
+        > <tr
+          > <td
+            >1952</td
+          > <td
+            >26.5</td
+          > </tr
+        > <tr
+          > <td
+            >1964</td
+          > <td
+            >31.0</td
+          > </tr
+        > <tr
+          > <td
+            >1969</td
+          > <td
+            >36.7</td
+          > </tr
+        > <tr
+          > <td
+            >1975</td
+          > <td
+            >49.3</td
+          > </tr
+        > <tr
+          > <td
+            >1979</td
+          > <td
+            >72.6</td
+          > </tr
+        > <tr
+          > <td
+            >1980</td
+          > <td
+            >82.4</td
+          > </tr
+        > <tr
+          > <td
+            >1986</td
+          > <td
+            >109.6</td
+          > </tr
+        > <tr
+          > <td
+            >1991</td
+          > <td
+            >130.7</td
+          > </tr
+        > <tr
+          > <td
+            >1999</td
+          > <td
+            >166.6</td
+          > </tr
+        > </tbody
+      ></table
+    > <div
+        class="exercise"
+        id="element-603"
+      ><div
+          class="problem"
+          id="id1171166081082"
+        > <ul
+            class="list"
+            data-id="list3"
+            data-list-type="bulleted"
+          ><li
+              class="item"
+            >Make a scatterplot of the data.</li
+          > <li
+              class="item"
+            >Calculate the least squares line. Write the equation in the form <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mover
+                ><mi
+                  >y</mi
+                ><mo
+                  >^</mo
+                ></mover
+              ><mo
+                >=</mo
+              ><mi
+                >a</mi
+              ><mo
+                >+</mo
+              ><mtext
+                >b</mtext
+              ><mi
+                >x</mi
+              ></math
+            >.</li
+          > <li
+              class="item"
+            >Draw the line on the scatterplot.</li
+          > <li
+              class="item"
+            >Find the correlation coefficient. Is it significant?</li
+          > <li
+              class="item"
+            >What is the average CPI for the year 1990?</li
+          > </ul
+        ></div
+      > <div
+          class="solution"
+          id="id1171157206888"
+        > <ul
+            class="list"
+            data-id="element-298"
+            data-list-type="bulleted"
+          ><li
+              class="item"
+            >Scatter plot and line of best fit.</li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mover
+                ><mi
+                  >y</mi
+                ><mo
+                  >^</mo
+                ></mover
+              ><mo
+                >=</mo
+              ><mn
+                >-3204</mn
+              ><mo
+                >+</mo
+              ><mtext
+                >1.662</mtext
+              ><mi
+                >x</mi
+              ></math
+            > is the equation of the line of best fit.</li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ><mo
+                >=</mo
+              ><mn
+                >0.8694</mn
+              ></math
+            ></li
+          > <li
+              class="item"
+            >The number of data points is <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >n</mi
+              ><mo
+                >=</mo
+              ><mn
+                >14</mn
+              ></math
+            >. Use the 95% Critical Values of the Sample Correlation Coefficient table at the end of Chapter 12. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >n</mi
+              ><mo
+                >-</mo
+              ><mn
+                >2</mn
+              ><mo
+                >=</mo
+              ><mn
+                >12</mn
+              ></math
+            >. The corresponding critical value is 0.532. Since <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mn
+                >0.8694</mn
+              ><mo
+                >&gt;</mo
+              ><mn
+                >0.532</mn
+              ></math
+            >, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ></math
+            > is significant.</li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mover
+                ><mi
+                  >y</mi
+                ><mo
+                  >^</mo
+                ></mover
+              ><mo
+                >=</mo
+              ><mn
+                >-3204</mn
+              ><mo
+                >+</mo
+              ><mn
+                >1.662</mn
+              ><mo
+                >(</mo
+              ><mn
+                >1990</mn
+              ><mo
+                >)</mo
+              ><mo
+                >=</mo
+              ><mn
+                >103.4</mn
+              ></math
+            > CPI</li
+          > <li
+              class="item"
+            > Using the calculator LinRegTTest, we find that s = 25.4 ; graphing the lines Y2=-3204+1.662X-2(25.4) and Y3=-3204+1.662X+2(25.4) shows that no data values are outside those lines, identifying no outliers. (Note that the year 1999 was very close to the upper line, but still inside it.)</li
+          ></ul
+        ><figure
+            id="linrgs_out1"
+          ><span
+              class="media"
+              id="id1171151867848"
+              data-alt="Scatter plot and line of best fit of the consumer price index data, on the y-axis, and year data, on the x-axis."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="3.5in"
+            /></span
+          ></figure
+        > </div
+      > </div
+    ><div
+        class="note"
+        id="eip-413"
+      >In the example, notice the pattern of the points compared to the line. Although the correlation coefficient is significant, the pattern in the scatterplot indicates that a curve would be a more appropriate model to use than a line. In this example, a statistician should prefer to use other methods to fit a curve to this data, rather than model the data with the line we found. In addition to doing the calculations, it is always important to look at the scatterplot when deciding whether a linear model is appropriate.</div
+    ><p
+        class="para"
+        id="eip-983"
+      >If you are interested in seeing more years of data, visit the Bureau of Labor Statistics CPI website ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt ; our data is taken from the column entitled "Annual Avg." (third column from the right). For example you could add more current years of data. Try adding the more recent years 2004 : CPI=188.9, 2008 : CPI=215.3 and 2011: CPI=224.9. See how it affects the model. (Check: <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mover
+          ><mi
+            >y</mi
+          ><mo
+            >^</mo
+          ></mover
+        ><mo
+          >=</mo
+        ><mn
+          >-4436</mn
+        ><mo
+          >+</mo
+        ><mtext
+          >2.295</mtext
+        ><mi
+          >x</mi
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r = 0.9018</mi
+        ></math
+      >. Is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > significant? Is the fit better with the addition of the new points?)</p
+    ></div
+  ><p
+      class="para"
+      id="eip-457"
+    >**With contributions from Roberta Bloom</p
+  > </body
+>
+</html>

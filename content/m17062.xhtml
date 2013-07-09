@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>F Distribution and One-Way ANOVA: Facts About the F Distribution</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >F Distribution and One-Way ANOVA: Facts About the F Distribution</div
+  > <ol
+      class="list"
+      data-id="list-1"
+      data-list-type="enumerated"
+    ><li
+        class="item"
+      >The curve is not symmetrical but skewed to the right.</li
+    > <li
+        class="item"
+      >There is a different curve for each set of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >dfs </mtext
+        ></math
+      >.</li
+    > <li
+        class="item"
+      >The F statistic is greater than or equal to zero.</li
+    > <li
+        class="item"
+      >As the degrees of freedom for the numerator and for the denominator get larger, the curve approximates the normal.</li
+    > <li
+        class="item"
+      >Other uses for the F distribution include comparing two variances and Two-Way Analysis of Variance. Comparing two variances is discussed at the end of the chapter. Two-Way Analysis is mentioned for your information only.</li
+    ></ol
+  > <p
+      class="para"
+      id="element-865"
+    ><figure
+        id="anova_figs"
+      ><figure
+          id="anova_facts1"
+        > <span
+            class="media"
+            id="id5185835"
+            data-alt="Nonsymmetrical F distribution curve skewed to the right, more values in the right tail and the peak is closer to the left. This curve is different from the graph on the right because of the different dfs."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      > <figure
+          id="anova_facts2"
+        > <span
+            class="media"
+            id="id3431372"
+            data-alt="Nonsymmetrical F distribution curve skewed to the right, more values in the right tail and the peak is closer to the left. This curve is different from the graph on the left because of the different dfs. Because its dfs are larger, it is closer in resemblance to a normal distribution curve."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      ></figure
+    ></p
+  ><div
+      class="example"
+      id="element-810"
+    ><p
+        class="para"
+        id="element-726"
+      ><strong
+          class="emphasis"
+        >One-Way ANOVA:</strong
+      > Four sororities took a random sample of sisters regarding their grade means for the past term. The results are shown below: </p
+    ><table
+        id="table-1"
+        summary="This table presents the grade averages for sororities with the first sorority in the first column, second in the second column, third in the third column, and fourth in the fourth column."
+      ><thead
+        > <tr
+          > <td
+            >MEAN GRADES FOR FOUR SORORITIES</td
+          > </tr
+        > <tr
+          > <td
+            >Sorority 1</td
+          > <td
+            >Sorority 2</td
+          > <td
+            >Sorority 3</td
+          > <td
+            >Sorority 4</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >2.17</td
+          > <td
+            >2.63</td
+          > <td
+            >2.63</td
+          > <td
+            >3.79</td
+          > </tr
+        > <tr
+          > <td
+            >1.85</td
+          > <td
+            >1.77</td
+          > <td
+            >3.78</td
+          > <td
+            >3.45</td
+          > </tr
+        > <tr
+          > <td
+            >2.83</td
+          > <td
+            >3.25</td
+          > <td
+            >4.00</td
+          > <td
+            >3.08</td
+          > </tr
+        > <tr
+          > <td
+            >1.69</td
+          > <td
+            >1.86</td
+          > <td
+            >2.55</td
+          > <td
+            >2.26</td
+          > </tr
+        > <tr
+          > <td
+            >3.33</td
+          > <td
+            >2.21</td
+          > <td
+            >2.45</td
+          > <td
+            >3.18</td
+          > </tr
+        > </tbody
+      ></table
+    ><div
+        class="exercise"
+        id="element-508"
+      ><div
+          class="problem"
+          id="id3272914"
+        > <p
+            class="para"
+            id="element-863"
+          >Using a significance level of 1%, is there a difference in mean grades among the sororities? </p
+        ></div
+      > <div
+          class="solution"
+          id="id3301468"
+        > <p
+            class="para"
+            id="element-75"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >1</mn
+              > </msub
+            > </math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >2</mn
+              > </msub
+            > </math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >3</mn
+              > </msub
+            > </math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >4</mn
+              > </msub
+            > </math
+          > be the population means of the sororities. Remember that the null hypothesis claims that the sorority groups are from the same normal distribution. The alternate hypothesis says that at least two of the sorority groups come from populations with different normal distributions. Notice that the four sample sizes are each size 5. <br
+          /> <div
+              class="note"
+              id="eip-id1170641699184"
+            >This is an example of a <strong
+                class="emphasis"
+              >balanced design</strong
+            >, since each factor (i.e. Sorority) has the same number of observations. </div
+          ></p
+        ><p
+            class="para"
+            id="element-998"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > <mo
+              >:</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >1</mn
+              > </msub
+            > <mo
+              >=</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >2</mn
+              > </msub
+            > <mo
+              >=</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >3</mn
+              > </msub
+            > <mo
+              >=</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >4</mn
+              > </msub
+            > <mspace
+                width="30pt"
+            /> </math
+          > </p
+        ><p
+            class="para"
+            id="element-309"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: Not all of the means <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >1</mn
+              > </msub
+            > <mo
+              >,</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >2</mn
+              > </msub
+            > <mo
+              >,</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >3</mn
+              > </msub
+            > <mo
+              >,</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >4</mn
+              > </msub
+            > </math
+          > are equal. </p
+        ><p
+            class="para"
+            id="element-958"
+          ><strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >F</mi
+              > <mrow
+                > <mn
+                  >3</mn
+                > <mo
+                  >,</mo
+                > <mn
+                  >16</mn
+                > </mrow
+              > </msub
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-673"
+          >where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >k</mi
+            > <mo
+              >=</mo
+            > <mtext
+              >4 groups</mtext
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >n</mi
+            > <mo
+              >=</mo
+            > <mtext
+              >20 samples in total</mtext
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-925"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >df(num)</mi
+            > <mo
+              >=</mo
+            > <mi
+              >k</mi
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >4</mn
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >3</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-41"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >df(denom)</mi
+            > <mo
+              >=</mo
+            > <mi
+              >n</mi
+            > <mo
+              >-</mo
+            > <mi
+              >k</mi
+            > <mo
+              >=</mo
+            > <mn
+              >20</mn
+            > <mo
+              >-</mo
+            > <mn
+              >4</mn
+            > <mo
+              >=</mo
+            > <mn
+              >16</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-284"
+          ><strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >F</mi
+            > <mo
+              >=</mo
+            > <mn
+              >2.23</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-964"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          > </p
+        ><p
+            class="para"
+            id="element-264"
+          ><figure
+              id="anova_facts3"
+            ><span
+                class="media"
+                id="id4765799"
+                data-alt="Nonsymmetrical F distribution curve with values of 0 and 2.23 on the x-axis representing the test statistic of sorority grade averages. A vertical upward line extends from 2.23 to the curve and the area to the right of this is equal to the p-value."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="4in"
+              /></span
+            ></figure
+          ></p
+        ><p
+            class="para"
+            id="element-484"
+          ><strong
+              class="emphasis"
+            >Probability statement:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >p-value</mtext
+            > <mo
+              >=</mo
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <mi
+              >F</mi
+            > <mo
+              >&gt;</mo
+            > <mn
+              >2.23</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.1241</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-849"
+          ><strong
+              class="emphasis"
+            >Compare <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >&#x3B1;</mi
+              > </math
+            > and the <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >p-value</mi
+              > </math
+            >:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >=</mo
+            > <mn
+              >0.01</mn
+            > <mspace
+                width="35pt"
+            /> <mtext
+              >p-value</mtext
+            > <mo
+              >=</mo
+            > <mn
+              >0.1241</mn
+            > <mspace
+                width="35pt"
+            /> </math
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >&lt;</mo
+            > <mtext
+              >p-value</mtext
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-119"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >&lt;</mo
+            > <mtext
+              >p-value</mtext
+            > </math
+          >, you cannot reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >. </p
+        ><p
+            class="para"
+            id="element-483"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > There is not sufficient evidence to conclude that there is a difference among the mean grades for the sororities. </p
+        ><p
+            class="para"
+            id="element-171"
+          ><strong
+              class="emphasis"
+            >TI-83+ or TI 84:</strong
+          > Put the data into lists L1, L2, L3, and L4. Press <code
+              class="code"
+            >STAT</code
+          > and arrow over to <code
+              class="code"
+            >TESTS</code
+          >. Arrow down to <code
+              class="code"
+            >F:ANOVA</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          > and Enter (<code
+              class="code"
+            >L1,L2,L3,L4</code
+          >). The F statistic is 2.2303 and the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value </mtext
+            ></math
+          > is 0.1241. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >df(numerator) = 3</mtext
+            ></math
+          > (under <code
+              class="code"
+            >"Factor"</code
+          >) and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >df(denominator) = 16</mtext
+            ></math
+          > (under <code
+              class="code"
+            >Error</code
+          >). </p
+        > </div
+      > </div
+    > </div
+  ><div
+      class="example"
+      id="element-349"
+    ><p
+        class="para"
+        id="element-149"
+      >A fourth grade class is studying the environment. One of the assignments is to grow bean plants in different soils. Tommy chose to grow his bean plants in soil found outside his classroom mixed with dryer lint. Tara chose to grow her bean plants in potting soil bought at the local nursery. Nick chose to grow his bean plants in soil from his mother's garden. No chemicals were used on the plants, only water. They were grown inside the classroom next to a large window. Each child grew 5 plants. At the end of the growing period, each plant was measured, producing the following data (in inches): <table
+          id="table-234"
+          summary="This table presents Tommy's plant heights in inches in the first column, Tara's plant heights in inches in the second column, and Nick's plant heights in inches in the third column."
+        ><thead
+            valign="top"
+          > <tr
+            > <td
+              >Tommy's Plants</td
+            > <td
+              >Tara's Plants</td
+            > <td
+              >Nick's Plants</td
+            > </tr
+          > </thead
+        ><tbody
+            valign="top"
+          > <tr
+            > <td
+              >24</td
+            > <td
+              >25</td
+            > <td
+              >23</td
+            > </tr
+          > <tr
+            > <td
+              >21</td
+            > <td
+              >31</td
+            > <td
+              >27</td
+            > </tr
+          > <tr
+            > <td
+              >23</td
+            > <td
+              >23</td
+            > <td
+              >22</td
+            > </tr
+          > <tr
+            > <td
+              >30</td
+            > <td
+              >20</td
+            > <td
+              >30</td
+            > </tr
+          > <tr
+            > <td
+              >23</td
+            > <td
+              >28</td
+            > <td
+              >20</td
+            > </tr
+          > </tbody
+        ></table
+      ></p
+    ><div
+        class="exercise"
+        id="element-769"
+      ><div
+          class="problem"
+          id="id13000852"
+        > <p
+            class="para"
+            id="element-952"
+          >Does it appear that the three media in which the bean plants were grown produce the same mean height? Test at a 3% level of significance. </p
+        ></div
+      > <div
+          class="solution"
+          id="id3319153"
+        > <p
+            class="para"
+            id="element-501"
+          >This time, we will perform the calculations that lead to the F' statistic. Notice that each group has the same number of plants so we will use the formula <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mrow
+              > <mi
+                >F'</mi
+              > <mo
+                >=</mo
+              > <mfrac
+                > <mrow
+                  > <mi
+                    >n</mi
+                  > <mo
+                    >&#x22C5;</mo
+                  > <msup
+                    > <mrow
+                      > <mo
+                      /> <msub
+                        > <mi
+                          >s</mi
+                        > <mstyle
+                            fontsize="8pt"
+                          > <mrow
+                            > <mover
+                              ><mi
+                                >x</mi
+                              ><mo
+                                >_</mo
+                              ></mover
+                            > </mrow
+                          > </mstyle
+                        > </msub
+                      > <mo
+                      /> </mrow
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > </mrow
+                > <mrow
+                  > <msup
+                    > <mrow
+                      > <mo
+                      /> <msub
+                        > <msup
+                          > <mi
+                            >s</mi
+                          > <mn
+                            >2</mn
+                          > </msup
+                        > <mstyle
+                            fontsize="8pt"
+                          > <mtext
+                            >pooled</mtext
+                          > </mstyle
+                        > </msub
+                      > <mo
+                      /> </mrow
+                    > </msup
+                  > </mrow
+                > </mfrac
+              > </mrow
+            > </math
+          >. </p
+        ><p
+            class="para"
+            id="element-599"
+          >First, calculate the sample mean and sample variance of each group. </p
+        > <table
+            id="table-9634"
+            summary="This table presents Tommy's plant heights in the first column, Tara's plant heights in the second column, and Nick's plant heights in the third column. The first row represents the sample mean and the second row represents the sample variance."
+          ><thead
+              valign="top"
+            > <tr
+              > <td
+              /> <td
+                >Tommy's Plants</td
+              > <td
+                >Tara's Plants</td
+              > <td
+                >Nick's Plants</td
+              > </tr
+            > </thead
+          ><tbody
+              valign="top"
+            > <tr
+              > <td
+                >Sample Mean</td
+              > <td
+                >24.2</td
+              > <td
+                >25.4</td
+              > <td
+                >24.4</td
+              > </tr
+            > <tr
+              > <td
+                >Sample Variance</td
+              > <td
+                >11.7</td
+              > <td
+                >18.3</td
+              > <td
+                >16.3</td
+              > </tr
+            > </tbody
+          ></table
+        ><p
+            class="para"
+            id="element-566"
+          >Next, calculate the variance of the three group means (Calculate the variance of 24.2, 25.4, and 24.4). <strong
+              class="emphasis"
+            >Variance of the group means = 0.413</strong
+          > = <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+              ><mstyle
+                  fontsize="12pt"
+                ><mrow
+                  ><mrow
+                    ><mo
+                        stretchy="false"
+                    /><msub
+                      ><mi
+                        >s</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mrow
+                            > <apply
+                              > <conjugate
+                              /> <ci
+                                >x</ci
+                              > </apply
+                            > </mrow
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ><mrow
+                      ><msup
+                        ><mo
+                            stretchy="false"
+                        /><mstyle
+                            fontsize="8pt"
+                          ><mrow
+                            ><mn
+                              >2</mn
+                            ></mrow
+                          ></mstyle
+                        ></msup
+                      ><mo
+                          stretchy="false"
+                      /><mrow
+                      /></mrow
+                    ></mrow
+                  ></mrow
+                ></mstyle
+              ><mrow
+              /></mrow
+            ></math
+          ></p
+        ><p
+            class="para"
+            id="element-883"
+          >Then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >MS</mi
+              > <mtext
+                >between</mtext
+              > </msub
+            > <mo
+              >=</mo
+            > <mi
+              >n</mi
+            > <mrow
+              ><mstyle
+                  fontsize="12pt"
+                ><mrow
+                  ><mrow
+                    ><mo
+                        stretchy="false"
+                    /><msub
+                      ><mi
+                        >s</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mrow
+                            > <apply
+                              > <conjugate
+                              /> <ci
+                                >x</ci
+                              > </apply
+                            > </mrow
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ><mrow
+                      ><msup
+                        ><mo
+                            stretchy="false"
+                        /><mstyle
+                            fontsize="8pt"
+                          ><mrow
+                            ><mn
+                              >2</mn
+                            ></mrow
+                          ></mstyle
+                        ></msup
+                      ><mo
+                          stretchy="false"
+                      /><mrow
+                      /></mrow
+                    ></mrow
+                  ></mrow
+                ></mstyle
+              ><mrow
+              /></mrow
+            > <mo
+              >=</mo
+            > <mo
+              >(</mo
+            > <mn
+              >5</mn
+            > <mo
+              >)</mo
+            > <mo
+              >(</mo
+            > <mn
+              >0.413</mn
+            > <mo
+              >)</mo
+            > </math
+          > where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ><mo
+              >=</mo
+            ><mn
+              >5</mn
+            ></math
+          > is the sample size (number of plants each child grew). </p
+        ><p
+            class="para"
+            id="element-606"
+          >Calculate the mean of the three sample variances (Calculate the mean of 11.7, 18.3, and 16.3). <strong
+              class="emphasis"
+            >Mean of the sample variances = 15.433</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mo
+              >=</mo
+            > <semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mo
+                          stretchy="false"
+                      /><msub
+                        > <msup
+                          > <mi
+                            >s</mi
+                          > <mstyle
+                              fontsize="8pt"
+                            > <mn
+                              >2</mn
+                            ></mstyle
+                          ></msup
+                        > <mstyle
+                            fontsize="8pt"
+                          ><mrow
+                            ><mstyle
+                                fontstyle="italic"
+                              ><mrow
+                                ><mtext
+                                  >pooled</mtext
+                                ></mrow
+                              ></mstyle
+                            ></mrow
+                          ></mstyle
+                        ></msub
+                      ><mrow
+                        ><msup
+                          ><mo
+                              stretchy="false"
+                          /><mstyle
+                              fontsize="8pt"
+                            ><mrow
+                              > </mrow
+                            ></mstyle
+                          ></msup
+                        ><mo
+                            stretchy="false"
+                        /><mrow
+                        /></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ \( s rSub { size 8{ ital "pooled"} } \) rSup { size 8{2} } ={}} {}</annotation
+              ></semantics
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-877"
+          >Then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >MS</mi
+              > <mtext
+                >within</mtext
+              > </msub
+            > <mo
+              >=</mo
+            > <semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mo
+                          stretchy="false"
+                      /><msub
+                        > <msup
+                          > <mi
+                            >s</mi
+                          > <mstyle
+                              fontsize="8pt"
+                            > <mn
+                              >2</mn
+                            > </mstyle
+                          > </msup
+                        > <mstyle
+                            fontsize="8pt"
+                          ><mrow
+                            ><mstyle
+                                fontstyle="italic"
+                              ><mrow
+                                ><mtext
+                                  >pooled</mtext
+                                ></mrow
+                              ></mstyle
+                            ></mrow
+                          ></mstyle
+                        ></msub
+                      ><mrow
+                        ><msup
+                          ><mo
+                              stretchy="false"
+                          /><mstyle
+                              fontsize="8pt"
+                            ><mrow
+                              > </mrow
+                            ></mstyle
+                          ></msup
+                        ><mo
+                            stretchy="false"
+                        /><mrow
+                        /></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ \( s rSub { size 8{ ital "pooled"} } \) rSup { size 8{2} } ={}} {}</annotation
+              ></semantics
+            > <mo
+              >=</mo
+            > <mn
+              >15.433</mn
+            > </math
+          >. </p
+        ><p
+            class="para"
+            id="element-649"
+          >The <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >F</mi
+            > </math
+          > statistic (or <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >F</mi
+            > </math
+          > ratio) is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >F</mi
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <msub
+                  > <mi
+                    >MS</mi
+                  > <mtext
+                    >between</mtext
+                  > </msub
+                > </mrow
+              > <mrow
+                > <msub
+                  > <mi
+                    >MS</mi
+                  > <mtext
+                    >within</mtext
+                  > </msub
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mi
+                  >n</mi
+                > <mo
+                  >&#x22C5;</mo
+                > <msup
+                  > <mrow
+                    > <mo
+                    /> <msub
+                      > <mi
+                        >s</mi
+                      > <mstyle
+                          fontsize="8pt"
+                        > <mrow
+                          > <mover
+                            ><mi
+                              >x</mi
+                            ><mo
+                              >_</mo
+                            ></mover
+                          > </mrow
+                        > </mstyle
+                      > </msub
+                    > <mo
+                    /> </mrow
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > <mrow
+                > <msup
+                  > <mrow
+                    > <mo
+                    /> <msub
+                      > <msup
+                        > <mi
+                          >s</mi
+                        > <mn
+                          >2</mn
+                        > </msup
+                      > <mstyle
+                          fontsize="8pt"
+                        > <mtext
+                          >pooled</mtext
+                        > </mstyle
+                      > </msub
+                    > <mo
+                    /> </mrow
+                  > </msup
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mn
+                  >5</mn
+                > <mo
+                  >)</mo
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mn
+                  >0.413</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mrow
+                > <mn
+                  >15.433</mn
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >0.134</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-81"
+          >The dfs for the numerator = <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >the number of groups</mtext
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >3</mn
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >2</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-691"
+          >The dfs for the denominator = <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              > the total number of samples</mtext
+            > <mo
+              >-</mo
+            > <mtext
+              >the number of groups</mtext
+            > <mo
+              >=</mo
+            > <mn
+              >15</mn
+            > <mo
+              >-</mo
+            > <mn
+              >3</mn
+            > <mo
+              >=</mo
+            > <mn
+              >12</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-174"
+          >The distribution for the test is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >F</mi
+              > <mrow
+                > <mn
+                  >2</mn
+                > <mo
+                  >,</mo
+                > <mn
+                  >12</mn
+                > </mrow
+              > </msub
+            > </math
+          > and the F statistic is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >F</mi
+            > <mo
+              >=</mo
+            > <mn
+              >0.134</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-351"
+          >The p-value is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <mi
+              >F</mi
+            > <mo
+              >&gt;</mo
+            > <mn
+              >0.134</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.8759</mn
+            > </math
+          >. </p
+        ><p
+            class="para"
+            id="element-528"
+          ><strong
+              class="emphasis"
+            >Decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >=</mo
+            > <mn
+              >0.03</mn
+            > </math
+          > and the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >p-value</mtext
+            > <mo
+              >=</mo
+            > <mn
+              >0.8759</mn
+            > </math
+          >, do not reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >. (Why?) </p
+        ><p
+            class="para"
+            id="element-886"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > With a 3% the level of significance, from the sample data, the evidence is not sufficient to conclude that the mean heights of the bean plants are different. </p
+        ><p
+            class="para"
+            id="element-223"
+          >(This experiment was actually done by three classmates of the son of one of the authors.) </p
+        > </div
+      > </div
+    > <p
+        class="para"
+        id="element-824"
+      >Another fourth grader also grew bean plants but this time in a jelly-like mass. The heights were (in inches) 24, 28, 25, 30, and 32. </p
+    > <div
+        class="exercise"
+        id="element-3252"
+      > <div
+          class="problem"
+          id="id6378299"
+        > <p
+            class="para"
+            id="element-146"
+          ><strong
+              class="emphasis"
+            >Do a One-Way ANOVA test on the 4 groups.</strong
+          > You may use your calculator or computer to perform the test. Are the heights of the bean plants different? Use a <a
+              href="/m17135"
+            >solution sheet</a
+          >. </p
+        ></div
+      > <div
+          class="solution"
+          id="id15320576"
+          print-placement="end"
+        > <ul
+            class="list"
+            data-id="element-foo"
+            data-list-type="bulleted"
+          ><li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >F</mi
+              ></math
+            > = 0.9496</li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >p-value</mi
+              ></math
+            > = 0.4402</li
+          > </ul
+        ><p
+            class="para"
+            id="element-bar"
+          >From the sample data, the evidence is not sufficient to conclude that the mean heights of the bean plants are different.</p
+        ></div
+      > </div
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-866"
+      >Optional Classroom Activity</h1
+    ><p
+        class="para"
+        id="element-746"
+      >From the class, create four groups of the same size as follows: men under 22, men at least 22, women under 22, women at least 22. Have each member of each group record the number of states in the United States he or she has visited. Run an ANOVA test to determine if the average number of states visited in the four groups are the same. Test at a 1% level of significance. Use one of the <a
+          href="/m17135"
+        >solution sheets</a
+      > at the end of the chapter (after the homework). </p
+    ></div
+  > </body
+>
+</html>

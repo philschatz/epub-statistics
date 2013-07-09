@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Discrete Random Variables: Binomial</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Discrete Random Variables: Binomial</div
+  > <p
+      class="para"
+      id="element-999"
+    >The characteristics of a binomial experiment are: <ol
+        class="list"
+        data-id="element-591"
+        data-list-type="enumerated"
+      ><li
+          class="item"
+        >There are a fixed number of trials. Think of trials as repetitions of an experiment. The letter <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        > denotes the number of trials. </li
+      > <li
+          class="item"
+        >There are only 2 possible outcomes, called "success" and, "failure" for each trial. The letter <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ></math
+        > denotes the probability of a success on one trial and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >q</mi
+          ></math
+        > denotes the probability of a failure on one trial. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ><mo
+            >+</mo
+          ><mi
+            >q</mi
+          ><mo
+            >=</mo
+          ><mn
+            >1</mn
+          ></math
+        >. </li
+      > <li
+          class="item"
+        >The <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        > trials are independent and are repeated using identical conditions. Because the <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        > trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ></math
+        >, of a success and probability, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >q</mi
+          ></math
+        >, of a failure remain the same. For example, randomly guessing at a true - false statistics question has only two outcomes. If a success is guessing correctly, then a failure is guessing incorrectly. Suppose Joe always guesses correctly on any statistics true - false question with probability <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><eq
+            /><mrow
+              ><mi
+                >p</mi
+              ></mrow
+            ><mrow
+              ><mn
+                >0.6</mn
+              ></mrow
+            ></reln
+          ></math
+        >. Then, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><eq
+            /><mrow
+              ><mi
+                >q</mi
+              ></mrow
+            ><mrow
+              ><mn
+                >0.4</mn
+              ></mrow
+            ></reln
+          ></math
+        > .This means that for every true - false statistics question Joe answers, his probability of success (<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><eq
+            /><mrow
+              ><mi
+                >p</mi
+              ></mrow
+            ><mrow
+              ><mn
+                >0.6</mn
+              ></mrow
+            ></reln
+          ></math
+        >) and his probability of failure (<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <reln
+            ><eq
+            /><mrow
+              ><mi
+                >q</mi
+              ></mrow
+            ><mrow
+              ><mn
+                >0.4</mn
+              ></mrow
+            ></reln
+          ></math
+        >) remain the same.</li
+      ></ol
+    ></p
+  > <p
+      class="para"
+      id="element-229"
+    >The outcomes of a binomial experiment fit a <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="bidist"
+      >binomial probability distribution</term
+    >. The random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ><mo
+        >=</mo
+      ></math
+    > the number of successes obtained in the <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    > independent trials.</p
+  ><p
+      class="para"
+      id="element-108"
+    >The mean, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    >, and variance, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><ci
+        ><msup
+          ><mi
+            >&#x3C3;</mi
+          ><mn
+            >2</mn
+          ></msup
+        ></ci
+      ></math
+    >, for the binomial probability distribution is <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <reln
+        ><eq
+        /><mrow
+          > <mi
+            >&#x3BC;</mi
+          ></mrow
+        > <mrow
+          ><mi
+            >np</mi
+          ></mrow
+        > </reln
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <reln
+        ><eq
+        /><mrow
+          > <ci
+            ><msup
+              ><mi
+                >&#x3C3;</mi
+              ><mn
+                >2</mn
+              ></msup
+            ></ci
+          ></mrow
+        > <mrow
+          ><mi
+            >npq</mi
+          ><mo
+            >.</mo
+          ></mrow
+        > </reln
+      ></math
+    > The standard deviation, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3C3;</mi
+      ></math
+    >, is then <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <reln
+        ><eq
+        /><mrow
+          > <mi
+            >&#x3C3;</mi
+          ></mrow
+        ><msqrt
+          > <mrow
+            ><mi
+              >npq</mi
+            ></mrow
+          ></msqrt
+        > </reln
+      ></math
+    >.</p
+  ><p
+      class="para"
+      id="element-612"
+    >Any experiment that has characteristics 2 and 3 and where n = 1 is called a <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="bernoullitr"
+      >Bernoulli Trial</term
+    > (named after Jacob Bernoulli who, in the late 1600s, studied them extensively). A binomial experiment takes place when the number of successes is counted in one or more Bernoulli Trials.</p
+  ><div
+      class="example"
+      id="element-375"
+    ><p
+        class="para"
+        id="element-545"
+      >At ABC College, the withdrawal rate from an elementary physics course is 30% for any given term. This implies that, for any given term, 70% of the students stay in the class for the entire term. A "success" could be defined as an individual who withdrew. The random variable is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of students who withdraw from the randomly selected elementary physics class. </p
+    > </div
+  ><div
+      class="example"
+      id="element-305"
+    ><p
+        class="para"
+        id="element-284"
+      >Suppose you play a game that you can only either win or lose. The probability that you win any game is 55% and the probability that you lose is 45%. Each game you play is independent. If you play the game 20 times, what is the probability that you win 15 of the 20 games? Here, if you define <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > = the number of wins, then <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > takes on the values 0, 1, 2, 3, ..., 20. The probability of a success is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /><mrow
+            > <mi
+              >p</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >0.55</mn
+            ></mrow
+          > </reln
+        ></math
+      >. The probability of a failure is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /><mrow
+            > <mi
+              >q</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >0.45</mn
+            ></mrow
+          > </reln
+        ></math
+      >. The number of trials is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /><mrow
+            > <mi
+              >n</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >20</mn
+            ></mrow
+          > </reln
+        ></math
+      >. The probability question can be stated mathematically as <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><mrow
+            ><mi
+              >P</mi
+            > <mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >15</mn
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      >.</p
+    ></div
+  ><div
+      class="example"
+      id="element-167"
+    ><p
+        class="para"
+        id="element-104"
+      >A fair coin is flipped 15 times. Each flip is independent. What is the probability of getting more than 10 heads? Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > = the number of heads in 15 flips of the fair coin. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > takes on the values 0, 1, 2, 3, ..., 15. Since the coin is fair, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >p</mi
+        ></math
+      > = 0.5 and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >q</mi
+        ></math
+      > = 0.5. The number of trials is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        ></math
+      > = 15. The probability question can be stated mathematically as <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><gt
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            > <mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >10</mn
+            ><mo
+              >)</mo
+            ></mrow
+          > </reln
+        ></math
+      >.</p
+    ></div
+  ><div
+      class="example"
+      id="element-807"
+    ><p
+        class="para"
+        id="element-175"
+      >Approximately 70% of statistics students do their homework in time for it to be collected and graded. Each student does homework independently. In a statistics class of 50 students, what is the probability that at least 40 will do their homework on time? Students are selected randomly. </p
+    ><div
+        class="exercise"
+        id="element-1751"
+      > <div
+          class="problem"
+          id="id5317083"
+        > <p
+            class="para"
+            id="element-732"
+          >This is a binomial problem because there is only a success or a __________, there are a definite number of trials, and the probability of a success is 0.70 for each trial. </p
+        > </div
+      > <div
+          class="solution"
+          id="id5321627"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-23523"
+          > failure </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-1752"
+      > <div
+          class="problem"
+          id="id5318862"
+        > <p
+            class="para"
+            id="element-73124"
+          >If we are interested in the number of students who do their homework, then how do we define <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >X</mi
+            ></math
+          >? </p
+        > </div
+      > <div
+          class="solution"
+          id="id5318289"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-235352"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >X</mi
+            ></math
+          > = the number of statistics students who do their homework on time </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-17530"
+      > <div
+          class="problem"
+          id="id5318085"
+        > <p
+            class="para"
+            id="element-732324"
+          >What values does <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >x</mi
+            ></math
+          > take on? </p
+        ></div
+      > <div
+          class="solution"
+          id="id5318055"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-23352"
+          > 0, 1, 2, &#x2026;, 50 </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-1753"
+      > <div
+          class="problem"
+          id="id5317581"
+        > <p
+            class="para"
+            id="element-7324"
+          >What is a "failure", in words? </p
+        > </div
+      > <div
+          class="solution"
+          id="id5317186"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-232"
+          >Failure is a student who does not do his or her homework on time.</p
+        > </div
+      > </div
+    > <p
+        class="para"
+        id="element-8865"
+      >The probability of a success is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >p</mi
+        ></math
+      > = 0.70. The number of trial is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        ></math
+      > = 50.</p
+    > <div
+        class="exercise"
+        id="element-1753232"
+      > <div
+          class="problem"
+          id="id5317836"
+        > <p
+            class="para"
+            id="element-74"
+          >If <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><reln
+              ><eq
+              /> <mrow
+                ><mi
+                  >p</mi
+                ><mo
+                  >+</mo
+                ><mi
+                  >q</mi
+                ></mrow
+              > <mrow
+                ><mn
+                  >1</mn
+                ></mrow
+              > </reln
+            ></math
+          >, then what is <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >q</mi
+            ></math
+          >? </p
+        > </div
+      > <div
+          class="solution"
+          id="id5317308"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-5352"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >q</mi
+            ></math
+          > = 0.30 </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-13"
+      > <div
+          class="problem"
+          id="id5317006"
+        > <p
+            class="para"
+            id="element-70"
+          >The words "at least" translate as what kind of inequality for the probability question <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mrow
+              ><mi
+                >P</mi
+              ><mo
+                >(</mo
+              > <mi
+                >x</mi
+              ></mrow
+            ><mi
+              >____</mi
+            > <mrow
+              ><mn
+                >40</mn
+              ><mo
+                >)</mo
+              ></mrow
+            > </math
+          >.</p
+        ></div
+      > <div
+          class="solution"
+          id="id5319380"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-23532"
+          >greater than or equal to (&#x2265;)</p
+        > </div
+      > </div
+    > <p
+        class="para"
+        id="element-whatever"
+      >The probability question is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><geq
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            > <mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >40</mn
+            ><mo
+              >)</mo
+            ></mrow
+          > </reln
+        ></math
+      >.</p
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-501"
+      >Notation for the Binomial: B = Binomial Probability Distribution Function</h1
+    > <p
+        class="para"
+        id="element-715"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > ~ <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >B</mi
+        ><mo
+          >(</mo
+        > <mi
+          >n</mi
+        ><mo
+          >,</mo
+        ><mi
+          >p</mi
+        ><mo
+          >)</mo
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="element-276"
+      >Read this as "<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > is a random variable with a binomial distribution." The parameters are <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >p</mi
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        ></math
+      > = number of trials <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >p</mi
+        ></math
+      > = probability of a success on each trial</p
+    > </div
+  > <div
+      class="example"
+      id="element-972"
+    ><p
+        class="para"
+        id="element-548"
+      >It has been stated that about 41% of adult workers have a high school diploma but do not pursue any further education. If 20 adult workers are randomly selected, find the probability that at most 12 of them have a high school diploma but do not pursue any further education. How many adult workers do you expect to have a high school diploma but do not pursue any further education? </p
+    ><p
+        class="para"
+        id="element-992"
+      >Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > = the number of workers who have a high school diploma but do not pursue any further education.</p
+    ><p
+        class="para"
+        id="element-570"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > takes on the values 0, 1, 2, ..., 20 where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        ></math
+      > = 20 and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >p</mi
+        ></math
+      > = 0.41. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >q</mi
+        ></math
+      > = 1 - 0.41 = 0.59. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >X</mi
+        ></math
+      > ~ <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >B</mi
+        ><mo
+          >(</mo
+        > <mn
+          >20</mn
+        ><mo
+          >,</mo
+        ><mn
+          >0.41</mn
+        ><mo
+          >)</mo
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-66"
+      >Find <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            > <mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >12</mn
+            ><mo
+              >)</mo
+            ><mo
+              >.</mo
+            ></mrow
+          > </reln
+        ></math
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <mrow
+            > <reln
+              ><leq
+              /> <mrow
+                ><mi
+                  >P</mi
+                ><mo
+                  >(</mo
+                ><mi
+                  >x</mi
+                ></mrow
+              > <mrow
+                ><mn
+                  >12</mn
+                ><mo
+                  >)</mo
+                ></mrow
+              > </reln
+            ></mrow
+          > <mrow
+            ><mn
+              >0.9738</mn
+            ><mo
+              >.</mo
+            ></mrow
+          > </reln
+        ></math
+      > (calculator or computer)</p
+    ><p
+        class="para"
+        id="element-224"
+      >Using the TI-83+ or the TI-84 calculators, the calculations are as follows. Go into 2nd DISTR. The syntax for the instructions are</p
+    ><p
+        class="para"
+        id="element-853"
+      ><strong
+          class="emphasis"
+        >To calculate (<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > = value): binompdf(<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        >, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ></math
+        >, number)</strong
+      > If "number" is left out, the result is the binomial probability table. </p
+    ><p
+        class="para"
+        id="element-506"
+      ><strong
+          class="emphasis"
+        >To calculate <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><leq
+            /> <mrow
+              ><mi
+                >P</mi
+              ><mo
+                >(</mo
+              ><mi
+                >x</mi
+              ></mrow
+            > <mrow
+              ><mtext
+                >value</mtext
+              ><mo
+                >)</mo
+              ></mrow
+            > </reln
+          ></math
+        >: binomcdf(<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ></math
+        >, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ></math
+        >, number)</strong
+      > If "number" is left out, the result is the cumulative binomial probability table.</p
+    ><p
+        class="para"
+        id="element-371"
+      ><strong
+          class="emphasis"
+        >For this problem: After you are in 2nd DISTR, arrow down to A:binomcdf. Press ENTER. Enter 20,.41,12). The result is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><eq
+            /> <mrow
+              > <reln
+                ><leq
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mi
+                    >x</mi
+                  ></mrow
+                > <mrow
+                  ><mn
+                    >12</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                > </reln
+              ></mrow
+            > <mrow
+              ><mn
+                >0.9738</mn
+              ></mrow
+            > </reln
+          ></math
+        >. </strong
+      ></p
+    ><div
+        class="note"
+        id="id5442988"
+      >If you want to find <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><mrow
+            ><mi
+              >P</mi
+            > <mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >12</mn
+            ><mo
+              >)</mo
+            ></mrow
+          > </reln
+        ></math
+      >, use the pdf (0:binompdf). If you want to find <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><mrow
+            ><mi
+              >P</mi
+            > <mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          ><mi
+            > &gt;</mi
+          > <mrow
+            ><mn
+              >12</mn
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      >, use 1 - binomcdf(20,.41,12).</div
+    ><p
+        class="para"
+        id="element-442"
+      >The probability at most 12 workers have a high school diploma but do not pursue any further education is 0.9738</p
+    ><p
+        class="para"
+        id="element-586"
+      >The graph of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >x</mi
+        ></math
+      > ~ <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >B</mi
+        ><mo
+          >(</mo
+        > <mn
+          >20</mn
+        ><mo
+          >,</mo
+        ><mn
+          >0.41</mn
+        ><mo
+          >)</mo
+        > </math
+      > is:</p
+    ><p
+        class="para"
+        id="element-128"
+      ><span
+          class="media"
+          id="id5403497"
+          data-alt="The binomial probability distribution function graph is made up of bars that are fairly normally distributed with an x-axis of 0-20 and a y-axis of 0-0.2 in increments of 0.05."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="4in"
+        /></span
+      > </p
+    ><p
+        class="para"
+        id="element-313"
+      >The y-axis contains the probability of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >, where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of workers who have only a high school diploma.</p
+    ><p
+        class="para"
+        id="element-363"
+      >The number of adult workers that you expect to have a high school diploma but not pursue any further education is the mean, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ><mo
+          >=</mo
+        ><mi
+          >np</mi
+        ><mo
+          >=</mo
+        > <mo
+          >(</mo
+        ><mn
+          >20</mn
+        ><mo
+          >)</mo
+        > <mo
+          >(</mo
+        ><mn
+          >0.41</mn
+        ><mo
+          >)</mo
+        ><mo
+          >=</mo
+        > <mn
+          >8.2</mn
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-949"
+      >The formula for the variance is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <mrow
+            ><msup
+              ><mi
+                >&#x3C3;</mi
+              ><mn
+                >2</mn
+              ></msup
+            ></mrow
+          > <mrow
+            ><mi
+              >npq</mi
+            ></mrow
+          ></reln
+        ></math
+      >. The standard deviation is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <mrow
+            ><mi
+              >&#x3C3;</mi
+            ></mrow
+          > <mrow
+            ><msqrt
+              ><mi
+                >npq</mi
+              ></msqrt
+            ></mrow
+          ></reln
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mi
+                >&#x3C3;</mi
+              ></mrow
+            > <mrow
+              > <msqrt
+                ><mo
+                  >(</mo
+                ><mn
+                  >20</mn
+                ><mo
+                  >)</mo
+                > <mo
+                  >(</mo
+                ><mn
+                  >0.41</mn
+                ><mo
+                  >)</mo
+                > <mo
+                  >(</mo
+                ><mn
+                  >0.59</mn
+                ><mo
+                  >)</mo
+                > </msqrt
+              > </mrow
+            ></reln
+          > <mrow
+            ><mn
+              >2.20</mn
+            > </mrow
+          ></reln
+        ></math
+      >. </p
+    > </div
+  ><div
+      class="example"
+      id="element-678"
+    ><p
+        class="para"
+        id="element-532"
+      >The following example illustrates a problem that is <strong
+          class="emphasis"
+        >not</strong
+      > binomial. It violates the condition of independence. ABC College has a student advisory committee made up of 10 staff members and 6 students. The committee wishes to choose a chairperson and a recorder. What is the probability that the chairperson and recorder are both students? All names of the committee are put into a box and two names are drawn <strong
+          class="emphasis"
+        >without replacement</strong
+      >. The first name drawn determines the chairperson and the second name the recorder. There are two trials. However, the trials are not independent because the outcome of the first trial affects the outcome of the second trial. The probability of a student on the first draw is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >6</mn
+          ><mn
+            >16</mn
+          ></mfrac
+        ></math
+      >. The probability of a student on the second draw is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >5</mn
+          ><mn
+            >15</mn
+          ></mfrac
+        ></math
+      >, when the first draw produces a student. The probability is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >6</mn
+          ><mn
+            >15</mn
+          ></mfrac
+        ></math
+      > when the first draw produces a staff member. The probability of drawing a student's name changes for each of the trials and, therefore, violates the condition of independence. </p
+    > </div
+  > </body
+>
+</html>

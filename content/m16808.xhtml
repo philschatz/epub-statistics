@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Continuous Random Variables: Introduction</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Continuous Random Variables: Introduction</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-967"
+      >Student Learning Outcomes</h1
+    ><p
+        class="para"
+        id="element-103"
+      > By the end of this chapter, the student should be able to: </p
+    > <ul
+        class="list"
+        data-id="list1"
+      ><li
+          class="item"
+        >Recognize and understand continuous probability density functions in general.</li
+      > <li
+          class="item"
+        >Recognize the uniform probability distribution and apply it appropriately.</li
+      > <li
+          class="item"
+        >Recognize the exponential probability distribution and apply it appropriately.</li
+      ></ul
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="id14391377"
+      >Introduction</h1
+    > <p
+        class="para"
+        id="delete_me"
+      >Continuous random variables have many applications. Baseball batting averages, IQ scores, the length of time a long distance telephone call lasts, the amount of money a person carries, the length of time a computer chip lasts, and SAT scores are just a few. The field of reliability depends on a variety of continuous random variables. </p
+    ><p
+        class="para"
+        id="element-919"
+      >This chapter gives an introduction to continuous random variables and the many continuous distributions. We will be studying these continuous distributions for several chapters.</p
+    ><p
+        class="para"
+        id="element-660"
+      ><div
+          class="note"
+          id="id13580313"
+          data-type="NOTE"
+          data-label="NOTE"
+        >The values of discrete and continuous random variables can be ambiguous. For example, if <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > is equal to the number of miles (to the nearest mile) you drive to work, then <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > is a discrete random variable. You count the miles. If <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > is the distance you drive to work, then you measure values of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > is a continuous random variable. How the random variable is defined is very important.</div
+      ></p
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-606"
+      >Properties of Continuous Probability Distributions</h1
+    ><p
+        class="para"
+        id="eip-60"
+      >The graph of a continuous probability distribution is a curve. Probability is represented by area under the curve. </p
+    ><p
+        class="para"
+        id="eip-33"
+      >The curve is called the <strong
+          class="emphasis"
+        > probability density function </strong
+      >(abbreviated: <strong
+          class="emphasis"
+        >pdf</strong
+      >). We use the symbol <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ></math
+      > to represent the curve. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ></math
+      > is the function that corresponds to the graph; we use the density function <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ></math
+      > to draw the graph of the probability distribution. </p
+    ><p
+        class="para"
+        id="eip-474"
+      ><strong
+          class="emphasis"
+        >Area under the curve</strong
+      > is given by a different function called the <strong
+          class="emphasis"
+        >cumulative distribution function </strong
+      > (abbreviated: <strong
+          class="emphasis"
+        >cdf</strong
+      >). The cumulative distribution function is used to evaluate probability as area.</p
+    ><p
+        class="para"
+        id="eip-224"
+      ><ul
+          class="list"
+          data-id="eip-id1170587055152"
+        ><li
+            class="item"
+          >The outcomes are measured, not counted.</li
+        > <li
+            class="item"
+          >The entire area under the curve and above the x-axis is equal to 1.</li
+        > <li
+            class="item"
+          >Probability is found for intervals of x values rather than for individual x values.</li
+        > <li
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><reln
+              ><lt
+              /> <reln
+                ><lt
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mn
+                    >c</mn
+                  ></mrow
+                > <mrow
+                  ><mi
+                    >x</mi
+                  ></mrow
+                ></reln
+              > <mrow
+                ><mn
+                  >d</mn
+                ><mo
+                  >)</mo
+                ></mrow
+              ></reln
+            > </math
+          > is the probability that the random variable X is in the interval between the values c and d. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><reln
+              ><lt
+              /> <reln
+                ><lt
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mn
+                    >c</mn
+                  ></mrow
+                > <mrow
+                  ><mi
+                    >x</mi
+                  ></mrow
+                ></reln
+              > <mrow
+                ><mn
+                  >d</mn
+                ><mo
+                  >)</mo
+                ></mrow
+              ></reln
+            > </math
+          > is the area under the curve, above the x-axis, to the right of c and the left of d.</li
+        > <li
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><reln
+              ><eq
+              /> <reln
+                ><eq
+                /> <mrow
+                  ><mi
+                    >P</mi
+                  ><mo
+                    >(</mo
+                  ><mi
+                    >x</mi
+                  ></mrow
+                > <mrow
+                  ><mi
+                    >c</mi
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > <mrow
+                ><mn
+                  >0</mn
+                ></mrow
+              ></reln
+            > </math
+          > The probability that x takes on any single individual value is 0. The area below the curve, above the x-axis, and between x=c and x=c has no width, and therefore no area (area = 0). Since the probability is equal to the area, the probability is also 0.</li
+        > </ul
+      ></p
+    ><p
+        class="para"
+        id="eip-423"
+      >We will find the area that represents probability by using geometry, formulas, technology, or probability tables. In general, calculus is needed to find the area under the curve for many probability density functions. When we use formulas to find the area in this textbook, the formulas were found by using the techniques of integral calculus. However, because most students taking this course have not studied calculus, we will not be using calculus in this textbook.</p
+    ><p
+        class="para"
+        id="eip-335"
+      >There are many continuous probability distributions. When using a continuous probability distribution to model probability, the distribution used is selected to best model and fit the particular situation. </p
+    ><p
+        class="para"
+        id="eip-94"
+      >In this chapter and the next chapter, we will study the uniform distribution, the exponential distribution, and the normal distribution. The following graphs illustrate these distributions.</p
+    ><p
+        class="para"
+        id="eip-114"
+      ><figure
+          id="id4131243"
+        ><figcaption
+          >The graph shows a Uniform Distribution with the area between x=3 and x=6 shaded to represent the probability that the value of the random variable X is in the interval between 3 and 6.</figcaption
+        ><span
+            class="media"
+            id="id1164320264037"
+            data-alt=""
+          ><img
+              src="../resources/graphics1.png"
+              data-mime-type="image/png"
+              alt=""
+              height="190"
+              width="317"
+          /></span
+        > </figure
+      ><figure
+          id="id3243513"
+        ><figcaption
+          >The graph shows an Exponential Distribution with the area between x=2 and x=4 shaded to represent the probability that the value of the random variable X is in the interval between 2 and 4.</figcaption
+        ><span
+            class="media"
+            id="id1164323972015"
+            data-alt=""
+          ><img
+              src="../resources/graphics2.png"
+              data-mime-type="image/png"
+              alt=""
+              height="190"
+              width="301"
+          /></span
+        > </figure
+      ><figure
+          id="eip-id1164898429541"
+        ><figcaption
+          >The graph shows the Standard Normal Distribution with the area between x=1 and x=2 shaded to represent the probability that the value of the random variable X is in the interval between 1 and 2.</figcaption
+        ><span
+            class="media"
+            id="id1164323801239"
+            data-alt=""
+          ><img
+              src="../resources/graphics3.png"
+              data-mime-type="image/png"
+              alt=""
+              height="209"
+              width="513"
+          /></span
+        > </figure
+      ></p
+    ><p
+        class="para"
+        id="eip-747"
+      >**With contributions from Roberta Bloom</p
+    ></div
+  > </body
+>
+</html>

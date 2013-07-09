@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Continuous Random Variables: Continuous Probability Functions</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Continuous Random Variables: Continuous Probability Functions</div
+  > <p
+      class="para"
+      id="delete_me"
+    >We begin by defining a continuous probability density function. We use the function notation <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><apply
+        ><ci
+            data-type="fn"
+          >f</ci
+        ><ci
+          >x</ci
+        ></apply
+      ></math
+    >. Intermediate algebra may have been your first formal introduction to functions. In the study of probability, the functions we study are special. We define the function <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><apply
+        ><ci
+            data-type="fn"
+          >f</ci
+        ><ci
+          >x</ci
+        ></apply
+      ></math
+    > so that the area between it and the x-axis is equal to a probability. Since the maximum probability is one, the maximum area is also one.</p
+  ><p
+      class="para"
+      id="element-347"
+    ><strong
+        class="emphasis"
+      >For continuous probability distributions, PROBABILITY = AREA.</strong
+    ></p
+  ><div
+      class="example"
+      id="element-652"
+    ><p
+        class="para"
+        id="element-630"
+      >Consider the function <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ><mo
+          >=</mo
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      > for <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /><reln
+            ><leq
+            /> <mrow
+              ><mi
+                >0</mi
+              ></mrow
+            > <mrow
+              ><mi
+                >x</mi
+              ></mrow
+            ></reln
+          > <mrow
+            ><mi
+              >20</mi
+            ></mrow
+          ></reln
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > = a real number. The graph of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ><mo
+          >=</mo
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      > is a horizontal line. However, since <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /><reln
+            ><leq
+            /> <mrow
+              ><mi
+                >0</mi
+              ></mrow
+            > <mrow
+              ><mi
+                >x</mi
+              ></mrow
+            ></reln
+          > <mrow
+            ><mi
+              >20</mi
+            ></mrow
+          ></reln
+        ></math
+      > , <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ></math
+      > is restricted to the portion between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><mrow
+            ><mi
+              >x</mi
+            ></mrow
+          ><mrow
+            ><mn
+              >0</mn
+            ></mrow
+          ></reln
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><mrow
+            ><mi
+              >x</mi
+            ></mrow
+          ><mrow
+            ><mn
+              >20</mn
+            ></mrow
+          ></reln
+        ></math
+      >, inclusive . </p
+    ><p
+        class="para"
+        id="element-629"
+      ><span
+          class="media"
+          id="id39758796"
+          data-alt="f(x)=1/20 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/20 on the y-axis, a vertical upward line from point 20 on the x-axis, and the x and y-axes."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-37"
+      ><strong
+          class="emphasis"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><apply
+            ><ci
+                data-type="fn"
+              >f</ci
+            ><ci
+              >x</ci
+            ></apply
+          ><mo
+            >=</mo
+          ><mfrac
+            ><mn
+              >1</mn
+            ><mn
+              >20</mn
+            ></mfrac
+          ></math
+        > for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><leq
+            /><reln
+              ><leq
+              /> <mrow
+                ><mo
+                  >0</mo
+                ></mrow
+              > <mrow
+                ><mi
+                  >x</mi
+                ></mrow
+              ></reln
+            > <mrow
+              ><mo
+                >20</mo
+              ></mrow
+            ></reln
+          ></math
+        ></strong
+      >. </p
+    ><p
+        class="para"
+        id="element-951"
+      >The graph of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ><mo
+          >=</mo
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      > is a horizontal line segment when <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /><reln
+            ><leq
+            /> <mrow
+              ><mi
+                >0</mi
+              ></mrow
+            > <mrow
+              ><mi
+                >x</mi
+              ></mrow
+            ></reln
+          > <mrow
+            ><mi
+              >20</mi
+            ></mrow
+          ></reln
+        ></math
+      >. </p
+    ><p
+        class="para"
+        id="element-515"
+      >The area between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><apply
+          ><ci
+              data-type="fn"
+            >f</ci
+          ><ci
+            >x</ci
+          ></apply
+        ><mo
+          >=</mo
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      > where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /><reln
+            ><leq
+            /> <mrow
+              ><mi
+                >0</mi
+              ></mrow
+            > <mrow
+              ><mi
+                >x</mi
+              ></mrow
+            ></reln
+          > <mrow
+            ><mi
+              >20</mi
+            ></mrow
+          ></reln
+        ></math
+      > and the x-axis is the area of a rectangle with base = <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mn
+          >20</mn
+        ></math
+      > and height =<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-797"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mtext
+                >AREA</mtext
+              ></mrow
+            > <mrow
+              ><mn
+                >20</mn
+              ><mo
+                >&#x22C5;</mo
+              ><mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >20</mn
+                ></mfrac
+              ></mrow
+            ></reln
+          > <mrow
+            ><mn
+              >1</mn
+            ></mrow
+          ></reln
+        ></math
+      > </p
+    ><p
+        class="para"
+        id="element-952"
+      >This particular function, where we have restricted <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > so that the area between the function and the x-axis is 1, is an example of a continuous probability density function. It is used as a tool to calculate probabilities.</p
+    ><p
+        class="para"
+        id="element-812"
+      ><strong
+          class="emphasis"
+        > Suppose we want to find the area between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><apply
+            ><ci
+                data-type="fn"
+              >f</ci
+            ><ci
+              >x</ci
+            ></apply
+          ><mo
+            >=</mo
+          ><mfrac
+            ><mn
+              >1</mn
+            ><mn
+              >20</mn
+            ></mfrac
+          ></math
+        > and the x-axis where <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><lt
+            /> <reln
+              ><lt
+              /> <mrow
+                ><mn
+                  >0</mn
+                ></mrow
+              > <mrow
+                ><mi
+                  >x</mi
+                ></mrow
+              ></reln
+            > <mrow
+              ><mn
+                >2</mn
+              ></mrow
+            ></reln
+          ></math
+        > .</strong
+      ></p
+    ><p
+        class="para"
+        id="element-171"
+      ><span
+          class="media"
+          id="id40073479"
+          data-alt="f(X)=1/20 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/20 on the y-axis, a vertical upward line from point 20 on the x-axis, and the x and y-axes. A shaded region ranging from points 0-2 on the x-axis occurs within this area."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-441"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mtext
+                >AREA</mtext
+              ></mrow
+            > <mrow
+              ><mo
+                >(</mo
+              ><mn
+                >2</mn
+              ><mo
+                >-</mo
+              ><mn
+                >0</mn
+              ><mo
+                >)</mo
+              ><mo
+                >&#x22C5;</mo
+              ><mfrac
+                > <mn
+                  >1</mn
+                ><mn
+                  >20</mn
+                ></mfrac
+              ></mrow
+            ></reln
+          > <mrow
+            ><mn
+              >0.1</mn
+            ></mrow
+          ></reln
+        ></math
+      > </p
+    ><p
+        class="para"
+        id="element-229"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mo
+                >(</mo
+              ><mn
+                >2</mn
+              ><mo
+                >-</mo
+              ><mn
+                >0</mn
+              ><mo
+                >)</mo
+              ></mrow
+            > <mrow
+              ><mn
+                >2</mn
+              ></mrow
+            ></reln
+          > <mrow
+            ><mtext
+              > base of a rectangle </mtext
+            ></mrow
+          ></reln
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-791"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      > = the height.</p
+    ><p
+        class="para"
+        id="element-961"
+      >The area corresponds to a probability. The probability that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > is between 0 and 2 is 0.1, which can be written mathematically as <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >P(0&lt;x&lt;2)</mtext
+        > <mo
+          >= </mo
+        ><mtext
+          >P(x&lt;2)</mtext
+        ><mo
+          >=</mo
+        ><mn
+          >0.1</mn
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-208"
+      ><strong
+          class="emphasis"
+        > Suppose we want to find the area between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><apply
+            ><ci
+                data-type="fn"
+              >f</ci
+            ><ci
+              >x</ci
+            ></apply
+          ><mo
+            >=</mo
+          ><mfrac
+            ><mn
+              >1</mn
+            ><mn
+              >20</mn
+            ></mfrac
+          ></math
+        > and the x-axis where <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><lt
+            /> <reln
+              ><lt
+              /> <mrow
+                ><mn
+                  >4</mn
+                ></mrow
+              > <mrow
+                ><mi
+                  >x</mi
+                ></mrow
+              ></reln
+            > <mrow
+              ><mn
+                >15</mn
+              ></mrow
+            ></reln
+          ></math
+        > .</strong
+      ></p
+    ><p
+        class="para"
+        id="element-614"
+      ><span
+          class="media"
+          id="id40137735"
+          data-alt="f(X)=1/20 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/20 on the y-axis, a vertical upward line from point 20 on the x-axis, and the x and y-axes. A shaded region ranging from points 4-15 on the x-axis occurs within this area."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-739"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mtext
+                >AREA</mtext
+              ></mrow
+            > <mrow
+              ><mo
+                >(</mo
+              ><mn
+                >15</mn
+              ><mo
+                >-</mo
+              ><mn
+                >4</mn
+              ><mo
+                >)</mo
+              ><mo
+                >&#x22C5;</mo
+              ><mfrac
+                > <mn
+                  >1</mn
+                ><mn
+                  >20</mn
+                ></mfrac
+              ></mrow
+            ></reln
+          > <mrow
+            ><mn
+              >0.55</mn
+            ></mrow
+          ></reln
+        ></math
+      > </p
+    ><p
+        class="para"
+        id="element-376"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mo
+          >(</mo
+        ><mn
+          >15</mn
+        ><mo
+          >-</mo
+        ><mn
+          >4</mn
+        ><mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mn
+          >11</mn
+        > <mo
+          >=</mo
+        > <mtext
+          >the base of a rectangle</mtext
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="element-176"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ></math
+      > = the height.</p
+    ><p
+        class="para"
+        id="element-29"
+      >The area corresponds to the probability <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><lt
+            /> <reln
+              ><lt
+              /> <mrow
+                ><mi
+                  >P</mi
+                ><mo
+                  >(</mo
+                ><mn
+                  >4</mn
+                ></mrow
+              > <mrow
+                ><mi
+                  >x</mi
+                ></mrow
+              ></reln
+            > <mrow
+              ><mn
+                >15</mn
+              ><mo
+                >)</mo
+              ></mrow
+            ></reln
+          > <mrow
+            ><mn
+              >0.55</mn
+            ></mrow
+          ></reln
+        ></math
+      >. </p
+    ><p
+        class="para"
+        id="element-874"
+      ><strong
+          class="emphasis"
+        > Suppose we want to find <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >P</mi
+          ><mi
+            >(</mi
+          ><mi
+            >x</mi
+          ><mi
+            > = </mi
+          ><mi
+            >15</mi
+          ><mi
+            >)</mi
+          ></math
+        >.</strong
+      > On an x-y graph, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ><mi
+          > = </mi
+        ><mi
+          >15</mi
+        ></math
+      > is a vertical line. A vertical line has no width (or 0 width). Therefore, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >P</mi
+        ><mi
+          >(</mi
+        ><mi
+          >x</mi
+        ><mi
+          > = </mi
+        ><mi
+          >15</mi
+        ><mi
+          >)</mi
+        > <mo
+          >=</mo
+        > <mtext
+          >(base)</mtext
+        ><mtext
+          >(height)</mtext
+        > <mo
+          >= </mo
+        ><mo
+          >(</mo
+        ><mn
+          >0</mn
+        ><mo
+          >)</mo
+        ><mo
+          >(</mo
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >20</mn
+          ></mfrac
+        ><mo
+          >)</mo
+        > <mo
+          >=</mo
+        > <mn
+          >0</mn
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-70"
+      ><span
+          class="media"
+          id="id40076640"
+          data-alt="f(X)=1/20 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/20 on the y-axis, a vertical upward line from point 20 on the x-axis, and the x and y-axes. A vertical upward line is drawn from point 15 on the x-axis to the horizontal line occurring from point 1/20 on the y-axis."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-71"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >X</mi
+            ></mrow
+          > <mrow
+            ><mi
+              >x</mi
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      > (can be written as <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><lt
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >X</mi
+            ></mrow
+          > <mrow
+            ><mi
+              >x</mi
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      > for continuous distributions) is called the cumulative distribution function or <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >CDF</mi
+        ></math
+      >. Notice the "less than or equal to" symbol. We can use the <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >CDF</mi
+        ></math
+      > to calculate <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><gt
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >X</mi
+            ></mrow
+          > <mrow
+            ><mi
+              >x</mi
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      > . The <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >CDF</mi
+        ></math
+      > gives "area to the left" and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><gt
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >X</mi
+            ></mrow
+          > <mrow
+            ><mi
+              >x</mi
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      > gives "area to the right." We calculate <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><gt
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >X</mi
+            ></mrow
+          > <mrow
+            ><mi
+              >x</mi
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        ></math
+      > for continuous distributions as follows: <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><lt
+          /> <reln
+            ><eq
+            /> <reln
+              ><gt
+              /> <mrow
+                ><mi
+                  >P</mi
+                ><mo
+                  >(</mo
+                ><mi
+                  >X</mi
+                ></mrow
+              > <mrow
+                ><mi
+                  >x</mi
+                ><mo
+                  >)</mo
+                ></mrow
+              ></reln
+            > <mrow
+              ><mn
+                >1</mn
+              ><mo
+                >-</mo
+              ><mi
+                >P</mi
+              ><mo
+                >(</mo
+              ><mi
+                >X</mi
+              ></mrow
+            ></reln
+          > <mrow
+            ><mi
+              >x</mi
+            ><mo
+              >)</mo
+            ></mrow
+          ></reln
+        > </math
+      >.</p
+    ><p
+        class="para"
+        id="element-369"
+      ><span
+          class="media"
+          id="id39508301"
+          data-alt="f(X) graph displaying a boxed region consisting of a horizontal line extending to the right from midway on the y-axis, a vertical upward line from an arbitrary point on the x-axis, and the x and y-axes. A shaded region from points 0-x occurs within this area."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-473"
+      >Label the graph with <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >f(x)</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >. Scale the x and y axes with the maximum <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > values. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /> <mrow
+            ><apply
+              ><ci
+                  data-type="fn"
+                >f</ci
+              ><ci
+                >x</ci
+              ></apply
+            ></mrow
+          > <mrow
+            ><mfrac
+              ><mn
+                >1</mn
+              ><mn
+                >20</mn
+              ></mfrac
+            ></mrow
+          ></reln
+        ></math
+      >, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><leq
+          /><reln
+            ><leq
+            /> <mrow
+              ><mi
+                >0</mi
+              ></mrow
+            > <mrow
+              ><mi
+                >x</mi
+              ></mrow
+            ></reln
+          > <mrow
+            ><mi
+              >20</mi
+            ></mrow
+          ></reln
+        ></math
+      >. </p
+    ><p
+        class="para"
+        id="element-668"
+      ><span
+          class="media"
+          id="id40140418"
+          data-alt="f(X) graph displaying a boxed region consisting of a horizontal line extending to the right from midway on the y-axis, a vertical upward line from an arbitrary point on the x-axis, and the x and y-axes. A shaded region from points 2.3-12.7 occurs within this area."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      > </p
+    ><p
+        class="para"
+        id="element-979"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /><reln
+            ><eq
+            /><reln
+              ><eq
+              /> <reln
+                ><lt
+                /><reln
+                  ><lt
+                  /> <mrow
+                    ><mi
+                      >P</mi
+                    ><mo
+                      >(</mo
+                    ><mn
+                      >2.3</mn
+                    ></mrow
+                  > <mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></reln
+                > <mrow
+                  ><mn
+                    >12.7</mn
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ></reln
+              > <mrow
+                ><mo
+                  >(</mo
+                ><mtext
+                  >base</mtext
+                ><mo
+                  >)</mo
+                > <mo
+                  >(</mo
+                ><mtext
+                  >height</mtext
+                ><mo
+                  >)</mo
+                ></mrow
+              ></reln
+            > <mrow
+              ><mo
+                >(</mo
+              ><mn
+                >12.7</mn
+              ><mo
+                >-</mo
+              ><mn
+                >2.3</mn
+              ><mo
+                >)</mo
+              > <mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >20</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></mrow
+            ></reln
+          > <mrow
+            ><mn
+              >0.52</mn
+            ></mrow
+          ></reln
+        ></math
+      ></p
+    ></div
+  ></body
+>
+</html>

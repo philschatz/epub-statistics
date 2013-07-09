@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Discrete Random Variables: Probability Distribution Function (PDF) for a Discrete Random Variable</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Discrete Random Variables: Probability Distribution Function (PDF) for a Discrete Random Variable</div
+  > <p
+      class="para"
+      id="delete_me"
+    >A discrete <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="pdfelab"
+      > probability distribution function</term
+    > has two characteristics: <ul
+        class="list"
+        data-id="element-yu2"
+        data-list-type="bulleted"
+      > <li
+          class="item"
+        >Each probability is between 0 and 1, inclusive.</li
+      > <li
+          class="item"
+        >The sum of the probabilities is 1.</li
+      > </ul
+    ></p
+  ><div
+      class="example"
+      id="element-170"
+    ><p
+        class="para"
+        id="element-165"
+      >A child psychologist is interested in the number of times a newborn baby's crying wakes its mother after midnight. For a random sample of 50 mothers, the following information was obtained. Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of times a newborn wakes its mother after midnight. For this example, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > = 0, 1, 2, 3, 4, 5. </p
+    > <p
+        class="para"
+        id="element-166"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >P(x) </mtext
+        ></math
+      > = probability that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on a value <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >.</p
+    ><table
+        id="element-519"
+        summary="PDF table for the the number of times a newborn wakes its mother after midnight and probabilities."
+      ><tbody
+        > <tr
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x)</mtext
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >0</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=0)</mtext
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mn
+                  >2</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >1</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=1)</mtext
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mn
+                  >11</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >2</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=2)</mtext
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mn
+                  >23</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >3</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=3)</mtext
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mn
+                  >9</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >4</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=4)</mtext
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mn
+                  >4</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >5</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=5)</mtext
+              ><mo
+                >=</mo
+              ><mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="element-260"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values 0, 1, 2, 3, 4, 5. This is a discrete <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >PDF </mi
+        ></math
+      > because <ol
+          class="list"
+          data-id="enumprac"
+          data-list-type="enumerated"
+        ><li
+            class="item"
+          >Each <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(x)</mtext
+            ></math
+          > is between 0 and 1, inclusive.</li
+        > <li
+            class="item"
+          >The sum of the probabilities is 1, that is, </li
+        ></ol
+      ></p
+    ><p
+        class="para"
+        id="element-135"
+      ><div
+          class="equation"
+          id="fifsum"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mfrac
+            > <mn
+              >2</mn
+            > <mn
+              >50</mn
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <mn
+              >11</mn
+            > <mn
+              >50</mn
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <mn
+              >23</mn
+            > <mn
+              >50</mn
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <mn
+              >9</mn
+            > <mn
+              >50</mn
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <mn
+              >4</mn
+            > <mn
+              >50</mn
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <mn
+              >1</mn
+            > <mn
+              >50</mn
+            > </mfrac
+          > <mo
+            >=</mo
+          > <mn
+            >1</mn
+          > </math
+        ></div
+      ></p
+    > </div
+  ><div
+      class="example"
+      id="element-852"
+    ><p
+        class="para"
+        id="element-500"
+      >Suppose Nancy has classes <strong
+          class="emphasis"
+        >3 days</strong
+      > a week. She attends classes 3 days a week <strong
+          class="emphasis"
+        >80%</strong
+      > of the time, <strong
+          class="emphasis"
+        >2 days 15%</strong
+      > of the time, <strong
+          class="emphasis"
+        >1 day 4% </strong
+      >of the time, and <strong
+          class="emphasis"
+        >no days 1% </strong
+      >of the time. Suppose one week is randomly selected. </p
+    ><div
+        class="exercise"
+        id="element-65"
+      ><div
+          class="problem"
+          id="id1165408009785"
+        > <p
+            class="para"
+            id="element-810"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the number of days Nancy ____________________ . </p
+        > </div
+      > <div
+          class="solution"
+          id="id1165440343838"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-150"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the number of days Nancy <strong
+              class="emphasis"
+            >attends class per week</strong
+          >. </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-354"
+      ><div
+          class="problem"
+          id="id1165434067870"
+        > <p
+            class="para"
+            id="element-839"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > takes on what values?</p
+        > </div
+      > <div
+          class="solution"
+          id="id1165429555990"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-591"
+          >0, 1, 2, and 3</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-589"
+      ><div
+          class="problem"
+          id="id4753220"
+        > <p
+            class="para"
+            id="element-312"
+          >Suppose one week is randomly chosen. Construct a probability distribution table (called a <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >PDF</mi
+            ></math
+          > table) like the one in the previous example. The table should have two columns labeled <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(x)</mtext
+            ></math
+          >. What does the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(x)</mtext
+            ></math
+          > column sum to? </p
+        ></div
+      > <div
+          class="solution"
+          id="id1165430115655"
+          print-placement="end"
+        > <table
+            id="element-537"
+            summary="PDF table of the number of times Nancy attends class per week and probabilities."
+          ><tbody
+            > <tr
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >x</mi
+                  ></math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >P(x)</mi
+                  ></math
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >0</td
+              > <td
+                >0.01</td
+              > </tr
+            > <tr
+              > <td
+                >1</td
+              > <td
+                >0.04</td
+              > </tr
+            > <tr
+              > <td
+                >2</td
+              > <td
+                >0.15</td
+              > </tr
+            > <tr
+              > <td
+                >3</td
+              > <td
+                >0.80</td
+              > </tr
+            > </tbody
+          ></table
+        ></div
+      > </div
+    > </div
+  > </body
+>
+</html>

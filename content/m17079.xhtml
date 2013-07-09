@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Regression Lab III</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Regression Lab III</div
+  > <p
+      class="para"
+      id="id7738260"
+    >Class Time: </p
+  > <p
+      class="para"
+      id="id7843117"
+    >Names:</p
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="id-292188973813"
+      >Student Learning Outcomes: </h1
+    > <ul
+        class="list"
+        data-id="id7650443"
+        data-list-type="bulleted"
+      > <li
+          class="item"
+        >The student will calculate and construct the line of best fit between two variables.</li
+      > <li
+          class="item"
+        >The student will evaluate the relationship between two variables to determine if that relationship is significant. </li
+      > </ul
+    > </div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-377"
+      >Collect the Data</h1
+    ><p
+        class="para"
+        id="element-7"
+      >Use the most recent April issue of Consumer Reports. It will give the total fuel efficiency (in miles per gallon) and weight (in pounds) of new model cars with automatic transmissions. We will use this data to determine the relationship, if any, between the fuel efficiency of a car and its weight.</p
+    > <ol
+        class="list"
+        data-id="list-238765865"
+        data-list-type="enumerated"
+      ><li
+          class="item"
+        > Which variable should be the independent variable and which should be the dependent variable? Explain your answer in one or two complete sentences.</li
+      > <li
+          class="item"
+        >Using your random number generator, randomly select 20 cars from the list and record their weights and fuel efficiency into the table below. <table
+            id="id7895697570"
+            summary="Blank table with weight in the first column and fuel efficiency in the second column. 40 empty cells."
+          ><thead
+            > <tr
+              > <td
+                >Weight</td
+              > <td
+                >Fuel Efficiency</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > <tr
+              > <td
+              /> <td
+              /> </tr
+            > </tbody
+          ></table
+        ></li
+      > <li
+          class="item"
+        >Which variable should be the dependent variable and which should be the independent variable? Why?</li
+      > <li
+          class="item"
+        >By hand, do a scatterplot of &#x201C;weight&#x201D; vs. &#x201C;fuel efficiency&#x201D;. Plot the points on graph paper. Label both axes with words. Scale both axes accurately.<figure
+            id="id21784687"
+          ><span
+              class="media"
+              id="id21784693"
+              data-alt="Blank graph with vertical and horizontal axes."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></figure
+        ></li
+      > </ol
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-10"
+      >Analyze the Data</h1
+    ><p
+        class="para"
+        id="element-765474"
+      > Enter your data into your calculator or computer. Write the linear equation below, rounding to 4 decimal places.</p
+    > <ol
+        class="list"
+        data-id="list-863524"
+        data-list-type="enumerated"
+        data-mark-suffix="."
+      ><li
+          class="item"
+        > Calculate the following: <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-7528634"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >a</mi
+              ></math
+            > =</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >b</mi
+              > </math
+            > =</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            > correlation =</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="d"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >n</mi
+              ></math
+            > =</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="e"
+            > equation: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mover
+                ><mi
+                  >y</mi
+                ><mo
+                  >^</mo
+                ></mover
+              ></math
+            > =</li
+          > </list
+        ></li
+      > <li
+          class="item"
+        >Obtain the graph of the regression line on your calculator. Sketch the regression line on the same axes as your scatterplot.</li
+      > </ol
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-414"
+      >Discussion Questions</h1
+    ><ol
+        class="list"
+        data-id="list-74763"
+        data-list-type="enumerated"
+        data-mark-suffix="."
+      ><li
+          class="item"
+        > Is the correlation significant? Explain how you determined this in complete sentences.</li
+      > <li
+          class="item"
+        >Is the relationship a positive one or a negative one? Explain how you can tell and what this means in terms of weight and fuel efficiency.</li
+      > <li
+          class="item"
+        >In one or two complete sentences, what is the practical interpretation of the slope of the least squares line in terms of fuel efficiency and weight?</li
+      > <li
+          class="item"
+        >For a car that weighs 4000 pounds, predict its fuel efficiency. Include units.</li
+      > <li
+          class="item"
+        >Can we predict the fuel efficiency of a car that weighs 10000 pounds using the least squares line? Explain why or why not.</li
+      > <li
+          class="item"
+        >Questions. Answer each in 1 to 3 complete sentences. <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list-9769782345"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > Does the line seem to fit the data? Why or why not?</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            > What does the correlation imply about the relationship between fuel efficiency and weight of a car? Is this what you expected?</li
+          ></list
+        ></li
+      > <li
+          class="item"
+        > Are there any outliers? If so, which point is an outlier?</li
+      ></ol
+    ></div
+  > <p
+      class="para"
+      id="id6944495"
+    >** This lab was designed and contributed by Diane Mathios.</p
+  > </body
+>
+</html>

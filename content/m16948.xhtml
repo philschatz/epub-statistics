@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Central Limit Theorem: Central Limit Theorem for Sums</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Central Limit Theorem: Central Limit Theorem for Sums</div
+  > <p
+      class="para"
+      id="delete_me"
+    >Suppose <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > is a random variable with a distribution that may be <strong
+        class="emphasis"
+      >known or unknown</strong
+    > (it can be any distribution) and suppose: <list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="list-1"
+        data-list-type="labeled-item"
+        data-mark-suffix="."
+      > <li
+          xmlns=""
+          class="item"
+          data-label="a"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msub
+            > <mi
+              >&#x3BC;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > <mo
+            >=</mo
+          > </math
+        > the mean of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+          data-label="b"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msub
+            > <mi
+              >&#x3C3;</mi
+            > <mi
+              >X</mi
+            > </msub
+          > <mo
+            >=</mo
+          > </math
+        > the standard deviation of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        ></li
+      > </list
+    > If you draw random samples of size <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    >, then as <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    > increases, the random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3A3;X</mi
+      ></math
+    > which consists of sums tends to be <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="normdist"
+      >normally distributed</term
+    > and</p
+  ><p
+      class="para"
+      id="element-367"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mo
+        >&#x3A3;</mo
+      > <mi
+        >X</mi
+      ></math
+    > ~ <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mi
+        >N</mi
+      > <mo
+        >(</mo
+      > <mi
+        >n</mi
+      > <mo
+        >&#x22C5;</mo
+      > <msub
+        > <mi
+          >&#x3BC;</mi
+        > <mi
+          >X</mi
+        > </msub
+      > <mo
+        >,</mo
+      > <msqrt
+        > <mi
+          >n</mi
+        > </msqrt
+      > <mo
+        >&#x22C5;</mo
+      > <msub
+        > <mi
+          >&#x3C3;</mi
+        > <mi
+          >X</mi
+        > </msub
+      > <mo
+        >)</mo
+      > </math
+    ></p
+  ><p
+      class="para"
+      id="element-603"
+    ><strong
+        class="emphasis"
+      >The Central Limit Theorem for Sums</strong
+    > says that if you keep drawing larger and larger samples and taking their sums, the sums form their own normal distribution (the sampling distribution) which approaches a normal distribution as the sample size increases. <strong
+        class="emphasis"
+      >The normal distribution has a mean equal to the original mean multiplied by the sample size and a standard deviation equal to the original standard deviation multiplied by the square root of the sample size.</strong
+    > </p
+  ><p
+      class="para"
+      id="element-7"
+    >The random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mo
+        >&#x3A3;</mo
+      > <mi
+        >X</mi
+      ></math
+    > has the following z-score associated with it:</p
+  ><list
+      xmlns="http://cnx.rice.edu/cnxml"
+      data-id="element-434"
+      data-list-type="labeled-item"
+      data-mark-suffix="."
+    ><li
+        xmlns=""
+        class="item"
+        data-label="a"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3A3;x</mi
+        ></math
+      > is one sum. </li
+    > <li
+        xmlns=""
+        class="item"
+        data-label="b"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >z</mi
+        > <mo
+          >=</mo
+        > <mfrac
+          > <mrow
+            > <mi
+              >&#x3A3;</mi
+            > <mi
+              >x</mi
+            > <mo
+              >-</mo
+            > <mi
+              >n</mi
+            > <mo
+              >&#x22C5;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > </mrow
+          > <mrow
+            > <msqrt
+              > <mi
+                >n</mi
+              > </msqrt
+            > <mo
+              >&#x22C5;</mo
+            > <msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > </mrow
+          > </mfrac
+        > </math
+      ></li
+    ></list
+  ><list
+      xmlns="http://cnx.rice.edu/cnxml"
+      data-id="element-444"
+      data-list-type="labeled-item"
+      data-mark-suffix="."
+    > <li
+        xmlns=""
+        class="item"
+        data-label="a"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        > <mo
+          >&#x22C5;</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >X</mi
+          > </msub
+        > <mo
+          >=</mo
+        > </math
+      > the mean of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3A3;X</mi
+        ></math
+      ></li
+    > <li
+        xmlns=""
+        class="item"
+        data-label="b"
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msqrt
+          > <mi
+            >n</mi
+          > </msqrt
+        > <mo
+          >&#x22C5;</mo
+        > <msub
+          > <mi
+            >&#x3C3;</mi
+          > <mi
+            >X</mi
+          > </msub
+        > <mo
+          >=</mo
+        > </math
+      > standard deviation of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3A3;X</mi
+        ></math
+      ></li
+    > </list
+  ><div
+      class="example"
+      id="element-747"
+    ><p
+        class="para"
+        id="element-455"
+      > An unknown distribution has a mean of 90 and a standard deviation of 15. A sample of size 80 is drawn randomly from the population. </p
+    ><div
+        class="exercise"
+        id="element-55"
+      ><div
+          class="problem"
+          id="id12220262"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-710"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >Find the probability that the sum of the 80 values (or the total of the 80 values) is more than 7500.</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >Find the sum that is 1.5 standard deviations above the mean of the sums.</li
+          ></list
+        ></div
+      > <div
+          class="solution"
+          id="id12220316"
+        > <p
+            class="para"
+            id="element-804"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = one value from the original unknown population. The probability question asks you to find a probability for <strong
+              class="emphasis"
+            >the sum (or total of) 80 values.</strong
+          ></p
+        ><p
+            class="para"
+            id="element-56"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3A3;X</mi
+            ></math
+          > = the sum or total of 80 values. Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <mn
+              >90</mn
+            > </math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <mn
+              >15</mn
+            > </math
+          >, and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >n</mi
+            > <mo
+              >=</mo
+            > <mn
+              >80</mn
+            > </math
+          >, then</p
+        ><p
+            class="para"
+            id="element-640"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3A3;</mi
+            > <mi
+              >X</mi
+            ></math
+          > ~ <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >N</mi
+            > <mo
+              >(</mo
+            > <mi
+              >80</mi
+            > <mo
+              >&#x22C5;</mo
+            > <mi
+              >90</mi
+            > <mo
+              >,</mo
+            > <msqrt
+              > <mi
+                >80</mi
+              > </msqrt
+            > <mo
+              >&#x22C5;</mo
+            > <mi
+              >15</mi
+            > <mo
+              >)</mo
+            > </math
+          ></p
+        ><ul
+            class="list"
+            data-id="element-907"
+            data-mark-suffix="."
+            data-list-type="bulleted"
+            data-bullet-style="bullet"
+          ><li
+              class="item"
+            >mean of the sums = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >n</mi
+              > <mo
+                >&#x22C5;</mo
+              > <msub
+                > <mi
+                  >&#x3BC;</mi
+                > <mi
+                  >X</mi
+                > </msub
+              > <mo
+                >=</mo
+              > <mo
+                >(</mo
+              > <mn
+                >80</mn
+              > <mo
+                >)</mo
+              > <mo
+                >(</mo
+              > <mn
+                >90</mn
+              > <mo
+                >)</mo
+              > <mo
+                >=</mo
+              > <mn
+                >7200</mn
+              > </math
+            ></li
+          > <li
+              class="item"
+            >standard deviation of the sums = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msqrt
+                > <mi
+                  >n</mi
+                > </msqrt
+              > <mo
+                >&#x22C5;</mo
+              > <msub
+                > <mi
+                  >&#x3C3;</mi
+                > <mi
+                  >X</mi
+                > </msub
+              > <mo
+                >=</mo
+              > <msqrt
+                > <mn
+                  >80</mn
+                > </msqrt
+              > <mo
+                >&#x22C5;</mo
+              > <mn
+                >15</mn
+              > </math
+            ></li
+          > <li
+              class="item"
+            >sum of 80 values = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >&#x3A3;x</mi
+              > <mo
+                >=</mo
+              > <mn
+                >7500</mn
+              > </math
+            ></li
+          ></ul
+        ><p
+            class="para"
+            id="element-703"
+          ><list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="eip-id2244439"
+              data-list-type="labeled-item"
+            ><li
+                xmlns=""
+                class="item"
+                data-label="a"
+              >Find <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <reln
+                  ><gt
+                  /> <mrow
+                    > <mi
+                      >P</mi
+                    > <mo
+                      >(</mo
+                    > <mi
+                      >&#x3A3;x</mi
+                    > </mrow
+                  > <mrow
+                    > <mn
+                      >7500</mn
+                    > </mrow
+                  > </reln
+                > <mo
+                  >)</mo
+                > <mspace
+                    width="20pt"
+                /> </math
+              > </li
+            ></list
+          ></p
+        ><p
+            class="para"
+            id="element-704"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <reln
+              ><gt
+              /> <mrow
+                > <mi
+                  >P</mi
+                > <mo
+                  >(</mo
+                > <mi
+                  >&#x3A3;x</mi
+                > </mrow
+              > <mrow
+                > <mn
+                  >7500</mn
+                > </mrow
+              > </reln
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.0127</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-876"
+          ><span
+              class="media"
+              id="id12212529"
+              data-alt="Normal distribution curve of sum X with the values of 7200 and 7500 on the x-axis. A vertical upward line extends from point 7500 on the x-axis up to the curve. The probability area occurs from point 7500 and to the end of the curve."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="3in"
+            /></span
+          ></p
+        ><p
+            class="para"
+            id="element-389"
+          ><code
+              class="code"
+            >normalcdf</code
+          >(lower value, upper value, mean of sums, <code
+              class="code"
+            >stdev</code
+          > of sums)</p
+        ><p
+            class="para"
+            id="element-503"
+          >The parameter list is abbreviated (lower, upper, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >n</mi
+            > <mo
+              >&#x22C5;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > <mo
+              >,</mo
+            > <msqrt
+              > <mi
+                >n</mi
+              > </msqrt
+            > <mo
+              >&#x22C5;</mo
+            > <msub
+              > <mi
+                >&#x3C3;</mi
+              > <mi
+                >X</mi
+              > </msub
+            > </math
+          >)</p
+        ><p
+            class="para"
+            id="element-458"
+          ><code
+              class="code"
+            >normalcdf</code
+          >(7500,1E99, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mn
+              >80</mn
+            > <mo
+              >&#x22C5;</mo
+            > <mn
+              >90</mn
+            > <mo
+              >,</mo
+            > <msqrt
+              > <mn
+                >80</mn
+              > </msqrt
+            > <mo
+              >&#x22C5;</mo
+            > <mn
+              >15</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.0127</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-565"
+          ><strong
+              class="emphasis"
+            >Reminder:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >1E99</mi
+            > <mo
+              >=</mo
+            > <msup
+              > <mn
+                >10</mn
+              > <mn
+                >99</mn
+              > </msup
+            > </math
+          >. Press the <code
+              class="code"
+            >EE</code
+          > key for E.</p
+        > </div
+      > </div
+    ><p
+        class="para"
+        id="eip-694"
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="eip-id1169192222958"
+          data-list-type="labeled-item"
+        ><li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Find <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3A3;x</mi
+            ></math
+          > where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >z</mi
+            ></math
+          > = 1.5: </li
+        ></list
+      ><br
+      /><br
+      /> <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3A3;x</mi
+        ></math
+      > = <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        > <mo
+          >&#x22C5;</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >X</mi
+          > </msub
+        > </math
+      > + <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >z</mi
+        > <mo
+          >&#x22C5;</mo
+        > <msqrt
+          > <mi
+            >n</mi
+          > </msqrt
+        > <mo
+          >&#x22C5;</mo
+        > <msub
+          > <mi
+            >&#x3C3;</mi
+          > <mi
+            >X</mi
+          > </msub
+        > </math
+      > = (80)(90) + (1.5)(<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msqrt
+          > <mo
+            >80</mo
+          > </msqrt
+        ></math
+      >) (15) = 7401.2 </p
+    ></div
+  > </body
+>
+</html>

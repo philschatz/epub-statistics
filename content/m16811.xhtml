@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Continuous Random Variables: Practice 2</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Continuous Random Variables: Practice 2</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-696"
+      >Student Learning Outcomes</h1
+    > <ul
+        class="list"
+        data-id="element-61"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >The student will analyze data following the exponential distribution.</li
+      > </ul
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-798"
+      >Given</h1
+    > <p
+        class="para"
+        id="element-776"
+      > Carbon-14 is a radioactive element with a half-life of about 5730 years. Carbon-14 is said to decay exponentially. The decay rate is 0.000121 . We start with 1 gram of carbon-14. We are interested in the time (years) it takes to decay carbon-14. </p
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-507"
+      >Describe the Data</h1
+    > <div
+        class="exercise"
+        id="element-397"
+      ><div
+          class="problem"
+          id="id7280756"
+        > <p
+            class="para"
+            id="element-191"
+          > What is being measured here? </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-891"
+      ><div
+          class="problem"
+          id="id11917938"
+        > <p
+            class="para"
+            id="element-892"
+          > Are the data discrete or continuous? </p
+        > </div
+      > <div
+          class="solution"
+          id="id12144762"
+        > <p
+            class="para"
+            id="element-648"
+          > Continuous </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-926"
+      ><div
+          class="problem"
+          id="id7413822"
+        > <p
+            class="para"
+            id="element-288"
+          >In words, define the Random Variable <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >X</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{X} {}</annotation
+              > </semantics
+            > </math
+          >. </p
+        > </div
+      > <div
+          class="solution"
+          id="id4169143"
+        > <p
+            class="para"
+            id="element-333"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >X</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{X} {}</annotation
+              > </semantics
+            > </math
+          > = Time (years) to decay carbon-14 </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-589"
+      ><div
+          class="problem"
+          id="id6487926"
+        > <p
+            class="para"
+            id="element-128"
+          >What is the decay rate (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >m</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{m} {}</annotation
+              > </semantics
+            > </math
+          >)? </p
+        > </div
+      > <div
+          class="solution"
+          id="id3426577"
+        > <p
+            class="para"
+            id="element-841"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >m</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{m} {}</annotation
+              > </semantics
+            > </math
+          > = 0.000121 </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-287"
+      ><div
+          class="problem"
+          id="id9195665"
+        > <p
+            class="para"
+            id="element-168"
+          > The distribution for <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >X</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{X} {}</annotation
+              > </semantics
+            > </math
+          > is: </p
+        > </div
+      > <div
+          class="solution"
+          id="id7303824"
+        > <p
+            class="para"
+            id="element-501"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mi
+                      >X</mi
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{X} {}</annotation
+              > </semantics
+            > </math
+          > ~ Exp(0.000121) </p
+        > </div
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-532"
+      >Probability</h1
+    > <div
+        class="exercise"
+        id="element-156"
+      ><div
+          class="problem"
+          id="id8793112"
+        > <p
+            class="para"
+            id="element-01234"
+          >Find the amount (percent of 1 gram) of carbon-14 lasting less than 5730 years. This means, find <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mi
+                        >P</mi
+                      > <mo
+                          stretchy="false"
+                        >(</mo
+                      > <mrow
+                        > <mi
+                          >x</mi
+                        > <mo
+                            stretchy="false"
+                          >&lt;</mo
+                        > <mtext
+                          >5730</mtext
+                        > </mrow
+                      > <mo
+                          stretchy="false"
+                        >)</mo
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{P \( X&lt;"5730" \) } {}</annotation
+              > </semantics
+            > </math
+          >.</p
+        ><list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-420"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >Sketch the graph. Shade the area of interest. <figure
+                id="element-123987"
+              ><span
+                  class="media"
+                  id="id7464899"
+                  data-alt="Blank graph with vertical and horizontal axes."
+                ><image
+                    print-width="4in"
+                /></span
+              ></figure
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >Find the probability. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >P</mi
+                        > <mo
+                            stretchy="false"
+                          >(</mo
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >&lt;</mo
+                          > <mtext
+                            >5730</mtext
+                          > </mrow
+                        > <mo
+                            stretchy="false"
+                          >)</mo
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{P \( X&lt;"5730" \) } {}</annotation
+                > </semantics
+              > </math
+            > =</li
+          ></list
+        ></div
+      > <div
+          class="solution"
+          id="id4085474"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-543654"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >P</mi
+                        > <mo
+                            stretchy="false"
+                          >(</mo
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >&lt;</mo
+                          > <mtext
+                            >5730</mtext
+                          > </mrow
+                        > <mo
+                            stretchy="false"
+                          >)</mo
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{P \( X&lt;"5730" \) } {}</annotation
+                > </semantics
+              > </math
+            > = 0.5001</li
+          > </list
+        ></div
+      ></div
+    > <div
+        class="exercise"
+        id="element-1560"
+      ><div
+          class="problem"
+          id="id3410015"
+        > <p
+            class="para"
+            id="element-012340"
+          >Find the percentage of carbon-14 lasting longer than 10,000 years.</p
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-4200"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >Sketch the graph. Shade the area of interest. <figure
+                id="element-1239870"
+              ><span
+                  class="media"
+                  id="id5643889"
+                  data-alt="Blank graph with horizontal and vertical axes."
+                ><image
+                    print-width="4in"
+                /></span
+              ></figure
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >Find the probability. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >P</mi
+                        > <mo
+                            stretchy="false"
+                          >(</mo
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >&gt;</mo
+                          > <mtext
+                            >10000</mtext
+                          > </mrow
+                        > <mo
+                            stretchy="false"
+                          >)</mo
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{P \( X&lt;"5730" \) } {}</annotation
+                > </semantics
+              > </math
+            > =</li
+          ></list
+        ></div
+      > <div
+          class="solution"
+          id="id7253883"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-5436540"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >P</mi
+                        > <mo
+                            stretchy="false"
+                          >(</mo
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >&gt;</mo
+                          > <mtext
+                            >10000</mtext
+                          > </mrow
+                        > <mo
+                            stretchy="false"
+                          >)</mo
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{P \( X&lt;"5730" \) } {}</annotation
+                > </semantics
+              > </math
+            > = 0.2982</li
+          > </list
+        ></div
+      ></div
+    > <div
+        class="exercise"
+        id="element-1561"
+      ><div
+          class="problem"
+          id="id7225163"
+        > <p
+            class="para"
+            id="element-012341"
+          >Thirty percent (30%) of carbon-14 will decay within how many years?</p
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-4201"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >Sketch the graph. Shade the area of interest. <figure
+                id="element-1239871"
+              ><span
+                  class="media"
+                  id="id8389585"
+                  data-alt="Blank graph with vertical and horizontal axes."
+                ><image
+                    print-width="4in"
+                /></span
+              ></figure
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >Find the value <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mi
+                        >k</mi
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{k} {}</annotation
+                > </semantics
+              > </math
+            > such that <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >P</mi
+                        > <mo
+                            stretchy="false"
+                          >(</mo
+                        > <mrow
+                          > <mi
+                            >x</mi
+                          > <mo
+                              stretchy="false"
+                            >&lt;</mo
+                          > <mi
+                            >k</mi
+                          > </mrow
+                        > <mrow
+                          > <mo
+                              stretchy="false"
+                            >)</mo
+                          > <mo
+                              stretchy="false"
+                            >=</mo
+                          > <mn
+                            >0</mn
+                          > </mrow
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >30</mtext
+                        > </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{P \( X&lt;k \) =0 "." "30"} {}</annotation
+                > </semantics
+              > </math
+            >. </li
+          ></list
+        ></div
+      > <div
+          class="solution"
+          id="id7261303"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-5436541"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mi
+                        >k</mi
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{k} {}</annotation
+                > </semantics
+              > </math
+            > = 2947.73</li
+          > </list
+        > </div
+      ></div
+    > </div
+  > </body
+>
+</html>

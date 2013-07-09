@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="cc: http://creativecommons.org/ns#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">col10522@1.40</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+    <dc:creator id="creator">Connexions</dc:creator>
+    <meta refines="#creator" property="file-as">Connexions</meta>
+    <dc:identifier id="pub-id">org.cnx.col10522@1.40</dc:identifier>
+    <dc:language>en-US</dc:language>
+    <meta property="dcterms:modified">2013-06-23T12:47:00Z</meta>
+    <dc:publisher>Connexions</dc:publisher>
+    <dc:rights>This work is shared with the public using the Attribution 3.0 Unported (CC BY 3.0) license.</dc:rights>
+    <link rel="cc:license" href="http://creativecommons.org/licenses/by/3.0/"/>
+    <meta property="cc:attributionURL">http://cnx.org/content</meta>
+  </metadata>
+  <manifest>
+    <item id="toc" properties="nav" href="content/col10522@1.40-toc.xhtml" media-type="application/xhtml+xml"/>
+    <item media-type="application/xhtml+xml" id="m16004" href="content/m16004.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16005" href="content/m16005.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16006" href="content/m16006.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16007" href="content/m16007.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16008" href="content/m16008.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16010" href="content/m16010.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16012" href="content/m16012.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16013" href="content/m16013.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16014" href="content/m16014.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16015" href="content/m16015.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16016" href="content/m16016.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16020" href="content/m16020.xhtml"/>
+      <item media-type="image/png" href="resources/m16020_DotPlot.png"/>
+    <item media-type="application/xhtml+xml" id="m16021" href="content/m16021.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16023" href="content/m16023.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16026" href="content/m16026.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16296" href="content/m16296.xhtml"/>
+      <item media-type="image/png" href="resources/Ch2_boxplot_1.png"/>
+      <item media-type="image/png" href="resources/Ch2_boxplot_2-1.png"/>
+      <item media-type="image/png" href="resources/Ch2_boxplot_3.png"/>
+      <item media-type="image/png" href="resources/example2-6solution.png"/>
+    <item media-type="application/xhtml+xml" id="m16297" href="content/m16297.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16298" href="content/m16298.xhtml"/>
+      <item media-type="image/png" href="resources/Ch2_hist_1.png"/>
+      <item media-type="image/png" href="resources/Ch2_books_1.png"/>
+    <item media-type="application/xhtml+xml" id="m16299" href="content/m16299.xhtml"/>
+      <item media-type="image/png" href="resources/image2.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16300" href="content/m16300.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16301" href="content/m16301.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16302" href="content/m16302.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16303" href="content/m16303.xhtml"/>
+      <item media-type="image/png" href="resources/atat1.png"/>
+      <item media-type="image/png" href="resources/atat2.png"/>
+      <item media-type="image/png" href="resources/atat3.png"/>
+      <item media-type="image/png" href="resources/atat4.png"/>
+      <item media-type="image/png" href="resources/desc_stats_final2_2.png"/>
+      <item media-type="image/png" href="resources/desc_stats_final2_3.png"/>
+      <item media-type="image/png" href="resources/desc_stats_final2_4.png"/>
+    <item media-type="application/xhtml+xml" id="m16304" href="content/m16304.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16305" href="content/m16305.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16307" href="content/m16307.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16308" href="content/m16308.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16310" href="content/m16310.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16312" href="content/m16312.xhtml"/>
+      <item media-type="image/png" href="resources/graph1.png"/>
+    <item media-type="application/xhtml+xml" id="m16314" href="content/m16314.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16801" href="content/m16801.xhtml"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot13.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot14.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot15.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot1.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot2.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot5.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot6.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot7.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot8.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot16.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot9.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot10.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot11-1.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot11-2.png"/>
+      <item media-type="image/png" href="resources/desc_stats_hw_boxplot12.png"/>
+      <item media-type="image/png" href="resources/desc_stats_bar_graph_5.png"/>
+    <item media-type="application/xhtml+xml" id="m16803" href="content/m16803.xhtml"/>
+      <item media-type="image/png" href="resources/graph5.PNG"/>
+      <item media-type="image/png" href="resources/graph5.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16805" href="content/m16805.xhtml"/>
+      <item media-type="image/png" href="resources/crv_cpf1.png"/>
+      <item media-type="image/png" href="resources/crv_cpf2.png"/>
+      <item media-type="image/png" href="resources/crv_cpf3.png"/>
+      <item media-type="image/png" href="resources/crv_cpf4.png"/>
+      <item media-type="image/png" href="resources/crv_cpf5.png"/>
+      <item media-type="image/png" href="resources/crv_cpf6.png"/>
+    <item media-type="application/xhtml+xml" id="m16807" href="content/m16807.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16808" href="content/m16808.xhtml"/>
+      <item media-type="image/png" href="resources/graphics1.png"/>
+      <item media-type="image/png" href="resources/graphics2.png"/>
+      <item media-type="image/png" href="resources/graphics3.png"/>
+    <item media-type="application/xhtml+xml" id="m16810" href="content/m16810.xhtml"/>
+      <item media-type="image/png" href="resources/12.png"/>
+      <item media-type="image/png" href="resources/chart.png"/>
+    <item media-type="application/xhtml+xml" id="m16811" href="content/m16811.xhtml"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+    <item media-type="application/xhtml+xml" id="m16812" href="content/m16812.xhtml"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+    <item media-type="application/xhtml+xml" id="m16813" href="content/m16813.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16816" href="content/m16816.xhtml"/>
+      <item media-type="image/png" href="resources/cont_rv_expdist1.png"/>
+      <item media-type="image/png" href="resources/cont_rv_expdist2.png"/>
+      <item media-type="image/png" href="resources/cont_rv_expdist3.png"/>
+      <item media-type="image/png" href="resources/cont_rv_expdist4.png"/>
+      <item media-type="image/png" href="resources/cont_rv_expdist5.png"/>
+      <item media-type="image/png" href="resources/cont_rv_expdist6.png"/>
+    <item media-type="application/xhtml+xml" id="m16819" href="content/m16819.xhtml"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist1.png"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist2.png"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist3.png"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist4.png"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist6.png"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist5.png"/>
+      <item media-type="image/png" href="resources/cont_rv_unidist7.png"/>
+      <item media-type="image/jpeg" href="resources/UniformEx4Graph1.jpg"/>
+      <item media-type="image/jpeg" href="resources/UniformEx4Graph2.jpg"/>
+      <item media-type="image/jpeg" href="resources/UniformEx4Graph3.jpg"/>
+      <item media-type="image/jpeg" href="resources/UniformEx4Graph4.jpg"/>
+    <item media-type="application/xhtml+xml" id="m16820" href="content/m16820.xhtml"/>
+      <item media-type="image/png" href="resources/disc_rv_graph1-1.png"/>
+    <item media-type="application/xhtml+xml" id="m16821" href="content/m16821.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16822" href="content/m16822.xhtml"/>
+      <item media-type="image/png" href="resources/disc_rv_graph2_bw.png"/>
+    <item media-type="application/xhtml+xml" id="m16823" href="content/m16823.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16824" href="content/m16824.xhtml"/>
+      <item media-type="image/png" href="resources/disc_rv_hypergeo_graph1_bw.png"/>
+    <item media-type="application/xhtml+xml" id="m16825" href="content/m16825.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16826" href="content/m16826.xhtml"/>
+      <item media-type="image/png" href="resources/graph4.PNG"/>
+      <item media-type="image/png" href="resources/graph3.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16827" href="content/m16827.xhtml"/>
+      <item media-type="image/png" href="resources/graph1.PNG"/>
+      <item media-type="image/png" href="resources/graph2.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16828" href="content/m16828.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16829" href="content/m16829.xhtml"/>
+      <item media-type="image/png" href="resources/disc_rv_poisson1.png"/>
+    <item media-type="application/xhtml+xml" id="m16830" href="content/m16830.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16831" href="content/m16831.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16832" href="content/m16832.xhtml"/>
+      <item media-type="image/png" href="resources/boxplot.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16833" href="content/m16833.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16835" href="content/m16835.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16836" href="content/m16836.xhtml"/>
+      <item media-type="image/png" href="resources/tree1.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16837" href="content/m16837.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16838" href="content/m16838.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16839" href="content/m16839.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16840" href="content/m16840.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16841" href="content/m16841.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16842" href="content/m16842.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16843" href="content/m16843.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16845" href="content/m16845.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16846" href="content/m16846.xhtml"/>
+      <item media-type="image/png" href="resources/prob_tpcs_treedia1.png"/>
+      <item media-type="image/png" href="resources/prob_tpcs_treedia2.png"/>
+      <item media-type="image/png" href="resources/prob_tpcs_treedia3.png"/>
+    <item media-type="application/xhtml+xml" id="m16847" href="content/m16847.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16848" href="content/m16848.xhtml"/>
+      <item media-type="image/png" href="resources/prob_tpcs_venn1.png"/>
+      <item media-type="image/png" href="resources/prob_tpcs_venn2.png"/>
+      <item media-type="image/png" href="resources/prob_tpcs_venn3.png"/>
+    <item media-type="application/xhtml+xml" id="m16849" href="content/m16849.xhtml"/>
+      <item media-type="image/png" href="resources/desc_stats_line_graph_1.png"/>
+      <item media-type="image/png" href="resources/desc_stats_bar_graph_3.png"/>
+      <item media-type="image/png" href="resources/desc_stats_bar_graph_4.png"/>
+    <item media-type="application/xhtml+xml" id="m16945" href="content/m16945.xhtml"/>
+      <item media-type="image/png" href="resources/graph10.PNG"/>
+      <item media-type="image/png" href="resources/graph10.PNG"/>
+      <item media-type="image/png" href="resources/graph10.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16947" href="content/m16947.xhtml"/>
+      <item media-type="image/png" href="resources/clt_-bymeans1.png"/>
+    <item media-type="application/xhtml+xml" id="m16948" href="content/m16948.xhtml"/>
+      <item media-type="image/png" href="resources/clt_bysums1.png"/>
+    <item media-type="application/xhtml+xml" id="m16950" href="content/m16950.xhtml"/>
+      <item media-type="image/png" href="resources/graph8.PNG"/>
+      <item media-type="image/png" href="resources/graph8.PNG"/>
+      <item media-type="image/png" href="resources/graph8.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16952" href="content/m16952.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16953" href="content/m16953.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16954" href="content/m16954.xhtml"/>
+      <item media-type="image/png" href="resources/1a.png"/>
+      <item media-type="image/png" href="resources/2a.png"/>
+      <item media-type="image/png" href="resources/2a.png"/>
+      <item media-type="image/png" href="resources/4a.png"/>
+      <item media-type="image/png" href="resources/4a.png"/>
+    <item media-type="application/xhtml+xml" id="m16955" href="content/m16955.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16956" href="content/m16956.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16958" href="content/m16958.xhtml"/>
+      <item media-type="image/png" href="resources/clt_useCLT1.png"/>
+      <item media-type="image/png" href="resources/clt_useCLT2.png"/>
+      <item media-type="image/png" href="resources/clt_useCLT3.png"/>
+      <item media-type="image/png" href="resources/clt_useCLT4.png"/>
+      <item media-type="image/png" href="resources/clt_useCLT5.png"/>
+      <item media-type="image/png" href="resources/clt_useCLT6.png"/>
+    <item media-type="application/xhtml+xml" id="m16959" href="content/m16959.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16960" href="content/m16960.xhtml"/>
+      <item media-type="image/png" href="resources/wave.png"/>
+    <item media-type="application/xhtml+xml" id="m16961" href="content/m16961.xhtml"/>
+      <item media-type="image/png" href="resources/wave1.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16962" href="content/m16962.xhtml"/>
+      <item media-type="image/png" href="resources/conf_intvls_cfpm1.png"/>
+      <item media-type="image/png" href="resources/conf_intvls_cfpm2.png"/>
+      <item media-type="image/png" href="resources/conf_intvls_cfpm3-1.png"/>
+      <item media-type="image/png" href="resources/conf_intvls_cfpm3-2.png"/>
+    <item media-type="application/xhtml+xml" id="m16963" href="content/m16963.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16964" href="content/m16964.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16966" href="content/m16966.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16967" href="content/m16967.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16968" href="content/m16968.xhtml"/>
+      <item media-type="image/png" href="resources/5.png"/>
+    <item media-type="application/xhtml+xml" id="m16970" href="content/m16970.xhtml"/>
+      <item media-type="image/png" href="resources/5.png"/>
+    <item media-type="application/xhtml+xml" id="m16971" href="content/m16971.xhtml"/>
+      <item media-type="image/png" href="resources/5.png"/>
+    <item media-type="application/xhtml+xml" id="m16972" href="content/m16972.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16973" href="content/m16973.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16976" href="content/m16976.xhtml"/>
+      <item media-type="image/png" href="resources/normdist_arealrx1.png"/>
+    <item media-type="application/xhtml+xml" id="m16977" href="content/m16977.xhtml"/>
+      <item media-type="image/png" href="resources/normdist_calcprop1.png"/>
+      <item media-type="image/png" href="resources/normdist_calcprop2.png"/>
+      <item media-type="image/png" href="resources/normdist_calcprop3.png"/>
+      <item media-type="image/png" href="resources/normdist_calcprop4.png"/>
+    <item media-type="application/xhtml+xml" id="m16978" href="content/m16978.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16979" href="content/m16979.xhtml"/>
+      <item media-type="image/png" href="resources/normdist_intro1.png"/>
+    <item media-type="application/xhtml+xml" id="m16980" href="content/m16980.xhtml"/>
+      <item media-type="image/png" href="resources/graph7.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16981" href="content/m16981.xhtml"/>
+      <item media-type="image/png" href="resources/graph6.PNG"/>
+    <item media-type="application/xhtml+xml" id="m16983" href="content/m16983.xhtml"/>
+      <item media-type="image/png" href="resources/3a.png"/>
+      <item media-type="image/png" href="resources/3a.png"/>
+      <item media-type="image/png" href="resources/3a.png"/>
+    <item media-type="application/xhtml+xml" id="m16985" href="content/m16985.xhtml"/>
+      <item media-type="image/png" href="resources/2c.png"/>
+    <item media-type="application/xhtml+xml" id="m16986" href="content/m16986.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16987" href="content/m16987.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16991" href="content/m16991.xhtml"/>
+      <item media-type="image/png" href="resources/empir_1.png"/>
+    <item media-type="application/xhtml+xml" id="m16992" href="content/m16992.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16993" href="content/m16993.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16994" href="content/m16994.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16995" href="content/m16995.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest11_samphyp1.png"/>
+    <item media-type="application/xhtml+xml" id="m16996" href="content/m16996.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16997" href="content/m16997.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16998" href="content/m16998.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m16999" href="content/m16999.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest11_addinfo1.png"/>
+      <item media-type="image/png" href="resources/hyptest11_addinfo2.png"/>
+      <item media-type="image/png" href="resources/hyptest11_addinfo3.png"/>
+    <item media-type="application/xhtml+xml" id="m17001" href="content/m17001.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17002" href="content/m17002.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17003" href="content/m17003.xhtml"/>
+      <item media-type="image/png" href="resources/9.png"/>
+    <item media-type="application/xhtml+xml" id="m17004" href="content/m17004.xhtml"/>
+      <item media-type="image/png" href="resources/10.png"/>
+    <item media-type="application/xhtml+xml" id="m17005" href="content/m17005.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest11_ex1.png"/>
+      <item media-type="image/png" href="resources/hyptest11_ex2.png"/>
+      <item media-type="image/png" href="resources/hyptest11_ex3.png"/>
+      <item media-type="image/png" href="resources/hyptest11_ex4.png"/>
+      <item media-type="image/png" href="resources/hyptest11_ex5.png"/>
+      <item media-type="image/png" href="resources/hyptest11_ex6.png"/>
+      <item media-type="image/png" href="resources/hyptest11_ex7.png"/>
+    <item media-type="application/xhtml+xml" id="m17006" href="content/m17006.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17007" href="content/m17007.xhtml"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17013" href="content/m17013.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17016" href="content/m17016.xhtml"/>
+      <item media-type="image/png" href="resources/10.png"/>
+    <item media-type="application/xhtml+xml" id="m17017" href="content/m17017.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17021" href="content/m17021.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17022" href="content/m17022.xhtml"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17023" href="content/m17023.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17025" href="content/m17025.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest22_cmp1.png"/>
+    <item media-type="application/xhtml+xml" id="m17027" href="content/m17027.xhtml"/>
+      <item media-type="image/png" href="resources/9-1.png"/>
+    <item media-type="application/xhtml+xml" id="m17028" href="content/m17028.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17029" href="content/m17029.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17033" href="content/m17033.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest22_samp1.png"/>
+      <item media-type="image/png" href="resources/hyptest22_samp2.png"/>
+    <item media-type="application/xhtml+xml" id="m17039" href="content/m17039.xhtml"/>
+      <item media-type="image/png" href="resources/9.png"/>
+    <item media-type="application/xhtml+xml" id="m17042" href="content/m17042.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest22_cmp_2_1.png"/>
+    <item media-type="application/xhtml+xml" id="m17043" href="content/m17043.xhtml"/>
+      <item media-type="image/png" href="resources/hyptest22_cmp_3_1.png"/>
+    <item media-type="application/xhtml+xml" id="m17044" href="content/m17044.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17045" href="content/m17045.xhtml"/>
+      <item media-type="image/png" href="resources/chisq_facts1.png"/>
+      <item media-type="image/png" href="resources/chisq_facts2.png"/>
+      <item media-type="image/png" href="resources/chisq_facts3.png"/>
+    <item media-type="application/xhtml+xml" id="m17048" href="content/m17048.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17049" href="content/m17049.xhtml"/>
+      <item media-type="image/png" href="resources/graph11.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17050" href="content/m17050.xhtml"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17052" href="content/m17052.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17053" href="content/m17053.xhtml"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+    <item media-type="application/xhtml+xml" id="m17054" href="content/m17054.xhtml"/>
+      <item media-type="image/png" href="resources/9.png"/>
+    <item media-type="application/xhtml+xml" id="m17056" href="content/m17056.xhtml"/>
+      <item media-type="image/png" href="resources/9.png"/>
+    <item media-type="application/xhtml+xml" id="m17057" href="content/m17057.xhtml"/>
+      <item media-type="image/png" href="resources/histogram2.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17058" href="content/m17058.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17059" href="content/m17059.xhtml"/>
+      <item media-type="image/png" href="resources/chisq_uses5.png"/>
+    <item media-type="application/xhtml+xml" id="m17061" href="content/m17061.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17062" href="content/m17062.xhtml"/>
+      <item media-type="image/png" href="resources/anova_facts1.png"/>
+      <item media-type="image/png" href="resources/anova_facts2.png"/>
+      <item media-type="image/png" href="resources/anova_facts3.png"/>
+    <item media-type="application/xhtml+xml" id="m17063" href="content/m17063.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17065" href="content/m17065.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17067" href="content/m17067.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17068" href="content/m17068.xhtml"/>
+      <item media-type="image/png" href="resources/anova_means_equal.png"/>
+      <item media-type="image/png" href="resources/anova_means_unequal.png"/>
+    <item media-type="application/xhtml+xml" id="m17070" href="content/m17070.xhtml"/>
+      <item media-type="image/png" href="resources/histogram113.PNG"/>
+      <item media-type="image/png" href="resources/histogram1.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17072" href="content/m17072.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17075" href="content/m17075.xhtml"/>
+      <item media-type="image/png" href="resources/anova_twotests.png"/>
+    <item media-type="application/xhtml+xml" id="m17076" href="content/m17076.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17077" href="content/m17077.xhtml"/>
+      <item media-type="image/png" href="resources/linrgs_facts4.png"/>
+      <item media-type="image/png" href="resources/linrgs_facts5.png"/>
+      <item media-type="image/png" href="resources/linrgs_facts6.png"/>
+      <item media-type="image/png" href="resources/lnregs_Facts_normal.png"/>
+    <item media-type="application/xhtml+xml" id="m17079" href="content/m17079.xhtml"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17080" href="content/m17080.xhtml"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17081" href="content/m17081.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17082" href="content/m17082.xhtml"/>
+      <item media-type="image/png" href="resources/linrgs_scater1.png"/>
+      <item media-type="image/png" href="resources/linrgs_scater7.png"/>
+      <item media-type="image/png" href="resources/linrgs_scater6.png"/>
+      <item media-type="image/png" href="resources/linrgs_scater2.png"/>
+      <item media-type="image/png" href="resources/linrgs_scater5.png"/>
+      <item media-type="image/png" href="resources/linrgs_scater3.png"/>
+      <item media-type="image/png" href="resources/linrgs_scater4.png"/>
+    <item media-type="application/xhtml+xml" id="m17083" href="content/m17083.xhtml"/>
+      <item media-type="image/png" href="resources/linrgs_slope1pos.png"/>
+      <item media-type="image/png" href="resources/linrgs_slope1const.png"/>
+      <item media-type="image/png" href="resources/linrgs_slope1neg.png"/>
+    <item media-type="application/xhtml+xml" id="m17085" href="content/m17085.xhtml"/>
+      <item media-type="image/png" href="resources/graphics1(1).png"/>
+    <item media-type="application/xhtml+xml" id="m17086" href="content/m17086.xhtml"/>
+      <item media-type="image/png" href="resources/linrgs_lineq1.png"/>
+    <item media-type="application/xhtml+xml" id="m17087" href="content/m17087.xhtml"/>
+      <item media-type="image/png" href="resources/graph12.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17088" href="content/m17088.xhtml"/>
+      <item media-type="image/png" href="resources/9.png"/>
+    <item media-type="application/xhtml+xml" id="m17089" href="content/m17089.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17090" href="content/m17090.xhtml"/>
+      <item media-type="image/png" href="resources/linrgs_regeq1.png"/>
+      <item media-type="image/png" href="resources/linrgs_regeq2.png"/>
+      <item media-type="image/png" href="resources/linrgs_regeq3.png"/>
+      <item media-type="image/png" href="resources/Ch12LinREgTTestOutput.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17092" href="content/m17092.xhtml"/>
+      <item media-type="image/png" href="resources/linrgs_facts1.png"/>
+      <item media-type="image/png" href="resources/linrgs_facts2.png"/>
+      <item media-type="image/png" href="resources/linrgs_facts3.png"/>
+    <item media-type="application/xhtml+xml" id="m17094" href="content/m17094.xhtml"/>
+      <item media-type="image/gif" href="resources/"/>
+      <item media-type="linrgoutlier.gif" href="resources/linrgoutlier.gif"/>
+      <item media-type="image/png" href="resources/linrgs_out1.png"/>
+    <item media-type="application/xhtml+xml" id="m17095" href="content/m17095.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17098" href="content/m17098.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17102" href="content/m17102.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17103" href="content/m17103.xhtml"/>
+      <item media-type="image/png" href="resources/desc_stat_numline.png"/>
+      <item media-type="image/png" href="resources/Ch2_boxplot_4.png"/>
+    <item media-type="application/xhtml+xml" id="m17104" href="content/m17104.xhtml"/>
+      <item media-type="image/png" href="resources/Ch2_hist_2.png"/>
+      <item media-type="image/png" href="resources/Ch2_hist_3_1.png"/>
+      <item media-type="image/png" href="resources/Ch2_hist_3.png"/>
+    <item media-type="application/xhtml+xml" id="m17105" href="content/m17105.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17106" href="content/m17106.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17107" href="content/m17107.xhtml"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+    <item media-type="application/xhtml+xml" id="m17108" href="content/m17108.xhtml"/>
+      <item media-type="image/png" href="resources/graph.png"/>
+    <item media-type="application/xhtml+xml" id="m17109" href="content/m17109.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17132" href="content/m17132.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17133" href="content/m17133.xhtml"/>
+      <item media-type="image/png" href="resources/wave.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17134" href="content/m17134.xhtml"/>
+      <item media-type="image/png" href="resources/wave.PNG"/>
+      <item media-type="image/png" href="resources/wave.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17135" href="content/m17135.xhtml"/>
+      <item media-type="image/png" href="resources/line1.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17136" href="content/m17136.xhtml"/>
+      <item media-type="image/png" href="resources/wave2.PNG"/>
+    <item media-type="application/xhtml+xml" id="m17140" href="content/m17140.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17141" href="content/m17141.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17142" href="content/m17142.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17143" href="content/m17143.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17144" href="content/m17144.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m17191" href="content/m17191.xhtml"/>
+      <item media-type="image/png" href="resources/chisq_uses4.png"/>
+    <item media-type="application/xhtml+xml" id="m17192" href="content/m17192.xhtml"/>
+      <item media-type="image/png" href="resources/chisq_uses1.png"/>
+      <item media-type="image/png" href="resources/chisq_uses2.png"/>
+      <item media-type="image/png" href="resources/chisq_uses3.png"/>
+    <item media-type="application/xhtml+xml" id="m18746" href="content/m18746.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m19138" href="content/m19138.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m19710" href="content/m19710.xhtml"/>
+      <item media-type="image/png" href="resources/ti83-button.png"/>
+      <item media-type="application/postscript" href="resources/ti83-button.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-up.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-up.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-down.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-down.eps"/>
+      <item media-type="image/png" href="resources/ti83-alpha.png"/>
+      <item media-type="application/postscript" href="resources/ti83-alpha.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-alpha.png"/>
+      <item media-type="application/postscript" href="resources/ti83-alpha.eps"/>
+      <item media-type="image/png" href="resources/ti83-alpha.png"/>
+      <item media-type="application/postscript" href="resources/ti83-alpha.eps"/>
+      <item media-type="image/png" href="resources/ti83-clear.png"/>
+      <item media-type="application/postscript" href="resources/ti83-clear.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-on.png"/>
+      <item media-type="application/postscript" href="resources/ti83-on.eps"/>
+      <item media-type="image/png" href="resources/ti83-stat.png"/>
+      <item media-type="application/postscript" href="resources/ti83-stat.eps"/>
+      <item media-type="image/png" href="resources/ti83-four.png"/>
+      <item media-type="application/postscript" href="resources/ti83-four.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-left.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-left.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-stat.png"/>
+      <item media-type="application/postscript" href="resources/ti83-stat.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-negate.png"/>
+      <item media-type="application/postscript" href="resources/ti83-negate.eps"/>
+      <item media-type="image/png" href="resources/ti83-nine.png"/>
+      <item media-type="application/postscript" href="resources/ti83-nine.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-four.png"/>
+      <item media-type="application/postscript" href="resources/ti83-four.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-stat.png"/>
+      <item media-type="application/postscript" href="resources/ti83-stat.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-comma.png"/>
+      <item media-type="application/postscript" href="resources/ti83-comma.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-yequals.png"/>
+      <item media-type="application/postscript" href="resources/ti83-yequals.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-down.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-down.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-right.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-right.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-yequals.png"/>
+      <item media-type="application/postscript" href="resources/ti83-yequals.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-down.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-down.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-right.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-right.eps"/>
+      <item media-type="image/png" href="resources/ti83-clear.png"/>
+      <item media-type="application/postscript" href="resources/ti83-clear.eps"/>
+      <item media-type="image/png" href="resources/ti83-zoom.png"/>
+      <item media-type="application/postscript" href="resources/ti83-zoom.eps"/>
+      <item media-type="image/png" href="resources/ti83-nine.png"/>
+      <item media-type="application/postscript" href="resources/ti83-nine.eps"/>
+      <item media-type="image/png" href="resources/ti83-window.png"/>
+      <item media-type="application/postscript" href="resources/ti83-window.eps"/>
+      <item media-type="image/png" href="resources/ti83-graph.png"/>
+      <item media-type="application/postscript" href="resources/ti83-graph.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-graph.png"/>
+      <item media-type="application/postscript" href="resources/ti83-graph.eps"/>
+      <item media-type="image/png" href="resources/calculator-lr-graph.png"/>
+      <item media-type="application/postscript" href="resources/calculator-lr-graph.eps"/>
+      <item media-type="image/png" href="resources/ti83-on.png"/>
+      <item media-type="application/postscript" href="resources/ti83-on.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-four.png"/>
+      <item media-type="application/postscript" href="resources/ti83-four.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-mode.png"/>
+      <item media-type="application/postscript" href="resources/ti83-mode.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-down.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-down.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-right.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-right.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-stat.png"/>
+      <item media-type="application/postscript" href="resources/ti83-stat.eps"/>
+      <item media-type="image/png" href="resources/ti83-four.png"/>
+      <item media-type="application/postscript" href="resources/ti83-four.eps"/>
+      <item media-type="image/png" href="resources/ti83-stat.png"/>
+      <item media-type="application/postscript" href="resources/ti83-stat.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-down.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-down.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-stat.png"/>
+      <item media-type="application/postscript" href="resources/ti83-stat.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-right.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-right.eps"/>
+      <item media-type="image/png" href="resources/ti83-eight.png"/>
+      <item media-type="application/postscript" href="resources/ti83-eight.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-window.png"/>
+      <item media-type="application/postscript" href="resources/ti83-window.eps"/>
+      <item media-type="image/png" href="resources/ti83-graph.png"/>
+      <item media-type="application/postscript" href="resources/ti83-graph.eps"/>
+      <item media-type="image/png" href="resources/ti83-yequals.png"/>
+      <item media-type="application/postscript" href="resources/ti83-yequals.eps"/>
+      <item media-type="image/png" href="resources/ti83-vars.png"/>
+      <item media-type="application/postscript" href="resources/ti83-vars.eps"/>
+      <item media-type="image/png" href="resources/ti83-five.png"/>
+      <item media-type="application/postscript" href="resources/ti83-five.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-graph.png"/>
+      <item media-type="application/postscript" href="resources/ti83-graph.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-sto.png"/>
+      <item media-type="application/postscript" href="resources/ti83-sto.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-xsquared.png"/>
+      <item media-type="application/postscript" href="resources/ti83-xsquared.eps"/>
+      <item media-type="image/png" href="resources/ti83-divide.png"/>
+      <item media-type="application/postscript" href="resources/ti83-divide.eps"/>
+      <item media-type="image/png" href="resources/ti83-eight.png"/>
+      <item media-type="application/postscript" href="resources/ti83-eight.eps"/>
+      <item media-type="image/png" href="resources/ti83-sto.png"/>
+      <item media-type="application/postscript" href="resources/ti83-sto.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-one.png"/>
+      <item media-type="application/postscript" href="resources/ti83-one.eps"/>
+      <item media-type="image/png" href="resources/ti83-decimal.png"/>
+      <item media-type="application/postscript" href="resources/ti83-decimal.eps"/>
+      <item media-type="image/png" href="resources/ti83-nine.png"/>
+      <item media-type="application/postscript" href="resources/ti83-nine.eps"/>
+      <item media-type="image/png" href="resources/ti83-multiply.png"/>
+      <item media-type="application/postscript" href="resources/ti83-multiply.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-right.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-right.eps"/>
+      <item media-type="image/png" href="resources/ti83-dir-right.png"/>
+      <item media-type="application/postscript" href="resources/ti83-dir-right.eps"/>
+      <item media-type="image/png" href="resources/ti83-five.png"/>
+      <item media-type="application/postscript" href="resources/ti83-five.eps"/>
+      <item media-type="image/png" href="resources/ti83-2nd.png"/>
+      <item media-type="application/postscript" href="resources/ti83-2nd.eps"/>
+      <item media-type="image/png" href="resources/ti83-rightparenthesis.png"/>
+      <item media-type="application/postscript" href="resources/ti83-rightparenthesis.eps"/>
+      <item media-type="image/png" href="resources/ti83-rightparenthesis.png"/>
+      <item media-type="application/postscript" href="resources/ti83-rightparenthesis.eps"/>
+      <item media-type="image/png" href="resources/ti83-enter.png"/>
+      <item media-type="application/postscript" href="resources/ti83-enter.eps"/>
+      <item media-type="image/png" href="resources/ti83-trace.png"/>
+      <item media-type="application/postscript" href="resources/ti83-trace.eps"/>
+    <item media-type="application/xhtml+xml" id="m43654" href="content/m43654.xhtml"/>
+    <item media-type="application/xhtml+xml" id="m43655" href="content/m43655.xhtml"/>
+  </manifest>
+  <spine>
+    <itemref linear="no" idref="toc"/>
+    <itemref linear="yes" idref="m16004"/>
+    <itemref linear="yes" idref="m16005"/>
+    <itemref linear="yes" idref="m16006"/>
+    <itemref linear="yes" idref="m16007"/>
+    <itemref linear="yes" idref="m16008"/>
+    <itemref linear="yes" idref="m16010"/>
+    <itemref linear="yes" idref="m16012"/>
+    <itemref linear="yes" idref="m16013"/>
+    <itemref linear="yes" idref="m16014"/>
+    <itemref linear="yes" idref="m16015"/>
+    <itemref linear="yes" idref="m16016"/>
+    <itemref linear="yes" idref="m16020"/>
+    <itemref linear="yes" idref="m16021"/>
+    <itemref linear="yes" idref="m16023"/>
+    <itemref linear="yes" idref="m16026"/>
+    <itemref linear="yes" idref="m16296"/>
+    <itemref linear="yes" idref="m16297"/>
+    <itemref linear="yes" idref="m16298"/>
+    <itemref linear="yes" idref="m16299"/>
+    <itemref linear="yes" idref="m16300"/>
+    <itemref linear="yes" idref="m16301"/>
+    <itemref linear="yes" idref="m16302"/>
+    <itemref linear="yes" idref="m16303"/>
+    <itemref linear="yes" idref="m16304"/>
+    <itemref linear="yes" idref="m16305"/>
+    <itemref linear="yes" idref="m16307"/>
+    <itemref linear="yes" idref="m16308"/>
+    <itemref linear="yes" idref="m16310"/>
+    <itemref linear="yes" idref="m16312"/>
+    <itemref linear="yes" idref="m16314"/>
+    <itemref linear="yes" idref="m16801"/>
+    <itemref linear="yes" idref="m16803"/>
+    <itemref linear="yes" idref="m16805"/>
+    <itemref linear="yes" idref="m16807"/>
+    <itemref linear="yes" idref="m16808"/>
+    <itemref linear="yes" idref="m16810"/>
+    <itemref linear="yes" idref="m16811"/>
+    <itemref linear="yes" idref="m16812"/>
+    <itemref linear="yes" idref="m16813"/>
+    <itemref linear="yes" idref="m16816"/>
+    <itemref linear="yes" idref="m16819"/>
+    <itemref linear="yes" idref="m16820"/>
+    <itemref linear="yes" idref="m16821"/>
+    <itemref linear="yes" idref="m16822"/>
+    <itemref linear="yes" idref="m16823"/>
+    <itemref linear="yes" idref="m16824"/>
+    <itemref linear="yes" idref="m16825"/>
+    <itemref linear="yes" idref="m16826"/>
+    <itemref linear="yes" idref="m16827"/>
+    <itemref linear="yes" idref="m16828"/>
+    <itemref linear="yes" idref="m16829"/>
+    <itemref linear="yes" idref="m16830"/>
+    <itemref linear="yes" idref="m16831"/>
+    <itemref linear="yes" idref="m16832"/>
+    <itemref linear="yes" idref="m16833"/>
+    <itemref linear="yes" idref="m16835"/>
+    <itemref linear="yes" idref="m16836"/>
+    <itemref linear="yes" idref="m16837"/>
+    <itemref linear="yes" idref="m16838"/>
+    <itemref linear="yes" idref="m16839"/>
+    <itemref linear="yes" idref="m16840"/>
+    <itemref linear="yes" idref="m16841"/>
+    <itemref linear="yes" idref="m16842"/>
+    <itemref linear="yes" idref="m16843"/>
+    <itemref linear="yes" idref="m16845"/>
+    <itemref linear="yes" idref="m16846"/>
+    <itemref linear="yes" idref="m16847"/>
+    <itemref linear="yes" idref="m16848"/>
+    <itemref linear="yes" idref="m16849"/>
+    <itemref linear="yes" idref="m16945"/>
+    <itemref linear="yes" idref="m16947"/>
+    <itemref linear="yes" idref="m16948"/>
+    <itemref linear="yes" idref="m16950"/>
+    <itemref linear="yes" idref="m16952"/>
+    <itemref linear="yes" idref="m16953"/>
+    <itemref linear="yes" idref="m16954"/>
+    <itemref linear="yes" idref="m16955"/>
+    <itemref linear="yes" idref="m16956"/>
+    <itemref linear="yes" idref="m16958"/>
+    <itemref linear="yes" idref="m16959"/>
+    <itemref linear="yes" idref="m16960"/>
+    <itemref linear="yes" idref="m16961"/>
+    <itemref linear="yes" idref="m16962"/>
+    <itemref linear="yes" idref="m16963"/>
+    <itemref linear="yes" idref="m16964"/>
+    <itemref linear="yes" idref="m16966"/>
+    <itemref linear="yes" idref="m16967"/>
+    <itemref linear="yes" idref="m16968"/>
+    <itemref linear="yes" idref="m16970"/>
+    <itemref linear="yes" idref="m16971"/>
+    <itemref linear="yes" idref="m16972"/>
+    <itemref linear="yes" idref="m16973"/>
+    <itemref linear="yes" idref="m16976"/>
+    <itemref linear="yes" idref="m16977"/>
+    <itemref linear="yes" idref="m16978"/>
+    <itemref linear="yes" idref="m16979"/>
+    <itemref linear="yes" idref="m16980"/>
+    <itemref linear="yes" idref="m16981"/>
+    <itemref linear="yes" idref="m16983"/>
+    <itemref linear="yes" idref="m16985"/>
+    <itemref linear="yes" idref="m16986"/>
+    <itemref linear="yes" idref="m16987"/>
+    <itemref linear="yes" idref="m16991"/>
+    <itemref linear="yes" idref="m16992"/>
+    <itemref linear="yes" idref="m16993"/>
+    <itemref linear="yes" idref="m16994"/>
+    <itemref linear="yes" idref="m16995"/>
+    <itemref linear="yes" idref="m16996"/>
+    <itemref linear="yes" idref="m16997"/>
+    <itemref linear="yes" idref="m16998"/>
+    <itemref linear="yes" idref="m16999"/>
+    <itemref linear="yes" idref="m17001"/>
+    <itemref linear="yes" idref="m17002"/>
+    <itemref linear="yes" idref="m17003"/>
+    <itemref linear="yes" idref="m17004"/>
+    <itemref linear="yes" idref="m17005"/>
+    <itemref linear="yes" idref="m17006"/>
+    <itemref linear="yes" idref="m17007"/>
+    <itemref linear="yes" idref="m17013"/>
+    <itemref linear="yes" idref="m17016"/>
+    <itemref linear="yes" idref="m17017"/>
+    <itemref linear="yes" idref="m17021"/>
+    <itemref linear="yes" idref="m17022"/>
+    <itemref linear="yes" idref="m17023"/>
+    <itemref linear="yes" idref="m17025"/>
+    <itemref linear="yes" idref="m17027"/>
+    <itemref linear="yes" idref="m17028"/>
+    <itemref linear="yes" idref="m17029"/>
+    <itemref linear="yes" idref="m17033"/>
+    <itemref linear="yes" idref="m17039"/>
+    <itemref linear="yes" idref="m17042"/>
+    <itemref linear="yes" idref="m17043"/>
+    <itemref linear="yes" idref="m17044"/>
+    <itemref linear="yes" idref="m17045"/>
+    <itemref linear="yes" idref="m17048"/>
+    <itemref linear="yes" idref="m17049"/>
+    <itemref linear="yes" idref="m17050"/>
+    <itemref linear="yes" idref="m17052"/>
+    <itemref linear="yes" idref="m17053"/>
+    <itemref linear="yes" idref="m17054"/>
+    <itemref linear="yes" idref="m17056"/>
+    <itemref linear="yes" idref="m17057"/>
+    <itemref linear="yes" idref="m17058"/>
+    <itemref linear="yes" idref="m17059"/>
+    <itemref linear="yes" idref="m17061"/>
+    <itemref linear="yes" idref="m17062"/>
+    <itemref linear="yes" idref="m17063"/>
+    <itemref linear="yes" idref="m17065"/>
+    <itemref linear="yes" idref="m17067"/>
+    <itemref linear="yes" idref="m17068"/>
+    <itemref linear="yes" idref="m17070"/>
+    <itemref linear="yes" idref="m17072"/>
+    <itemref linear="yes" idref="m17075"/>
+    <itemref linear="yes" idref="m17076"/>
+    <itemref linear="yes" idref="m17077"/>
+    <itemref linear="yes" idref="m17079"/>
+    <itemref linear="yes" idref="m17080"/>
+    <itemref linear="yes" idref="m17081"/>
+    <itemref linear="yes" idref="m17082"/>
+    <itemref linear="yes" idref="m17083"/>
+    <itemref linear="yes" idref="m17085"/>
+    <itemref linear="yes" idref="m17086"/>
+    <itemref linear="yes" idref="m17087"/>
+    <itemref linear="yes" idref="m17088"/>
+    <itemref linear="yes" idref="m17089"/>
+    <itemref linear="yes" idref="m17090"/>
+    <itemref linear="yes" idref="m17092"/>
+    <itemref linear="yes" idref="m17094"/>
+    <itemref linear="yes" idref="m17095"/>
+    <itemref linear="yes" idref="m17098"/>
+    <itemref linear="yes" idref="m17102"/>
+    <itemref linear="yes" idref="m17103"/>
+    <itemref linear="yes" idref="m17104"/>
+    <itemref linear="yes" idref="m17105"/>
+    <itemref linear="yes" idref="m17106"/>
+    <itemref linear="yes" idref="m17107"/>
+    <itemref linear="yes" idref="m17108"/>
+    <itemref linear="yes" idref="m17109"/>
+    <itemref linear="yes" idref="m17132"/>
+    <itemref linear="yes" idref="m17133"/>
+    <itemref linear="yes" idref="m17134"/>
+    <itemref linear="yes" idref="m17135"/>
+    <itemref linear="yes" idref="m17136"/>
+    <itemref linear="yes" idref="m17140"/>
+    <itemref linear="yes" idref="m17141"/>
+    <itemref linear="yes" idref="m17142"/>
+    <itemref linear="yes" idref="m17143"/>
+    <itemref linear="yes" idref="m17144"/>
+    <itemref linear="yes" idref="m17191"/>
+    <itemref linear="yes" idref="m17192"/>
+    <itemref linear="yes" idref="m18746"/>
+    <itemref linear="yes" idref="m19138"/>
+    <itemref linear="yes" idref="m19710"/>
+    <itemref linear="yes" idref="m43654"/>
+    <itemref linear="yes" idref="m43655"/>
+  </spine>
+</package>

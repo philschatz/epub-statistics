@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Central Limit Theorem: Introduction</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Central Limit Theorem: Introduction</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-650"
+      >Student Learning Outcomes</h1
+    ><p
+        class="para"
+        id="element-745"
+      > By the end of this chapter, the student should be able to: </p
+    > <ul
+        class="list"
+        data-id="list6234"
+      ><li
+          class="item"
+        >Recognize the Central Limit Theorem problems.</li
+      > <li
+          class="item"
+        >Classify continuous word problems by their distributions.</li
+      > <li
+          class="item"
+        >Apply and interpret the Central Limit Theorem for Means.</li
+      > <li
+          class="item"
+        >Apply and interpret the Central Limit Theorem for Sums.</li
+      > </ul
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="id11083952"
+      >Introduction</h1
+    > <p
+        class="para"
+        id="delete_me"
+      >Why are we so concerned with means? Two reasons are that they give us a middle ground for comparison and they are easy to calculate. In this chapter, you will study means and the Central Limit Theorem.</p
+    ><p
+        class="para"
+        id="element-164"
+      ><term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="centlimit"
+        >The Central Limit Theorem</term
+      > (CLT for short) is one of the most powerful and useful ideas in all of statistics. Both alternatives are concerned with drawing finite samples of size <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > from a population with a known mean, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3BC;</mi
+        > </math
+      >, and a known standard deviation, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >&#x3C3;</mi
+        > </math
+      >. The first alternative says that if we collect samples of size <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        > </math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >n</mi
+        > </math
+      > is "large enough," calculate each sample's mean, and create a histogram of those means, then the resulting histogram will tend to have an approximate normal bell shape. The second alternative says that if we again collect samples of size n that are "large enough," calculate the sum of each sample and create a histogram, then the resulting histogram will again tend to have a normal bell-shape.</p
+    ><p
+        class="para"
+        id="element-328"
+      ><strong
+          class="emphasis"
+        >In either case, it does not matter what the distribution of the original population is, or whether you even need to know it. The important fact is that the sample means and the sums tend to follow the normal distribution.</strong
+      > And, the rest you will learn in this chapter.</p
+    ><p
+        class="para"
+        id="element-17"
+      >The size of the sample, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      >, that is required in order to be to be 'large enough' depends on the original population from which the samples are drawn. If the original population is far from normal then more observations are needed for the sample means or the sample sums to be normal. <strong
+          class="emphasis"
+        >Sampling is done with replacement.</strong
+      ></p
+    ><p
+        class="para"
+        id="element-166"
+      ><span
+          class="title"
+        >Optional Collaborative Classroom Activity</span
+      ></p
+    ><p
+        class="para"
+        id="element-332"
+      ><strong
+          class="emphasis"
+        >Do the following example in class:</strong
+      > Suppose 8 of you roll 1 fair die 10 times, 7 of you roll 2 fair dice 10 times, 9 of you roll 5 fair dice 10 times, and 11 of you roll 10 fair dice 10 times.</p
+    ><p
+        class="para"
+        id="element-42"
+      >Each time a person rolls more than one die, he/she calculates the sample <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="mean"
+        >mean</term
+      > of the faces showing. For example, one person might roll 5 fair dice and get a 2, 2, 3, 4, 6 on one roll.</p
+    ><p
+        class="para"
+        id="element-994"
+      >The mean is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mspace
+            width="10pt"
+        /> <mfrac
+          > <mrow
+            > <mn
+              >2</mn
+            > <mo
+              >+</mo
+            > <mn
+              >2</mn
+            > <mo
+              >+</mo
+            > <mn
+              >3</mn
+            > <mo
+              >+</mo
+            > <mn
+              >4</mn
+            > <mo
+              >+</mo
+            > <mn
+              >6</mn
+            > </mrow
+          > <mrow
+            > <mn
+              >5</mn
+            > </mrow
+          > </mfrac
+        > <mo
+          >=</mo
+        > <mn
+          >3.4</mn
+        > </math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mspace
+            width="10pt"
+        /></math
+      > The 3.4 is one mean when 5 fair dice are rolled. This same person would roll the 5 dice 9 more times and calculate 9 more means for a total of 10 means.</p
+    ><p
+        class="para"
+        id="element-200"
+      >Your instructor will pass out the dice to several people as described above. Roll your dice 10 times. For each roll, record the faces and find the mean. Round to the nearest 0.5.</p
+    ><p
+        class="para"
+        id="element-73"
+      >Your instructor (and possibly you) will produce one graph (it might be a histogram) for 1 die, one graph for 2 dice, one graph for 5 dice, and one graph for 10 dice. Since the "mean" when you roll one die, is just the face on the die, what distribution do these <strong
+          class="emphasis"
+        >means</strong
+      > appear to be representing?</p
+    ><p
+        class="para"
+        id="element-938"
+      ><strong
+          class="emphasis"
+        >Draw the graph for the means using 2 dice.</strong
+      > Do the sample means show any kind of pattern? </p
+    ><p
+        class="para"
+        id="element-182"
+      ><strong
+          class="emphasis"
+        >Draw the graph for the means using 5 dice.</strong
+      > Do you see any pattern emerging? </p
+    ><p
+        class="para"
+        id="element-131"
+      ><strong
+          class="emphasis"
+        >Finally, draw the graph for the means using 10 dice.</strong
+      > Do you see any pattern to the graph? What can you conclude as you increase the number of dice?</p
+    ><p
+        class="para"
+        id="element-368"
+      >As the number of dice rolled increases from 1 to 2 to 5 to 10, the following is happening: <ol
+          class="list"
+          data-id="list-1"
+          data-list-type="enumerated"
+        ><li
+            class="item"
+          >The mean of the sample means remains approximately the same.</li
+        > <li
+            class="item"
+          >The spread of the sample means (the standard deviation of the sample means) gets smaller.</li
+        > <li
+            class="item"
+          >The graph appears steeper and thinner.</li
+        > </ol
+      ></p
+    ><p
+        class="para"
+        id="element-730"
+      >You have just demonstrated the Central Limit Theorem (CLT).</p
+    ><p
+        class="para"
+        id="element-266"
+      >The Central Limit Theorem tells you that as you increase the number of dice, <strong
+          class="emphasis"
+        >the sample means tend toward a normal distribution (the sampling distribution).</strong
+      ></p
+    ></div
+  > </body
+>
+</html>

@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Testing the Significance of the Correlation Coefficient</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Testing the Significance of the Correlation Coefficient</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-617"
+      >Testing the Significance of the Correlation Coefficient</h1
+    ><p
+        class="para"
+        id="eip-298"
+      >The correlation coefficient, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      >, tells us about the strength of the linear relationship between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      >. However, the reliability of the linear model also depends on how many observed data points are in the sample. We need to look at both the value of the correlation coefficient <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > and the sample size <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      >, together.</p
+    ><p
+        class="para"
+        id="element-3884"
+      >We perform a hypothesis test of the <strong
+          class="emphasis"
+        > "significance of the correlation coefficient" </strong
+      > to decide whether the linear relationship in the sample data is strong enough to use to model the relationship in the population. </p
+    ><p
+        class="para"
+        id="eip-413"
+      >The sample data is used to compute <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      >, the correlation coefficient for the sample. If we had data for the entire population, we could find the population correlation coefficient. But because we only have sample data, we can not calculate the population correlation coefficient. The sample correlation coefficient, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      >, is our estimate of the unknown population correlation coefficient. </p
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-560"
+        data-list-type="labeled-item"
+      ><li
+          xmlns=""
+          class="item"
+        >The symbol for the population correlation coefficient is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        >, the Greek letter "rho".</li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        > = population correlation coefficient (unknown)</li
+      > <li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > = sample correlation coefficient (known; calculated from sample data)</li
+      > </list
+    ><p
+        class="para"
+        id="eip-137"
+      >The hypothesis test lets us decide whether the value of the population correlation coefficient <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3C1;</mi
+        ></math
+      > is "close to 0" or "significantly different from 0". We decide this based on the sample correlation coefficient <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > and the sample size <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      >.</p
+    ><ul
+        class="list"
+        data-id="eip-9"
+      ><div
+          class="title"
+        >If the test concludes that the correlation coefficient is significantly different from 0, we say that the correlation coefficient is "significant". </div
+      ><li
+          class="item"
+        >Conclusion: "There is sufficient evidence to conclude that there is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > because the correlation coefficient is significantly different from 0."</li
+      > <li
+          class="item"
+        >What the conclusion means: There is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        >. We can use the regression line to model the linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > in the population.</li
+      > </ul
+    ><ul
+        class="list"
+        data-id="eip-663"
+      ><div
+          class="title"
+        >If the test concludes that the correlation coefficient is not significantly different from 0 (it is close to 0), we say that correlation coefficient is "not significant".</div
+      ><li
+          class="item"
+        > Conclusion: "There is insufficient evidence to conclude that there is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > because the correlation coefficient is not significantly different from 0." </li
+      > <li
+          class="item"
+        >What the conclusion means: There is not a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        >. Therefore we can NOT use the regression line to model a linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > in the population.</li
+      > </ul
+    ><div
+        class="note"
+        id="eip-939"
+      ><ul
+          class="list"
+          data-id="eip-id1164926616686"
+        ><li
+            class="item"
+          >If <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is significant and the scatter plot shows a linear trend, the line can be used to predict the value of <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >y</mi
+            ></math
+          > for values of <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > that are within the domain of observed <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > values. </li
+        > <li
+            class="item"
+          >If <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is not significant OR if the scatter plot does not show a linear trend, the line should not be used for prediction. </li
+        > <li
+            class="item"
+          >If <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is significant and if the scatter plot shows a linear trend, the line may NOT be appropriate or reliable for prediction OUTSIDE the domain of observed <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > values in the data.</li
+        > </ul
+      ></div
+    ><p
+        class="para"
+        id="eip-838"
+      ><span
+          class="title"
+        >PERFORMING THE HYPOTHESIS TEST</span
+      ></p
+    ><ul
+        class="list"
+        data-id="eip-375"
+      ><div
+          class="title"
+        >SETTING UP THE HYPOTHESES: </div
+      ><li
+          class="item"
+        > <strong
+            class="emphasis"
+          > Null Hypothesis: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3C1;</mi
+            ></math
+          > = 0 </strong
+        ></li
+      > <li
+          class="item"
+        ><strong
+            class="emphasis"
+          >Alternate Hypothesis: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3C1;</mi
+            ></math
+          > &#x2260; 0</strong
+        ></li
+      > </ul
+    ><ul
+        class="list"
+        data-id="eip-761"
+      ><div
+          class="title"
+        >What the hypotheses mean in words:</div
+      ><li
+          class="item"
+        > <strong
+            class="emphasis"
+          > Null Hypothesis <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >:</strong
+        > The population correlation coefficient IS NOT significantly different from 0. There IS NOT a significant linear relationship(correlation) between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > in the population. </li
+      > <li
+          class="item"
+        ><strong
+            class="emphasis"
+          >Alternate Hypothesis <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >:</strong
+        > The population correlation coefficient IS significantly DIFFERENT FROM 0. There IS A SIGNIFICANT LINEAR RELATIONSHIP (correlation) between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > in the population. </li
+      > </ul
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-40"
+        data-list-type="labeled-item"
+      ><div
+          xmlns=""
+          class="title"
+        >DRAWING A CONCLUSION: </div
+      ><li
+          xmlns=""
+          class="item"
+        >There are two methods to make the decision. Both methods are equivalent and give the same result.</li
+      > <li
+          xmlns=""
+          class="item"
+        ><strong
+            class="emphasis"
+          >Method 1: Using the p-value </strong
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        ><strong
+            class="emphasis"
+          >Method 2: Using a table of critical values</strong
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        >In this chapter of this textbook, we will always use a significance level of 5%, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = 0.05 </li
+      > <li
+          xmlns=""
+          class="item"
+        >Note: Using the p-value method, you could choose any appropriate significance level you want; you are not limited to using <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = 0.05. But the table of critical values provided in this textbook assumes that we are using a significance level of 5%, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = 0.05. (If we wanted to use a different significance level than 5% with the critical value method, we would need different tables of critical values that are not provided in this textbook.)</li
+      > </list
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-562"
+        data-list-type="labeled-item"
+      ><div
+          xmlns=""
+          class="title"
+        >METHOD 1: Using a p-value to make a decision</div
+      ><li
+          xmlns=""
+          class="item"
+        >The linear regression <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >t</mi
+          ></math
+        >-test LinRegTTEST on the TI-83+ or TI-84+ calculators calculates the p-value.</li
+      > <li
+          xmlns=""
+          class="item"
+        > On the LinRegTTEST input screen, on the line prompt for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B2;</mi
+          ></math
+        > or <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        >, highlight "<strong
+            class="emphasis"
+          >&#x2260; 0</strong
+        >" </li
+      > <li
+          xmlns=""
+          class="item"
+        >The output screen shows the p-value on the line that reads "p =". </li
+      > <li
+          xmlns=""
+          class="item"
+        >(Most computer statistical software can calculate the p-value.)</li
+      ></list
+    ><ul
+        class="list"
+        data-id="eip-297"
+      ><div
+          class="title"
+        >If the p-value is less than the significance level (&#x3B1; = 0.05):</div
+      ><li
+          class="item"
+        >Decision: REJECT the null hypothesis.</li
+      > <li
+          class="item"
+        >Conclusion: "There is sufficient evidence to conclude that there is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > because the correlation coefficient is significantly different from 0."</li
+      > </ul
+    ><ul
+        class="list"
+        data-id="eip-981"
+      ><div
+          class="title"
+        >If the p-value is NOT less than the significance level (&#x3B1; = 0.05)</div
+      ><li
+          class="item"
+        >Decision: DO NOT REJECT the null hypothesis.</li
+      > <li
+          class="item"
+        >Conclusion: "There is insufficient evidence to conclude that there is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > because the correlation coefficient is NOT significantly different from 0."</li
+      > </ul
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-335"
+        data-list-type="labeled-item"
+      ><div
+          xmlns=""
+          class="title"
+        >Calculation Notes:</div
+      ><li
+          xmlns=""
+          class="item"
+        > You will use technology to calculate the p-value. The following describe the calculations to compute the test statistics and the p-value:</li
+      ><li
+          xmlns=""
+          class="item"
+        >The p-value is calculated using a <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >t</mi
+          ></math
+        >-distribution with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n-2</mi
+          ></math
+        > degrees of freedom.</li
+      > <li
+          xmlns=""
+          class="item"
+        > The formula for the test statistic is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+            data-display="display"
+          > <apply
+            > <eq
+            /> <ci
+              >t</ci
+            > <apply
+              > <divide
+              /> <apply
+                > <times
+                /> <ci
+                  >r</ci
+                > <apply
+                  > <root
+                  /> <apply
+                    > <minus
+                    /> <ci
+                      >n</ci
+                    > <cn
+                      >2</cn
+                    > </apply
+                  > </apply
+                > </apply
+              > <apply
+                > <root
+                /> <apply
+                  > <minus
+                  /> <cn
+                    >1</cn
+                  > <apply
+                    > <power
+                    /> <ci
+                      >r</ci
+                    > <cn
+                      >2</cn
+                    > </apply
+                  > </apply
+                > </apply
+              > </apply
+            > </apply
+          > </math
+        >. The value of the test statistic, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >t</mi
+          ></math
+        >, is shown in the computer or calculator output along with the p-value. The test statistic <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >t</mi
+          ></math
+        > has the same sign as the correlation coefficient <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        >.</li
+      > <li
+          xmlns=""
+          class="item"
+        >The p-value is the combined area in both tails.</li
+      > <li
+          xmlns=""
+          class="item"
+        >An alternative way to calculate the p-value <strong
+            class="emphasis"
+          >(p)</strong
+        > given by LinRegTTest is the command 2*tcdf(abs(t),10^99, n-2) in 2nd DISTR.</li
+      > </list
+    ><ul
+        class="list"
+        data-id="eip-76"
+      ><div
+          class="title"
+        >THIRD EXAM vs FINAL EXAM EXAMPLE: p value method</div
+      ><li
+          class="item"
+        >Consider the <a
+            href="/m17092#element-22"
+          >third exam/final exam example</a
+        >.</li
+      > <li
+          class="item"
+        >The line of best fit is: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mover
+            > <mi
+              >y</mi
+            > <mo
+              >^</mo
+            > </mover
+          > <mo
+            >=</mo
+          > <mn
+            >-173.51</mn
+          > <mo
+            >+</mo
+          > <mtext
+            >4.83x</mtext
+          > </math
+        > with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >r</mi
+          > <mo
+            >=</mo
+          > <mn
+            >0.6631</mn
+          > </math
+        > and there are <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >n = 11</mi
+          ></math
+        > data points.</li
+      > <li
+          class="item"
+        >Can the regression line be used for prediction? <strong
+            class="emphasis"
+          >Given a third exam score (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > value), can we use the line to predict the final exam score (predicted <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >y</mi
+            ></math
+          > value)?</strong
+        ></li
+      > </ul
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-933"
+        data-list-type="labeled-item"
+      ><li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >H</mi
+            > <mi
+              >o</mi
+            > </msub
+          > </math
+        >: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        > = 0 </li
+      > <li
+          xmlns=""
+          class="item"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >H</mi
+            > <mi
+              >a</mi
+            > </msub
+          > </math
+        >: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        > &#x2260; 0 </li
+      > <li
+          xmlns=""
+          class="item"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = 0.05 </li
+      > <li
+          xmlns=""
+          class="item"
+        >The p-value is 0.026 (from LinRegTTest on your calculator or from computer software)</li
+      > <li
+          xmlns=""
+          class="item"
+        >The p-value, 0.026, is less than the significance level of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = 0.05</li
+      > <li
+          xmlns=""
+          class="item"
+        >Decision: Reject the Null Hypothesis <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >H</mi
+            > <mi
+              >o</mi
+            > </msub
+          > </math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        >Conclusion: There is sufficient evidence to conclude that there is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > because the correlation coefficient is significantly different from 0.</li
+      > <li
+          xmlns=""
+          class="item"
+        > <strong
+            class="emphasis"
+          >Because <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is significant and the scatter plot shows a linear trend, the regression line can be used to predict final exam scores.</strong
+        ></li
+      > </list
+    ><p
+        class="para"
+        id="eip-851"
+      ><span
+          class="title"
+        >METHOD 2: Using a table of Critical Values to make a decision</span
+      ><strong
+          class="emphasis"
+        >The <a
+            href="/m17098"
+          >95% Critical Values of the Sample Correlation Coefficient Table</a
+        > at the end of this chapter (before the <a
+            href="/m17081"
+          >Summary</a
+        >)</strong
+      > may be used to give you a good idea of whether the computed value of <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is significant or not</strong
+      >. Compare <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > to the appropriate critical value in the table. If <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > is not between the positive and negative critical values, then the correlation coefficient is significant. If <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > is significant, then you may want to use the line for prediction.</p
+    ><div
+        class="example"
+        id="element-684"
+      ><p
+          class="para"
+          id="element-798"
+        >Suppose you computed <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >=</mo
+          ><mn
+            >0.801</mn
+          ></math
+        > using <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mo
+            >=</mo
+          ><mn
+            >10</mn
+          ></math
+        > data points. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >df</mtext
+          ><mo
+            >=</mo
+          ><mi
+            >n</mi
+          ><mo
+            >-</mo
+          ><mn
+            >2</mn
+          ><mo
+            >=</mo
+          ><mn
+            >10 </mn
+          ><mo
+            >-</mo
+          ><mn
+            >2</mn
+          ><mo
+            >=</mo
+          ><mn
+            >8</mn
+          ></math
+        >. The critical values associated with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >df</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >8</mn
+          ></math
+        > are -0.632 and + 0.632. If <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><lt
+            /></reln
+          ><mtext
+            >negative critical value</mtext
+          ></math
+        > or <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >&gt;</mo
+          ><mtext
+            >positive critical value</mtext
+          ></math
+        >, then <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is significant. Since <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >=</mo
+          ><mn
+            >0.801</mn
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >0.801</mn
+          ><mo
+            >&gt;</mo
+          ><mn
+            >0.632</mn
+          ></math
+        >, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is significant and the line may be used for prediction. If you view this example on a number line, it will help you. </p
+      ><p
+          class="para"
+          id="element-393"
+        ><figure
+            id="id1165447908809"
+          ><figcaption
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ></math
+            > is not significant between -0.632 and +0.632. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ><mo
+                >=</mo
+              ><mn
+                >0.801</mn
+              ><mo
+                >&gt;</mo
+              ><mn
+                >+0.632</mn
+              ></math
+            >. Therefore, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ></math
+            > is significant.</figcaption
+          ><span
+              class="media"
+              id="id1165447908813"
+              data-alt="Horizontal number line with values of -1, -0.632, 0, 0.632, 0.801, and 1. A dashed line above values -0.632, 0, and 0.632 indicates not significant values."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="3.5in"
+            /></span
+          ></figure
+        ></p
+      > </div
+    ><div
+        class="example"
+        id="element-358"
+      ><p
+          class="para"
+          id="element-206"
+        > Suppose you computed <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >=</mo
+          ><mn
+            >-0.624</mn
+          ></math
+        > with 14 data points. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >df</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >14</mn
+          ><mo
+            >-</mo
+          ><mn
+            >2</mn
+          ><mo
+            >=</mo
+          ><mn
+            >12</mn
+          ></math
+        >. The critical values are -0.532 and 0.532. Since <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >-0.624</mn
+          ></math
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><lt
+            /></reln
+          ></math
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >-0.532</mn
+          ></math
+        >, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is significant and the line may be used for prediction </p
+      ><p
+          class="para"
+          id="element-674"
+        ><figure
+            id="id1165447908929"
+          ><figcaption
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ><mo
+                >=</mo
+              ><mn
+                >-0.624</mn
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /></reln
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mn
+                >-0.532</mn
+              ></math
+            >. Therefore, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ></math
+            > is significant.</figcaption
+          ><span
+              class="media"
+              id="id1165447908933"
+              data-alt="Horizontal number line with values of -0.624, -0.532, and 0.532."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="3.5in"
+            /></span
+          ></figure
+        ></p
+      > </div
+    ><div
+        class="example"
+        id="element-719"
+      ><p
+          class="para"
+          id="element-446"
+        > Suppose you computed <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >=</mo
+          ><mn
+            >0.776</mn
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n</mi
+          ><mo
+            >=</mo
+          ><mn
+            >6</mn
+          ></math
+        >. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >df</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >6</mn
+          ><mo
+            >-</mo
+          ><mn
+            >2</mn
+          ><mo
+            >=</mo
+          ><mn
+            >4</mn
+          ></math
+        >. The critical values are -0.811 and 0.811. Since <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >-0.811</mn
+          ></math
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><lt
+            /></reln
+          ></math
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >0.776</mn
+          ></math
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><lt
+            /></reln
+          ></math
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >0.811</mn
+          ></math
+        >, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is not significant and the line should not be used for prediction. </p
+      ><p
+          class="para"
+          id="element-845"
+        ><figure
+            id="linrgs_facts5"
+          ><figcaption
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mn
+                >-0.811</mn
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /></reln
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ><mo
+                >=</mo
+              ><mn
+                >0.776</mn
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /></reln
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mn
+                >0.811</mn
+              ></math
+            >. Therefore, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >r</mi
+              ></math
+            > is not significant.</figcaption
+          ><span
+              class="media"
+              id="id1165447912701"
+              data-alt="Horizontal number line with values -0.924, -0.532, and 0.532."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="3.5in"
+            /></span
+          ></figure
+        ></p
+      > </div
+    ><ul
+        class="list"
+        data-id="eip-771"
+        data-list-type="bulleted"
+        data-bullet-style="bullet"
+      ><div
+          class="title"
+        >THIRD EXAM vs FINAL EXAM EXAMPLE: critical value method</div
+      ><li
+          class="item"
+        >Consider the <a
+            href="/m17092#element-22"
+          >third exam/final exam example</a
+        >.</li
+      > <li
+          class="item"
+        >The line of best fit is: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mover
+            > <mi
+              >y</mi
+            > <mo
+              >^</mo
+            > </mover
+          > <mo
+            >=</mo
+          > <mn
+            >-173.51</mn
+          > <mo
+            >+</mo
+          > <mtext
+            >4.83x</mtext
+          > </math
+        > with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >r</mi
+          > <mo
+            >=</mo
+          > <mn
+            >0.6631</mn
+          > </math
+        > and there are <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >n = 11</mi
+          ></math
+        > data points.</li
+      > <li
+          class="item"
+        >Can the regression line be used for prediction? <strong
+            class="emphasis"
+          >Given a third exam score (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          > value), can we use the line to predict the final exam score (predicted <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >y</mi
+            ></math
+          > value)?</strong
+        ></li
+      > </ul
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-557"
+        data-list-type="labeled-item"
+      ><li
+          xmlns=""
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >H</mi
+            > <mi
+              >o</mi
+            > </msub
+          > </math
+        >: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        > = 0 </li
+      ><li
+          xmlns=""
+          class="item"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >H</mi
+            > <mi
+              >a</mi
+            > </msub
+          > </math
+        >: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C1;</mi
+          ></math
+        > &#x2260; 0 </li
+      ><li
+          xmlns=""
+          class="item"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = 0.05 </li
+      > <li
+          xmlns=""
+          class="item"
+        >Use the "95% Critical Value" table for <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > with <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >df</mtext
+          > <mo
+            >=</mo
+          > <mtext
+            >n</mtext
+          > <mo
+            >-</mo
+          ><mn
+            >2</mn
+          > <mo
+            >=</mo
+          > <mn
+            >11</mn
+          > <mo
+            >-</mo
+          ><mn
+            >2</mn
+          > <mo
+            >=</mo
+          ><mn
+            >9</mn
+          ></math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        > The critical values are -0.602 and +0.602</li
+      ><li
+          xmlns=""
+          class="item"
+        > Since <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >0.6631</mn
+          ><mo
+            >&gt;</mo
+          ><mn
+            >0.602</mn
+          ></math
+        >, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          > </math
+        > is significant.</li
+      > <li
+          xmlns=""
+          class="item"
+        >Decision: Reject <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >H</mi
+            > <mi
+              >o</mi
+            > </msub
+          > </math
+        >:</li
+      > <li
+          xmlns=""
+          class="item"
+        >Conclusion:There is sufficient evidence to conclude that there is a significant linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > because the correlation coefficient is significantly different from 0.</li
+      > <li
+          xmlns=""
+          class="item"
+        > <strong
+            class="emphasis"
+          >Because <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is significant and the scatter plot shows a linear trend, the regression line can be used to predict final exam scores.</strong
+        ></li
+      ></list
+    ><div
+        class="example"
+        id="element-433"
+      ><div
+          class="title"
+        >Additional Practice Examples using Critical Values</div
+      ><p
+          class="para"
+          id="element-294"
+        >Suppose you computed the following correlation coefficients. Using the table at the end of the chapter, determine if <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is significant and the line of best fit associated with each <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > can be used to predict a <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > value. If it helps, draw a number line. </p
+      ><ol
+          class="list"
+          data-id="element-467"
+          data-list-type="enumerated"
+          data-number-style="arabic"
+        ><li
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >-0.567</mn
+            ></math
+          > and the sample size, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ></math
+          >, is 19. The <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >df</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >n</mi
+            ><mo
+              >-</mo
+            ><mn
+              >2</mn
+            ><mo
+              >=</mo
+            ><mn
+              >17</mn
+            ></math
+          >. The critical value is -0.456. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mn
+              >-0.567</mn
+            ></math
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><reln
+              ><lt
+              /></reln
+            ></math
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mn
+              >-0.456</mn
+            ></math
+          > so <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is significant.</li
+        > <li
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.708</mn
+            ></math
+          > and the sample size, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ></math
+          >, is 9. The <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >df</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >n</mi
+            ><mo
+              >-</mo
+            ><mn
+              >2</mn
+            ><mo
+              >=</mo
+            ><mn
+              >7</mn
+            ></math
+          >. The critical value is 0.666. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mn
+              >0.708</mn
+            ><mo
+              >&gt;</mo
+            ><mn
+              >0.666</mn
+            ></math
+          > so <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is significant.</li
+        > <li
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.134</mn
+            ></math
+          > and the sample size, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ></math
+          >, is 14. The <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >df</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >14</mi
+            ><mo
+              >-</mo
+            ><mn
+              >2</mn
+            ><mo
+              >=</mo
+            ><mn
+              >12</mn
+            ></math
+          >. The critical value is 0.532. 0.134 is between -0.532 and 0.532 so <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is not significant.</li
+        > <li
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0</mn
+            ></math
+          > and the sample size, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ></math
+          >, is 5. No matter what the dfs are, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0</mn
+            ></math
+          > is between the two critical values so <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >r</mi
+            ></math
+          > is not significant.</li
+        ></ol
+      > </div
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-570"
+      >Assumptions in Testing the Significance of the Correlation Coefficient</h1
+    ><p
+        class="para"
+        id="eip-485"
+      >Testing the significance of the correlation coefficient requires that certain assumptions about the data are satisfied. The premise of this test is that the data are a sample of observed points taken from a larger population. We have not examined the entire population because it is not possible or feasible to do so. We are examining the sample to draw a conclusion about whether the linear relationship that we see between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > in the sample data provides strong enough evidence so that we can conclude that there is a linear relationship between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > in the population. </p
+    ><p
+        class="para"
+        id="eip-953"
+      >The regression line equation that we calculate from the sample data gives the best fit line for our particular sample. We want to use this best fit line for the sample as an estimate of the best fit line for the population. Examining the scatterplot and testing the significance of the correlation coefficient helps us determine if it is appropriate to do this.</p
+    ><ul
+        class="list"
+        data-id="eip-873"
+      ><div
+          class="title"
+        >The assumptions underlying the test of significance are:</div
+      ><li
+          class="item"
+        >There is a linear relationship in the population that models the average value of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > for varying values of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        >. In other words, the expected value of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > for each particular <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+          /></math
+        > value lies on a straight line in the population. (We do not know the equation for the line for the population. Our regression line from the sample is our best estimate of this line in the population.)</li
+      > <li
+          class="item"
+        > The <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > values for any particular <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > value are normally distributed about the line. This implies that there are more <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > values scattered closer to the line than are scattered farther away. Assumption (1) above implies that these normal distributions are centered on the line: the means of these normal distributions of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > values lie on the line.</li
+      > <li
+          class="item"
+        > The standard deviations of the population <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > values about the line are equal for each value of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        >. In other words, each of these normal distributions of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > values has the same shape and spread about the line.</li
+      > <li
+          class="item"
+        >The residual errors are mutually independent (no pattern).</li
+      > </ul
+    ><p
+        class="para"
+        id="element-9999"
+      > <figure
+          id="linrgs_facts_normal"
+        ><figcaption
+          >The y values for each x value are normally distributed about the line with the same standard deviation. For each x value, the mean of the y values lies on the regression line. More y values lie near the line than are scattered further away from the line. </figcaption
+        ><span
+            class="media"
+            id="id9999999999999"
+            data-alt="A downward sloping regression line is shown with the y values normally distributed about the line with equal standard deviations for each x value. For each x value, the mean of the y values lies on the regression line. More y values lie near the line than are scattered further away from the line. "
+          > <image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="6 in"
+          /> </span
+        > </figure
+      > </p
+    > </div
+  ><p
+      class="para"
+      id="eip-526"
+    >**With contributions from Roberta Bloom</p
+  > </body
+>
+</html>

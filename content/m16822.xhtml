@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Discrete Random Variables: Geometric (optional)</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Discrete Random Variables: Geometric (optional)</div
+  > <p
+      class="para"
+      id="element-456"
+    >The characteristics of a geometric experiment are: <ol
+        class="list"
+        data-id="geometricexperiment"
+        data-list-type="enumerated"
+      ><li
+          class="item"
+        >There are one or more Bernoulli trials with all failures except the last one, which is a success. In other words, you keep repeating what you are doing until the first success. Then you stop. For example, you throw a dart at a bull's eye until you hit the bull's eye. The first time you hit the bull's eye is a "success" so you stop throwing the dart. It might take you 6 tries until you hit the bull's eye. You can think of the trials as failure, failure, failure, failure, failure, success. STOP.</li
+      > <li
+          class="item"
+        >In theory, the number of trials could go on forever. There must be at least one trial.</li
+      > <li
+          class="item"
+        >The probability,<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >p</mi
+          ></math
+        >, of a success and the probability, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >q</mi
+          ></math
+        >, of a failure is the same for each trial. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><eq
+            /> <mrow
+              ><mi
+                >p</mi
+              ><mo
+                >+</mo
+              ><mi
+                >q</mi
+              ></mrow
+            > <mrow
+              ><mn
+                >1</mn
+              ></mrow
+            > </reln
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><eq
+            /> <mrow
+              ><mi
+                >q</mi
+              ></mrow
+            > <mrow
+              ><mn
+                >1</mn
+              ><mo
+                >-</mo
+              ><mi
+                >p</mi
+              ></mrow
+            > </reln
+          ></math
+        >. For example, the probability of rolling a 3 when you throw one fair die is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            ><mn
+              >1</mn
+            ><mn
+              >6</mn
+            ></mfrac
+          ></math
+        >. This is true no matter how many times you roll the die. Suppose you want to know the probability of getting the first 3 on the fifth roll. On rolls 1, 2, 3, and 4, you do not get a face with a 3. The probability for each of rolls 1, 2, 3, and 4 is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><eq
+            /> <mrow
+              ><mi
+                >q</mi
+              ></mrow
+            > <mrow
+              ><mfrac
+                ><mn
+                  >5</mn
+                ><mn
+                  >6</mn
+                ></mfrac
+              ></mrow
+            > </reln
+          ></math
+        >, the probability of a failure. The probability of getting a 3 on the fifth roll is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><eq
+            /> <mrow
+              > <mfrac
+                > <mn
+                  >5</mn
+                ><mn
+                  >6</mn
+                > </mfrac
+              > <mo
+                >&#x22C5;</mo
+              > <mfrac
+                > <mn
+                  >5</mn
+                ><mn
+                  >6</mn
+                > </mfrac
+              > <mo
+                >&#x22C5;</mo
+              > <mfrac
+                > <mn
+                  >5</mn
+                ><mn
+                  >6</mn
+                > </mfrac
+              > <mo
+                >&#x22C5;</mo
+              > <mfrac
+                > <mn
+                  >5</mn
+                ><mn
+                  >6</mn
+                > </mfrac
+              > <mo
+                >&#x22C5;</mo
+              > <mfrac
+                > <mn
+                  >1</mn
+                ><mn
+                  >6</mn
+                > </mfrac
+              > </mrow
+            > <mrow
+              ><mn
+                >0.0804</mn
+              ></mrow
+            > </reln
+          ></math
+        > <!-- Needs touch up!--> </li
+      > </ol
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ><mo
+        >=</mo
+      ></math
+    > the number of independent trials until the first success. The mean and variance are in the summary in this chapter. </p
+  ><div
+      class="example"
+      id="element-328"
+    ><p
+        class="para"
+        id="element-341"
+      >You play a game of chance that you can either win or lose (there are no other possibilities) <strong
+          class="emphasis"
+        >until</strong
+      > you lose. Your probability of losing is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >p = 0.57</mi
+        ></math
+      >. What is the probability that it takes 5 games until you lose? Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of games you play until you lose (includes the losing game). Then <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values 1, 2, 3, ... (could go on indefinitely). The probability question is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >5</mn
+            ><mo
+              >)</mo
+            ></mrow
+          > </reln
+        ></math
+      >. </p
+    ></div
+  ><div
+      class="example"
+      id="element-15"
+    ><p
+        class="para"
+        id="element-320"
+      >A safety engineer feels that 35% of all industrial accidents in her plant are caused by failure of employees to follow instructions. She decides to look at the accident reports (selected randomly and replaced in the pile after reading) <strong
+          class="emphasis"
+        >until</strong
+      > she finds one that shows an accident caused by failure of employees to follow instructions. On the average, how many reports would the safety engineer <strong
+          class="emphasis"
+        >expect</strong
+      > to look at until she finds a report showing an accident caused by employee failure to follow instructions? What is the probability that the safety engineer will have to examine at least 3 reports until she finds a report showing an accident caused by employee failure to follow instructions? </p
+    ><p
+        class="para"
+        id="element-112"
+      >Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of accidents the safety engineer must examine <strong
+          class="emphasis"
+        >until</strong
+      > she finds a report showing an accident caused by employee failure to follow instructions. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values 1, 2, 3, .... The first question asks you to find the <strong
+          class="emphasis"
+        >expected value</strong
+      > or the mean. The second question asks you to find <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><geq
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >3</mn
+            ><mo
+              >)</mo
+            ></mrow
+          > </reln
+        ></math
+      >. ("At least" translates as a "greater than or equal to" symbol).</p
+    ></div
+  ><div
+      class="example"
+      id="element-616"
+    ><p
+        class="para"
+        id="element-741"
+      >Suppose that you are looking for a student at your college who lives within five miles of you. You know that 55% of the 25,000 students do live within five miles of you. You randomly contact students from the college <strong
+          class="emphasis"
+        >until</strong
+      > one says he/she lives within five miles of you. What is the probability that you need to contact four people? </p
+    ><p
+        class="para"
+        id="element-724"
+      >This is a geometric problem because you may have a number of failures before you have the one success you desire. Also, the probability of a success stays the same each time you ask a student if he/she lives within five miles of you. There is no definite number of trials (number of times you ask a student).</p
+    ><div
+        class="exercise"
+        id="element-823"
+      ><?solution
+      in back?> <div
+          class="problem"
+          id="id27319141"
+        > <p
+            class="para"
+            id="element-4422"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the number of ____________ you must ask ____________ one says yes.</p
+        > </div
+      > <div
+          class="solution"
+          id="id27319163"
+        > <p
+            class="para"
+            id="element-153"
+          >Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the number of <strong
+              class="emphasis"
+            >students</strong
+          > you must ask <strong
+              class="emphasis"
+            >until</strong
+          > one says yes.</p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-766"
+      > <div
+          class="problem"
+          id="id27319211"
+        > <p
+            class="para"
+            id="element-789"
+          > What values does <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > take on? </p
+        > </div
+      > <div
+          class="solution"
+          id="id27319232"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-140"
+          >1, 2, 3, &#x2026;, (total number of students) </p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-208"
+      ><div
+          class="problem"
+          id="id27319259"
+        > <p
+            class="para"
+            id="element-884"
+          > What are <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >p</mi
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >q</mi
+            ></math
+          >? </p
+        > </div
+      > <div
+          class="solution"
+          id="id27319284"
+          print-placement="end"
+        > <ul
+            class="list"
+            data-id="element-887"
+          > <li
+              class="item"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >p</mi
+              ></math
+            > = 0.55</li
+          > <li
+              class="item"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >q</mi
+              ></math
+            > = 0.45</li
+          > </ul
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-413"
+      ><div
+          class="problem"
+          id="id27319331"
+        > <p
+            class="para"
+            id="element-458"
+          > The probability question is P(_______). </p
+        > </div
+      > <div
+          class="solution"
+          id="id27319348"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-996"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <mi
+              >x</mi
+            > <mo
+              >&#xA0;=&#xA0;</mo
+            > <mn
+              >4</mn
+            > <mo
+              >)</mo
+            ></math
+          > </p
+        ></div
+      > </div
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-125"
+      >Notation for the Geometric: G = Geometric Probability Distribution Function</h1
+    > <p
+        class="para"
+        id="element-156"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > ~ <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >G(p)</mi
+        ></math
+      > </p
+    ><p
+        class="para"
+        id="element-953"
+      >Read this as "<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is a random variable with a geometric distribution." The parameter is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >p</mi
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >p</mi
+        ></math
+      > = the probability of a success for each trial.</p
+    > </div
+  > <div
+      class="example"
+      id="element-340"
+    ><p
+        class="para"
+        id="element-38"
+      >Assume that the probability of a defective computer component is 0.02. Components are randomly selected. Find the probability that the first defect is caused by the 7th component tested. How many components do you expect to test until one is found to be defective? </p
+    ><p
+        class="para"
+        id="element-20"
+      >Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of computer components tested until the first defect is found.</p
+    ><p
+        class="para"
+        id="element-857"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > takes on the values 1, 2, 3, ... where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >p</mi
+        > <mo
+          >=</mo
+        ><mn
+          > 0.02</mn
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > ~ <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >G(0.02)</mtext
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="element-826"
+      >Find <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <mrow
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><mi
+              >x</mi
+            ></mrow
+          > <mrow
+            ><mn
+              >7</mn
+            ><mo
+              >)</mo
+            ></mrow
+          > </reln
+        ></math
+      >. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <mrow
+              ><mi
+                >P</mi
+              ><mo
+                >(</mo
+              ><mi
+                >x</mi
+              ></mrow
+            > <mrow
+              ><mn
+                >7</mn
+              ><mo
+                >)</mo
+              ></mrow
+            > </reln
+          > <mrow
+            ><mn
+              >0.0177</mn
+            ></mrow
+          > </reln
+        ></math
+      >. (calculator or computer)</p
+    ><p
+        class="para"
+        id="element-452"
+      >TI-83+ and TI-84: <strong
+          class="emphasis"
+        >For a general discussion, see <a
+            href="/m16820##element-678"
+          >this example</a
+        > (binomial)</strong
+      >. The syntax is similar. The geometric parameter list is (p, number) If "number" is left out, the result is the geometric probability table. For this problem: <strong
+          class="emphasis"
+        >After you are in 2nd DISTR, arrow down to D:geometpdf. Press ENTER. Enter .02,7). The result is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><reln
+            ><eq
+            /> <reln
+              ><eq
+              /> <mrow
+                ><mi
+                  >P</mi
+                ><mo
+                  >(</mo
+                ><mi
+                  >x</mi
+                ></mrow
+              > <mrow
+                ><mn
+                  >7</mn
+                ><mo
+                  >)</mo
+                ></mrow
+              > </reln
+            > <mrow
+              ><mn
+                >0.0177</mn
+              ></mrow
+            > </reln
+          ></math
+        >.</strong
+      ></p
+    ><p
+        class="para"
+        id="element-833"
+      >The probability that the 7th component is the first defect is 0.0177.</p
+    ><p
+        class="para"
+        id="element-223"
+      >The graph of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > ~ <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >G(0.02)</mtext
+        ></math
+      > is:</p
+    ><p
+        class="para"
+        id="element-96"
+      ><span
+          class="media"
+          id="id26371923"
+          data-alt="The geometric probability distribution function graph consists of bars sloping downwards with each successive bar to the right. The x-axis is from 1-&#x221E; and the y-axis is from 0-0.02 in increments of 0.005. The x-axis is equal to the number of computer components tested until the defect is found."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="4in"
+        /></span
+      > </p
+    ><p
+        class="para"
+        id="element-802"
+      >The <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      >-axis contains the probability of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >, where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of computer components tested.</p
+    ><p
+        class="para"
+        id="element-785"
+      >The number of components that you would expect to test until you find the first defective one is the mean, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > = 50.</p
+    ><p
+        class="para"
+        id="element-261"
+      >The formula for the mean is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <reln
+              ><eq
+              /> <mrow
+                ><mi
+                  >&#x3BC;</mi
+                ></mrow
+              > <mrow
+                ><mfrac
+                  ><mn
+                    >1</mn
+                  ><mi
+                    >p</mi
+                  ></mfrac
+                ></mrow
+              > </reln
+            > <mrow
+              ><mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >0.02</mn
+                ></mfrac
+              ></mrow
+            > </reln
+          > <mrow
+            ><mn
+              >50</mn
+            ></mrow
+          > </reln
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="element-782"
+      >The formula for the variance is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <reln
+              ><eq
+              /> <mrow
+                ><msup
+                  ><mi
+                    >&#x3C3;</mi
+                  ><mn
+                    >2</mn
+                  ></msup
+                ></mrow
+              > <mrow
+                > <mfrac
+                  ><mn
+                    >1</mn
+                  ><mi
+                    >p</mi
+                  ></mfrac
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  ><mn
+                    >1</mn
+                  ><mi
+                    >p</mi
+                  ></mfrac
+                > <mo
+                  >-</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >)</mo
+                > </mrow
+              > </reln
+            > <mrow
+              > <mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >0.02</mn
+                ></mfrac
+              > <mo
+                >&#x22C5;</mo
+              > <mo
+                >(</mo
+              > <mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >0.02</mn
+                ></mfrac
+              > <mo
+                >-</mo
+              > <mn
+                >1</mn
+              > <mo
+                >)</mo
+              > </mrow
+            > </reln
+          > <mrow
+            ><mn
+              >2450</mn
+            ></mrow
+          > </reln
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-443"
+      >The standard deviation is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <reln
+          ><eq
+          /> <reln
+            ><eq
+            /> <reln
+              ><eq
+              /> <mrow
+                ><mi
+                  >&#x3C3;</mi
+                ></mrow
+              > <mrow
+                > <msqrt
+                  > <mfrac
+                    ><mn
+                      >1</mn
+                    ><mi
+                      >p</mi
+                    ></mfrac
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mfrac
+                    ><mn
+                      >1</mn
+                    ><mi
+                      >p</mi
+                    ></mfrac
+                  > <mo
+                    >-</mo
+                  > <mn
+                    >1</mn
+                  > <mo
+                    >)</mo
+                  > </msqrt
+                > </mrow
+              > </reln
+            > <mrow
+              > <msqrt
+                > <mfrac
+                  ><mn
+                    >1</mn
+                  ><mn
+                    >0.02</mn
+                  ></mfrac
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >(</mo
+                > <mfrac
+                  ><mn
+                    >1</mn
+                  ><mn
+                    >0.02</mn
+                  ></mfrac
+                > <mo
+                  >-</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >)</mo
+                > </msqrt
+              > </mrow
+            > </reln
+          > <mrow
+            > <mn
+              >49.5</mn
+            > </mrow
+          > </reln
+        > </math
+      ></p
+    > </div
+  > </body
+>
+</html>

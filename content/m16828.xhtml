@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Discrete Random Variables: Mean or Expected Value and Standard Deviation</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Discrete Random Variables: Mean or Expected Value and Standard Deviation</div
+  > <p
+      class="para"
+      id="delete_me"
+    >The <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="expectedv"
+      >expected value</term
+    > is often referred to as the <strong
+        class="emphasis"
+      >"long-term"average or mean</strong
+    > . This means that over the long term of doing an experiment over and over, you would <strong
+        class="emphasis"
+      >expect</strong
+    > this average.</p
+  ><p
+      class="para"
+      id="element-262"
+    >The <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="mean"
+      >mean</term
+    > of a random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > is <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    >. If we do an experiment many times (for instance, flip a fair coin, as Karl Pearson did, 24,000 times and let <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > = the number of heads) and record the value of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > each time, the average is likely to get closer and closer to <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    > as we keep repeating the experiment. This is known as the <strong
+        class="emphasis"
+      >Law of Large Numbers</strong
+    >. </p
+  ><div
+      class="note"
+      id="id8737934"
+    >To find the expected value or long term average, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    >, simply multiply each value of the random variable by its probability and add the products.</div
+  ><p
+      class="para"
+      id="element-257"
+    ><span
+        class="title"
+      >A Step-by-Step Example</span
+    >A men's soccer team plays soccer 0, 1, or 2 days a week. The probability that they play 0 days is 0.2, the probability that they play 1 day is 0.5, and the probability that they play 2 days is 0.3. Find the long-term average, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    >, or expected value of the days per week the men's soccer team plays soccer. </p
+  ><p
+      class="para"
+      id="element-126"
+    >To do the problem, first let the random variable <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > = the number of days the men's soccer team plays soccer per week. <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >X</mi
+      ></math
+    > takes on the values 0, 1, 2. Construct a <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >PDF</mi
+      ></math
+    > table, adding a column <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >xP(x)</mi
+      ></math
+    >. In this column, you will multiply each <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    > value by its probability.</p
+  ><table
+      id="element-749"
+      summary="The PDF table contains the number of days a men's soccer team plays soccer per week and thir probabilities."
+    ><caption
+      ><span
+          class="title"
+        >Expected Value Table</span
+      >This table is called an expected value table. The table helps you calculate the expected value or long-term average. </caption
+    ><thead
+      > <tr
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          ></td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(x)</mtext
+            ></math
+          ></td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            > <mtext
+              >P(x)</mtext
+            ></math
+          ></td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+          >0</td
+        > <td
+          >0.2</td
+        > <td
+          >(0)(0.2) = 0</td
+        > </tr
+      > <tr
+        > <td
+          >1</td
+        > <td
+          >0.5</td
+        > <td
+          >(1)(0.5) = 0.5</td
+        > </tr
+      > <tr
+        > <td
+          >2</td
+        > <td
+          >0.3</td
+        > <td
+          >(2)(0.3) = 0.6</td
+        > </tr
+      > </tbody
+    ></table
+  ><p
+      class="para"
+      id="element-972"
+    >Add the last column to find the long term average or expected value: <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >(0)(0.2)+(1)(0.5)+(2)(0.3)= 0 + 0.5 + 0.6 = 1.1</mi
+      ></math
+    >. </p
+  ><p
+      class="para"
+      id="element-353"
+    >The expected value is 1.1. The men's soccer team would, on the average, expect to play soccer 1.1 days per week. The number 1.1 is the long term average or expected value if the men's soccer team plays soccer week after week after week. We say <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;=1.1</mi
+      ></math
+    ></p
+  ><div
+      class="example"
+      id="element-658"
+    > <p
+        class="para"
+        id="element-757"
+      >Find the expected value for the example about the number of times a newborn baby's crying wakes its mother after midnight. The expected value is the expected number of times a newborn wakes its mother after midnight. </p
+    ><table
+        id="element-740"
+        summary="The PDF table contains the number of times a newborn wakes its mother after midnight, their probabilities and a column for each number multiplied by its probability."
+      ><caption
+        >You expect a newborn to wake its mother after midnight 2.1 times, on the average.</caption
+      ><thead
+        > <tr
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(X)</mtext
+              ></math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              > <mtext
+                >P(X)</mtext
+              ></math
+            ></td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >0 </td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=0)</mtext
+              > <mo
+                >=</mo
+              > <mfrac
+                ><mn
+                  >2</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > <td
+            >(0)<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >2</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></math
+            > = 0</td
+          > </tr
+        > <tr
+          > <td
+            >1</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=1)</mtext
+              > <mo
+                >=</mo
+              > <mfrac
+                ><mn
+                  >11</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > <td
+            >(1)<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >11</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></math
+            > = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mfrac
+                ><mn
+                  >11</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >2</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=2)</mtext
+              > <mo
+                >=</mo
+              > <mfrac
+                ><mn
+                  >23</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > <td
+            >(2)<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >23</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></math
+            > = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mfrac
+                ><mn
+                  >46</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >3</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=3)</mtext
+              > <mo
+                >=</mo
+              > <mfrac
+                ><mn
+                  >9</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > <td
+            >(3)<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >9</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></math
+            > = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mfrac
+                ><mn
+                  >27</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >4</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=4)</mtext
+              > <mo
+                >=</mo
+              > <mfrac
+                ><mn
+                  >4</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > <td
+            >(4)<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >4</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></math
+            > = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mfrac
+                ><mn
+                  >16</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >5</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x=5)</mtext
+              ><mo
+                > =</mo
+              > <mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > <td
+            >(5)<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              ><mfrac
+                ><mn
+                  >1</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ><mo
+                >)</mo
+              ></math
+            > = <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mfrac
+                ><mn
+                  >5</mn
+                ><mn
+                  >50</mn
+                ></mfrac
+              ></math
+            ></td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="element-404"
+      ><strong
+          class="emphasis"
+        >Add the last column to find the expected value. </strong
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      > = Expected Value = <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >105</mn
+          > <mn
+            >50</mn
+          > </mfrac
+        > <mo
+          >=</mo
+        > <mn
+          >2.1</mn
+        > </math
+      ></p
+    ><div
+        class="exercise"
+        id="element-454"
+      ><div
+          class="problem"
+          id="id10873647"
+        > <p
+            class="para"
+            id="element-599"
+          > Go back and calculate the expected value for the number of days Nancy attends classes a week. Construct the third column to do so. </p
+        > </div
+      > <div
+          class="solution"
+          id="id10873665"
+        > <p
+            class="para"
+            id="element-47"
+          > 2.74 days a week. </p
+        > </div
+      > </div
+    > </div
+  > <div
+      class="example"
+      id="element-116"
+    ><p
+        class="para"
+        id="element-117"
+      >Suppose you play a game of chance in which five numbers are chosen from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. A computer randomly selects five numbers from 0 to 9 with replacement. You pay $2 to play and could profit $100,000 if you match all 5 numbers in order (you get your $2 back plus $100,000). Over the long term, what is your <strong
+          class="emphasis"
+        >expected</strong
+      > profit of playing the game? </p
+    ><p
+        class="para"
+        id="element-481"
+      >To do this problem, set up an expected value table for the amount of money you can profit.</p
+    ><p
+        class="para"
+        id="element-382"
+      >Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the amount of money you profit. The values of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > are not 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Since you are interested in your profit (or loss), the values of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > are 100,000 dollars and -2 dollars.</p
+    ><p
+        class="para"
+        id="element-996"
+      >To win, you must get all 5 numbers correct, in order. The probability of choosing one correct number is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >10</mn
+          ></mfrac
+        ></math
+      > because there are 10 numbers. You may choose a number more than once. The probability of choosing all 5 numbers correctly and in order is:</p
+    ><div
+        class="equation"
+        id="element-269"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >10</mn
+          > </mfrac
+        ><mo
+          >*</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >10</mn
+          > </mfrac
+        ><mo
+          >*</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >10</mn
+          > </mfrac
+        ><mo
+          >*</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >10</mn
+          > </mfrac
+        ><mo
+          >*</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >10</mn
+          > </mfrac
+        ><mo
+          >*</mo
+        ><mo
+          > = </mo
+        ><mn
+          >1</mn
+        > <mo
+          >*</mo
+        > <msup
+          ><mn
+            >10</mn
+          > <mn
+            >-5</mn
+          ></msup
+        ><mo
+          >=</mo
+        > <mn
+          >0.00001</mn
+        ></math
+      ></div
+    ><p
+        class="para"
+        id="element-800"
+      >Therefore, the probability of winning is 0.00001 and the probability of losing is</p
+    ><div
+        class="equation"
+        id="element-962"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mrow
+          ><mn
+            >1</mn
+          ><mo
+            >-</mo
+          ><mn
+            >0.00001</mn
+          ><mo
+            >=</mo
+          ><mn
+            >0.99999</mn
+          ></mrow
+        ></math
+      ></div
+    ><p
+        class="para"
+        id="element-839"
+      >The expected value table is as follows.</p
+    ><table
+        id="element-480"
+        summary="In the table, to find the expected value, add the last column."
+      ><caption
+        >&#x391;dd the last column. -1.99998 + 1 = -0.99998 </caption
+      ><tbody
+        > <tr
+          > <td
+          /> <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(x)</mtext
+              ></math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ><mtext
+                >P(x)</mtext
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >Loss</td
+          > <td
+            >-2</td
+          > <td
+            >0.99999</td
+          > <td
+            >(-2)(0.99999)=-1.99998</td
+          > </tr
+        > <tr
+          > <td
+            >Profit</td
+          > <td
+            >100,000</td
+          > <td
+            >0.00001</td
+          > <td
+            >(100000)(0.00001)=1</td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="element-406"
+      >Since <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mn
+          >-0.99998</mn
+        ></math
+      > is about <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mn
+          >-1</mn
+        ></math
+      >, you would, on the average, expect to lose approximately one dollar for each game you play. However, each time you play, you either lose $2 or profit $100,000. The $1 is the average or expected LOSS per game after playing this game over and over.</p
+    > </div
+  > <div
+      class="example"
+      id="element-341"
+    ><p
+        class="para"
+        id="element-408"
+      >Suppose you play a game with a biased coin. You play each game by tossing the coin once. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >P(heads)</mtext
+        ><mo
+          >=</mo
+        ><mfrac
+          ><mn
+            >2</mn
+          ><mn
+            >3</mn
+          ></mfrac
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >P(tails)</mtext
+        > <mo
+          >=</mo
+        > <mfrac
+          ><mn
+            >1</mn
+          ><mn
+            >3</mn
+          ></mfrac
+        ></math
+      >. If you toss a head, you pay $6. If you toss a tail, you win $10. If you play this game many times, will you come out ahead? </p
+    ><div
+        class="exercise"
+        id="element-193"
+      ><div
+          class="problem"
+          id="id14631763"
+        > <p
+            class="para"
+            id="element-653"
+          >Define a random variable <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          >.</p
+        > </div
+      > <div
+          class="solution"
+          id="id14631784"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-548"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = amount of profit</p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-483"
+      ><div
+          class="problem"
+          id="id14631817"
+        > <p
+            class="para"
+            id="element-597"
+          >Complete the following expected value table.</p
+        ><table
+            id="element-644"
+            summary=""
+          ><tbody
+            > <tr
+              > <td
+              /> <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></math
+                ></td
+              > <td
+                >____</td
+              > <td
+                >____</td
+              > </tr
+            > <tr
+              > <td
+                >WIN</td
+              > <td
+                >10</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mfrac
+                    ><mn
+                      >1</mn
+                    ><mn
+                      >3</mn
+                    ></mfrac
+                  ></math
+                ></td
+              > <td
+                >____</td
+              > </tr
+            > <tr
+              > <td
+                >LOSE</td
+              > <td
+                >____</td
+              > <td
+                >____</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mfrac
+                    ><mn
+                      >-12</mn
+                    ><mn
+                      >3</mn
+                    ></mfrac
+                  ></math
+                ></td
+              > </tr
+            > </tbody
+          ></table
+        > </div
+      > <div
+          class="solution"
+          id="id7273882"
+          print-placement="end"
+        > <table
+            id="element-644s"
+            summary="In the PDF table, the outcomes (money you win or lose) of a game played with a biased coin are recorded. There is a column to record the probability and a column to record the outcome multiplied by its probability."
+          ><tbody
+            > <tr
+              > <td
+              /> <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mrow
+                    ><mi
+                      >x</mi
+                    ></mrow
+                  ></math
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mi
+                      >P(x)</mi
+                    ></math
+                  ></strong
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mrow
+                      ><mi
+                        >x</mi
+                      ></mrow
+                    ></math
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mi
+                      >P(x)</mi
+                    ></math
+                  ></strong
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >WIN</td
+              > <td
+                >10</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mfrac
+                    ><mn
+                      >1</mn
+                    ><mn
+                      >3</mn
+                    ></mfrac
+                  ></math
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >10</mn
+                      ><mn
+                        >3</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >LOSE</td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >-6</strong
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >2</mn
+                      ><mn
+                        >3</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mfrac
+                    ><mn
+                      >-12</mn
+                    ><mn
+                      >3</mn
+                    ></mfrac
+                  ></math
+                ></td
+              > </tr
+            > </tbody
+          ></table
+        ></div
+      > </div
+    > <div
+        class="exercise"
+        id="element-737"
+      ><div
+          class="problem"
+          id="id10943564"
+        > <p
+            class="para"
+            id="element-847"
+          >What is the expected value, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3BC;</mi
+            ></math
+          >? Do you come out ahead? </p
+        > </div
+      > <div
+          class="solution"
+          id="id10943588"
+          print-placement="end"
+        > <p
+            class="para"
+            id="element-535"
+          >Add the last column of the table. The expected value <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3BC;</mi
+            > <mo
+              > = </mo
+            > <mfrac
+              > <mn
+                >-2</mn
+              > <mn
+                >3</mn
+              > </mfrac
+            > </math
+          >. You lose, on average, about 67 cents each time you play the game so you do not come out ahead.</p
+        > </div
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="element-903"
+    >Like data, probability distributions have standard deviations. To calculate the standard deviation (<math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3C3;</mi
+      ></math
+    >) of a probability distribution, find each deviation from its expected value, square it, multiply it by its probability, add the products, and take the square root . To understand how to do the calculation, look at the table for the number of days per week a men's soccer team plays soccer. To find the standard deviation, add the entries in the column labeled <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <msup
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >x</mi
+          > <mo
+            >&#x2212;</mo
+          > <mi
+            >&#x3BC;</mi
+          > <mo
+            >)</mo
+          > </mrow
+        > <mn
+          >2</mn
+        > </msup
+      > <mo
+        >&#xB7;</mo
+      > <mi
+        >P</mi
+      > <mo
+        >(</mo
+      > <mi
+        >x</mi
+      > <mo
+        >)</mo
+      > </math
+    > and take the square root.</p
+  ><table
+      id="element-226"
+      summary="PDF table with the added columns for expected value and variance."
+    ><tbody
+      > <tr
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ></math
+          ></td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(x)</mtext
+            ></math
+          ></td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >x</mi
+            ><mtext
+              >P(x)</mtext
+            ></math
+          ></td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              ><mtext
+                >(x -&#x3BC;)</mtext
+              ><mn
+                >2</mn
+              ></msup
+            > <mtext
+              >P(x)</mtext
+            ></math
+          ></td
+        > </tr
+      > <tr
+        > <td
+          >0</td
+        > <td
+          >0.2</td
+        > <td
+          >(0)(0.2) = 0</td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              ><mrow
+                ><mo
+                  >(</mo
+                ><mn
+                  >0</mn
+                ><mo
+                  >-</mo
+                ><mn
+                  >1.1</mn
+                ><mo
+                  >)</mo
+                ></mrow
+              ><mn
+                >2</mn
+              ></msup
+            > <mo
+              >(</mo
+            ><mn
+              >.2</mn
+            ><mo
+              >)</mo
+            > <mo
+              >= </mo
+            ><mn
+              >0.242</mn
+            ></math
+          ></td
+        > </tr
+      > <tr
+        > <td
+          >1</td
+        > <td
+          >0.5</td
+        > <td
+          >(1)(0.5) = 0.5</td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              ><mrow
+                ><mo
+                  >(</mo
+                ><mn
+                  >1</mn
+                ><mo
+                  >-</mo
+                ><mn
+                  >1.1</mn
+                ><mo
+                  >)</mo
+                ></mrow
+              ><mn
+                >2</mn
+              ></msup
+            > <mo
+              >(</mo
+            ><mn
+              >.5</mn
+            ><mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.005</mn
+            ><mo
+            /></math
+          ></td
+        > </tr
+      > <tr
+        > <td
+          >2</td
+        > <td
+          >0.3</td
+        > <td
+          >(2)(0.3) = 0.6</td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              ><mrow
+                ><mo
+                  >(</mo
+                ><mn
+                  >2</mn
+                ><mo
+                  >-</mo
+                ><mn
+                  >1.1</mn
+                ><mo
+                  >)</mo
+                > </mrow
+              > <mn
+                >2</mn
+              ></msup
+            > <mo
+              >(</mo
+            ><mn
+              >.3</mn
+            ><mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.243</mn
+            ></math
+          ></td
+        > </tr
+      > </tbody
+    ></table
+  ><p
+      class="para"
+      id="eip-127"
+    >Add the last column in the table. <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mn
+        >0.242</mn
+      ><mo
+        >+</mo
+      ><mn
+        >0.005</mn
+      ><mo
+        >+</mo
+      ><mn
+        >0.243</mn
+      ><mo
+        >=</mo
+      ><mn
+        >0.490</mn
+      ></math
+    >. The standard deviation is the square root of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mn
+        >0.49</mn
+      ></math
+    >. <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3C3;</mi
+      ><mo
+        >=</mo
+      ><msqrt
+        ><mn
+          >0.49</mn
+        ></msqrt
+      ><mo
+        >=</mo
+      ><mn
+        >0.7</mn
+      ></math
+    ></p
+  ><p
+      class="para"
+      id="element-873"
+    >Generally for probability distributions, we use a calculator or a computer to calculate <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3C3;</mi
+      ></math
+    > to reduce roundoff error. For some probability distributions, there are short-cut formulas that calculate <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3BC;</mi
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3C3;</mi
+      ></math
+    >.</p
+  > </body
+>
+</html>

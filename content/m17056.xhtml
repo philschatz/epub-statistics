@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>The Chi-Square Distribution: Practice 2</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >The Chi-Square Distribution: Practice 2</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-715"
+      >Student Learning Outcomes</h1
+    > <ul
+        class="list"
+        data-id="list-2356124"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        > The student will conduct a test for independence using contingency tables.</li
+      > </ul
+    ></div
+  ><p
+      class="para"
+      id="element-420"
+    >Conduct a hypothesis test to determine if smoking level and ethnicity are independent.</p
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-802"
+      >Collect the Data</h1
+    > <p
+        class="para"
+        id="element-538"
+      >Copy the data provided in <strong
+          class="emphasis"
+        >Probability Topics Practice 1: Contingency Tables </strong
+      > into the table below.</p
+    ><table
+        id="element-894"
+        summary="This is a partially filled observation table with Ethnicity for the columns (2nd to 6th) and Total for the seventh column. The smoking level (4 rows) and the total constitute the rows of the table. 30 blank cells are available."
+      ><caption
+        ><span
+            class="title"
+          >Smoking Levels by Ethnicity (Observed)</span
+        ></caption
+      ><thead
+        > <tr
+          > <td
+            >Smoking Level Per Day</td
+          > <td
+            > African American </td
+          > <td
+            > Native Hawaiian </td
+          > <td
+            > Latino </td
+          > <td
+            > Japanese Americans </td
+          > <td
+            > White </td
+          > <td
+            > TOTALS </td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            > 1-10 </td
+          > <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+            > 11-20 </td
+          > <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+            > 21-30 </td
+          > <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+            > 31+ </td
+          > <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+            > TOTALS </td
+          > <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> <td
+          /> </tr
+        > </tbody
+      ></table
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-144"
+      >Hypothesis</h1
+    > <p
+        class="para"
+        id="element-424"
+      > State the hypotheses. </p
+    ><ul
+        class="list"
+        data-id="element-488"
+        data-list-type="bulleted"
+      > <li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><semantics
+            ><mrow
+              ><mstyle
+                  fontsize="12pt"
+                ><mrow
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >H</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >o</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ><mi
+                      >:</mi
+                    ></mrow
+                  ></mrow
+                ></mstyle
+              ><mrow
+              /></mrow
+            ><annotation
+                encoding="StarMath 5.0"
+              > size 12{H rSub { size 8{O} } :} {}</annotation
+            ></semantics
+          ></math
+        > </li
+      > <li
+          class="item"
+          id="element-673"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><semantics
+            ><mrow
+              ><mstyle
+                  fontsize="12pt"
+                ><mrow
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >H</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >a</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ><mi
+                      >:</mi
+                    ></mrow
+                  ></mrow
+                ></mstyle
+              ><mrow
+              /></mrow
+            ><annotation
+                encoding="StarMath 5.0"
+              > size 12{H rSub { size 8{a} } :} {}</annotation
+            ></semantics
+          ></math
+        > </li
+      > </ul
+    ></div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-439"
+      >Expected Values</h1
+    > <p
+        class="para"
+        id="element-762"
+      > Enter expected values in the above below. Round to two decimal places. </p
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="element-418"
+      >Analyze the Data</h1
+    > <p
+        class="para"
+        id="element-359"
+      >Calculate the following values: </p
+    ><div
+        class="exercise"
+        id="element-180"
+      ><div
+          class="problem"
+          id="id13657036"
+        > <p
+            class="para"
+            id="element-491"
+          >Degrees of freedom =</p
+        > </div
+      > <div
+          class="solution"
+          id="id7220186"
+        > <p
+            class="para"
+            id="element-349"
+          > 12 </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-607"
+      ><div
+          class="problem"
+          id="id3392008"
+        > <p
+            class="para"
+            id="element-615"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mstyle
+                        fontstyle="italic"
+                      ><mrow
+                        ><msup
+                          ><mtext
+                            >Chi</mtext
+                          ><mstyle
+                              fontsize="8pt"
+                            ><mrow
+                              ><mn
+                                >2</mn
+                              ></mrow
+                            ></mstyle
+                          ></msup
+                        ></mrow
+                      ></mstyle
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ ital "Chi" rSup { size 8{2} } } {}</annotation
+              ></semantics
+            ></math
+          > test statistic =</p
+        > </div
+      > <div
+          class="solution"
+          id="id13687139"
+        > <p
+            class="para"
+            id="element-123"
+          > 10301.8 </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-151"
+      ><div
+          class="problem"
+          id="id13677856"
+        > <p
+            class="para"
+            id="element-267"
+          >p-value = </p
+        > </div
+      > <div
+          class="solution"
+          id="id13459309"
+        > <p
+            class="para"
+            id="element-663"
+          > 0 </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-526"
+      ><div
+          class="problem"
+          id="id13507289"
+        > <p
+            class="para"
+            id="element-78"
+          >Is this a right-tailed, left-tailed, or two-tailed test? Explain why. </p
+        > </div
+      > <div
+          class="solution"
+          id="id12956247"
+        > <p
+            class="para"
+            id="element-785"
+          > right </p
+        > </div
+      > </div
+    > </div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-1e241"
+      >Graph the Data</h1
+    > <div
+        class="exercise"
+        id="element-651"
+      ><div
+          class="problem"
+          id="id13510518"
+        > <p
+            class="para"
+            id="element-52"
+          >Graph the situation. Label and scale the horizontal axis. Mark the mean and test statistic. Shade in the region corresponding to the p-value. </p
+        ><p
+            class="para"
+            id="element-698"
+          ><span
+              class="media"
+              id="id10494834"
+              data-alt="Blank graph with vertical and horizontal axes."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></p
+        > </div
+      ></div
+    > </div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-524"
+      >Conclusions</h1
+    > <p
+        class="para"
+        id="element-150"
+      >State the decision and conclusion (in a complete sentence) for the following preconceived levels of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><semantics
+          ><mrow
+            ><mstyle
+                fontsize="12pt"
+              ><mrow
+                ><mi
+                  >&#x3B1;</mi
+                ></mrow
+              ></mstyle
+            ><mrow
+            /></mrow
+          ><annotation
+              encoding="StarMath 5.0"
+            > size 12{&#x3B1;} {}</annotation
+          ></semantics
+        ></math
+      > .</p
+    ><div
+        class="exercise"
+        id="element-90"
+      ><div
+          class="problem"
+          id="id13505381"
+        > <p
+            class="para"
+            id="element-764"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >&#x3B1;</mi
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >05</mtext
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;=0 "." "05"} {}</annotation
+              > </semantics
+            > </math
+          > <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-2353627788"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              > Decision:</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              > Reason for the decision:</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              > Conclusion (write out in a complete sentence):</li
+            > </list
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id10677600"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-307"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >Reject the null hypothesis</li
+          ></list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-56"
+      ><div
+          class="problem"
+          id="id12810548"
+        > <p
+            class="para"
+            id="element-317"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.01</mn
+            > </math
+          > <list
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-id="list-23536277881"
+              data-list-type="labeled-item"
+              data-mark-suffix="."
+            > <li
+                xmlns=""
+                class="item"
+                data-label="a"
+              > Decision:</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="b"
+              > Reason for the decision:</li
+            > <li
+                xmlns=""
+                class="item"
+                data-label="c"
+              > Conclusion (write out in a complete sentence):</li
+            > </list
+          > </p
+        > </div
+      > </div
+    ></div
+  > </body
+>
+</html>

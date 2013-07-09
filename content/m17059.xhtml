@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>The Chi-Square Distribution: Test of a Single Variance</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >The Chi-Square Distribution: Test of a Single Variance</div
+  > <p
+      class="para"
+      id="element-194"
+    >A test of a single variance assumes that the underlying distribution is <strong
+        class="emphasis"
+      >normal</strong
+    >. The null and alternate hypotheses are stated in terms of the <strong
+        class="emphasis"
+      >population variance</strong
+    > (or population standard deviation). The test statistic is: </p
+  ><div
+      class="equation"
+      id="element-740"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mfrac
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >n</mi
+          > <mo
+            >-</mo
+          > <mn
+            >1</mn
+          > <mo
+            >)</mo
+          > <mo
+            >&#x22C5;</mo
+          > <msup
+            > <mi
+              >s</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </mrow
+        > <mrow
+          > <msup
+            > <mi
+              >&#x3C3;</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </mrow
+        > </mfrac
+      > </math
+    > </div
+  > <p
+      class="para"
+      id="element-706"
+    >where:</p
+  > <ul
+      class="list"
+      data-id="element-706l"
+      data-list-type="bulleted"
+    > <li
+        class="item"
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > = the total number of data </li
+    > <li
+        class="item"
+        id="element-646"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msup
+          ><mi
+            >s</mi
+          ><mn
+            >2</mn
+          ></msup
+        ></math
+      > = sample variance </li
+    > <li
+        class="item"
+        id="element-502"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msup
+          ><mi
+            >&#x3C3;</mi
+          ><mn
+            >2</mn
+          ></msup
+        ></math
+      > = population variance</li
+    > </ul
+  > <p
+      class="para"
+      id="element-416"
+    >You may think of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >s</mi
+      ></math
+    > as the random variable in this test. The degrees of freedom are <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mtext
+        >df</mtext
+      ><mo
+        >=</mo
+      ><mi
+        >n</mi
+      ><mo
+        >-</mo
+      ><mn
+        >1</mn
+      ></math
+    >.</p
+  ><p
+      class="para"
+      id="element-260"
+    ><strong
+        class="emphasis"
+      >A test of a single variance may be right-tailed, left-tailed, or two-tailed.</strong
+    ></p
+  ><p
+      class="para"
+      id="element-446"
+    >The following example will show you how to set up the null and alternate hypotheses. The null and alternate hypotheses contain statements about the population variance.</p
+  ><div
+      class="example"
+      id="element-174"
+    ><div
+        class="exercise"
+        id="element-514"
+      ><div
+          class="problem"
+          id="id1168324983513"
+        > <p
+            class="para"
+            id="element-687"
+          >Math instructors are not only interested in how their students do on exams, on average, but how the exam scores vary. To many instructors, the variance (or standard deviation) may be more important than the average.</p
+        > <p
+            class="para"
+            id="element-485"
+          >Suppose a math instructor believes that the standard deviation for his final exam is 5 points. One of his best students thinks otherwise. The student claims that the standard deviation is more than 5 points. If the student were to conduct a hypothesis test, what would the null and alternate hypotheses be? </p
+        > </div
+      > <div
+          class="solution"
+          id="id1168323245019"
+        > <p
+            class="para"
+            id="element-219"
+          >Even though we are given the population standard deviation, we can set the test up using the population variance as follows. </p
+        > <ul
+            class="list"
+            data-id="element-660"
+            data-list-type="bulleted"
+          > <li
+              class="item"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msub
+                ><mi
+                  >H</mi
+                ><mi
+                  >o</mi
+                ></msub
+              ></math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mi
+                  >&#x3C3;</mi
+                ><mn
+                  >2</mn
+                ></msup
+              ><mo
+                >=</mo
+              ><msup
+                ><mn
+                  >5</mn
+                ><mn
+                  >2</mn
+                ></msup
+              ></math
+            > </li
+          > <li
+              class="item"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msub
+                ><mi
+                  >H</mi
+                ><mi
+                  >a</mi
+                ></msub
+              ></math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mi
+                  >&#x3C3;</mi
+                ><mn
+                  >2</mn
+                ></msup
+              ><mo
+                >&gt;</mo
+              ><msup
+                ><mn
+                  >5</mn
+                ><mn
+                  >2</mn
+                ></msup
+              ></math
+            ></li
+          ></ul
+        > </div
+      > </div
+    > </div
+  ><div
+      class="example"
+      id="element-28"
+    ><div
+        class="exercise"
+        id="element-853"
+      ><div
+          class="problem"
+          id="id2871589"
+        ><p
+            class="para"
+            id="element-271"
+          > With individual lines at its various windows, a post office finds that the standard deviation for normally distributed waiting times for customers on Friday afternoon is 7.2 minutes. The post office experiments with a single main waiting line and finds that for a random sample of 25 customers, the waiting times for customers have a standard deviation of 3.5 minutes. </p
+        > <p
+            class="para"
+            id="element-677"
+          >With a significance level of 5%, test the claim that <strong
+              class="emphasis"
+            >a single line causes lower variation among waiting times (shorter waiting times) for customers</strong
+          >. </p
+        > </div
+      > <div
+          class="solution"
+          id="id1168321500398"
+        > <p
+            class="para"
+            id="element-628"
+          > Since the claim is that a single line causes lower variation, this is a test of a single variance. The parameter is the population variance, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              ><mi
+                >&#x3C3;</mi
+              ><mn
+                >2</mn
+              ></msup
+            ></math
+          >, or the population standard deviation, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3C3;</mi
+            ></math
+          >. </p
+        ><p
+            class="para"
+            id="element-16"
+          ><strong
+              class="emphasis"
+            >Random Variable:</strong
+          > The sample standard deviation, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ></math
+          >, is the random variable. Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ></math
+          > = standard deviation for the waiting times.</p
+        > <ul
+            class="list"
+            data-id="element-227"
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msub
+                ><mi
+                  >H</mi
+                ><mi
+                  >o</mi
+                ></msub
+              ></math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mi
+                  >&#x3C3;</mi
+                ><mn
+                  >2</mn
+                ></msup
+              ><mo
+                >=</mo
+              ><msup
+                ><mn
+                  >7.2</mn
+                ><mn
+                  >2</mn
+                ></msup
+              > </math
+            ></li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msub
+                ><mi
+                  >H</mi
+                ><mi
+                  >a</mi
+                ></msub
+              ></math
+            >: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mi
+                  >&#x3C3;</mi
+                ><mn
+                  >2</mn
+                ></msup
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><reln
+                ><lt
+                /></reln
+              ></math
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mn
+                  >7.2</mn
+                ><mn
+                  >2</mn
+                ></msup
+              ></math
+            ></li
+          > </ul
+        > <p
+            class="para"
+            id="element-789"
+          >The word <strong
+              class="emphasis"
+            >"lower"</strong
+          > tells you this is a left-tailed test.</p
+        ><p
+            class="para"
+            id="element-760"
+          ><strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msubsup
+              ><mi
+                >&#x3C7;</mi
+              ><mn
+                >24</mn
+              ><mn
+                >2</mn
+              ></msubsup
+            ></math
+          >, where: <ul
+              class="list"
+              data-id="element-12421"
+              data-list-type="bulleted"
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mi
+                  >n</mi
+                ></math
+              > = the number of customers sampled</li
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                ><mtext
+                  >df</mtext
+                ><mo
+                  >=</mo
+                ><mi
+                  >n</mi
+                ><mo
+                  >-</mo
+                ><mn
+                  >1</mn
+                ><mo
+                  >=</mo
+                ><mn
+                  >25 </mn
+                ><mo
+                  >-</mo
+                ><mn
+                  >1</mn
+                ><mo
+                  >=</mo
+                ><mn
+                  >24</mn
+                ></math
+              > </li
+            > </ul
+          ></p
+        ><p
+            class="para"
+            id="element-85"
+          ><strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > </p
+        ><p
+            class="para"
+            id="element-10"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mi
+                  >n</mi
+                > <mo
+                  >-</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >)</mo
+                > <mo
+                  >&#x22C5;</mo
+                > <msup
+                  > <mi
+                    >s</mi
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > <mrow
+                > <msup
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mfrac
+              > <mrow
+                > <mo
+                  >(</mo
+                > <mn
+                  >25</mn
+                > <mo
+                  >-</mo
+                > <mn
+                  >1</mn
+                > <mo
+                  >)</mo
+                > <mo
+                  >&#x22C5;</mo
+                > <msup
+                  > <mn
+                    >3.5</mn
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > <mrow
+                > <msup
+                  > <mn
+                    >7.2</mn
+                  > <mn
+                    >2</mn
+                  > </msup
+                > </mrow
+              > </mfrac
+            > <mo
+              >=</mo
+            > <mn
+              >5.67</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-801"
+          >where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >n</mi
+            ><mo
+              >=</mo
+            ><mn
+              >25</mn
+            ></math
+          >, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >s</mi
+            ><mo
+              >=</mo
+            ><mn
+              >3.5</mn
+            ></math
+          >, and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3C3;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >7.2</mn
+            ></math
+          >.</p
+        ><p
+            class="para"
+            id="element-607"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          ></p
+        > <media
+            xmlns="http://cnx.rice.edu/cnxml"
+            id="id1168325355960"
+            data-alt="Nonsymmetrical chi-square curve with values of 0 and 5.67 on the x-axis representing the test statistic of waiting times at the post office. A vertical upward line extends from 5.67 to the curve and the area to the left of this is equal to the p-value."
+            data-display="block"
+          ><image
+              print-width="3in"
+          /></media
+        > <p
+            class="para"
+            id="element-970"
+          ><strong
+              class="emphasis"
+            >Probability statement: </strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >p-value</mtext
+            > <mo
+              >=</mo
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              > &lt; </mo
+            > <mn
+              >5.67</mn
+            > <mo
+              >)</mo
+            > <mo
+              > = </mo
+            > <mn
+              >0.000042</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-684"
+          ><strong
+              class="emphasis"
+            >Compare <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3B1;</mi
+              ></math
+            > and the p-value: </strong
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.05</mn
+            ><mspace
+                width="20pt"
+            /><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.000042</mn
+            ><mspace
+                width="20pt"
+            /><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          ></p
+        ><p
+            class="para"
+            id="element-726"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >, reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          >.</p
+        ><p
+            class="para"
+            id="element-786"
+          >This means that you reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              ><mi
+                >&#x3C3;</mi
+              ><mn
+                >2</mn
+              ></msup
+            ><mo
+              >=</mo
+            ><msup
+              ><mn
+                >7.2</mn
+              ><mn
+                >2</mn
+              ></msup
+            ></math
+          >. In other words, you do not think the variation in waiting times is 7.2 minutes, but lower.</p
+        ><p
+            class="para"
+            id="element-952"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At a 5% level of significance, from the data, there is sufficient evidence to conclude that a single line causes a lower variation among the waiting times <strong
+              class="emphasis"
+            >or</strong
+          > with a single line, the customer waiting times vary less than 7.2 minutes.</p
+        ><p
+            class="para"
+            id="element-528"
+          ><strong
+              class="emphasis"
+            >TI-83+ and TI-84 calculators</strong
+          >: In <code
+              class="code"
+            >2nd DISTR</code
+          >, use <code
+              class="code"
+            >7:&#x3C7;2cdf</code
+          >. The syntax is <code
+              class="code"
+            >(lower, upper, df)</code
+          > for the parameter list. For Example 11-9, <code
+              class="code"
+            >&#x3C7;2cdf(-1E99,5.67,24)</code
+          >. The <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.000042</mn
+            ></math
+          >.</p
+        > </div
+      > </div
+    > </div
+  > </body
+>
+</html>

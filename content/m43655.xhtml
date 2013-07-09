@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>The Chi-Square Distribution: Test for Homogeneity</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >The Chi-Square Distribution: Test for Homogeneity</div
+  > <p
+      class="para"
+      id="delete_me"
+    >The Goodness of Fit test can be used to decide whether a population fits a given distribution, but the Goodness of Fit test will not suffice to compare whether two populations follow the same unknown distribution. A different test, called the Test for Homogeneity, can be used to make a conclusion about whether two populations have the same distribution. To calculate the test statistic for a test for homogeneity, follow the same procedure as with the Test of Independence. </p
+  ><div
+      class="note"
+      id="eip-195"
+    >The expected value for each cell needs to be at least 5 in order to use this test.</div
+  ><p
+      class="para"
+      id="eip-705"
+    ><span
+        class="title"
+      >Hypotheses</span
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <msub
+        > <mi
+          >H</mi
+        > <mi
+          >o</mi
+        > </msub
+      > </math
+    >: The distributions of the two populations are the same. <br
+    /><br
+    /> <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <msub
+        > <mi
+          >H</mi
+        > <mi
+          >a</mi
+        > </msub
+      > </math
+    >: The distributions of the two populations are not the same. </p
+  ><p
+      class="para"
+      id="eip-703"
+    ><span
+        class="title"
+      >Test Statistic</span
+    >Use a <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <msup
+        > <mi
+          >&#x3C7;</mi
+        > <mn
+          >2</mn
+        > </msup
+      ></math
+    > test statistic. It is computed in the same way as the test for independence. </p
+  ><p
+      class="para"
+      id="eip-577"
+    ><span
+        class="title"
+      >Degrees of Freedom (df)</span
+    >df = number of columns - 1</p
+  ><p
+      class="para"
+      id="eip-572"
+    ><span
+        class="title"
+      >Requirements</span
+    >All values in the table must be greater than or equal to 5. </p
+  ><p
+      class="para"
+      id="eip-66"
+    ><span
+        class="title"
+      >Common Uses</span
+    >Comparing two populations. For example: men versus women, before vs. after, east vs. west. The variable is categorical with more than two possible response values. </p
+  ><div
+      class="example"
+      id="eip-101"
+    ><p
+        class="para"
+        id="eip-520"
+      >Do male and female college students have the same distribution of living conditions? Use a level of significance of 0.05. Suppose that 250 randomly selected male college students and 300 randomly selected female college students were asked about their living conditions: Dormitory, Apartment, With Parents, Other. The results are shown in the table below. </p
+    > <table
+        id="eip-924"
+        summary="The table contains the distribution of living conditions for college males and college females. First row: Males 72 Dorm; 84 Apt.; 49 Parents; 45 Other; Second row: Females, 91 Dorm; 86 Apt.; 88 Parents; 35 Other;"
+      ><caption
+        ><span
+            class="title"
+          >Distribution of Living Conditions for College Males and College Females</span
+        ></caption
+      ><tbody
+        > <tr
+          > <td
+          /> <td
+            ><strong
+                class="emphasis"
+              >Dormitory</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >Apartment</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >With Parents</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >Other</strong
+            ></td
+          > </tr
+        > <tr
+          > <td
+            ><strong
+                class="emphasis"
+              >Males</strong
+            ></td
+          > <td
+            >72</td
+          > <td
+            >84</td
+          > <td
+            >49</td
+          > <td
+            >45</td
+          > </tr
+        > <tr
+          > <td
+            ><strong
+                class="emphasis"
+              >Females</strong
+            ></td
+          > <td
+            >91</td
+          > <td
+            >86</td
+          > <td
+            >88</td
+          > <td
+            >35</td
+          > </tr
+        > </tbody
+      ></table
+    > <div
+        class="exercise"
+        id="eip-790"
+      ><div
+          class="problem"
+          id="eip-886"
+        > <p
+            class="para"
+            id="eip-818"
+          >Do male and female college students have the same distribution of living conditions? </p
+        ></div
+      > <div
+          class="solution"
+          id="eip-996"
+        > <p
+            class="para"
+            id="eip-724"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >: The distribution of living conditions for male college students is the same as the distribution of living conditions for female college students. <br
+          /><br
+          /> <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: The distribution of living conditions for male college students is not the same as the distribution of living conditions for female college students. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Degrees of Freedom (df):</strong
+          ><br
+          /> df = number of columns - 1 = 4 - 1 = 3 <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msubsup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >3</mn
+              > <mn
+                >2</mn
+              > </msubsup
+            > </math
+          > <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >=</mo
+            > <mn
+              >10.1287</mn
+            > <mspace
+                width="20pt"
+            /> </math
+          >(calculator or computer) <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Probability statement:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><msup
+              ><mi
+                >&#x3C7;</mi
+              ><mn
+                >2 </mn
+              ></msup
+            ><mo
+              >&gt;</mo
+            ><mn
+              >10.1287</mn
+            ><mo
+              >)</mo
+            ><mo
+              >=</mo
+            ><mn
+              >0.0175</mn
+            ></math
+          > <br
+          /><br
+          /> TI-83+ and TI-84 calculator: Press the <code
+              class="code"
+            >MATRX</code
+          > key and arrow over to <code
+              class="code"
+            >EDIT</code
+          >. Press <code
+              class="code"
+            >1:[A]</code
+          >. Press <code
+              class="code"
+            >2 ENTER 4 ENTER</code
+          >. Enter the table values by row. Press <code
+              class="code"
+            >ENTER</code
+          > after each. Press <code
+              class="code"
+            >2nd QUIT</code
+          >. Press <code
+              class="code"
+            >STAT</code
+          > and arrow over to <code
+              class="code"
+            >TESTS</code
+          >. Arrow down to <code
+              class="code"
+            >C:&#x3C7;2-TEST</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. You should see <code
+              class="code"
+            >Observed:[A] and Expected:[B]</code
+          >. Arrow down to <code
+              class="code"
+            >Calculate</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. The test statistic is 10.1287 and the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.0175</mn
+            ></math
+          >. Do the procedure a second time but arrow down to <code
+              class="code"
+            >Draw</code
+          > instead of <code
+              class="code"
+            >calculate</code
+          >. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Compare <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3B1;</mi
+              ></math
+            > and the <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >p-value</mtext
+              ></math
+            >:</strong
+          > Since no <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ></math
+          > is given, assume <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.05</mn
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.0175</mn
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >, reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          >. This means that the distributions are not the same. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At a 5% level of significance, from the data, there is sufficient evidence to conclude that the distributions of living conditions for male and female college students are not the same. <br
+          /><br
+          /> Notice that the conclusion is only that the distributions are not the same. We cannot use the Test for Homogeneity to make any conclusions about how they differ. </p
+        ></div
+      > </div
+    ></div
+  ><div
+      class="example"
+      id="eip-151"
+    ><p
+        class="para"
+        id="eip-558"
+      >Both before and after a recent earthquake, surveys were conducted asking voters which of the three candidates they planned on voting for in the upcoming city council election. Has there been a change since the earthquake? Use a level of significance of 0.05. The table below shows the results of the survey. </p
+    ><table
+        id="eip-422"
+        summary="The table contains the number of votes 3 candidates (Perez, Chung, Stevens) could receive before and after an earthquake from a survey. First row: 167; 128; 135; Second row: 214; 197; 225;"
+      ><tbody
+        > <tr
+          > <td
+          /> <td
+            ><strong
+                class="emphasis"
+              >Perez</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >Chung</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >Stevens</strong
+            ></td
+          > </tr
+        > <tr
+          > <td
+            ><strong
+                class="emphasis"
+              >Before</strong
+            ></td
+          > <td
+            >167</td
+          > <td
+            >128</td
+          > <td
+            >135</td
+          > </tr
+        > <tr
+          > <td
+            ><strong
+                class="emphasis"
+              >After</strong
+            ></td
+          > <td
+            >214</td
+          > <td
+            >197</td
+          > <td
+            >225</td
+          > </tr
+        > </tbody
+      ></table
+    ><div
+        class="exercise"
+        id="eip-692"
+      ><div
+          class="problem"
+          id="eip-44"
+        > <p
+            class="para"
+            id="eip-987"
+          >Has there been a change in the distribution of voter preferences since the earthquake? </p
+        ></div
+      > <div
+          class="solution"
+          id="eip-156"
+        > <p
+            class="para"
+            id="eip-969"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >: The distribution of voter preferences was the same before and after the earthquake. <br
+          /><br
+          /> <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: The distribution of voter preferences was not the same before and after the earthquake. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Degrees of Freedom (df):</strong
+          ><br
+          /> df = number of columns - 1 = 3 - 1 = 2 <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msubsup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > <mn
+                >2</mn
+              > </msubsup
+            > </math
+          > <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >=</mo
+            > <mn
+              >3.2603</mn
+            > <mspace
+                width="20pt"
+            /> </math
+          >(calculator or computer) <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Probability statement:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mi
+              >P</mi
+            ><mo
+              >(</mo
+            ><msup
+              ><mi
+                >&#x3C7;</mi
+              ><mn
+                >2 </mn
+              ></msup
+            ><mo
+              >&gt;</mo
+            ><mn
+              >3.2603</mn
+            ><mo
+              >)</mo
+            ><mo
+              >=</mo
+            ><mn
+              >0.1959</mn
+            ></math
+          > <br
+          /><br
+          /> TI-83+ and TI-84 calculator: Press the <code
+              class="code"
+            >MATRX</code
+          > key and arrow over to <code
+              class="code"
+            >EDIT</code
+          >. Press <code
+              class="code"
+            >1:[A]</code
+          >. Press <code
+              class="code"
+            >2 ENTER 3 ENTER</code
+          >. Enter the table values by row. Press <code
+              class="code"
+            >ENTER</code
+          > after each. Press <code
+              class="code"
+            >2nd QUIT</code
+          >. Press <code
+              class="code"
+            >STAT</code
+          > and arrow over to <code
+              class="code"
+            >TESTS</code
+          >. Arrow down to <code
+              class="code"
+            >C:&#x3C7;2-TEST</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. You should see <code
+              class="code"
+            >Observed:[A] and Expected:[B]</code
+          >. Arrow down to <code
+              class="code"
+            >Calculate</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. The test statistic is 3.2603 and the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.1959</mn
+            ></math
+          >. Do the procedure a second time but arrow down to <code
+              class="code"
+            >Draw</code
+          > instead of <code
+              class="code"
+            >calculate</code
+          >. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Compare <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >&#x3B1;</mi
+              ></math
+            > and the <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >p-value</mtext
+              ></math
+            >:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >=</mo
+            ><mn
+              >0.05</mn
+            ></math
+          > and the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.1959</mn
+            ></math
+          >. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&lt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&lt;</mo
+            ><mtext
+              >p-value</mtext
+            ></math
+          >, do not reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          >. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At a 5% level of significance, from the data, there is insufficient evidence to conclude that the distribution of voter preferences was not the same before and after the earthquake. </p
+        ></div
+      > </div
+    ></div
+  ><p
+      class="para"
+      id="eip-205"
+    >** Contributed by Dr. Larry Green</p
+  ></body
+>
+</html>

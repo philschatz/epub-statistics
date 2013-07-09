@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>F Distribution and One-Way ANOVA: Purpose and Basic Assumptions of One-Way ANOVA</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >F Distribution and One-Way ANOVA: Purpose and Basic Assumptions of One-Way ANOVA</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="section-1"
+      >F Distribution and One-Way ANOVA: Purpose and Basic Assumptions of One-Way ANOVA </h1
+    ><p
+        class="para"
+        id="delete_me"
+      >The purpose of a <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="anova"
+        >One-Way ANOVA</term
+      > test is to determine the existence of a statistically significant difference among several group means. The test actually uses <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="variance"
+        >variances</term
+      > to help determine if the means are equal or not.</p
+    ><p
+        class="para"
+        id="element-257"
+      >In order to perform a One-Way ANOVA test, there are five basic <strong
+          class="emphasis"
+        >assumptions</strong
+      > to be fulfilled: <ul
+          class="list"
+          data-id="list-786879"
+          data-list-type="bulleted"
+        ><li
+            class="item"
+          >Each population from which a sample is taken is assumed to be normal.</li
+        > <li
+            class="item"
+          >Each sample is randomly selected and independent.</li
+        > <li
+            class="item"
+          > The populations are assumed to have <strong
+              class="emphasis"
+            >equal standard deviations (or variances).</strong
+          ></li
+        > <li
+            class="item"
+          >The factor is the categorical variable.</li
+        > <li
+            class="item"
+          >The response is the numerical variable.</li
+        > </ul
+      ></p
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="nullalt"
+      >The Null and Alternate Hypotheses</h1
+    > <p
+        class="para"
+        id="delete_me2"
+      >The null hypothesis is simply that all the group population means are the same. The alternate hypothesis is that at least one pair of means is different. For example, if there are <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >k</mi
+        ></math
+      > groups:</p
+    ><p
+        class="para"
+        id="element-671"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >H</mi
+          > <mi
+            >o</mi
+          > </msub
+        > <mo
+          >:</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >1</mi
+          > </msub
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >2</mi
+          > </msub
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >3</mi
+          > </msub
+        > <mo
+          >=</mo
+        > <mo
+          >...</mo
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >k</mi
+          > </msub
+        > </math
+      ></p
+    ><p
+        class="para"
+        id="element-952"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >H</mi
+          > <mi
+            >a</mi
+          > </msub
+        > <mo
+          >:</mo
+        ></math
+      > At least two of the group means <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mn
+            >1</mn
+          > </msub
+        > <mo
+          >,</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mn
+            >2</mn
+          > </msub
+        > <mo
+          >,</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mn
+            >3</mn
+          > </msub
+        > <mo
+          >,</mo
+        > <mo
+          >...</mo
+        > <mo
+          >,</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >k</mi
+          > </msub
+        ></math
+      > are not equal.</p
+    ><p
+        class="para"
+        id="eip-969"
+      >The graphs help in the understanding of the hypothesis test. In the first graph (red box plots), <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msub
+          > <mi
+            >H</mi
+          > <mi
+            >o</mi
+          > </msub
+        > <mo
+          >:</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >1</mi
+          > </msub
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >2</mi
+          > </msub
+        > <mo
+          >=</mo
+        > <msub
+          > <mi
+            >&#x3BC;</mi
+          > <mi
+            >3</mi
+          > </msub
+        > </math
+      > and the three populations have the same distribution if the null hypothesis is true. The variance of the combined data is approximately the same as the variance of each of the populations. <br
+      /><br
+      /> If the null hypothesis is false, then the variance of the combined data is larger which is caused by the different means as shown in the second graph (green box plots).</p
+    ><p
+        class="para"
+        id="eip-463"
+      ><span
+          class="media"
+          id="eip-id1169957791323"
+          data-alt="Three boxplots with equal means"
+        > <img
+            src="../resources/anova_means_equal.png"
+            data-mime-type="image/png"
+            alt="Three boxplots with equal means"
+        /> </span
+      > </p
+    ><p
+        class="para"
+        id="eip-765"
+      ><span
+          class="media"
+          id="eip-id1169954570908"
+          data-alt="Three boxplots with unequal means"
+        > <img
+            src="../resources/anova_means_unequal.png"
+            data-mime-type="image/png"
+            alt="Three boxplots with unequal means"
+        /> </span
+      > </p
+    ></div
+  > </body
+>
+</html>

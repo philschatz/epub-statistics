@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Discrete Random Variables: Introduction</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Discrete Random Variables: Introduction</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-636"
+      >Student Learning Outcomes</h1
+    ><p
+        class="para"
+        id="element-959"
+      > By the end of this chapter, the student should be able to: </p
+    > <ul
+        class="list"
+        data-id="list14235"
+      ><li
+          class="item"
+        >Recognize and understand discrete probability distribution functions, in general.</li
+      > <li
+          class="item"
+        >Calculate and interpret expected values.</li
+      > <li
+          class="item"
+        >Recognize the binomial probability distribution and apply it appropriately.</li
+      > <li
+          class="item"
+        >Recognize the Poisson probability distribution and apply it appropriately (optional).</li
+      > <li
+          class="item"
+        >Recognize the geometric probability distribution and apply it appropriately (optional).</li
+      > <li
+          class="item"
+        >Recognize the hypergeometric probability distribution and apply it appropriately (optional).</li
+      > <li
+          class="item"
+        >Classify discrete word problems by their distributions.</li
+      > </ul
+    > </div
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="id1167450162130"
+      >Introduction</h1
+    > <p
+        class="para"
+        id="delete_me"
+      >A student takes a 10 question true-false quiz. Because the student had such a busy schedule, he or she could not study and randomly guesses at each answer. What is the probability of the student passing the test with at least a 70%? </p
+    ><p
+        class="para"
+        id="element-804"
+      >Small companies might be interested in the number of long distance phone calls their employees make during the peak time of the day. Suppose the average is 20 calls. What is the probability that the employees make more than 20 long distance phone calls during the peak time?</p
+    ><p
+        class="para"
+        id="element-919"
+      >These two examples illustrate two different types of probability problems involving discrete random variables. Recall that discrete data are data that you can count. A <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="randvar"
+        >random variable </term
+      > describes the outcomes of a statistical experiment in words. The values of a random variable can vary with each repetition of an experiment.</p
+    ><p
+        class="para"
+        id="element-523"
+      >In this chapter, you will study probability problems involving discrete random distributions. You will also study long-term averages associated with them. </p
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="randvarnot"
+      >Random Variable Notation</h1
+    > <p
+        class="para"
+        id="element-197"
+      >Upper case letters like <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > or <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >Y</mi
+        ></math
+      > denote a random variable. Lower case letters like <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > or <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > denote the value of a random variable. If <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > is a random variable, then <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > is written in words.</strong
+      > and <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > is given as a number.</strong
+      ></p
+    ><p
+        class="para"
+        id="element-109"
+      >For example, let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of heads you get when you toss three fair coins. The sample space for the toss of three fair coins is <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-list-type="labeled-item"
+          data-display="inline"
+          data-id="set-inlist1"
+        > <li
+            xmlns=""
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >TTT</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >THH</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >HTH</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              > HHT</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >HTT</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >THT</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >TTH</mi
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              > HHH</mi
+            ></math
+          ></li
+        > </list
+      >. Then, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > = 0, 1, 2, 3. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is in words and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > is a number. Notice that for this example, the <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > values are countable outcomes. Because you can count the possible values that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > can take on and the outcomes are random (the <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > values 0, 1, 2, 3), <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > is a discrete random variable. </p
+    > </div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="optexe"
+      >Optional Collaborative Classroom Activity</h1
+    > <p
+        class="para"
+        id="element-607"
+      >Toss a coin 10 times and record the number of heads. After all members of the class have completed the experiment (tossed a coin 10 times and counted the number of heads), fill in the chart using a heading like the one below. Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >X</mi
+        ></math
+      > = the number of heads in 10 tosses of the coin.</p
+    ><table
+        id="element-8"
+        summary="Table showing x, frequency of x and relative frequency of x. x = the number of heads in 10 tosses of a fair coin."
+      ><thead
+        > <tr
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > <td
+            >Frequency of <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > <td
+            >Relative Frequency of <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >x</mi
+              ></math
+            ></td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+          /> <td
+          /> <td
+          /> </tr
+        > <tr
+          > <td
+          /> <td
+          /> <td
+          /> </tr
+        > </tbody
+      ></table
+    ><ul
+        class="list"
+        data-id="element-388"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >Which value(s) of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > occurred most frequently?</li
+      > <li
+          class="item"
+        >If you tossed the coin 1,000 times, what values could <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > take on? Which value(s) of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > do you think would occur most frequently? </li
+      > <li
+          class="item"
+        >What does the relative frequency column sum to?</li
+      ></ul
+    ></div
+  > </body
+>
+</html>

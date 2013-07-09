@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Probability Topics: Contingency Tables</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Probability Topics: Contingency Tables</div
+  > <p
+      class="para"
+      id="element-864"
+    >A <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="contintable"
+      >contingency table</term
+    > provides a way of portraying data that can facilitate calculating probabilities. The table helps in determining conditional probabilities quite easily. The table displays sample values in relation to two different variables that may be dependent or contingent on one another. Later on, we will use contingency tables again, but in another manner. Contingincy tables provide a way of portraying data that can facilitate calculating probabilities.</p
+  ><div
+      class="example"
+      id="element-775"
+    ><p
+        class="para"
+        id="element-557"
+      > Suppose a study of speeding violations and drivers who use car phones produced the following fictional data: </p
+    ><table
+        id="element-838"
+        summary=""
+      ><thead
+        > <tr
+          > <td
+          /> <td
+            >Speeding violation in the last year</td
+          > <td
+            >No speeding violation in the last year</td
+          > <td
+            >Total</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >Car phone user</td
+          > <td
+            >25</td
+          > <td
+            >280</td
+          > <td
+            >305</td
+          > </tr
+        > <tr
+          > <td
+            >Not a car phone user</td
+          > <td
+            >45</td
+          > <td
+            >405</td
+          > <td
+            >450</td
+          > </tr
+        > <tr
+          > <td
+            >Total</td
+          > <td
+            >70</td
+          > <td
+            >685</td
+          > <td
+            >755</td
+          > </tr
+        > </tbody
+      ></table
+    > <p
+        class="para"
+        id="element-42"
+      >The total number of people in the sample is 755. The row totals are 305 and 450. The column totals are 70 and 685. Notice that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mn
+          >305</mn
+        ><mo
+          > + </mo
+        ><mn
+          >450</mn
+        ><mo
+          > = </mo
+        ><mn
+          >755</mn
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mn
+          >70</mn
+        ><mo
+          > + </mo
+        ><mn
+          >685</mn
+        ><mo
+          > = </mo
+        ><mn
+          >755</mn
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-818"
+      >Calculate the following probabilities using the table</p
+    > <div
+        class="exercise"
+        id="element-101"
+      ><div
+          class="problem"
+          id="id41663171"
+        > <p
+            class="para"
+            id="element-101p"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(person is a car phone user) = </mtext
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id41663194"
+        > <p
+            class="para"
+            id="element-101s"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mfrac
+              > <mtext
+                >number of car phone users </mtext
+              > <mtext
+                >total number in study</mtext
+              > </mfrac
+            > <mi
+              >=</mi
+            > <mfrac
+              > <mn
+                >305</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            > </math
+          > </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-102"
+      ><div
+          class="problem"
+          id="id41663249"
+        > <p
+            class="para"
+            id="element-102p"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(person had no violation in the last year) = </mtext
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id41663273"
+        > <p
+            class="para"
+            id="element-102s"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mfrac
+              > <mtext
+                >number that had no violation</mtext
+              > <mtext
+                >total number in study</mtext
+              > </mfrac
+            > <mi
+              >=</mi
+            > <mfrac
+              > <mn
+                >685</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            > </math
+          > </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-103"
+      ><div
+          class="problem"
+          id="id41525516"
+        > <p
+            class="para"
+            id="element-103p"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(person had no violation in the last year AND was a car phone user) =</mtext
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id41525540"
+        > <p
+            class="para"
+            id="element-103s"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mfrac
+              > <mn
+                >280</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            ></math
+          > </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-104"
+      ><div
+          class="problem"
+          id="id41525579"
+        > <p
+            class="para"
+            id="element-104p"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(person is a car phone user OR person had no violation in the last year) =</mtext
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id41525604"
+        > <p
+            class="para"
+            id="element-104s"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mo
+              >(</mo
+            > <mfrac
+              > <mn
+                >305</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            ><mi
+              >+</mi
+            > <mfrac
+              > <mn
+                >685</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            > <mo
+              >)</mo
+            ><mi
+              > - </mi
+            > <mfrac
+              > <mn
+                >280</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            ><mi
+              >=</mi
+            > <mfrac
+              > <mn
+                >710</mn
+              > <mn
+                >755</mn
+              > </mfrac
+            > </math
+          > </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-105"
+      ><div
+          class="problem"
+          id="id41525686"
+        > <p
+            class="para"
+            id="element-105p"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(person is a car phone user GIVEN person had a violation in the last year) = </mtext
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id41525710"
+        > <p
+            class="para"
+            id="element-105s"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mfrac
+              > <mn
+                >25</mn
+              > <mn
+                >70</mn
+              > </mfrac
+            > </math
+          > (The sample space is reduced to the number of persons who had a violation.) </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-107"
+      ><div
+          class="problem"
+          id="id41525752"
+        > <p
+            class="para"
+            id="element-107p"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >P(person had no violation last year GIVEN person was not a car phone user) = </mtext
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id41525776"
+        > <p
+            class="para"
+            id="element-107s"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mfrac
+              > <mn
+                >405</mn
+              > <mn
+                >450</mn
+              > </mfrac
+            > </math
+          > (The sample space is reduced to the number of persons who were not car phone users.) </p
+        > </div
+      > </div
+    > </div
+  > <div
+      class="example"
+      id="element-511"
+    ><p
+        class="para"
+        id="element-98"
+      >The following table shows a random sample of 100 hikers and the areas of hiking preferred: </p
+    ><table
+        id="element-850"
+        summary=""
+      ><caption
+        ><span
+            class="title"
+          >Hiking Area Preference</span
+        ></caption
+      ><thead
+        > <tr
+          > <td
+            >Sex</td
+          > <td
+            >The Coastline</td
+          > <td
+            >Near Lakes and Streams</td
+          > <td
+            >On Mountain Peaks</td
+          > <td
+            >Total</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >Female</td
+          > <td
+            >18</td
+          > <td
+            >16</td
+          > <td
+            >___</td
+          > <td
+            >45</td
+          > </tr
+        > <tr
+          > <td
+            >Male</td
+          > <td
+            >___</td
+          > <td
+            >___</td
+          > <td
+            >14</td
+          > <td
+            >55</td
+          > </tr
+        > <tr
+          > <td
+            >Total</td
+          > <td
+            >___</td
+          > <td
+            >41</td
+          > <td
+            >___</td
+          > <td
+            >___</td
+          > </tr
+        > </tbody
+      ></table
+    ><div
+        class="exercise"
+        id="element-227"
+      > <div
+          class="problem"
+          id="id41647708"
+        > <p
+            class="para"
+            id="element-665"
+          > Complete the table. </p
+        > </div
+      > <div
+          class="solution"
+          id="id41647726"
+          print-placement="end"
+        > <table
+            id="element-850s"
+            summary=""
+          ><caption
+            ><span
+                class="title"
+              >Hiking Area Preference</span
+            ></caption
+          ><thead
+            > <tr
+              > <td
+                >Sex</td
+              > <td
+                >The Coastline</td
+              > <td
+                >Near Lakes and Streams</td
+              > <td
+                >On Mountain Peaks</td
+              > <td
+                >Total</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >Female</td
+              > <td
+                >18</td
+              > <td
+                >16</td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >11</strong
+                ></td
+              > <td
+                >45</td
+              > </tr
+            > <tr
+              > <td
+                >Male</td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >16</strong
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >25</strong
+                ></td
+              > <td
+                >14</td
+              > <td
+                >55</td
+              > </tr
+            > <tr
+              > <td
+                >Total</td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >34</strong
+                ></td
+              > <td
+                >41</td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >25</strong
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  >100</strong
+                ></td
+              > </tr
+            > </tbody
+          ></table
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-754"
+      > <div
+          class="problem"
+          id="id41524865"
+        > <p
+            class="para"
+            id="element-891"
+          > Are the events "being female" and "preferring the coastline" independent events? </p
+        > <p
+            class="para"
+            id="element-123"
+          > Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >F</mi
+            ></math
+          > = being female and let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >C</mi
+            ></math
+          > = preferring the coastline. </p
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-1242"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F AND C)</mtext
+              ></math
+            > =</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >P(F)</mi
+              ><mo
+                > &#x22C5; </mo
+              ><mi
+                >P(C)</mi
+              ></math
+            > =</li
+          > </list
+        > <p
+            class="para"
+            id="element-3532"
+          > Are these two numbers the same? If they are, then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >F</mi
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >C</mi
+            ></math
+          > are independent. If they are not, then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >F</mi
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >C</mi
+            ></math
+          > are not independent.</p
+        > </div
+      > <div
+          class="solution"
+          id="id41524993"
+          print-placement="end"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-3256"
+            data-mark-suffix="."
+            data-list-type="labeled-item"
+          ><li
+              xmlns=""
+              class="item"
+              data-label="a"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mtext
+                >P(F AND C)</mtext
+              > <mo
+                > = </mo
+              > <mfrac
+                > <mn
+                  >18</mn
+                > <mn
+                  >100</mn
+                > </mfrac
+              > <mo
+                > = </mo
+              > <mn
+                >0.18</mn
+              > </math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >P(F)</mi
+              ><mo
+                > &#x22C5; </mo
+              ><mi
+                >P(C)</mi
+              > <mo
+                > = </mo
+              > <mfrac
+                > <mn
+                  >45</mn
+                > <mn
+                  >100</mn
+                > </mfrac
+              > <mo
+                > &#x22C5; </mo
+              > <mfrac
+                > <mn
+                  >34</mn
+                > <mn
+                  >100</mn
+                > </mfrac
+              > <mo
+                > = </mo
+              > <mn
+                >0.45</mn
+              > <mo
+                > &#x22C5; </mo
+              > <mn
+                >0.34</mn
+              > <mo
+                > = </mo
+              > <mn
+                >0.153</mn
+              > </math
+            > </li
+          > </list
+        > <p
+            class="para"
+            id="element-404"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >P(F AND C)</mtext
+            > <mo
+              > &#x2260; </mo
+            > <mi
+              >P(F)</mi
+            ><mo
+              > &#x22C5; </mo
+            ><mi
+              >P(C)</mi
+            ></math
+          >, so the events <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >F</mi
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >C</mi
+            ></math
+          > are not independent. </p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-414"
+      > <div
+          class="problem"
+          id="id41525175"
+        > <p
+            class="para"
+            id="element-717"
+          > Find the probability that a person is male given that the person prefers hiking near lakes and streams. Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >M</mtext
+            ></math
+          > = being male and let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >L</mtext
+            ></math
+          > = prefers hiking near lakes and streams. </p
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-2341"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >What word tells you this is a conditional? </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            >Fill in the blanks and calculate the probability: <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(___|___)</mtext
+              ><mo
+                > = </mo
+              ><mi
+                >___</mi
+              ></math
+            >.</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >Is the sample space for this problem all 100 hikers? If not, what is it? </li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id41525272"
+          print-placement="end"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="element-2341s"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            >The word 'given' tells you that this is a conditional.</li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(M|L)</mtext
+              ><mo
+                > = </mo
+              ><mfrac
+                ><mn
+                  >25</mn
+                ><mn
+                  >41</mn
+                ></mfrac
+              ></math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            >No, the sample space for this problem is 41.</li
+          > </list
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-402"
+      ><div
+          class="problem"
+          id="id41525358"
+        > <p
+            class="para"
+            id="element-715"
+          > Find the probability that a person is female or prefers hiking on mountain peaks. Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >F</mi
+            ></math
+          > = being female and let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >P</mi
+            ></math
+          > = prefers mountain peaks. </p
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list1213"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F)</mtext
+              ><mo
+                > = </mo
+              ></math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(P)</mtext
+              ><mo
+                > = </mo
+              ></math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F AND P)</mtext
+              ><mo
+                > = </mo
+              ></math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="d"
+            >Therefore, <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F OR P)</mtext
+              ><mo
+                > = </mo
+              ></math
+            > </li
+          > </list
+        > </div
+      > <div
+          class="solution"
+          id="id41669265"
+          print-placement="end"
+        > <list
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-id="list1213s"
+            data-list-type="labeled-item"
+            data-mark-suffix="."
+          > <li
+              xmlns=""
+              class="item"
+              data-label="a"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F)</mtext
+              ><mo
+                > = </mo
+              ><mfrac
+                ><mn
+                  >45</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              ></math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="b"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(P)</mtext
+              ><mo
+                > = </mo
+              ><mfrac
+                ><mn
+                  >25</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              ></math
+            > </li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="c"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F AND P)</mtext
+              ><mo
+                > = </mo
+              ><mfrac
+                ><mn
+                  >11</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              ></math
+            ></li
+          > <li
+              xmlns=""
+              class="item"
+              data-label="d"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mtext
+                >P(F OR P)</mtext
+              ><mo
+                > = </mo
+              ><mfrac
+                ><mn
+                  >45</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              > <mo
+                > + </mo
+              > <mfrac
+                ><mn
+                  >25</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              > <mo
+                > - </mo
+              > <mfrac
+                ><mn
+                  >11</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              > <mo
+                > = </mo
+              ><mfrac
+                ><mn
+                  >59</mn
+                ><mn
+                  >100</mn
+                ></mfrac
+              ></math
+            > </li
+          > </list
+        > </div
+      > </div
+    > </div
+  ><div
+      class="example"
+      id="element-883"
+    ><p
+        class="para"
+        id="element-700"
+      >Muddy Mouse lives in a cage with 3 doors. If Muddy goes out the first door, the probability that he gets caught by Alissa the cat is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >1</mn
+          > <mn
+            >5</mn
+          > </mfrac
+        > <mtext
+        /> </math
+      > and the probability he is not caught is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >4</mn
+          > <mn
+            >5</mn
+          > </mfrac
+        > <mtext
+        /> </math
+      >. If he goes out the second door, the probability he gets caught by Alissa is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >1</mn
+          > <mn
+            >4</mn
+          > </mfrac
+        > </math
+      > and the probability he is not caught is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >3</mn
+          > <mn
+            >4</mn
+          > </mfrac
+        > </math
+      >. The probability that Alissa catches Muddy coming out of the third door is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >1</mn
+          > <mn
+            >2</mn
+          > </mfrac
+        > </math
+      > and the probability she does not catch Muddy is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >1</mn
+          > <mn
+            >2</mn
+          > </mfrac
+        > </math
+      >. It is equally likely that Muddy will choose any of the three doors so the probability of choosing each door is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mfrac
+          > <mn
+            >1</mn
+          > <mn
+            >3</mn
+          > </mfrac
+        > </math
+      >. </p
+    > <table
+        id="element-666"
+        summary=""
+      ><caption
+        ><span
+            class="title"
+          >Door Choice</span
+        ></caption
+      ><thead
+        > <tr
+          > <td
+            >Caught or Not</td
+          > <td
+            >Door One</td
+          > <td
+            >Door Two</td
+          > <td
+            >Door Three</td
+          > <td
+            >Total</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >Caught</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mn
+                  >1</mn
+                > <mn
+                  >15</mn
+                > </mfrac
+              > <mtext
+              /> </math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mn
+                  >1</mn
+                > <mn
+                  >12</mn
+                > </mfrac
+              > <mtext
+              /> </math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mn
+                  >1</mn
+                > <mn
+                  >6</mn
+                > </mfrac
+              > <mtext
+              /> </math
+            ></td
+          > <td
+            >____</td
+          > </tr
+        > <tr
+          > <td
+            >Not Caught</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mn
+                  >4</mn
+                > <mn
+                  >15</mn
+                > </mfrac
+              > </math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mn
+                  >3</mn
+                > <mn
+                  >12</mn
+                > </mfrac
+              > </math
+            ></td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mfrac
+                > <mn
+                  >1</mn
+                > <mn
+                  >6</mn
+                > </mfrac
+              > </math
+            ></td
+          > <td
+            >____</td
+          > </tr
+        > <tr
+          > <td
+            >Total</td
+          > <td
+            >____</td
+          > <td
+            >____</td
+          > <td
+            >____</td
+          > <td
+            >1</td
+          > </tr
+        > </tbody
+      ></table
+    > <ul
+        class="list"
+        data-id="element-791"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >The first entry <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mfrac
+            > <mn
+              >1</mn
+            > <mn
+              >15</mn
+            > </mfrac
+          > <mo
+            > =</mo
+          > <mo
+            >(</mo
+          > <mfrac
+            > <mn
+              >1</mn
+            > <mn
+              >5</mn
+            > </mfrac
+          > <mo
+            >)</mo
+          > <mo
+            >(</mo
+          > <mfrac
+            > <mn
+              >1</mn
+            > <mn
+              >3</mn
+            > </mfrac
+          > <mo
+            >)</mo
+          ></math
+        > is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >P(Door One AND Caught)</mtext
+          ></math
+        >.</li
+      > <li
+          class="item"
+        >The entry <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            > <mn
+              >4</mn
+            > <mn
+              >15</mn
+            > </mfrac
+          > <mo
+            >=</mo
+          > <mo
+            >(</mo
+          > <mfrac
+            > <mn
+              >4</mn
+            > <mn
+              >5</mn
+            > </mfrac
+          > <mo
+            >)</mo
+          ><mo
+            >(</mo
+          > <mfrac
+            > <mn
+              >1</mn
+            > <mn
+              >3</mn
+            > </mfrac
+          > <mo
+            >)</mo
+          ></math
+        > is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >P(Door One AND Not Caught)</mtext
+          ></math
+        >.</li
+      > </ul
+    ><p
+        class="para"
+        id="element-94"
+      >Verify the remaining entries.</p
+    ><div
+        class="exercise"
+        id="element-919"
+      > <div
+          class="problem"
+          id="id41669984"
+        > <p
+            class="para"
+            id="element-910"
+          >Complete the probability contingency table. Calculate the entries for the totals. Verify that the lower-right corner entry is 1. </p
+        > </div
+      > <div
+          class="solution"
+          id="id41670004"
+          print-placement="end"
+        > <table
+            id="element-6166"
+            summary="Displayed is a contingency table showing all the entries for the Muddy Mouse problem."
+          ><caption
+            ><span
+                class="title"
+              >Door Choice</span
+            ></caption
+          ><thead
+            > <tr
+              > <td
+                >Caught or Not</td
+              > <td
+                >Door One</td
+              > <td
+                >Door Two</td
+              > <td
+                >Door Three</td
+              > <td
+                >Total</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >Caught</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mfrac
+                    > <mn
+                      >1</mn
+                    > <mn
+                      >15</mn
+                    > </mfrac
+                  > <mtext
+                  /> </math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mfrac
+                    > <mn
+                      >1</mn
+                    > <mn
+                      >12</mn
+                    > </mfrac
+                  > <mtext
+                  /> </math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mfrac
+                    > <mn
+                      >1</mn
+                    > <mn
+                      >6</mn
+                    > </mfrac
+                  > <mtext
+                  /> </math
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >19</mn
+                      ><mn
+                        >60</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >Not Caught</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mfrac
+                    > <mn
+                      >4</mn
+                    > <mn
+                      >15</mn
+                    > </mfrac
+                  > </math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mfrac
+                    > <mn
+                      >3</mn
+                    > <mn
+                      >12</mn
+                    > </mfrac
+                  > </math
+                ></td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mfrac
+                    > <mn
+                      >1</mn
+                    > <mn
+                      >6</mn
+                    > </mfrac
+                  > </math
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >41</mn
+                      ><mn
+                        >60</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > </tr
+            > <tr
+              > <td
+                >Total</td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >5</mn
+                      ><mn
+                        >15</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >4</mn
+                      ><mn
+                        >12</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > <td
+                ><strong
+                    class="emphasis"
+                  ><math
+                      xmlns="http://www.w3.org/1998/Math/MathML"
+                    ><mfrac
+                      ><mn
+                        >2</mn
+                      ><mn
+                        >6</mn
+                      ></mfrac
+                    ></math
+                  ></strong
+                ></td
+              > <td
+                >1</td
+              > </tr
+            > </tbody
+          ></table
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="element-604"
+      ><div
+          class="problem"
+          id="id41670368"
+        > <p
+            class="para"
+            id="element-117"
+          > What is the probability that Alissa does not catch Muddy? </p
+        > </div
+      > <div
+          class="solution"
+          id="id41670388"
+        > <p
+            class="para"
+            id="element-70"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mfrac
+              ><mn
+                >41</mn
+              ><mn
+                >60</mn
+              ></mfrac
+            ></math
+          > </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-288"
+      ><div
+          class="problem"
+          id="id41670423"
+        > <p
+            class="para"
+            id="element-45"
+          > What is the probability that Muddy chooses Door One <strong
+              class="emphasis"
+            >OR</strong
+          > Door Two given that Muddy is caught by Alissa? </p
+        > </div
+      > <div
+          class="solution"
+          id="id41670452"
+        > <p
+            class="para"
+            id="element-63"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mfrac
+              ><mn
+                >9</mn
+              ><mn
+                >19</mn
+              ></mfrac
+            ></math
+          ></p
+        > </div
+      > </div
+    > <div
+        class="note"
+        id="id41670477"
+      >You could also do this problem by using a probability tree. See the <a
+          href="/m16846"
+        >Tree Diagrams (Optional)</a
+      > section of this chapter for examples.</div
+    > </div
+  > </body
+>
+</html>

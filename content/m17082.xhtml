@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Scatter Plots</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Scatter Plots</div
+  > <p
+      class="para"
+      id="delete_me"
+    >Before we take up the discussion of linear regression and correlation, we need to examine a way to display the relation between two variables <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    >. The most common and easiest way is a <strong
+        class="emphasis"
+      >scatter plot</strong
+    >. The following example illustrates a scatter plot.</p
+  ><div
+      class="example"
+      id="element-777"
+    ><p
+        class="para"
+        id="element-622"
+      >From an article in the <cite
+        ><span
+            class="cite-title"
+          >Wall Street Journal</span
+        ></cite
+      >: In Europe and Asia, m-commerce is popular. M-commerce users have special mobile phones that work like electronic wallets as well as provide phone and Internet services. Users can do everything from paying for parking to buying a TV set or soda from a machine to banking to checking sports scores on the Internet. For the years 2000 through 2004, was there a relationship between the year and the number of m-commerce users? Construct a scatter plot. Let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > = the year and let <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > = the number of m-commerce users, in millions. </p
+    ><figure
+        id="linrgs_scater1"
+      ><figure
+          id="id1171451634341"
+        ><figcaption
+          >Table showing the number of m-commerce users (in millions) by year.</figcaption
+        > <table
+            id="element-478"
+            summary=""
+          ><thead
+            > <tr
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >x</mi
+                  ></math
+                > (year)</td
+              > <td
+                ><math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  ><mi
+                    >y</mi
+                  ></math
+                > (# of users)</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >2000</td
+              > <td
+                >0.5</td
+              > </tr
+            > <tr
+              > <td
+                >2002</td
+              > <td
+                >20.0</td
+              > </tr
+            > <tr
+              > <td
+                >2003</td
+              > <td
+                >33.0</td
+              > </tr
+            > <tr
+              > <td
+                >2004</td
+              > <td
+                >47.0</td
+              > </tr
+            > </tbody
+          ></table
+        > </figure
+      > <figure
+          id="id1171453954465"
+        ><figcaption
+          > Scatter plot showing the number of m-commerce users (in millions) by year.</figcaption
+        > <span
+            class="media"
+            id="id1171452159644"
+            data-alt="A scatter plot with the x-axis representing the year and the y-axis representing the number of m-commerce users in millions. There are four points plotted, at (2000, 0.5), (2002, 20.0), (2003, 33.0), (2004, 47.0)."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      ></figure
+    > </div
+  ><p
+      class="para"
+      id="element-83"
+    >A scatter plot shows the <strong
+        class="emphasis"
+      >direction</strong
+    > and <strong
+        class="emphasis"
+      >strength</strong
+    > of a relationship between the variables. A clear direction happens when there is either: <ul
+        class="list"
+        data-id="list1"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >High values of one variable occurring with high values of the other variable or low values of one variable occurring with low values of the other variable.</li
+      > <li
+          class="item"
+        >High values of one variable occurring with low values of the other variable.</li
+      > </ul
+    ></p
+  ><p
+      class="para"
+      id="element-674"
+    >You can determine the strength of the relationship by looking at the scatter plot and seeing how close the points are to a line, a power function, an exponential function, or to some other type of function.</p
+  ><p
+      class="para"
+      id="element-708"
+    >When you look at a scatterplot, you want to notice the <strong
+        class="emphasis"
+      >overall pattern</strong
+    > and any <strong
+        class="emphasis"
+      >deviations</strong
+    > from the pattern. The following scatterplot examples illustrate these concepts.</p
+  ><p
+      class="para"
+      id="element-384"
+    ><figure
+        id="lingrgs10"
+      ><figure
+          id="lingrs_scater70"
+        ><figcaption
+          ><div
+              class="title"
+            > Positive Linear Pattern (Strong)</div
+          ></figcaption
+        > <span
+            class="media"
+            id="id1171450550347"
+            data-alt="Scatterplot of 6 points in a straight ascending line from lower left to upper right."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      > <figure
+          id="lingrs_scater60"
+        ><figcaption
+          ><div
+              class="title"
+            > Linear Pattern w/ One Deviation</div
+          ></figcaption
+        > <span
+            class="media"
+            id="id1171455332067"
+            data-alt="Scatterplot of 6 points in a straight ascending line from lower left to upper right with one additional point in the upper left corner."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      ></figure
+    > <figure
+        id="lingrgs20"
+      ><figure
+          id="lingrs_scater20"
+        ><figcaption
+          ><div
+              class="title"
+            > Negative Linear Pattern (Strong)</div
+          ></figcaption
+        > <span
+            class="media"
+            id="id1171453496318"
+            data-alt="Scatterplot of 6 points in a straight descending line from upper left to lower right."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      > <figure
+          id="lingrs_scater50"
+        ><figcaption
+          ><div
+              class="title"
+            > Negative Linear Pattern (Weak)</div
+          ></figcaption
+        > <span
+            class="media"
+            id="id1171453344407"
+            data-alt="Scatterplot of 8 points in a wobbly descending line from upper left to lower right."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      ></figure
+    > <figure
+        id="lingrgs30"
+      ><figure
+          id="lingrs_scater30"
+        ><figcaption
+          ><div
+              class="title"
+            > Exponential Growth Pattern</div
+          ></figcaption
+        > <span
+            class="media"
+            id="id1171454842074"
+            data-alt="Scatterplot of 7 points in a exponential curve from along the x-axis on the left to slowly ascending up the graph in the upper right."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      > <figure
+          id="lingrs_scater40"
+        ><figcaption
+          ><div
+              class="title"
+            > No Pattern</div
+          ></figcaption
+        > <span
+            class="media"
+            id="id1171454772666"
+            data-alt="Scatterplot of many points scattered everywhere."
+          ><image
+              xmlns="http://cnx.rice.edu/cnxml"
+              print-width="3in"
+          /></span
+        > </figure
+      ></figure
+    ></p
+  ><p
+      class="para"
+      id="element-243"
+    >In this chapter, we are interested in scatter plots that show a linear pattern. Linear patterns are quite common. The linear relationship is strong if the points are close to a straight line. If we think that the points show a linear relationship, we would like to draw a line on the scatter plot. This line can be calculated through a process called <strong
+        class="emphasis"
+      >linear regression</strong
+    >. However, we only calculate a regression line if one of the variables helps to explain or predict the other variable. If <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    > is the independent variable and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > the dependent variable, then we can use a regression line to predict <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >y</mi
+      ></math
+    > for a given value of <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >x</mi
+      ></math
+    >.</p
+  > </body
+>
+</html>

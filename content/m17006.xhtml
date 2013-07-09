@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Hypothesis Testing of Single Mean and Single Proportion: Outcomes and the Type I and Type II Errors</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Hypothesis Testing of Single Mean and Single Proportion: Outcomes and the Type I and Type II Errors</div
+  > <p
+      class="para"
+      id="delete_me"
+    >When you perform a hypothesis test, there are four possible outcomes depending on the actual truth (or falseness) of the null hypothesis <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >H</mi
+        ><mi
+          >o</mi
+        ></msub
+      ></math
+    > and the decision to reject or not. The outcomes are summarized in the following table:</p
+  ><table
+      id="element-689"
+      summary=""
+    ><thead
+      > <tr
+        > <td
+          >ACTION</td
+        > <td
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              > <mi
+                >o</mi
+              ></msub
+            ></math
+          > IS ACTUALLY</td
+        > <td
+          >...</td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+        /> <td
+          >True</td
+        > <td
+          >False</td
+        > </tr
+      > <tr
+        > <td
+          ><strong
+              class="emphasis"
+            >Do not reject <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msub
+                ><mi
+                  >H</mi
+                ><mi
+                  >o</mi
+                ></msub
+              ></math
+            ></strong
+          ></td
+        > <td
+          >Correct Outcome</td
+        > <td
+          >Type II error</td
+        > </tr
+      > <tr
+        > <td
+          ><strong
+              class="emphasis"
+            >Reject <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msub
+                ><mi
+                  >H</mi
+                ><mi
+                  >o</mi
+                ></msub
+              ></math
+            ></strong
+          ></td
+        > <td
+          >Type I Error</td
+        > <td
+          >Correct Outcome</td
+        > </tr
+      > </tbody
+    ></table
+  ><p
+      class="para"
+      id="element-915"
+    >The four possible outcomes in the table are: <ul
+        class="list"
+        data-id="list-1"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        >The decision is to <strong
+            class="emphasis"
+          >not reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          ></strong
+        > when, in fact, <strong
+            class="emphasis"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          > is true (correct decision).</strong
+        ></li
+      > <li
+          class="item"
+        >The decision is to <strong
+            class="emphasis"
+          >reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          ></strong
+        > when, in fact, <strong
+            class="emphasis"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          > is true</strong
+        > (incorrect decision known as a <term
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-target-id="type1err"
+          >Type I error</term
+        >).</li
+      > <li
+          class="item"
+        >The decision is to <strong
+            class="emphasis"
+          >not reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          ></strong
+        > when, in fact, <strong
+            class="emphasis"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          > is false</strong
+        > (incorrect decision known as a <term
+            xmlns="http://cnx.rice.edu/cnxml"
+            data-target-id="type2err"
+          >Type II error</term
+        >).</li
+      > <li
+          class="item"
+        >The decision is to <strong
+            class="emphasis"
+          >reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          ></strong
+        > when, in fact, <strong
+            class="emphasis"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >o</mi
+              ></msub
+            ></math
+          > is false</strong
+        > (<strong
+            class="emphasis"
+          >correct decision</strong
+        > whose probability is called the <strong
+            class="emphasis"
+          >Power of the Test</strong
+        >).</li
+      ></ul
+    ></p
+  ><p
+      class="para"
+      id="element-247"
+    >Each of the errors occurs with a particular probability. The Greek letters <strong
+        class="emphasis"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3B1;</mi
+        ></math
+      ></strong
+    > and <strong
+        class="emphasis"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3B2;</mi
+        ></math
+      ></strong
+    > represent the probabilities.</p
+  ><p
+      class="para"
+      id="element-95"
+    ><strong
+        class="emphasis"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3B1;</mi
+        ></math
+      ></strong
+    > = probability of a Type I error = <strong
+        class="emphasis"
+      >P(Type I error)</strong
+    > = probability of rejecting the null hypothesis when the null hypothesis is true.</p
+  ><p
+      class="para"
+      id="element-634"
+    ><strong
+        class="emphasis"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3B2;</mi
+        ></math
+      ></strong
+    > = probability of a Type II error = <strong
+        class="emphasis"
+      >P(Type II error)</strong
+    > = probability of not rejecting the null hypothesis when the null hypothesis is false.</p
+  ><p
+      class="para"
+      id="element-222"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3B1;</mi
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >&#x3B2;</mi
+      ></math
+    > should be as small as possible because they are probabilities of errors. They are rarely 0.</p
+  ><p
+      class="para"
+      id="element-225"
+    >The Power of the Test is <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mn
+        >1</mn
+      ><mo
+        >-</mo
+      ><mi
+        >&#x3B2;</mi
+      ></math
+    >. Ideally, we want a high power that is as close to 1 as possible. Increasing the sample size can increase the Power of the Test.</p
+  ><p
+      class="para"
+      id="element-400"
+    >The following are examples of Type I and Type II errors.</p
+  ><div
+      class="example"
+      id="element-484"
+    ><p
+        class="para"
+        id="element-742"
+      >Suppose the null hypothesis, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msub
+          ><mi
+            >H</mi
+          ><mi
+            >o</mi
+          ></msub
+        ></math
+      >, is: Frank's rock climbing equipment is safe. </p
+    ><p
+        class="para"
+        id="element-905"
+      ><strong
+          class="emphasis"
+        >Type I error</strong
+      >: Frank thinks that his rock climbing equipment may not be safe when, in fact, it really is safe. <strong
+          class="emphasis"
+        >Type II error</strong
+      >: Frank thinks that his rock climbing equipment may be safe when, in fact, it is not safe.</p
+    ><p
+        class="para"
+        id="element-821"
+      ><strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = probability</strong
+      > that Frank thinks his rock climbing equipment may not be safe when, in fact, it really is safe. <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B2;</mi
+          ></math
+        > = probability</strong
+      > that Frank thinks his rock climbing equipment may be safe when, in fact, it is not safe.</p
+    ><p
+        class="para"
+        id="element-239"
+      >Notice that, in this case, the error with the greater consequence is the Type II error. (If Frank thinks his rock climbing equipment is safe, he will go ahead and use it.)</p
+    > </div
+  ><div
+      class="example"
+      id="element-449"
+    ><p
+        class="para"
+        id="element-496"
+      >Suppose the null hypothesis, <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msub
+          ><mi
+            >H</mi
+          ><mi
+            >o</mi
+          ></msub
+        ></math
+      >, is: The victim of an automobile accident is alive when he arrives at the emergency room of a hospital. </p
+    ><p
+        class="para"
+        id="element-157"
+      ><strong
+          class="emphasis"
+        >Type I error</strong
+      >: The emergency crew thinks that the victim is dead when, in fact, the victim is alive. <strong
+          class="emphasis"
+        >Type II error</strong
+      >: The emergency crew does not know if the victim is alive when, in fact, the victim is dead. </p
+    ><p
+        class="para"
+        id="element-558"
+      ><strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B1;</mi
+          ></math
+        > = probability</strong
+      > that the emergency crew thinks the victim is dead when, in fact, he is really alive = <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >P(Type I error)</mtext
+        ></math
+      >. <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3B2;</mi
+          ></math
+        > = probability</strong
+      > that the emergency crew does not know if the victim is alive when, in fact, the victim is dead = <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >P(Type II error)</mtext
+        ></math
+      >.</p
+    ><p
+        class="para"
+        id="element-266"
+      >The error with the greater consequence is the Type I error. (If the emergency crew thinks the victim is dead, they will not treat him.)</p
+    > </div
+  > </body
+>
+</html>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>F Distribution and One-Way ANOVA: Practice</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >F Distribution and One-Way ANOVA: Practice</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-130"
+      >Student Learning Outcome</h1
+    > <ul
+        class="list"
+        data-id="list-2535"
+        data-list-type="bulleted"
+      ><li
+          class="item"
+        > The student will conduct a One-Way ANOVA hypothesis test.</li
+      > </ul
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-224"
+      >Given</h1
+    > <p
+        class="para"
+        id="element-577"
+      >Suppose a group is interested in determining whether teenagers obtain their drivers licenses at approximately the same average age across the country. Suppose that the following data are randomly collected from five teenagers in each region of the country. The numbers represent the age at which teenagers obtained their drivers licenses. </p
+    ><table
+        id="element-25"
+        summary=""
+      ><thead
+        > <tr
+          > <td
+          /> <td
+            > Northeast </td
+          > <td
+            > South </td
+          > <td
+            > West </td
+          > <td
+            > Central </td
+          > <td
+            > East </td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+          /> <td
+            >16.3</td
+          > <td
+            >16.9</td
+          > <td
+            >16.4</td
+          > <td
+            >16.2</td
+          > <td
+            >17.1</td
+          > </tr
+        > <tr
+          > <td
+          /> <td
+            >16.1</td
+          > <td
+            >16.5</td
+          > <td
+            >16.5</td
+          > <td
+            >16.6</td
+          > <td
+            >17.2</td
+          > </tr
+        > <tr
+          > <td
+          /> <td
+            >16.4</td
+          > <td
+            >16.4</td
+          > <td
+            >16.6</td
+          > <td
+            >16.5</td
+          > <td
+            >16.6</td
+          > </tr
+        > <tr
+          > <td
+          /> <td
+            >16.5</td
+          > <td
+            >16.2</td
+          > <td
+            >16.1</td
+          > <td
+            >16.4</td
+          > <td
+            >16.8</td
+          > </tr
+        > <tr
+          > <td
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <mover
+                            accent="true"
+                          > <mi
+                            >x</mi
+                          > <mo
+                            >&#xAF;</mo
+                          > </mover
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                        /> </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{ {overline {x}} ={}} {}</annotation
+                > </semantics
+              > </math
+            > </td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > </tr
+        > <tr
+          > <td
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <semantics
+                > <mrow
+                  > <mstyle
+                      fontsize="12pt"
+                    > <mrow
+                      > <mrow
+                        > <msup
+                          > <mi
+                            >s</mi
+                          > <mstyle
+                              fontsize="8pt"
+                            > <mrow
+                              > <mn
+                                >2</mn
+                              > </mrow
+                            > </mstyle
+                          > </msup
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mrow
+                        /> </mrow
+                      > </mrow
+                    > </mstyle
+                  > <mrow
+                  /> </mrow
+                > <annotation
+                    encoding="StarMath 5.0"
+                  > size 12{s rSup { size 8{2} } ={}} {}</annotation
+                > </semantics
+              > </math
+            > </td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > <td
+            >________</td
+          > </tr
+        > </tbody
+      ></table
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-714"
+      >Hypothesis</h1
+    > <div
+        class="exercise"
+        id="element-615"
+      ><div
+          class="problem"
+          id="id47643113"
+        > <p
+            class="para"
+            id="element-736"
+          > State the hypotheses. </p
+        ><p
+            class="para"
+            id="element-740"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >H</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >o</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{H rSub { size 8{O} } } {}</annotation
+              ></semantics
+            ></math
+          >:</p
+        ><p
+            class="para"
+            id="element-571"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><msub
+                      ><mi
+                        >H</mi
+                      ><mstyle
+                          fontsize="8pt"
+                        ><mrow
+                          ><mi
+                            >a</mi
+                          ></mrow
+                        ></mstyle
+                      ></msub
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{H rSub { size 8{a} } } {}</annotation
+              ></semantics
+            ></math
+          >: </p
+        > </div
+      > </div
+    ></div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-546"
+      >Data Entry</h1
+    > <p
+        class="para"
+        id="element-749"
+      > Enter the data into your calculator or computer. </p
+    > <div
+        class="exercise"
+        id="exerciseone"
+      ><div
+          class="problem"
+          id="id47643237"
+        > <p
+            class="para"
+            id="element-341"
+          >degrees of freedom - numerator: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mstyle
+                          fontstyle="italic"
+                        ><mrow
+                          ><mtext
+                            >df</mtext
+                          ></mrow
+                        ></mstyle
+                      ><mo
+                          stretchy="false"
+                        >(</mo
+                      ><mi
+                        >n</mi
+                      ><mrow
+                        ><mo
+                            stretchy="false"
+                          >)</mo
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ ital "df" \( n \) ={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        ></div
+      > <div
+          class="solution"
+          id="id47591269"
+        > <p
+            class="para"
+            id="element-2452145"
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >d</mi
+            > <mi
+              >f</mi
+            > <mo
+              >(</mo
+            > <mn
+              >1</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >4</mn
+            > </math
+          > </p
+        > </div
+      ></div
+    > <div
+        class="exercise"
+        id="exercisetwo"
+      ><div
+          class="problem"
+          id="id47591322"
+        > <p
+            class="para"
+            id="element-242"
+          >degrees of freedom - denominator: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mstyle
+                          fontstyle="italic"
+                        ><mrow
+                          ><mtext
+                            >df</mtext
+                          ></mrow
+                        ></mstyle
+                      ><mo
+                          stretchy="false"
+                        >(</mo
+                      ><mi
+                        >d</mi
+                      ><mrow
+                        ><mo
+                            stretchy="false"
+                          >)</mo
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mrow
+                        /></mrow
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{ ital "df" \( d \) ={}} {}</annotation
+              ></semantics
+            ></math
+          > </p
+        > </div
+      > <div
+          class="solution"
+          id="id47591380"
+        > <p
+            class="para"
+            id="element-124"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >d</mi
+            > <mi
+              >f</mi
+            > <mo
+              >(</mo
+            > <mn
+              >2</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >15</mn
+            > </math
+          ></p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="element-115"
+      ><div
+          class="problem"
+          id="id47591432"
+        > <p
+            class="para"
+            id="element-677"
+          >F test statistic = </p
+        > </div
+      > <div
+          class="solution"
+          id="id47591451"
+        > <p
+            class="para"
+            id="element-518"
+          >Test statistic <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mo
+              >=</mo
+            > <mi
+              >F</mi
+            > <mo
+              >=</mo
+            > <mn
+              >4.22</mn
+            ></math
+          ></p
+        > </div
+      > </div
+    ><div
+        class="exercise"
+        id="exercisethree"
+      ><div
+          class="problem"
+          id="id47591494"
+        > <p
+            class="para"
+            id="element-801"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ></math
+          > = </p
+        ></div
+      ><div
+          class="solution"
+          id="id47591513"
+        > <p
+            class="para"
+            id="element-155"
+          >0.017</p
+        ></div
+      > </div
+    > </div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="element-750"
+      >Decisions and Conclusions </h1
+    > <p
+        class="para"
+        id="element-48"
+      >State the decisions and conclusions (in complete sentences) for the following preconceived levels of <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><semantics
+          ><mrow
+            ><mstyle
+                fontsize="12pt"
+              ><mrow
+                ><mi
+                  >&#x3B1;</mi
+                ></mrow
+              ></mstyle
+            ><mrow
+            /></mrow
+          ><annotation
+              encoding="StarMath 5.0"
+            > size 12{&#x3B1;} {}</annotation
+          ></semantics
+        ></math
+      > . </p
+    > <div
+        class="exercise"
+        id="exerciseten"
+      > <div
+          class="problem"
+          id="id47591590"
+        > <p
+            class="para"
+            id="element-506"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mrow
+                      ><mrow
+                        ><mi
+                          >&#x3B1;</mi
+                        ><mo
+                            stretchy="false"
+                          >=</mo
+                        ><mn
+                          >0</mn
+                        ></mrow
+                      ><mtext
+                        >.</mtext
+                      ><mtext
+                        >05</mtext
+                      ></mrow
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;=0 "." "05"} {}</annotation
+              ></semantics
+            ></math
+          ></p
+        > <p
+            class="para"
+            id="element-950"
+          >Decision:</p
+        > <p
+            class="para"
+            id="element-2384687"
+          > Conclusion: </p
+        > </div
+      > </div
+    > <div
+        class="exercise"
+        id="exercisemern"
+      > <div
+          class="problem"
+          id="id47591672"
+        > <p
+            class="para"
+            id="element-768"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mrow
+                        > <mi
+                          >&#x3B1;</mi
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > <mtext
+                        >.</mtext
+                      > <mtext
+                        >01</mtext
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;=0 "." "01"} {}</annotation
+              > </semantics
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-354"
+          >Decision:</p
+        > <p
+            class="para"
+            id="element-2307872938759"
+          > Conclusion: </p
+        > </div
+      > </div
+    ></div
+  > </body
+>
+</html>

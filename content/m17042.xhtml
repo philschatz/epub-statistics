@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Hypothesis Testing: Two Population Means and Two Population Proportions: Comparing Two Independent Population Means with Known Population Standard Deviations</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Hypothesis Testing: Two Population Means and Two Population Proportions: Comparing Two Independent Population Means with Known Population Standard Deviations</div
+  > <p
+      class="para"
+      id="delete_me"
+    >Even though this situation is not likely (knowing the population standard deviations is not likely), the following example illustrates hypothesis testing for independent means, known population standard deviations. The sampling distribution for the difference between the means is normal and both populations must be normal. The random variable is <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <msub
+          > <ci
+            >X</ci
+          > <mn
+            >1</mn
+          > </msub
+        > </apply
+      > <mo
+        >-</mo
+      > <apply
+        > <conjugate
+        /> <msub
+          > <ci
+            >X</ci
+          > <mn
+            >2</mn
+          > </msub
+        > </apply
+      > </math
+    >. The normal distribution has the following format: <div
+        class="equation"
+        id="normal"
+      ><div
+          class="title"
+        >Normal distribution</div
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mover
+          > <msub
+            > <mi
+              >X</mi
+            > <mn
+              >1</mn
+            > </msub
+          > <mo
+            >&#xAF;</mo
+          > </mover
+        > <mo
+          >&#x2212;</mo
+        > <mover
+          > <msub
+            > <mi
+              >X</mi
+            > <mn
+              >2</mn
+            > </msub
+          > <mo
+            >&#xAF;</mo
+          > </mover
+        > <mo
+          >~</mo
+        > <mi
+          >N</mi
+        > <mo
+          >[</mo
+        > <msub
+          > <mi
+            >u</mi
+          > <mn
+            >1</mn
+          > </msub
+        > <mo
+          >&#x2212;</mo
+        > <msub
+          > <mi
+            >u</mi
+          > <mn
+            >2</mn
+          > </msub
+        > <mo
+          >,</mo
+        > <msqrt
+          > <mfrac
+            > <msup
+              > <mrow
+                > <mo
+                  >(</mo
+                > <msub
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mn
+                    >1</mn
+                  > </msub
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mn
+                >2</mn
+              > </msup
+            > <msub
+              > <mi
+                >n</mi
+              > <mn
+                >1</mn
+              > </msub
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <msup
+              > <mrow
+                > <mo
+                  >(</mo
+                > <msub
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mn
+                    >2</mn
+                  > </msub
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mn
+                >2</mn
+              > </msup
+            > <msub
+              > <mi
+                >n</mi
+              > <mn
+                >2</mn
+              > </msub
+            > </mfrac
+          > </msqrt
+        > <mo
+          >]</mo
+        > </math
+      > </div
+    ></p
+  ><div
+      class="equation"
+      id="element-970"
+    ><div
+        class="title"
+      >The standard deviation is:</div
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mspace
+          width="12pt"
+      /> <msqrt
+        > <mfrac
+          > <msup
+            > <mrow
+              > <mo
+                >(</mo
+              > <msub
+                > <mi
+                  >&#x3C3;</mi
+                > <mn
+                  >1</mn
+                > </msub
+              > <mo
+                >)</mo
+              > </mrow
+            > <mn
+              >2</mn
+            > </msup
+          > <msub
+            > <mi
+              >n</mi
+            > <mn
+              >1</mn
+            > </msub
+          > </mfrac
+        > <mo
+          >+</mo
+        > <mfrac
+          > <msup
+            > <mrow
+              > <mo
+                >(</mo
+              > <msub
+                > <mi
+                  >&#x3C3;</mi
+                > <mn
+                  >2</mn
+                > </msub
+              > <mo
+                >)</mo
+              > </mrow
+            > <mn
+              >2</mn
+            > </msup
+          > <msub
+            > <mi
+              >n</mi
+            > <mn
+              >2</mn
+            > </msub
+          > </mfrac
+        > </msqrt
+      > </math
+    ></div
+  ><div
+      class="equation"
+      id="element-465"
+    ><div
+        class="title"
+      >The test statistic (z-score) is:</div
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mspace
+          width="12pt"
+      /> <mi
+        >z</mi
+      > <mo
+        >=</mo
+      > <mfrac
+        > <mrow
+          > <mrow
+            > <mo
+              >(</mo
+            > <mover
+              > <msub
+                > <mi
+                  >x</mi
+                > <mn
+                  >1</mn
+                > </msub
+              > <mo
+                >&#xAF;</mo
+              > </mover
+            > <mo
+              >&#x2212;</mo
+            > <mover
+              > <msub
+                > <mi
+                  >x</mi
+                > <mn
+                  >2</mn
+                > </msub
+              > <mo
+                >&#xAF;</mo
+              > </mover
+            > <mo
+              >)</mo
+            > </mrow
+          > <mo
+            >&#x2212;</mo
+          > <mrow
+            > <mo
+              >(</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >1</mn
+              > </msub
+            > <mo
+              >&#x2212;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >2</mn
+              > </msub
+            > <mo
+              >)</mo
+            > </mrow
+          > </mrow
+        > <msqrt
+          > <mfrac
+            > <msup
+              > <mrow
+                > <mo
+                  >(</mo
+                > <msub
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mn
+                    >1</mn
+                  > </msub
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mn
+                >2</mn
+              > </msup
+            > <msub
+              > <mi
+                >n</mi
+              > <mn
+                >1</mn
+              > </msub
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <msup
+              > <mrow
+                > <mo
+                  >(</mo
+                > <msub
+                  > <mi
+                    >&#x3C3;</mi
+                  > <mn
+                    >2</mn
+                  > </msub
+                > <mo
+                  >)</mo
+                > </mrow
+              > <mn
+                >2</mn
+              > </msup
+            > <msub
+              > <mi
+                >n</mi
+              > <mn
+                >2</mn
+              > </msub
+            > </mfrac
+          > </msqrt
+        > </mfrac
+      > </math
+    ></div
+  ><div
+      class="example"
+      id="element-364"
+    ><p
+        class="para"
+        id="element-384"
+      ><strong
+          class="emphasis"
+        >independent groups, population standard deviations known:</strong
+      > The mean lasting time of 2 competing floor waxes is to be compared. <strong
+          class="emphasis"
+        >Twenty floors</strong
+      > are randomly assigned <strong
+          class="emphasis"
+        >to test each wax</strong
+      >. Both populations have a normal distribution. The following table is the result. <table
+          id="table-12"
+          summary="This table has wax in the first column, sample mean in the second column, and standard deviation in the third column. There are two rows."
+        ><thead
+          > <tr
+            > <td
+              >Wax</td
+            > <td
+              >Sample Mean Number of Months Floor Wax Last</td
+            > <td
+              >Population Standard Deviation</td
+            > </tr
+          > </thead
+        ><tbody
+          > <tr
+            > <td
+              >1</td
+            > <td
+              >3</td
+            > <td
+              >0.33</td
+            > </tr
+          > <tr
+            > <td
+              >2</td
+            > <td
+              >2.9</td
+            > <td
+              >0.36</td
+            > </tr
+          > </tbody
+        ></table
+      ></p
+    ><div
+        class="exercise"
+        id="element-144"
+      ><div
+          class="problem"
+          id="id48398874"
+        > <p
+            class="para"
+            id="element-656"
+          > Does the data indicate that <strong
+              class="emphasis"
+            >wax 1 is more effective than wax 2</strong
+          >? Test at a 5% level of significance. </p
+        > </div
+      > <div
+          class="solution"
+          id="id48398901"
+        > <p
+            class="para"
+            id="element-795"
+          > This is a test of two independent groups, two population means, population standard deviations known. </p
+        ><p
+            class="para"
+            id="element-483"
+          ><span
+              class="term"
+            >Random Variable</span
+          >: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >X</ci
+                > <mn
+                  >1</mn
+                > </msub
+              > </apply
+            > <mo
+              >-</mo
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >X</ci
+                > <mn
+                  >2</mn
+                > </msub
+              > </apply
+            > <mo
+              >=</mo
+            > </math
+          > difference in the mean number of months the competing floor waxes last.</p
+        ><p
+            class="para"
+            id="element-735"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > <mo
+              >:</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >1</mn
+              > </msub
+            > <mo
+              >&#x2264;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >2</mn
+              > </msub
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-608"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > <mo
+              >:</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >1</mn
+              > </msub
+            > <mo
+              >&gt;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mn
+                >2</mn
+              > </msub
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-696"
+          >The words <strong
+              class="emphasis"
+            >"is more effective"</strong
+          > says that <strong
+              class="emphasis"
+            >wax 1 lasts longer than wax 2</strong
+          >, on the average. "Longer" is a <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mo
+              >"</mo
+            ><mo
+              >&gt;</mo
+            ><mo
+              >"</mo
+            ></math
+          > symbol and goes into <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >H</mi
+              ><mi
+                >a</mi
+              ></msub
+            ></math
+          >. Therefore, this is a right-tailed test.</p
+        ><p
+            class="para"
+            id="element-690"
+          ><strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > The population standard deviations are known so the distribution is normal. Using the formula above, the distribution is:</p
+        ><p
+            class="para"
+            id="element-406"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mover
+              > <msub
+                > <mi
+                  >X</mi
+                > <mn
+                  >1</mn
+                > </msub
+              > <mo
+                >&#xAF;</mo
+              > </mover
+            > <mo
+              >&#x2212;</mo
+            > <mover
+              > <msub
+                > <mi
+                  >X</mi
+                > <mn
+                  >2</mn
+                > </msub
+              > <mo
+                >&#xAF;</mo
+              > </mover
+            > <mo
+              >~</mo
+            > <mi
+              >N</mi
+            > <mrow
+              > <mo
+                >(</mo
+              > <mn
+                >0</mn
+              > <mo
+                >,</mo
+              > <msqrt
+                > <mfrac
+                  > <msup
+                    > <mn
+                      >0.33</mn
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > <mn
+                    >20</mn
+                  > </mfrac
+                > <mo
+                  >+</mo
+                > <mfrac
+                  > <msup
+                    > <mn
+                      >0.36</mn
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > <mn
+                    >20</mn
+                  > </mfrac
+                > </msqrt
+              > <mo
+                >)</mo
+              > </mrow
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-990"
+          >Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >1</mi
+              > </msub
+            > <mo
+              >&#x2264;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >2</mi
+              > </msub
+            > </math
+          > then <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >1</mi
+              > </msub
+            > <mo
+              >&#x2212;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >2</mi
+              > </msub
+            > <mo
+              >&#x2264;</mo
+            > <mn
+              >0</mn
+            > </math
+          > and the mean for the normal distribution is 0.</p
+        ><p
+            class="para"
+            id="element-503"
+          ><strong
+              class="emphasis"
+            >Calculate the p-value using the normal distribution:</strong
+          > p-value = 0.1799</p
+        ><p
+            class="para"
+            id="element-542"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          ></p
+        ><figure
+            id="hyptest22_cmp_2_1"
+          ><span
+              class="media"
+              id="id48414007"
+              data-alt="Normal distribution curve of difference in the average number of months the competing floor waxes last with values of 0 and 0.1 on the x-axis. A vertical upward line extends from 0.1 to the curve and the p-value points to the area to the right of 0.1."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                width="400"
+                print-width="3in"
+            /></span
+          ></figure
+        ><p
+            class="para"
+            id="element-311"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >x</ci
+                > <mi
+                  >1</mi
+                > </msub
+              > </apply
+            > <mo
+              >-</mo
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >x</ci
+                > <mi
+                  >2</mi
+                > </msub
+              > </apply
+            > <mo
+              >=</mo
+            > <mn
+              >3</mn
+            > <mo
+              >-</mo
+            > <mn
+              >2.9</mn
+            > <mo
+              >=</mo
+            > <mn
+              >0.1</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-803"
+          ><strong
+              class="emphasis"
+            >Compare &#x3B1; and the p-value:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >=</mo
+            > <mn
+              >0.05</mn
+            ></math
+          > and p-value = 0.1799. Therefore, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >&lt;</mo
+            ></math
+          > p-value.</p
+        ><p
+            class="para"
+            id="element-962"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            > <mo
+              >&lt;</mo
+            ></math
+          > p-value, do not reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >.</p
+        ><p
+            class="para"
+            id="element-132"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the mean time wax 1 lasts is longer (wax 1 is more effective) than the mean time wax 2 lasts.</p
+        ><div
+            class="note"
+            id="id48337650"
+          >TI-83+ and TI-84: Press <code
+              class="code"
+            >STAT</code
+          >. Arrow over to <code
+              class="code"
+            >TESTS</code
+          > and press <code
+              class="code"
+            >3:2-SampZTest</code
+          >. Arrow over to <code
+              class="code"
+            >Stats</code
+          > and press <code
+              class="code"
+            >ENTER</code
+          >. Arrow down and enter <code
+              class="code"
+            >.33</code
+          > for sigma1, <code
+              class="code"
+            >.36</code
+          > for sigma2, <code
+              class="code"
+            >3</code
+          > for the first sample mean, <code
+              class="code"
+            >20</code
+          > for n1, <code
+              class="code"
+            >2.9</code
+          > for the second sample mean, and <code
+              class="code"
+            >20</code
+          > for n2. Arrow down to <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3BC;</mi
+            ></math
+          >1: and arrow to &gt; <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3BC;</mi
+            ></math
+          >2. Press <code
+              class="code"
+            >ENTER</code
+          >. Arrow down to <code
+              class="code"
+            >Calculate</code
+          > and press <code
+              class="code"
+            >ENTER</code
+          >. The p-value is p = 0.1799 and the test statistic is 0.9157. Do the procedure again but instead of <code
+              class="code"
+            >Calculate</code
+          > do <code
+              class="code"
+            >Draw</code
+          >.</div
+        > </div
+      > </div
+    > </div
+  > </body
+>
+</html>

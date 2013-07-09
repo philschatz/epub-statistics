@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Linear Regression and Correlation: Correlation Coefficient and Coefficient of Determination</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Linear Regression and Correlation: Correlation Coefficient and Coefficient of Determination</div
+  > <div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-737"
+      >The Correlation Coefficient r</h1
+    ><p
+        class="para"
+        id="element-12345"
+      >Besides looking at the scatter plot and seeing that a line seems reasonable, how can you tell if the line is a good predictor? Use the correlation coefficient as another indicator (besides the scatterplot) of the strength of the relationship between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      >.</p
+    > <p
+        class="para"
+        id="eip-357"
+      >The <strong
+          class="emphasis"
+        >correlation coefficient, r, </strong
+      > developed by Karl Pearson in the early 1900s, is a numerical measure of the strength of association between the independent variable x and the dependent variable y. </p
+    > <p
+        class="para"
+        id="eip-344"
+      >The correlation coefficient is calculated as</p
+    ><p
+        class="para"
+        id="element-48"
+      ><div
+          class="equation"
+          id="eip-id4561593"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >r</mi
+          > <mo
+            >=</mo
+          > <mfrac
+            > <mrow
+              > <mi
+                >n</mi
+              > <mo
+                >&#x22C5;</mo
+              > <mi
+                >&#x3A3;</mi
+              > <mi
+                >x</mi
+              > <mo
+                >&#x22C5;</mo
+              > <mi
+                >y</mi
+              > <mo
+                >-</mo
+              > <mo
+                >(</mo
+              > <mi
+                >&#x3A3;</mi
+              > <mi
+                >x</mi
+              > <mo
+                >)</mo
+              > <mo
+                >&#x22C5;</mo
+              > <mo
+                >(</mo
+              > <mi
+                >&#x3A3;</mi
+              > <mi
+                >y</mi
+              > <mo
+                >)</mo
+              > </mrow
+            > <mrow
+              > <msqrt
+                > <mo
+                  >[</mo
+                > <mi
+                  >n</mi
+                > <mo
+                  >&#x22C5;</mo
+                > <mi
+                  >&#x3A3;</mi
+                > <msup
+                  > <mi
+                    >x</mi
+                  > <mn
+                    >2</mn
+                  > </msup
+                > <mo
+                  >-</mo
+                > <mo
+                  >(</mo
+                > <mi
+                  >&#x3A3;</mi
+                > <mi
+                  >x</mi
+                > <msup
+                  > <mo
+                    >)</mo
+                  > <mn
+                    >2</mn
+                  > </msup
+                > <mo
+                  >]</mo
+                > <mo
+                  >&#x22C5;</mo
+                > <mo
+                  >[</mo
+                > <mi
+                  >n</mi
+                > <mo
+                  >&#x22C5;</mo
+                > <mi
+                  >&#x3A3;</mi
+                > <msup
+                  > <mi
+                    >y</mi
+                  > <mn
+                    >2</mn
+                  > </msup
+                > <mo
+                  >-</mo
+                > <mo
+                  >(</mo
+                > <mi
+                  >&#x3A3;</mi
+                > <mi
+                  >y</mi
+                > <msup
+                  > <mo
+                    >)</mo
+                  > <mn
+                    >2</mn
+                  > </msup
+                > <mo
+                  >]</mo
+                > </msqrt
+              > </mrow
+            > </mfrac
+          > </math
+        > </div
+      > </p
+    ><p
+        class="para"
+        id="element-363"
+      >where <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >n</mi
+        ></math
+      > = the number of data points. </p
+    > <p
+        class="para"
+        id="element-447"
+      >If you suspect a linear relationship between <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > and <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      >, then <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >r</mi
+        ></math
+      > can measure how strong the linear relationship is.</p
+    > <ul
+        class="list"
+        data-id="eip-828"
+      ><div
+          class="title"
+        >What the VALUE of r tells us:</div
+      ><li
+          class="item"
+        >The value of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is always between -1 and +1: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mn
+            >-1</mn
+          ><mo
+            >&#x2264;</mo
+          ><mi
+            >r</mi
+          ><mo
+            >&#x2264;</mo
+          ><mn
+            >1</mn
+          ></math
+        >. </li
+      > <li
+          class="item"
+        >The size of the correlation <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > indicates the strength of the linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        >. Values of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > close to -1 or to +1 indicate a stronger linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        >.</li
+      > <li
+          class="item"
+        >If <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r=0</mi
+          ></math
+        > there is absolutely no linear relationship between <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > <strong
+            class="emphasis"
+          > (no linear correlation)</strong
+        >.</li
+      ><li
+          class="item"
+        >If <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >=</mo
+          ><mn
+            >1</mn
+          ></math
+        >, there is perfect positive correlation. If <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ><mo
+            >=</mo
+          ><mn
+            >-1</mn
+          ></math
+        >, there is perfect negative correlation. In both these cases, all of the original data points lie on a straight line. Of course, in the real world, this will not generally happen.</li
+      ></ul
+    ><ul
+        class="list"
+        data-id="eip-269"
+      ><div
+          class="title"
+        >What the SIGN of r tells us</div
+      ><li
+          class="item"
+        >A positive value of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > means that when <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > increases, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > tends to increase and when <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > decreases, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > tends to decrease <strong
+            class="emphasis"
+          >(positive correlation)</strong
+        >.</li
+      > <li
+          class="item"
+        >A negative value of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > means that when <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > increases, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > tends to decrease and when <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >x</mi
+          ></math
+        > decreases, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >y</mi
+          ></math
+        > tends to increase <strong
+            class="emphasis"
+          >(negative correlation)</strong
+        >.</li
+      > <li
+          class="item"
+        >The sign of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >r</mi
+          ></math
+        > is the same as the sign of the slope, <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >b</mi
+          ></math
+        >, of the best fit line.</li
+      > </ul
+    ><div
+        class="note"
+        id="eip-131"
+      >Strong correlation does not suggest that <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      > causes <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > or <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >y</mi
+        ></math
+      > causes <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >x</mi
+        ></math
+      >. We say <strong
+          class="emphasis"
+        >"correlation does not imply causation."</strong
+      > For example, every person who learned math in the 17th century is dead. However, learning math does not necessarily cause death!</div
+    ><p
+        class="para"
+        id="element-227"
+      ><figure
+          id="linrgs_facts_pics"
+        ><figure
+            id="linrgs_facts1"
+          ><figcaption
+            ><div
+                class="title"
+              >Positive Correlation</div
+            >A scatter plot showing data with a positive correlation. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mn
+                >0</mn
+              > <reln
+                ><lt
+                /></reln
+              ><mn
+                >r</mn
+              > <reln
+                ><lt
+                /></reln
+              ><mn
+                >1</mn
+              ></math
+            > </figcaption
+          > <span
+              class="media"
+              id="id1165447908435"
+              data-alt="Scatterplot of points ascending from the lower left to the upper right."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="2in"
+            /></span
+          > </figure
+        > <figure
+            id="linrgs_facts2"
+          ><figcaption
+            ><div
+                class="title"
+              >Negative Correlation</div
+            >A scatter plot showing data with a negative correlation. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mn
+                >-1</mn
+              > <reln
+                ><lt
+                /></reln
+              ><mn
+                >r</mn
+              > <reln
+                ><lt
+                /></reln
+              ><mn
+                >0</mn
+              ></math
+            > </figcaption
+          > <span
+              class="media"
+              id="id1165447908472"
+              data-alt="Scatterplot of points descending from the upper left to the lower right."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="2in"
+            /></span
+          > </figure
+        > <figure
+            id="linrgs_facts3"
+          ><figcaption
+            ><div
+                class="title"
+              >Zero Correlation</div
+            >A scatter plot showing data with zero correlation. <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mn
+                >r</mn
+              > </math
+            >=0</figcaption
+          > <span
+              class="media"
+              id="id1165447908510"
+              data-alt="Scatterplot of points in a horizontal configuration."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="2in"
+            /></span
+          > </figure
+        ></figure
+      ></p
+    ></div
+  ><p
+      class="para"
+      id="eip-696"
+    >The formula for <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >r</mi
+      ></math
+    > looks formidable. However, computer spreadsheets, statistical software, and many calculators can quickly calculate <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >r</mi
+      ></math
+    >. The correlation coefficient <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >r</mi
+      ></math
+    > is the bottom item in the output screens for the LinRegTTest on the TI-83, TI-83+, or TI-84+ calculator (see previous section for instructions).</p
+  ><div
+      class="section"
+    ><h1
+        class="title"
+        id="eip-117"
+      >The Coefficient of Determination</h1
+    ><p
+        class="para"
+        id="eip-458"
+      ><strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msup
+            > <mi
+              >r</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </math
+        > is called the coefficient of determination. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msup
+            > <mi
+              >r</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </math
+        > is the square of the correlation coefficient </strong
+      >, but is usually stated as a percent, rather than in decimal form. <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msup
+          > <mi
+            >r</mi
+          > <mn
+            >2</mn
+          > </msup
+        > </math
+      > has an interpretation in the context of the data: </p
+    ><ul
+        class="list"
+        data-id="eip-728"
+      ><li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msup
+            > <mi
+              >r</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </math
+        >, when expressed as a percent, represents the percent of variation in the dependent variable y that can be explained by variation in the independent variable x using the regression (best fit) line.</li
+      > <li
+          class="item"
+        >1-<math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msup
+            > <mi
+              >r</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </math
+        >, when expressed as a percent, represents the percent of variation in y that is NOT explained by variation in x using the regression line. This can be seen as the scattering of the observed data points about the regression line. </li
+      > </ul
+    ><list
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-id="eip-624"
+        data-list-type="labeled-item"
+      ><div
+          xmlns=""
+          class="title"
+        >Consider the <a
+            href="/m17092#element-22"
+          >third exam/final exam example</a
+        > introduced in the previous section</div
+      ><li
+          xmlns=""
+          class="item"
+        >The line of best fit is: <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mover
+            > <mi
+              >y</mi
+            > <mo
+              >^</mo
+            > </mover
+          > <mo
+            >=</mo
+          > <mn
+            >-173.51</mn
+          > <mo
+            >+</mo
+          > <mtext
+            >4.83x</mtext
+          > </math
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        >The correlation coefficient is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <mi
+            >r</mi
+          > <mo
+            >=</mo
+          > <mn
+            >0.6631</mn
+          > </math
+        > </li
+      > <li
+          xmlns=""
+          class="item"
+        >The coefficient of determination is <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msup
+            > <mi
+              >r</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </math
+        > = <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msup
+            > <mi
+              >0.6631</mi
+            > <mn
+              >2</mn
+            > </msup
+          > </math
+        > = 0.4397</li
+      > <li
+          xmlns=""
+          class="item"
+        > <strong
+            class="emphasis"
+          > Interpretation of <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >r</mi
+              > <mn
+                >2</mn
+              > </msup
+            > </math
+          > in the context of this example: </strong
+        ></li
+      > <li
+          xmlns=""
+          class="item"
+        > Approximately 44% of the variation (0.4397 is approximately 0.44) in the final exam grades can be explained by the variation in the grades on the third exam, using the best fit regression line.</li
+      > <li
+          xmlns=""
+          class="item"
+        >Therefore approximately 56% of the variation (1 - 0.44 = 0.56) in the final exam grades can NOT be explained by the variation in the grades on the third exam, using the best fit regression line. (This is seen as the scattering of the points about the line.)</li
+      > </list
+    ></div
+  ><p
+      class="para"
+      id="eip-222"
+    >**With contributions from Roberta Bloom.</p
+  > </body
+>
+</html>

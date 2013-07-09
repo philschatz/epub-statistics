@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>F Distribution and One-Way ANOVA: Review</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >F Distribution and One-Way ANOVA: Review</div
+  > <p
+      class="para"
+      id="id8884289"
+    ><strong
+        class="emphasis"
+      >The next two questions refer to the following situation:</strong
+    ></p
+  > <p
+      class="para"
+      id="id8230138"
+    >Suppose that the probability of a drought in any independent year is 20%. Out of those years in which a drought occurs, the probability of water rationing is 10%. However, in any year, the probability of water rationing is 5%.</p
+  > <div
+      class="exercise"
+      id="element-322"
+    ><div
+        class="problem"
+        id="id8611828"
+      > <p
+          class="para"
+          id="element-857"
+        > What is the probability of both a drought <strong
+            class="emphasis"
+          >and</strong
+        > water rationing occurring? </p
+      > </div
+    > <div
+        class="solution"
+        id="id8611853"
+      > <p
+          class="para"
+          id="element-299"
+        >0.02</p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-706"
+    ><div
+        class="problem"
+        id="id8611876"
+      > <p
+          class="para"
+          id="element-275"
+        > Out of the years with water rationing, find the probability that there is a drought. </p
+      > </div
+    > <div
+        class="solution"
+        id="id8611894"
+      > <p
+          class="para"
+          id="element-476"
+        >0.40</p
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="id9067374"
+    ><strong
+        class="emphasis"
+      >The next three questions refer to the following survey:</strong
+    > </p
+  > <table
+      id="idsdf9433735"
+      summary="This table presents favorite pie type by gender with apple pie in the first column, pumpkin pie in the second column, and pecan pie in the third column. The first row represents female preference and the second row represents male preference."
+    ><caption
+      ><span
+          class="title"
+        >Favorite Type of Pie by Gender</span
+      ></caption
+    ><thead
+      > <tr
+        > <td
+        /> <td
+          >apple</td
+        > <td
+          >pumpkin</td
+        > <td
+          >pecan</td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+          >female</td
+        > <td
+          >40</td
+        > <td
+          >10</td
+        > <td
+          >30</td
+        > </tr
+      > <tr
+        > <td
+          >male</td
+        > <td
+          >20</td
+        > <td
+          >30</td
+        > <td
+          >10</td
+        > </tr
+      > </tbody
+    ></table
+  > <div
+      class="exercise"
+      id="element-53"
+    ><div
+        class="problem"
+        id="id9129371"
+      > <p
+          class="para"
+          id="element-453"
+        > Suppose that one individual is randomly chosen. Find the probability that the person&#x2019;s favorite pie is apple <strong
+            class="emphasis"
+          >or</strong
+        > the person is male. </p
+      > </div
+    > <div
+        class="solution"
+        id="id9129398"
+      > <p
+          class="para"
+          id="element-112"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <semantics
+            > <mrow
+              > <mstyle
+                  fontsize="12pt"
+                > <mrow
+                  > <mfrac
+                    > <mstyle
+                        fontsize="8pt"
+                      > <mrow
+                        > <mtext
+                          >100</mtext
+                        > </mrow
+                      > </mstyle
+                    > <mstyle
+                        fontsize="8pt"
+                      > <mrow
+                        > <mtext
+                          >140</mtext
+                        > </mrow
+                      > </mstyle
+                    > </mfrac
+                  > </mrow
+                > </mstyle
+              > <mrow
+              /> </mrow
+            > <annotation
+                encoding="StarMath 5.0"
+              > size 12{ { { size 8{"100"} } over { size 8{"140"} } } } {}</annotation
+            > </semantics
+          > </math
+        > </p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-255"
+    ><div
+        class="problem"
+        id="id9252116"
+      > <p
+          class="para"
+          id="element-489"
+        > Suppose that one male is randomly chosen. Find the probability his favorite pie is pecan. </p
+      > </div
+    > <div
+        class="solution"
+        id="id9252134"
+      > <p
+          class="para"
+          id="element-336"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <semantics
+            > <mrow
+              > <mstyle
+                  fontsize="12pt"
+                > <mrow
+                  > <mfrac
+                    > <mstyle
+                        fontsize="8pt"
+                      > <mrow
+                        > <mtext
+                          >10</mtext
+                        > </mrow
+                      > </mstyle
+                    > <mstyle
+                        fontsize="8pt"
+                      > <mrow
+                        > <mtext
+                          >60</mtext
+                        > </mrow
+                      > </mstyle
+                    > </mfrac
+                  > </mrow
+                > </mstyle
+              > <mrow
+              /> </mrow
+            > <annotation
+                encoding="StarMath 5.0"
+              > size 12{ { { size 8{"10"} } over { size 8{"60"} } } } {}</annotation
+            > </semantics
+          > </math
+        > </p
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-180"
+    ><div
+        class="problem"
+        id="id9252211"
+      > <p
+          class="para"
+          id="element-297"
+        > Conduct a hypothesis test to determine if favorite pie type and gender are independent. </p
+      > </div
+    > <div
+        class="solution"
+        id="id9252229"
+      > <p
+          class="para"
+          id="element-19"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >p-value</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >0</mn
+          ></math
+        >; Reject null; Conclude dependent events </p
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="id9678760"
+    ><strong
+        class="emphasis"
+      >The next two questions refer to the following situation:</strong
+    ></p
+  > <p
+      class="para"
+      id="id9648483"
+    >Let&#x2019;s say that the probability that an adult watches the news at least once per week is 0.60.</p
+  > <div
+      class="exercise"
+      id="element-777"
+    ><div
+        class="problem"
+        id="id9252289"
+      > <p
+          class="para"
+          id="element-477"
+        > We randomly survey 14 people. On average, how many people do we expect to watch the news at least once per week? </p
+      > </div
+    > <div
+        class="solution"
+        id="id9252307"
+      > <p
+          class="para"
+          id="element-520"
+        >8.4</p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-0"
+    ><div
+        class="problem"
+        id="id9252331"
+      > <p
+          class="para"
+          id="element-733"
+        >We randomly survey 14 people. Of interest is the number that watch the news at least once per week. State the distribution of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        >. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >X</mi
+          ></math
+        > ~ </p
+      > </div
+    > <div
+        class="solution"
+        id="id9252358"
+      > <p
+          class="para"
+          id="element-163"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <semantics
+            > <mrow
+              > <mstyle
+                  fontsize="12pt"
+                > <mrow
+                  > <mrow
+                    > <mi
+                      >B</mi
+                    > <mfenced
+                        open="("
+                        close=")"
+                      > <mrow
+                        > <mtext
+                          >14</mtext
+                        > <mi
+                          >,</mi
+                        > <mn
+                          >0</mn
+                        > <mtext
+                          >.</mtext
+                        > <mtext
+                          >60</mtext
+                        > </mrow
+                      > </mfenced
+                    > </mrow
+                  > </mrow
+                > </mstyle
+              > <mrow
+              /> </mrow
+            > <annotation
+                encoding="StarMath 5.0"
+              > size 12{B left ("14",0 "." "60" right )} {}</annotation
+            > </semantics
+          > </math
+        > </p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-496"
+    ><div
+        class="problem"
+        id="id9252440"
+      > <p
+          class="para"
+          id="element-131"
+        > The following histogram is most likely to be a result of sampling from which distribution? </p
+      ><p
+          class="para"
+          id="element-848"
+        ><figure
+            id="id9252464"
+          ><span
+              class="media"
+              id="id9252469"
+              data-alt="Histogram with 7 bars."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="4in"
+            /></span
+          ></figure
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-579"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="A"
+          >Chi-Square</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="B"
+          >Geometric</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="C"
+          >Uniform</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="D"
+          >Binomial</li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id9145952"
+      > <p
+          class="para"
+          id="element-939"
+        >D</p
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-75"
+    ><div
+        class="problem"
+        id="id9145976"
+      > <p
+          class="para"
+          id="element-849"
+        >The ages of De Anza evening students is known to be normally distributed with a population mean of 40 and a population standard deviation of 6. A sample of 6 De Anza evening students reported their ages (in years) as: 28; 35; 47; 45; 30; 50. Find the probability that the mean of 6 ages of randomly chosen students is less than 35 years. Hint: Find the sample mean. </p
+      ></div
+    > <div
+        class="solution"
+        id="eip-id1164486411668"
+      > <p
+          class="para"
+          id="eip-id1164493908039"
+        > 0.3669 </p
+      > </div
+    > </div
+  ><p
+      class="para"
+      id="id9579053"
+    ><strong
+        class="emphasis"
+      >The next three questions refer to the following situation:</strong
+    ></p
+  > <p
+      class="para"
+      id="id10160973"
+    >The amount of money a customer spends in one trip to the supermarket is known to have an exponential distribution. Suppose the mean amount of money a customer spends in one trip to the supermarket is $72.</p
+  ><div
+      class="exercise"
+      id="element-302"
+    ><div
+        class="problem"
+        id="id9146033"
+      > <p
+          class="para"
+          id="element-948"
+        > Find the probability that one customer spends less than $72 in one trip to the supermarket? </p
+      > </div
+    > <div
+        class="solution"
+        id="id9146052"
+      > <p
+          class="para"
+          id="element-279"
+        >0.6321</p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-847"
+    ><div
+        class="problem"
+        id="id9146076"
+      > <p
+          class="para"
+          id="element-813"
+        > Suppose 5 customers pool their money. (They are poor college students.) How much money altogether would you expect the 5 customers to spend in one trip to the supermarket (in dollars)? </p
+      > </div
+    > <div
+        class="solution"
+        id="id9146095"
+      > <p
+          class="para"
+          id="element-656"
+        >$360</p
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-837"
+    ><div
+        class="problem"
+        id="id9146120"
+      > <p
+          class="para"
+          id="element-34"
+        >State the distribution to use if you want to find the probability that the <strong
+            class="emphasis"
+          >mean</strong
+        > amount spent by 5 customers in one trip to the supermarket is less than $60. </p
+      ></div
+    > <div
+        class="solution"
+        id="id9146146"
+      > <p
+          class="para"
+          id="element-324"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <semantics
+            > <mrow
+              > <mstyle
+                  fontsize="12pt"
+                > <mrow
+                  > <mrow
+                    > <mi
+                      >N</mi
+                    > <mfenced
+                        open="("
+                        close=")"
+                      > <mrow
+                        > <mtext
+                          >72</mtext
+                        > <mi
+                          >,</mi
+                        > <mfrac
+                          > <mstyle
+                              fontsize="8pt"
+                            > <mrow
+                              > <mtext
+                                >72</mtext
+                              > </mrow
+                            > </mstyle
+                          > <mstyle
+                              fontsize="8pt"
+                            > <mrow
+                              > <msqrt
+                                > <mn
+                                  >5</mn
+                                > </msqrt
+                              > </mrow
+                            > </mstyle
+                          > </mfrac
+                        > </mrow
+                      > </mfenced
+                    > </mrow
+                  > </mrow
+                > </mstyle
+              > <mrow
+              /> </mrow
+            > <annotation
+                encoding="StarMath 5.0"
+              > size 12{N left ("72", { { size 8{"72"} } over { size 8{ sqrt {5} } } } right )} {}</annotation
+            > </semantics
+          > </math
+        > </p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-57"
+    ><div
+        class="problem"
+        id="id9146250"
+      > <p
+          class="para"
+          id="element-863"
+        >A math exam was given to all the fifth grade children attending Country School. Two random samples of scores were taken. The null hypothesis is that the mean math scores for boys and girls in fifth grade are the same. Conduct a hypothesis test. </p
+      ><p
+          class="para"
+          id="element-176"
+        ><table
+            id="id8885dfg906"
+            summary="This table presents math exam scores by gender. Boys are in the first row and girls are in the second row. The first column lists the sample of each gender, the second column lists the sample mean, and the third column lists the sample variance."
+          ><thead
+            > <tr
+              > <td
+              /> <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mi
+                            >n</mi
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{n} {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <mover
+                              accent="true"
+                            > <mi
+                              >x</mi
+                            > <mo
+                              >&#xAF;</mo
+                            > </mover
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{ {overline {x}} } {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <semantics
+                    > <mrow
+                      > <mstyle
+                          fontsize="12pt"
+                        > <mrow
+                          > <msup
+                            > <mi
+                              >s</mi
+                            > <mstyle
+                                fontsize="8pt"
+                              > <mrow
+                                > <mn
+                                  >2</mn
+                                > </mrow
+                              > </mstyle
+                            > </msup
+                          > </mrow
+                        > </mstyle
+                      > <mrow
+                      /> </mrow
+                    > <annotation
+                        encoding="StarMath 5.0"
+                      > size 12{s rSup { size 8{2} } } {}</annotation
+                    > </semantics
+                  > </math
+                > </td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >Boys</td
+              > <td
+                >55</td
+              > <td
+                >82</td
+              > <td
+                >29</td
+              > </tr
+            > <tr
+              > <td
+                >Girls</td
+              > <td
+                >60</td
+              > <td
+                >86</td
+              > <td
+                >46</td
+              > </tr
+            > </tbody
+          ></table
+        ></p
+      > </div
+    > <div
+        class="solution"
+        id="id9106948"
+      > <p
+          class="para"
+          id="element-919"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >p-value</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >0.0006</mn
+          ></math
+        >; Reject null; Conclude averages are not equal</p
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-748"
+    ><div
+        class="problem"
+        id="id9106981"
+      > <p
+          class="para"
+          id="element-945"
+        > In a survey of 80 males, 55 had played an organized sport growing up. Of the 70 females surveyed, 25 had played an organized sport growing up. We are interested in whether the proportion for males is higher than the proportion for females. Conduct a hypothesis test. </p
+      > </div
+    > <div
+        class="solution"
+        id="id9107002"
+      > <p
+          class="para"
+          id="element-555"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >p-value</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >0</mn
+          ></math
+        >; Reject null; Conclude proportion of males is higher</p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-9"
+    ><div
+        class="problem"
+        id="id9107034"
+      > <p
+          class="para"
+          id="element-567"
+        > Which of the following is preferable when designing a hypothesis test? </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-943"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="A"
+          >Maximize <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B1;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;} {}</annotation
+              ></semantics
+            ></math
+          > and minimize <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B2;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B2;} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="B"
+          >Minimize <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B1;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;} {}</annotation
+              ></semantics
+            ></math
+          > and maximize <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B2;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B2;} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="C"
+          >Maximize <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B1;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;} {}</annotation
+              ></semantics
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B2;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B2;} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="D"
+          >Minimize <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B1;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B1;} {}</annotation
+              ></semantics
+            ></math
+          > and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><semantics
+              ><mrow
+                ><mstyle
+                    fontsize="12pt"
+                  ><mrow
+                    ><mi
+                      >&#x3B2;</mi
+                    ></mrow
+                  ></mstyle
+                ><mrow
+                /></mrow
+              ><annotation
+                  encoding="StarMath 5.0"
+                > size 12{&#x3B2;} {}</annotation
+              ></semantics
+            ></math
+          ></li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id9107243"
+      > <p
+          class="para"
+          id="element-437"
+        >D</p
+      > </div
+    > </div
+  > <p
+      class="para"
+      id="id8921446"
+    ><strong
+        class="emphasis"
+      >The next three questions refer to the following situation:</strong
+    ></p
+  > <p
+      class="para"
+      id="id9735611"
+    >120 people were surveyed as to their favorite beverage (non-alcoholic). The results are below.</p
+  > <table
+      id="id9434189"
+      summary="This table presents the preferred beverage by average age. The first column contains the preferred beverage, second column are ages 0-9, third column are ages 10-19, fourth column are ages 20-29, fifth column are ages 30 and above, a space for the sixth column, and the total is in the seventh column. The first row is for milk, second row is for soda, third row is for juice, fourth row is blank, and the fifth row is for totals."
+    ><caption
+      ><span
+          class="title"
+        >Preferred Beverage by Age</span
+      ></caption
+    ><thead
+      > <tr
+        > <td
+        /> <td
+          >0 &#x2013; 9</td
+        > <td
+          >10 &#x2013; 19</td
+        > <td
+          >20 &#x2013; 29</td
+        > <td
+          >30 +</td
+        > <td
+        /> <td
+          >Totals</td
+        > </tr
+      > </thead
+    ><tbody
+      > <tr
+        > <td
+          >Milk</td
+        > <td
+          >14</td
+        > <td
+          >10</td
+        > <td
+          >6</td
+        > <td
+          >0</td
+        > <td
+          >30</td
+        > </tr
+      > <tr
+        > <td
+          >Soda</td
+        > <td
+          >3</td
+        > <td
+          >8</td
+        > <td
+          >26</td
+        > <td
+          >15</td
+        > <td
+          >52</td
+        > </tr
+      > <tr
+        > <td
+          >Juice</td
+        > <td
+          >7</td
+        > <td
+          >12</td
+        > <td
+          >12</td
+        > <td
+          >7</td
+        > <td
+          >38</td
+        > </tr
+      > <tr
+        > <td
+          >Totals</td
+        > <td
+          >24</td
+        > <td
+          >30</td
+        > <td
+          >44</td
+        > <td
+          >22</td
+        > <td
+          >120</td
+        > </tr
+      > </tbody
+    ></table
+  > <div
+      class="exercise"
+      id="element-337"
+    ><div
+        class="problem"
+        id="id9164973"
+      > <p
+          class="para"
+          id="element-842"
+        >Are the events of <strong
+            class="emphasis"
+          >milk</strong
+        > and <strong
+            class="emphasis"
+          >30+</strong
+        >: </p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-134"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >Independent events? Justify your answer.</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Mutually exclusive events? Justify your answer.</li
+        ></list
+      > </div
+    > <div
+        class="solution"
+        id="id9165039"
+      > <list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-828"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="a"
+          >No</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="b"
+          >Yes, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <semantics
+              > <mrow
+                > <mstyle
+                    fontsize="12pt"
+                  > <mrow
+                    > <mrow
+                      > <mi
+                        >P</mi
+                      > <mrow
+                        > <mfenced
+                            open="("
+                            close=")"
+                          > <mrow
+                            > <mstyle
+                                fontstyle="italic"
+                              > <mrow
+                                > <mtext
+                                  >M</mtext
+                                ><mspace
+                                    width="4pt"
+                                /><mtext
+                                  >and</mtext
+                                ><mspace
+                                    width="4pt"
+                                /> </mrow
+                              > </mstyle
+                            > <mrow
+                              > <mtext
+                                >30</mtext
+                              > <mo
+                                  stretchy="false"
+                                >+</mo
+                              > <mrow
+                              /> </mrow
+                            > </mrow
+                          > </mfenced
+                        > <mo
+                            stretchy="false"
+                          >=</mo
+                        > <mn
+                          >0</mn
+                        > </mrow
+                      > </mrow
+                    > </mrow
+                  > </mstyle
+                > <mrow
+                /> </mrow
+              > <annotation
+                  encoding="StarMath 5.0"
+                > size 12{P left ( ital "Mand""30"+{} right )=0} {}</annotation
+              > </semantics
+            > </math
+          > </li
+        > </list
+      > </div
+    > </div
+  > <div
+      class="exercise"
+      id="element-254"
+    ><div
+        class="problem"
+        id="id9165180"
+      > <p
+          class="para"
+          id="element-740"
+        > Suppose that one person is randomly chosen. Find the probability that person is <strong
+            class="emphasis"
+          >10 &#x2013; 19</strong
+        > given that he/she <strong
+            class="emphasis"
+          >prefers juice</strong
+        >. </p
+      > </div
+    > <div
+        class="solution"
+        id="id9165213"
+      > <p
+          class="para"
+          id="element-536"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <semantics
+            > <mrow
+              > <mstyle
+                  fontsize="12pt"
+                > <mrow
+                  > <mfrac
+                    > <mstyle
+                        fontsize="8pt"
+                      > <mrow
+                        > <mtext
+                          >12</mtext
+                        > </mrow
+                      > </mstyle
+                    > <mstyle
+                        fontsize="8pt"
+                      > <mrow
+                        > <mtext
+                          >38</mtext
+                        > </mrow
+                      > </mstyle
+                    > </mfrac
+                  > </mrow
+                > </mstyle
+              > <mrow
+              /> </mrow
+            > <annotation
+                encoding="StarMath 5.0"
+              > size 12{ { { size 8{"12"} } over { size 8{"38"} } } } {}</annotation
+            > </semantics
+          > </math
+        > </p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-334"
+    ><div
+        class="problem"
+        id="id9165289"
+      > <p
+          class="para"
+          id="element-252"
+        > Are <strong
+            class="emphasis"
+          >Preferred Beverage</strong
+        > and <strong
+            class="emphasis"
+          >Age</strong
+        > independent events? Conduct a hypothesis test. </p
+      > </div
+    > <div
+        class="solution"
+        id="id9165320"
+      > <p
+          class="para"
+          id="element-781"
+        >No; <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mtext
+            >p-value</mtext
+          ><mo
+            >=</mo
+          ><mn
+            >0</mn
+          ></math
+        ></p
+      > </div
+    > </div
+  ><div
+      class="exercise"
+      id="element-373"
+    ><div
+        class="problem"
+        id="id9165351"
+      > <p
+          class="para"
+          id="element-626"
+        > Given the following histogram, which distribution is the data most likely to come from? </p
+      ><p
+          class="para"
+          id="element-451"
+        ><figure
+            id="id9165374"
+          ><span
+              class="media"
+              id="id9165379"
+              data-alt="Histogram with 8 bars."
+            ><image
+                xmlns="http://cnx.rice.edu/cnxml"
+                print-width="6in"
+            /></span
+          ></figure
+        ></p
+      ><list
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-id="element-962"
+          data-list-type="labeled-item"
+          data-mark-suffix="."
+        ><li
+            xmlns=""
+            class="item"
+            data-label="A"
+          >uniform</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="B"
+          >exponential</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="C"
+          >normal</li
+        > <li
+            xmlns=""
+            class="item"
+            data-label="D"
+          >chi-square</li
+        > </list
+      > </div
+    > <div
+        class="solution"
+        id="id9165464"
+      > <p
+          class="para"
+          id="element-702"
+        >A</p
+      > </div
+    > </div
+  > </body
+>
+</html>

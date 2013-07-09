@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Hypothesis Testing of Single Mean and Single Proportion: Using the Sample to Test the Null Hypothesis</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Hypothesis Testing of Single Mean and Single Proportion: Using the Sample to Test the Null Hypothesis</div
+  > <p
+      class="para"
+      id="delete_me"
+    >Use the sample data to calculate the actual probability of getting the test result, called the <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="pvalue"
+      >p-value</term
+    >. The p-value is the <strong
+        class="emphasis"
+      >probability that, if the null hypothesis is true, the results from another randomly selected sample will be as extreme or more extreme as the results obtained from the given sample.</strong
+    > </p
+  ><p
+      class="para"
+      id="element-188"
+    >A large p-value calculated from the data indicates that we should fail to reject the <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="hypothesis"
+      >null hypothesis</term
+    >. The smaller the p-value, the more unlikely the outcome, and the stronger the evidence is against the null hypothesis. We would reject the null hypothesis if the evidence is strongly against it. </p
+  ><p
+      class="para"
+      id="element-986"
+    ><strong
+        class="emphasis"
+      >Draw a graph that shows the p-value. The hypothesis test is easier to perform if you use a graph because you see the problem more clearly.</strong
+    ></p
+  ><div
+      class="example"
+      id="element-804"
+    ><div
+        class="title"
+      >(to illustrate the p-value)</div
+    ><p
+        class="para"
+        id="element-842"
+      >Suppose a baker claims that his bread height is more than 15 cm, on the average. Several of his customers do not believe him. To persuade his customers that he is right, the baker decides to do a hypothesis test. He bakes 10 loaves of bread. The mean height of the sample loaves is 17 cm. The baker knows from baking hundreds of loaves of bread that the <term
+          xmlns="http://cnx.rice.edu/cnxml"
+          data-target-id="stddev"
+        >standard deviation</term
+      > for the height is 0.5 cm. and the distribution of heights is normal. </p
+    ><p
+        class="para"
+        id="element-369"
+      >The null hypothesis could be <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msub
+          ><mi
+            >H</mi
+          ><mi
+            >o</mi
+          ></msub
+        ></math
+      >: <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ><mo
+          >&#x2264;</mo
+        ><mn
+          >15</mn
+        ></math
+      > The alternate hypothesis is <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><msub
+          ><mi
+            >H</mi
+          ><mi
+            >a</mi
+          ></msub
+        ></math
+      >: <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ><mo
+          >&gt;</mo
+        ><mn
+          >15</mn
+        ></math
+      ></p
+    ><p
+        class="para"
+        id="element-850"
+      >The words <strong
+          class="emphasis"
+        >"is more than"</strong
+      > translates as a "<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >&gt;</mo
+        ></math
+      >" so "<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ><mo
+          >&gt;</mo
+        ><mn
+          >15</mn
+        ></math
+      >" goes into the alternate hypothesis. The null hypothesis must contradict the alternate hypothesis.</p
+    ><p
+        class="para"
+        id="element-863"
+      >Since <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mi
+            >&#x3C3;</mi
+          ></math
+        > is known</strong
+      > (<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3C3;</mi
+        ><mo
+          >=</mo
+        ><mn
+          >0.5</mn
+        ></math
+      > cm.), the distribution for the population is known to be normal with mean <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >&#x3BC;</mi
+        ></math
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >=</mo
+        ><mn
+          >15</mn
+        ></math
+      > and standard deviation <strong
+          class="emphasis"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><mfrac
+            ><mrow
+              ><mi
+                >&#x3C3;</mi
+              ></mrow
+            ><mrow
+              ><msqrt
+                ><mi
+                  >n</mi
+                ></msqrt
+              ></mrow
+            ></mfrac
+          ></math
+        ></strong
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mo
+          >=</mo
+        ><mfrac
+          ><mrow
+            ><mn
+              >0.5</mn
+            ></mrow
+          ><mrow
+            ><msqrt
+              ><mn
+                >10</mn
+              ></msqrt
+            ></mrow
+          ></mfrac
+        ><mo
+          >=</mo
+        ><mn
+          >0.16</mn
+        ></math
+      >. </p
+    ><p
+        class="para"
+        id="element-910"
+      >Suppose the null hypothesis is true (the mean height of the loaves is no more than 15 cm). Then is the mean height (17 cm) calculated from the sample unexpectedly large? The hypothesis test works by asking the question how <strong
+          class="emphasis"
+        >unlikely</strong
+      > the sample mean would be if the null hypothesis were true. The graph shows how far out the sample mean is on the normal curve. The p-value is the probability that, if we were to take other samples, any other sample mean would fall at least as far out as 17 cm.</p
+    ><p
+        class="para"
+        id="element-537"
+      ><strong
+          class="emphasis"
+        >The p-value, then, is the probability that a sample mean is the same or greater than 17 cm. when the population mean is, in fact, 15 cm.</strong
+      > We can calculate this probability using the normal distribution for means from Chapter 7. </p
+    ><p
+        class="para"
+        id="element-246"
+      ><span
+          class="media"
+          id="id9446267"
+          data-alt="Normal distribution curve on average bread heights with values 15, as the population mean, and 17, as the point to determine the p-value, on the x-axis."
+        ><image
+            xmlns="http://cnx.rice.edu/cnxml"
+            print-width="3in"
+        /></span
+      ></p
+    ><p
+        class="para"
+        id="element-328"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mtext
+          >p-value</mtext
+        ><mo
+          >=</mo
+        ><mi
+          >P</mi
+        ><mo
+          >(</mo
+        ><apply
+          ><conjugate
+          /><mi
+            >x</mi
+          ></apply
+        ><mo
+          >&gt;</mo
+        ><mn
+          >17</mn
+        ><mo
+          >)</mo
+        ></math
+      > which is approximately 0.</p
+    ><p
+        class="para"
+        id="element-710"
+      >A p-value of approximately 0 tells us that it is highly unlikely that a loaf of bread rises no more than 15 cm, on the average. That is, almost 0% of all loaves of bread would be at least as high as 17 cm. <strong
+          class="emphasis"
+        >purely by CHANCE</strong
+      > had the population mean height really been 15 cm. Because the outcome of 17 cm. is so <strong
+          class="emphasis"
+        >unlikely (meaning it is happening NOT by chance alone)</strong
+      >, we conclude that the evidence is strongly against the null hypothesis (the mean height is at most 15 cm.). There is sufficient evidence that the true mean height for the population of the baker's loaves of bread is greater than 15 cm.</p
+    ></div
+  > </body
+>
+</html>

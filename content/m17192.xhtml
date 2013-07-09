@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>The Chi-Square Distribution: Goodness-of-Fit Test</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >The Chi-Square Distribution: Goodness-of-Fit Test</div
+  > <p
+      class="para"
+      id="element-112"
+    >In this type of hypothesis test, you determine whether the data <strong
+        class="emphasis"
+      >"fit"</strong
+    > a particular distribution or not. For example, you may suspect your unknown data fit a binomial distribution. You use a chi-square test (meaning the distribution for the hypothesis test is chi-square) to determine if there is a fit or not. <strong
+        class="emphasis"
+      >The null and the alternate hypotheses for this test may be written in sentences or may be stated as equations or inequalities.</strong
+    > </p
+  ><p
+      class="para"
+      id="element-908"
+    >The test statistic for a goodness-of-fit test is: </p
+  ><div
+      class="equation"
+      id="element-252"
+    ><math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <munder
+        > <mo
+          >&#x3A3;</mo
+        > <mi
+          >k</mi
+        > </munder
+      > <mfrac
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >O</mi
+          > <mo
+            >&#x2212;</mo
+          > <mi
+            >E</mi
+          > <msup
+            > <mo
+              >)</mo
+            > <mn
+              >2</mn
+            > </msup
+          > </mrow
+        > <mrow
+          > <mi
+            >E</mi
+          > </mrow
+        > </mfrac
+      > </math
+    > </div
+  ><p
+      class="para"
+      id="element-248"
+    >where:</p
+  > <ul
+      class="list"
+      data-id="element-645"
+      data-list-type="bulleted"
+    ><li
+        class="item"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >O</mi
+        ></math
+      > = observed values (data) </li
+    ><li
+        class="item"
+        id="element-481"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >E</mi
+        ></math
+      > = expected values (from theory) </li
+    ><li
+        class="item"
+        id="element-402"
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >k</mi
+        ></math
+      > = the number of different data cells or categories</li
+    > </ul
+  ><p
+      class="para"
+      id="element-512"
+    ><strong
+        class="emphasis"
+      >The observed values are the data values and the expected values are the values you would expect to get if the null hypothesis were true.</strong
+    > There are <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mi
+        >n</mi
+      ></math
+    > terms of the form <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <mfrac
+        > <mrow
+          > <mo
+            >(</mo
+          > <mi
+            >O</mi
+          > <mo
+            >&#x2212;</mo
+          > <mi
+            >E</mi
+          > <msup
+            > <mo
+              >)</mo
+            > <mn
+              >2</mn
+            > </msup
+          > </mrow
+        > <mrow
+          > <mi
+            >E</mi
+          > </mrow
+        > </mfrac
+      > </math
+    >.</p
+  ><p
+      class="para"
+      id="element-304"
+    >The degrees of freedom are <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><mtext
+        >df = (number of categories - 1)</mtext
+      ></math
+    >.</p
+  ><p
+      class="para"
+      id="element-838"
+    ><strong
+        class="emphasis"
+      >The goodness-of-fit test is almost always right tailed.</strong
+    > If the observed values and the corresponding expected values are not close to each other, then the test statistic can get very large and will be way out in the right tail of the chi-square curve.</p
+  ><div
+      class="note"
+      id="eip-587"
+    >The expected value for each cell needs to be at least 5 in order to use this test.</div
+  ><div
+      class="example"
+      id="element-719"
+    ><p
+        class="para"
+        id="element-615"
+      >Absenteeism of college students from math classes is a major concern to math instructors because missing class appears to increase the drop rate. Suppose that a study was done to determine if the actual student absenteeism follows faculty perception. The faculty expected that a group of 100 students would miss class according to the following chart. </p
+    ><table
+        id="eip-658"
+        summary="The table consists of two columns with headings Number of absences and Expected number of students. There are 5 entries under each heading. Under Number of absences are the entries 0 to 2, 3 to 5, 6 to 8, 9 to 11, 12 plus. Under Expected number of students are the entries 50, 30, 12, 6, 2."
+      ><tbody
+        > <tr
+          > <td
+            ><strong
+                class="emphasis"
+              >Number absences per term</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >Expected number of students</strong
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >0 - 2</td
+          > <td
+            >50</td
+          > </tr
+        > <tr
+          > <td
+            >3 - 5</td
+          > <td
+            >30</td
+          > </tr
+        > <tr
+          > <td
+            >6 - 8</td
+          > <td
+            >12</td
+          > </tr
+        > <tr
+          > <td
+            >9 - 11</td
+          > <td
+            >6</td
+          > </tr
+        > <tr
+          > <td
+            >12+</td
+          > <td
+            >2</td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="eip-952"
+      >A random survey across all mathematics courses was then done to determine the actual number <strong
+          class="emphasis"
+        >(observed)</strong
+      > of absences in a course. The next chart displays the result of that survey.</p
+    ><table
+        id="eip-842"
+        summary="The table consists of two columns with headings Number of absences per term and Actual number of students. There are 5 entries under each heading. Under Number of absences per term are the entries 0 to 2, 3 to 5, 6 to 8, 9 to 11, 12 plus. Under Expected number of students are the entries 35, 40, 20, 1, 4"
+      ><tbody
+        > <tr
+          > <td
+            ><strong
+                class="emphasis"
+              >Number absences per term</strong
+            ></td
+          > <td
+            ><strong
+                class="emphasis"
+              >Actual number of students</strong
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >0 - 2</td
+          > <td
+            >35</td
+          > </tr
+        > <tr
+          > <td
+            >3 - 5</td
+          > <td
+            >40</td
+          > </tr
+        > <tr
+          > <td
+            >6 - 8</td
+          > <td
+            >20</td
+          > </tr
+        > <tr
+          > <td
+            >9 - 11</td
+          > <td
+            >1</td
+          > </tr
+        > <tr
+          > <td
+            >12+</td
+          > <td
+            >4</td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="element-32252626"
+      >Determine the null and alternate hypotheses needed to conduct a goodness-of-fit test. </p
+    ><p
+        class="para"
+        id="element-846"
+      ><strong
+          class="emphasis"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msub
+            > <mi
+              >H</mi
+            > <mi
+              >o</mi
+            > </msub
+          > </math
+        >:</strong
+      > Student absenteeism <strong
+          class="emphasis"
+        >fits</strong
+      > faculty perception.</p
+    ><p
+        class="para"
+        id="element-82"
+      >The alternate hypothesis is the opposite of the null hypothesis.</p
+    ><p
+        class="para"
+        id="element-421"
+      ><strong
+          class="emphasis"
+        > <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <msub
+            > <mi
+              >H</mi
+            > <mi
+              >a</mi
+            > </msub
+          > </math
+        >:</strong
+      > Student absenteeism <strong
+          class="emphasis"
+        >does not fit</strong
+      > faculty perception.</p
+    ><div
+        class="exercise"
+        id="element-217"
+      ><div
+          class="problem"
+          id="id6198828"
+        > <p
+            class="para"
+            id="element-451"
+          >Can you use the information as it appears in the charts to conduct the goodness-of-fit test? </p
+        ></div
+      > <div
+          class="solution"
+          id="id6198852"
+        > <p
+            class="para"
+            id="element-600"
+          ><strong
+              class="emphasis"
+            >No.</strong
+          > Notice that the expected number of absences for the "12+" entry is less than 5 (it is 2). Combine that group with the "9 - 11" group to create new tables where the number of students for each entry are at least 5. The new tables are below. <br
+          /> <table
+              id="eip-id1164959794173"
+              summary="The new table consists of two columns with headings Number of absences per term and Expected number of students. There are 4 entries under each heading. Under Number of absences per term are the entries 0 to 2, 3 to 5, 6 to 8, 9+ plus. Under Expected number of students are the entries 50, 30, 12, 8."
+            ><tbody
+              > <tr
+                > <td
+                  ><strong
+                      class="emphasis"
+                    >Number absences per term</strong
+                  ></td
+                > <td
+                  ><strong
+                      class="emphasis"
+                    >Expected number of students</strong
+                  ></td
+                > </tr
+              > <tr
+                > <td
+                  >0 - 2</td
+                > <td
+                  >50</td
+                > </tr
+              > <tr
+                > <td
+                  >3 - 5</td
+                > <td
+                  >30</td
+                > </tr
+              > <tr
+                > <td
+                  >6 - 8</td
+                > <td
+                  >12</td
+                > </tr
+              > <tr
+                > <td
+                  >9+</td
+                > <td
+                  >8</td
+                > </tr
+              > </tbody
+            ></table
+          > <table
+              id="eip-id1164958383926"
+              summary="The table consists of two columns with headings Number of absences per term and Actual number of students. There are 5 entries under each heading. Under Number of absences per term are the entries 0 to 2, 3 to 5, 6 to 8, 9+ plus. Under Actual number of students are the entries 35, 40, 20, 5."
+            ><tbody
+              > <tr
+                > <td
+                  ><strong
+                      class="emphasis"
+                    >Number absences per term</strong
+                  ></td
+                > <td
+                  ><strong
+                      class="emphasis"
+                    >Actual number of students</strong
+                  ></td
+                > </tr
+              > <tr
+                > <td
+                  >0 - 2</td
+                > <td
+                  >35</td
+                > </tr
+              > <tr
+                > <td
+                  >3 - 5</td
+                > <td
+                  >40</td
+                > </tr
+              > <tr
+                > <td
+                  >6 - 8</td
+                > <td
+                  >20</td
+                > </tr
+              > <tr
+                > <td
+                  >9+</td
+                > <td
+                  >5</td
+                > </tr
+              > </tbody
+            ></table
+          > </p
+        ></div
+      > </div
+    ><div
+        class="exercise"
+        id="element-612"
+      ><div
+          class="problem"
+          id="id6198893"
+        > <p
+            class="para"
+            id="element-496"
+          >What are the degrees of freedom (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >df</mi
+            ></math
+          >)?</p
+        > </div
+      > <div
+          class="solution"
+          id="id6198915"
+        > <p
+            class="para"
+            id="element-601"
+          >There are 4 "cells" or categories in each of the new tables.</p
+        ><p
+            class="para"
+            id="element-6012"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >df = number of cells - 1 = 4 - 1 = 3</mi
+            ></math
+          > </p
+        ></div
+      > </div
+    ></div
+  ><div
+      class="example"
+      id="element-962"
+    ><p
+        class="para"
+        id="element-733"
+      >Employers particularly want to know which days of the week employees are absent in a five day work week. Most employers would like to believe that employees are absent equally during the week. Suppose a random sample of 60 managers were asked on which day of the week did they have the highest number of employee absences. The results were distributed as follows: <table
+          id="table-235674346"
+          summary="This table presents the number of students absent by days of the week. Monday is in the second column, Tuesday is in the third column, Wednesday is in the fourth column, Thursday is in the fifth column, and Friday is in the sixth column. There is only one row of data for the number of students absent."
+        ><caption
+          ><span
+              class="title"
+            >Day of the Week Employees were most Absent</span
+          ></caption
+        ><thead
+            valign="top"
+          > <tr
+            > <td
+            /> <td
+              >Monday</td
+            > <td
+              >Tuesday</td
+            > <td
+              >Wednesday</td
+            > <td
+              >Thursday</td
+            > <td
+              >Friday</td
+            > </tr
+          > </thead
+        ><tbody
+            valign="top"
+          > <tr
+            > <td
+              >Number of Absences</td
+            > <td
+              >15</td
+            > <td
+              >12</td
+            > <td
+              >9</td
+            > <td
+              >9</td
+            > <td
+              >15</td
+            > </tr
+          > </tbody
+        ></table
+      ></p
+    ><div
+        class="exercise"
+        id="element-811"
+      ><div
+          class="problem"
+          id="id6215628"
+        > <p
+            class="para"
+            id="element-215"
+          >For the population of employees, do the days for the highest number of absences occur with equal frequencies during a five day work week? Test at a 5% significance level. </p
+        ></div
+      > <div
+          class="solution"
+          id="id6215647"
+        > <p
+            class="para"
+            id="element-13"
+          >The null and alternate hypotheses are: </p
+        ><ul
+            class="list"
+            data-id="element-741"
+            data-list-type="bulleted"
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                > <mi
+                  >H</mi
+                > <mi
+                  >o</mi
+                > </msub
+              > </math
+            >: The absent days occur with equal frequencies, that is, they fit a uniform distribution.</li
+          > <li
+              class="item"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                > <mi
+                  >H</mi
+                > <mi
+                  >a</mi
+                > </msub
+              > </math
+            >: The absent days occur with unequal frequencies, that is, they do not fit a uniform distribution.</li
+          > </ul
+        ><p
+            class="para"
+            id="element-71"
+          >If the absent days occur with equal frequencies, then, out of 60 absent days (the total in the sample: 15 + 12 + 9 + 9 + 15 = 60), there would be 12 absences on Monday, 12 on Tuesday, 12 on Wednesday, 12 on Thursday, and 12 on Friday. These numbers are the <strong
+              class="emphasis"
+            >expected</strong
+          > (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >E</mi
+            ></math
+          >) values. The values in the table are the <strong
+              class="emphasis"
+            >observed</strong
+          > (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >O</mi
+            ></math
+          >) values or data.</p
+        ><p
+            class="para"
+            id="element-489"
+          >This time, calculate the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            ></math
+          > test statistic by hand. Make a chart with the following headings and fill in the columns:</p
+        ><ul
+            class="list"
+            data-id="element-120"
+            data-list-type="bulleted"
+          ><li
+              class="item"
+            >Expected (<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >E</mi
+              ></math
+            >) values (12, 12, 12, 12, 12)</li
+          > <li
+              class="item"
+            >Observed (<math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mi
+                >O</mi
+              ></math
+            >) values (15, 12, 9, 9, 15)</li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mo
+                >(</mo
+              > <mi
+                >O</mi
+              > <mo
+                > - </mo
+              > <mi
+                >E</mi
+              ><mo
+                >)</mo
+              ></math
+            > </li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mrow
+                  ><mo
+                    >(</mo
+                  > <mi
+                    >O</mi
+                  > <mo
+                    > - </mo
+                  > <mi
+                    >E</mi
+                  ><mo
+                    >)</mo
+                  ></mrow
+                ><mn
+                  >2</mn
+                ></msup
+              ></math
+            > </li
+          > <li
+              class="item"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><mfrac
+                ><mrow
+                  ><msup
+                    ><mrow
+                      ><mo
+                        >(</mo
+                      > <mi
+                        >O</mi
+                      > <mo
+                        > - </mo
+                      > <mi
+                        >E</mi
+                      ><mo
+                        >)</mo
+                      ></mrow
+                    ><mn
+                      >2</mn
+                    ></msup
+                  ></mrow
+                > <mi
+                  >E</mi
+                > </mfrac
+              > </math
+            > </li
+          ></ul
+        ><p
+            class="para"
+            id="element-231"
+          >The last column (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mfrac
+              ><mrow
+                ><msup
+                  ><mrow
+                    ><mo
+                      >(</mo
+                    > <mi
+                      >O</mi
+                    > <mo
+                      > - </mo
+                    > <mi
+                      >E</mi
+                    ><mo
+                      >)</mo
+                    ></mrow
+                  ><mn
+                    >2</mn
+                  ></msup
+                ></mrow
+              > <mi
+                >E</mi
+              > </mfrac
+            > </math
+          >) should have 0.75, 0, 0.75, 0.75, 0.75. <br
+          /> Now add (sum) the last column. Verify that the sum is 3. This is the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mi
+                >2</mi
+              > </msup
+            > </math
+          > test statistic.</p
+        ><p
+            class="para"
+            id="element-290"
+          >To find the p-value, calculate <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >&gt;</mo
+            > <mn
+              >3</mn
+            > <mo
+              >)</mo
+            > </math
+          >. This test is right-tailed. <br
+          /> (Use a computer or calculator to find the p-value. You should get <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >p-value</mtext
+            ><mo
+              >=</mo
+            ><mn
+              >0.5578</mn
+            ></math
+          >.) </p
+        ><p
+            class="para"
+            id="element-894"
+          >The <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >dfs</mi
+            ></math
+          > are the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mtext
+              >number of cells</mtext
+            ><mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >5 - 1 = 4</mn
+            > </math
+          >. <br
+          /><br
+          /> <strong
+              class="emphasis"
+            >TI-83+ and TI-84:</strong
+          > Press <code
+              class="code"
+            >2nd DISTR</code
+          >. Arrow down to <code
+              class="code"
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msup
+                ><mi
+                  >&#x3C7;</mi
+                ><mn
+                  >2</mn
+                ></msup
+              ></math
+            >cdf</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. Enter <code
+              class="code"
+            >(3,10^99,4)</code
+          >. Rounded to 4 decimal places, you should see 0.5578 which is the p-value.</p
+        ><p
+            class="para"
+            id="element-724"
+          >Next, complete a graph like the one below with the proper labeling and shading. (You should shade the right tail.) </p
+        ><media
+            xmlns="http://cnx.rice.edu/cnxml"
+            id="id6207852"
+            data-alt="Blank nonsymmetrical chi-square curve for the test statistic of the days of the week absent."
+            data-display="block"
+          ><image
+              print-width="3in"
+          /></media
+        > <p
+            class="para"
+            id="element-545"
+          >The decision is to not reject the null hypothesis.</p
+        ><p
+            class="para"
+            id="element-1000"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the absent days do not occur with equal frequencies.</p
+        ><div
+            class="note"
+            id="id6207972"
+          >TI-83+ and some TI-84 calculators do not have a special program for the test statistic for the goodness-of-fit test. The next example (Example 11-3) has the calculator instructions. The newer TI-84 calculators have in <code
+              class="code"
+            >STAT TESTS</code
+          > the test <code
+              class="code"
+            >Chi2 GOF</code
+          >. To run the test, put the observed values (the data) into a first list and the expected values (the values you expect if the null hypothesis is true) into a second list. Press <code
+              class="code"
+            >STAT</code
+          > <code
+              class="code"
+            >TESTS</code
+          > and <code
+              class="code"
+            >Chi2 GOF</code
+          >. Enter the list names for the Observed list and the Expected list. Enter the degrees of freedom and press <code
+              class="code"
+            >calculate</code
+          > or <code
+              class="code"
+            >draw</code
+          >. Make sure you clear any lists before you start. See below.</div
+        ><div
+            class="note"
+            id="id6208035"
+          ><strong
+              class="emphasis"
+            >To Clear Lists in the calculators:</strong
+          > Go into <code
+              class="code"
+            >STAT EDIT</code
+          > and arrow up to the list name area of the particular list. Press <code
+              class="code"
+            >CLEAR</code
+          > and then arrow down. The list will be cleared. Or, you can press <code
+              class="code"
+            >STAT</code
+          > and press 4 (for <code
+              class="code"
+            >ClrList</code
+          >). Enter the list name and press <code
+              class="code"
+            >ENTER</code
+          >.</div
+        > </div
+      > </div
+    > </div
+  ><div
+      class="example"
+      id="element-258"
+    ><p
+        class="para"
+        id="element-59"
+      > One study indicates that the number of televisions that American families have is distributed (this is the <strong
+          class="emphasis"
+        >given </strong
+      >distribution for the American population) as follows: </p
+    > <table
+        id="table-234567"
+        summary="This table presents the number of televisions that American families have is in the first column, and the expected percentage is in the second column."
+      ><thead
+          valign="top"
+        > <tr
+          > <td
+            >Number of Televisions</td
+          > <td
+            >Percent</td
+          > </tr
+        > </thead
+      ><tbody
+        > <tr
+          > <td
+            >0</td
+          > <td
+            >10</td
+          > </tr
+        > <tr
+          > <td
+            >1</td
+          > <td
+            >16</td
+          > </tr
+        > <tr
+          > <td
+            >2</td
+          > <td
+            >55</td
+          > </tr
+        > <tr
+          > <td
+            >3</td
+          > <td
+            >11</td
+          > </tr
+        > <tr
+          > <td
+            >over 3</td
+          > <td
+            >8</td
+          > </tr
+        > </tbody
+      ></table
+    > <p
+        class="para"
+        id="element-23563"
+      >The table contains expected (<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >E</mi
+        ></math
+      >) percents. </p
+    > <p
+        class="para"
+        id="element-236"
+      >A random sample of 600 families in the far western United States resulted in the following data: </p
+    > <table
+        id="table-234599867"
+        summary="This table presents the number of televisions that American families have is in the first column, and the observed frequency is in the second column."
+      ><thead
+          valign="top"
+        > <tr
+          > <td
+            >Number of Televisions</td
+          > <td
+            >Frequency</td
+          > </tr
+        > </thead
+      ><tfoot
+        > <tr
+          > <td
+          /> <td
+            >Total = 600</td
+          > </tr
+        > </tfoot
+      ><tbody
+        > <tr
+          > <td
+            >0</td
+          > <td
+            >66</td
+          > </tr
+        > <tr
+          > <td
+            >1</td
+          > <td
+            >119</td
+          > </tr
+        > <tr
+          > <td
+            >2</td
+          > <td
+            >340</td
+          > </tr
+        > <tr
+          > <td
+            >3</td
+          > <td
+            >60</td
+          > </tr
+        > <tr
+          > <td
+            >over 3</td
+          > <td
+            >15</td
+          > </tr
+        > </tbody
+      ></table
+    ><p
+        class="para"
+        id="element-560"
+      >The table contains observed (<math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        ><mi
+          >O</mi
+        ></math
+      >) frequency values.</p
+    ><div
+        class="exercise"
+        id="element-911"
+      ><div
+          class="problem"
+          id="id6229414"
+        > <p
+            class="para"
+            id="element-649"
+          > At the 1% significance level, does it appear that the distribution "number of televisions" of far western United States families is different from the distribution for the American population as a whole? </p
+        > </div
+      > <div
+          class="solution"
+          id="id6229434"
+        > <p
+            class="para"
+            id="element-538"
+          > This problem asks you to test whether the far western United States families distribution fits the distribution of the American families. This test is always right-tailed. </p
+        ><p
+            class="para"
+            id="element-788"
+          >The first table contains expected percentages. To get expected (<math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >E</mi
+            ></math
+          >) frequencies, multiply the percentage by 600. The expected frequencies are:</p
+        > <table
+            id="table-2345671"
+            summary="This table is the same as above except for an additional third column listing th expected frequencies."
+          ><thead
+              valign="top"
+            > <tr
+              > <td
+                >Number of Televisions</td
+              > <td
+                >Percent</td
+              > <td
+                >Expected Frequency</td
+              > </tr
+            > </thead
+          ><tbody
+            > <tr
+              > <td
+                >0</td
+              > <td
+                >10</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >0.10</mn
+                  > <mo
+                    >)</mo
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >600</mn
+                  > <mn
+                    >)</mn
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >60</mn
+                  > </math
+                > </td
+              > </tr
+            > <tr
+              > <td
+                >1</td
+              > <td
+                >16</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >0.16</mn
+                  > <mo
+                    >)</mo
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >600</mn
+                  > <mn
+                    >)</mn
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >96</mn
+                  > </math
+                > </td
+              > </tr
+            > <tr
+              > <td
+                >2</td
+              > <td
+                >55</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >0.55</mn
+                  > <mo
+                    >)</mo
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >600</mn
+                  > <mn
+                    >)</mn
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >330</mn
+                  > </math
+                > </td
+              > </tr
+            > <tr
+              > <td
+                >3</td
+              > <td
+                >11</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >0.11</mn
+                  > <mo
+                    >)</mo
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >600</mn
+                  > <mn
+                    >)</mn
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >66</mn
+                  > </math
+                > </td
+              > </tr
+            > <tr
+              > <td
+                >over 3</td
+              > <td
+                >8</td
+              > <td
+                > <math
+                    xmlns="http://www.w3.org/1998/Math/MathML"
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >0.08</mn
+                  > <mo
+                    >)</mo
+                  > <mo
+                    >&#x22C5;</mo
+                  > <mo
+                    >(</mo
+                  > <mn
+                    >600</mn
+                  > <mn
+                    >)</mn
+                  > <mo
+                    >=</mo
+                  > <mn
+                    >48</mn
+                  > </math
+                > </td
+              > </tr
+            > </tbody
+          ></table
+        > <p
+            class="para"
+            id="element-whatever"
+          > Therefore, the expected frequencies are 60, 96, 330, 66, and 48. In the TI calculators, you can let the calculator do the math. For example, instead of 60, enter .10*600.</p
+        ><p
+            class="para"
+            id="element-239"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >: The "number of televisions" distribution of far western United States families is the same as the "number of televisions" distribution of the American population.</p
+        ><p
+            class="para"
+            id="element-2"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: The "number of televisions" distribution of far western United States families is different from the "number of televisions" distribution of the American population.</p
+        ><p
+            class="para"
+            id="element-228"
+          >Distribution for the test: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msubsup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >4</mn
+              > <mn
+                >2</mn
+              > </msubsup
+            > </math
+          > where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >df</mi
+            > <mo
+              >=</mo
+            > <mtext
+              >(the number of cells)</mtext
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >5</mn
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >4</mn
+            > </math
+          >.</p
+        ><div
+            class="note"
+            id="id6229977"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >df &#x2260; 600 &#x2212; 1</mi
+            > </math
+          ></div
+        ><p
+            class="para"
+            id="element-65"
+          ><strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >=</mo
+            > <mn
+              >29.65</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-280"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          ></p
+        > <media
+            xmlns="http://cnx.rice.edu/cnxml"
+            id="id6230034"
+            data-alt="Non-symmetric chi-square curve with values of 0, 4, and 29.65 on the x-axis representing the test statistic of the comparison of the number of televisions in America. A vertical upward line extends from 29.65 to the curve, and the area to the right of this line is equal to the p-value."
+            data-display="block"
+          ><image
+              print-width="3in"
+          /></media
+        > <p
+            class="para"
+            id="element-635"
+          ><strong
+              class="emphasis"
+            >Probability statement:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >p-value</mtext
+            > <mo
+              >=</mo
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >&gt;</mo
+            > <mn
+              >29.65</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.000006</mn
+            > </math
+          >.</p
+        ><p
+            class="para"
+            id="element-42"
+          ><strong
+              class="emphasis"
+            >Compare &#x3B1; and the p-value:</strong
+          > <ul
+              class="list"
+              data-id="list-whatever3"
+              data-list-type="bulleted"
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >&#x3B1;</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.01</mn
+                ></math
+              > </li
+            ><li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mtext
+                  >p-value</mtext
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.000006</mn
+                ></math
+              ></li
+            > </ul
+          > So, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              > &gt; </mo
+            > <mtext
+              >p-value</mtext
+            > </math
+          >.</p
+        ><p
+            class="para"
+            id="element-251"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >&gt;</mo
+            > <mtext
+              >p-value</mtext
+            > </math
+          >, reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >.</p
+        ><p
+            class="para"
+            id="element-717"
+          >This means you reject the belief that the distribution for the far western states is the same as that of the American population as a whole.</p
+        ><p
+            class="para"
+            id="element-387"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At the 1% significance level, from the data, there is sufficient evidence to conclude that the "number of televisions" distribution for the far western United States is different from the "number of televisions" distribution for the American population as a whole.</p
+        ><div
+            class="note"
+            id="id6230263"
+          >TI-83+ and some TI-84 calculators: Press <code
+              class="code"
+            >STAT</code
+          > and <code
+              class="code"
+            >ENTER</code
+          >. Make sure to clear lists <code
+              class="code"
+            >L1</code
+          >, <code
+              class="code"
+            >L2</code
+          >, and <code
+              class="code"
+            >L3</code
+          > if they have data in them (see the note at the end of Example 11-2). Into <code
+              class="code"
+            >L1</code
+          >, put the observed frequencies <code
+              class="code"
+            >66</code
+          >, <code
+              class="code"
+            >119</code
+          >, <code
+              class="code"
+            >349</code
+          >, <code
+              class="code"
+            >60</code
+          >, <code
+              class="code"
+            >15</code
+          >. Into <code
+              class="code"
+            >L2</code
+          >, put the expected frequencies <code
+              class="code"
+            >.10*600, .16*600</code
+          >, <code
+              class="code"
+            >.55*600</code
+          >, <code
+              class="code"
+            >.11*600</code
+          >, <code
+              class="code"
+            >.08*600</code
+          >. Arrow over to list <code
+              class="code"
+            >L3</code
+          > and up to the name area <code
+              class="code"
+            >"L3"</code
+          >. Enter <code
+              class="code"
+            >(L1-L2)^2/L2</code
+          > and <code
+              class="code"
+            >ENTER</code
+          >. Press <code
+              class="code"
+            >2nd QUIT</code
+          >. Press <code
+              class="code"
+            >2nd LIST</code
+          > and arrow over to <code
+              class="code"
+            >MATH</code
+          >. Press <code
+              class="code"
+            >5</code
+          >. You should see <code
+              class="code"
+            >"sum" (Enter L3)</code
+          >. Rounded to 2 decimal places, you should see <code
+              class="code"
+            >29.65</code
+          >. Press <code
+              class="code"
+            >2nd DISTR</code
+          >. Press <code
+              class="code"
+            >7</code
+          > or Arrow down to <code
+              class="code"
+            >7:&#x3C7;2cdf</code
+          > and press <code
+              class="code"
+            >ENTER</code
+          >. Enter <code
+              class="code"
+            >(29.65,1E99,4)</code
+          >. Rounded to 4 places, you should see <code
+              class="code"
+            >5.77E-6 = .000006</code
+          > (rounded to 6 decimal places) which is the p-value. <br
+          /><br
+          /> The newer TI-84 calculators have in <code
+              class="code"
+            >STAT TESTS</code
+          > the test <code
+              class="code"
+            >Chi2 GOF</code
+          >. To run the test, put the observed values (the data) into a first list and the expected values (the values you expect if the null hypothesis is true) into a second list. Press <code
+              class="code"
+            >STAT</code
+          > <code
+              class="code"
+            >TESTS</code
+          > and <code
+              class="code"
+            >Chi2 GOF</code
+          >. Enter the list names for the Observed list and the Expected list. Enter the degrees of freedom and press <code
+              class="code"
+            >calculate</code
+          > or <code
+              class="code"
+            >draw</code
+          >. Make sure you clear any lists before you start.</div
+        ></div
+      > </div
+    ></div
+  ><div
+      class="example"
+      id="element-866"
+    ><div
+        class="exercise"
+        id="element-221"
+      ><div
+          class="problem"
+          id="id6230511"
+        > <p
+            class="para"
+            id="element-95"
+          > Suppose you flip two coins 100 times. The results are 20 HH, 27 HT, 30 TH, and 23 TT. Are the coins fair? Test at a 5% significance level. </p
+        > </div
+      > <div
+          class="solution"
+          id="id6230530"
+        > <p
+            class="para"
+            id="element-929"
+          > This problem can be set up as a goodness-of-fit problem. The sample space for flipping two fair coins is {HH, HT, TH, TT}. Out of 100 flips, you would expect 25 HH, 25 HT, 25 TH, and 25 TT. This is the expected distribution. The question, "Are the coins fair?" is the same as saying, "Does the distribution of the coins (20 HH, 27 HT, 30 TH, 23 TT) fit the expected distribution?" </p
+        ><p
+            class="para"
+            id="element-570"
+          ><strong
+              class="emphasis"
+            >Random Variable:</strong
+          > Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the number of heads in one flip of the two coins. <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > takes on the value 0, 1, 2. (There are 0, 1, or 2 heads in the flip of 2 coins.) Therefore, the <strong
+              class="emphasis"
+            >number of cells is 3</strong
+          >. Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >X</mi
+            ></math
+          > = the number of heads, the observed frequencies are 20 (for 2 heads), 57 (for 1 head), and 23 (for 0 heads or both tails). The expected frequencies are 25 (for 2 heads), 50 (for 1 head), and 25 (for 0 heads or both tails). This test is right-tailed.</p
+        ><p
+            class="para"
+            id="element-774"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >: The coins are fair. </p
+        ><p
+            class="para"
+            id="element-734"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >: The coins are not fair.</p
+        ><p
+            class="para"
+            id="element-136"
+          ><strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msubsup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > <mn
+                >2</mn
+              > </msubsup
+            > </math
+          > where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >df</mi
+            > <mo
+              >=</mo
+            > <mn
+              >3</mn
+            > <mo
+              >-</mo
+            > <mn
+              >1</mn
+            > <mo
+              >=</mo
+            > <mn
+              >2</mn
+            > </math
+          >.</p
+        ><p
+            class="para"
+            id="element-380"
+          ><strong
+              class="emphasis"
+            >Calculate the test statistic:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >=</mo
+            > <mn
+              >2.14</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-973"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          ></p
+        > <media
+            xmlns="http://cnx.rice.edu/cnxml"
+            id="id6230739"
+            data-alt="Nonsymmetrical chi-square curve with values of 0 and 2.14 on the x-axis representing the test statistic of results from flipping a coin. A vertical upward line extends from 2.14 to the curve and the area to the right of this is equal to the p-value."
+            data-display="block"
+          ><image
+              print-width="3in"
+          /></media
+        > <p
+            class="para"
+            id="element-490"
+          ><strong
+              class="emphasis"
+            >Probability statement:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mtext
+              >p-value</mtext
+            > <mo
+              >=</mo
+            > <mi
+              >P</mi
+            > <mo
+              >(</mo
+            > <msup
+              > <mi
+                >&#x3C7;</mi
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >&gt;</mo
+            > <mn
+              >2.14</mn
+            > <mo
+              >)</mo
+            > <mo
+              >=</mo
+            > <mn
+              >0.3430</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-817"
+          ><strong
+              class="emphasis"
+            >Compare <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <mi
+                >&#x3B1;</mi
+              > </math
+            > and the p-value: </strong
+          > <ul
+              class="list"
+              data-id="element-xyz"
+            > <li
+                class="item"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mi
+                  >&#x3B1;</mi
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.05</mn
+                ></math
+              ></li
+            > <li
+                class="item"
+              ><math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <mtext
+                  >p-value</mtext
+                > <mo
+                  >=</mo
+                > <mn
+                  >0.3430</mn
+                ></math
+              ></li
+            > </ul
+          > So, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >&lt;</mo
+            > <mtext
+              >p-value</mtext
+            > </math
+          >. </p
+        ><p
+            class="para"
+            id="element-58"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >&#x3B1;</mi
+            > <mo
+              >&lt;</mo
+            > <mtext
+              >p-value</mtext
+            > </math
+          >, do not reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >. </p
+        ><p
+            class="para"
+            id="element-995"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > There is insufficient evidence to conclude that the coins are not fair.</p
+        ><div
+            class="note"
+            id="id6230956"
+          >TI-83+ and some TI- 84 calculators: Press <code
+              class="code"
+            >STAT</code
+          > and <code
+              class="code"
+            >ENTER</code
+          >. Make sure you clear lists <code
+              class="code"
+            >L1</code
+          >, <code
+              class="code"
+            >L2</code
+          >, and <code
+              class="code"
+            >L3</code
+          > if they have data in them. Into <code
+              class="code"
+            >L1</code
+          >, put the observed frequencies <code
+              class="code"
+            >20</code
+          >, <code
+              class="code"
+            >57</code
+          >, <code
+              class="code"
+            >23</code
+          >. Into <code
+              class="code"
+            >L2</code
+          >, put the expected frequencies <code
+              class="code"
+            >25</code
+          >, <code
+              class="code"
+            >50</code
+          >, <code
+              class="code"
+            >25</code
+          >. Arrow over to list <code
+              class="code"
+            >L3</code
+          > and up to the name area <code
+              class="code"
+            >"L3"</code
+          >. Enter <code
+              class="code"
+            >(L1-L2)^2/L2</code
+          > and <code
+              class="code"
+            >ENTER</code
+          >. Press <code
+              class="code"
+            >2nd QUIT</code
+          >. Press <code
+              class="code"
+            >2nd LIST</code
+          > and arrow over to <code
+              class="code"
+            >MATH</code
+          >. Press <code
+              class="code"
+            >5</code
+          >. You should see <code
+              class="code"
+            >"sum"</code
+          >.<code
+              class="code"
+            >Enter L3</code
+          >. Rounded to 2 decimal places, you should see <code
+              class="code"
+            >2.14</code
+          >. Press <code
+              class="code"
+            >2nd DISTR</code
+          >. Arrow down to <code
+              class="code"
+            >7:&#x3C7;2cdf</code
+          > (or press <code
+              class="code"
+            >7</code
+          >). Press <code
+              class="code"
+            >ENTER</code
+          >. Enter <code
+              class="code"
+            >2.14,1E99,2)</code
+          >. Rounded to 4 places, you should see <code
+              class="code"
+            >.3430</code
+          > which is the p-value. <br
+          /><br
+          /> The newer TI-84 calculators have in <code
+              class="code"
+            >STAT TESTS</code
+          > the test <code
+              class="code"
+            >Chi2 GOF</code
+          >. To run the test, put the observed values (the data) into a first list and the expected values (the values you expect if the null hypothesis is true) into a second list. Press <code
+              class="code"
+            >STAT</code
+          > <code
+              class="code"
+            >TESTS</code
+          > and <code
+              class="code"
+            >Chi2 GOF</code
+          >. Enter the list names for the Observed list and the Expected list. Enter the degrees of freedom and press <code
+              class="code"
+            >calculate</code
+          > or <code
+              class="code"
+            >draw</code
+          >. Make sure you clear any lists before you start.</div
+        ></div
+      > </div
+    > </div
+  > </body
+>
+</html>

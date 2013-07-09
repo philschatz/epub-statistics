@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Hypothesis Testing: Two Population Means and Two Population Proportions: Comparing Two Independent Population Means with Unknown Population Standard Deviations</title></head>
+<?xml version="1.0"?>
+<body
+    xmlns:c="http://cnx.rice.edu/cnxml"
+    xmlns:md="http://cnx.rice.edu/mdml/0.4"
+    xmlns:qml="http://cnx.rice.edu/qml/1.0"
+    xmlns:mod="http://cnx.rice.edu/#moduleIds"
+    xmlns:bib="http://bibtexml.sf.net/"
+    xmlns:data="http://dev.w3.org/html5/spec/#custom"
+  ><div
+      class="title"
+    >Hypothesis Testing: Two Population Means and Two Population Proportions: Comparing Two Independent Population Means with Unknown Population Standard Deviations</div
+  > <ol
+      class="list"
+      data-id="element-984"
+      data-list-type="enumerated"
+    ><li
+        class="item"
+      >The two independent samples are simple random samples from two distinct populations.</li
+    > <li
+        class="item"
+      >Both populations are normally distributed with the population means and standard deviations unknown unless the sample sizes are greater than 30. In that case, the populations need not be normally distributed.</li
+    > </ol
+  ><div
+      class="note"
+      id="eip-748"
+    >The test comparing two independent population means with unknown and possibly unequal population standard deviations is called the Aspin-Welch t-test. The degrees of freedom formula was developed by Aspin-Welch.</div
+  ><p
+      class="para"
+      id="delete_me"
+    >The comparison of two population means is very common. A difference between the two samples depends on both the means and the standard deviations. Very different means can occur by chance if there is great variation among the individual samples. In order to account for the variation, we take the difference of the sample means, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <msub
+          > <ci
+            >X</ci
+          > <cn
+            >1</cn
+          > </msub
+        > </apply
+      > </math
+    > - <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <msub
+          > <ci
+            >X</ci
+          > <cn
+            >2</cn
+          > </msub
+        > </apply
+      > </math
+    > , and divide by the standard error (shown below) in order to standardize the difference. The result is a t-score test statistic (shown below).</p
+  ><p
+      class="para"
+      id="element-254"
+    >Because we do not know the population standard deviations, we estimate them using the two sample standard deviations from our independent samples. For the hypothesis test, we calculate the estimated standard deviation, or <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="stddev"
+      >standard error</term
+    >, of <strong
+        class="emphasis"
+      >the difference in sample means</strong
+    >, <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <msub
+          > <ci
+            >X</ci
+          > <cn
+            >1</cn
+          > </msub
+        > </apply
+      > </math
+    > - <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      > <apply
+        > <conjugate
+        /> <msub
+          > <ci
+            >X</ci
+          > <cn
+            >2</cn
+          > </msub
+        > </apply
+      > </math
+    >. <div
+        class="equation"
+        id="std_err"
+      ><div
+          class="title"
+        >The standard error is:</div
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <msqrt
+          > <mfrac
+            > <mrow
+              > <mo
+                >(</mo
+              > <msub
+                > <mi
+                  >S</mi
+                > <mn
+                  >1</mn
+                > </msub
+              > <msup
+                > <mo
+                  >)</mo
+                > <mn
+                  >2</mn
+                > </msup
+              > </mrow
+            > <mrow
+              > <msub
+                > <mi
+                  >n</mi
+                > <mn
+                  >1</mn
+                > </msub
+              > </mrow
+            > </mfrac
+          > <mo
+            >+</mo
+          > <mfrac
+            > <mrow
+              > <mo
+                >(</mo
+              > <msub
+                > <mi
+                  >S</mi
+                > <mn
+                  >2</mn
+                > </msub
+              > <msup
+                > <mo
+                  >)</mo
+                > <mn
+                  >2</mn
+                > </msup
+              > </mrow
+            > <mrow
+              > <msub
+                > <mi
+                  >n</mi
+                > <mn
+                  >2</mn
+                > </msub
+              > </mrow
+            > </mfrac
+          > </msqrt
+        > </math
+      > </div
+    > </p
+  ><p
+      class="para"
+      id="element-817"
+    >The test statistic (t-score) is calculated as follows: <div
+        class="equation"
+        id="t-score2"
+      ><div
+          class="title"
+        >t-score</div
+      ><math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mspace
+            width="12pt"
+        /> <mfrac
+          > <mrow
+            > <mo
+              >(</mo
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >x</ci
+                > <cn
+                  >1</cn
+                > </msub
+              > </apply
+            > <mo
+              >-</mo
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >x</ci
+                > <cn
+                  >2</cn
+                > </msub
+              > </apply
+            > <mo
+              >)</mo
+            > <mo
+              >-</mo
+            > <mo
+              >(</mo
+            > <msub
+              > <ci
+                >&#x3BC;</ci
+              > <cn
+                >1</cn
+              > </msub
+            > <mo
+              >-</mo
+            > <msub
+              > <ci
+                >&#x3BC;</ci
+              > <cn
+                >2</cn
+              > </msub
+            > <mo
+              >)</mo
+            > </mrow
+          > <mrow
+            > <msqrt
+              > <mfrac
+                > <mrow
+                  > <mo
+                    >(</mo
+                  > <msub
+                    > <mi
+                      >S</mi
+                    > <mn
+                      >1</mn
+                    > </msub
+                  > <msup
+                    > <mo
+                      >)</mo
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > </mrow
+                > <mrow
+                  > <msub
+                    > <mi
+                      >n</mi
+                    > <mn
+                      >1</mn
+                    > </msub
+                  > </mrow
+                > </mfrac
+              > <mo
+                >+</mo
+              > <mfrac
+                > <mrow
+                  > <mo
+                    >(</mo
+                  > <msub
+                    > <mi
+                      >S</mi
+                    > <mn
+                      >2</mn
+                    > </msub
+                  > <msup
+                    > <mo
+                      >)</mo
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > </mrow
+                > <mrow
+                  > <msub
+                    > <mi
+                      >n</mi
+                    > <mn
+                      >2</mn
+                    > </msub
+                  > </mrow
+                > </mfrac
+              > </msqrt
+            > </mrow
+          > </mfrac
+        > </math
+      > </div
+    ><ul
+        class="list"
+        data-id="list1"
+      ><div
+          class="title"
+        >where:</div
+      ><li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >s</mi
+            ><mn
+              >1</mn
+            ></msub
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >s</mi
+            ><mn
+              >2</mn
+            ></msub
+          ></math
+        >, the sample standard deviations, are estimates of <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3C3;</mi
+            ><mn
+              >1</mn
+            ></msub
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3C3;</mi
+            ><mn
+              >2</mn
+            ></msub
+          ></math
+        >, respectively.</li
+      > <li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3C3;</mi
+            ><mn
+              >1</mn
+            ></msub
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3C3;</mi
+            ><mn
+              >2</mn
+            ></msub
+          ></math
+        > are the unknown population standard deviations.</li
+      > <li
+          class="item"
+        ><math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <msub
+              > <ci
+                >x</ci
+              > <ci
+                >1</ci
+              > </msub
+            > </apply
+          > </math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          > <apply
+            > <conjugate
+            /> <msub
+              > <ci
+                >x</ci
+              > <ci
+                >2</ci
+              > </msub
+            > </apply
+          > </math
+        > are the sample means. <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3BC;</mi
+            ><mn
+              >1</mn
+            ></msub
+          ></math
+        > and <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+          ><msub
+            ><mi
+              >&#x3BC;</mi
+            ><mn
+              >2</mn
+            ></msub
+          ></math
+        > are the population means. </li
+      > </ul
+    ></p
+  ><p
+      class="para"
+      id="element-256"
+    >The <term
+        xmlns="http://cnx.rice.edu/cnxml"
+        data-target-id="degrefree"
+      >degrees of freedom (df)</term
+    > is a somewhat complicated calculation. However, a computer or calculator calculates it easily. The dfs are not always a whole number. The test statistic calculated above is approximated by the student's-t distribution with dfs as follows: <div
+        class="equation"
+        id="eq_df"
+      ><div
+          class="title"
+        > Degrees of freedom </div
+      > <math
+          xmlns="http://www.w3.org/1998/Math/MathML"
+        > <mi
+          >df</mi
+        > <mo
+          >=</mo
+        > <mfrac
+          > <msup
+            > <mrow
+              > <mo
+                >[</mo
+              > <mfrac
+                > <msup
+                  > <mrow
+                    > <mo
+                      >(</mo
+                    > <msub
+                      > <mi
+                        >s</mi
+                      > <mn
+                        >1</mn
+                      > </msub
+                    > <mo
+                      >)</mo
+                    > </mrow
+                  > <mn
+                    >2</mn
+                  > </msup
+                > <msub
+                  > <mi
+                    >n</mi
+                  > <mn
+                    >1</mn
+                  > </msub
+                > </mfrac
+              > <mo
+                >+</mo
+              > <mfrac
+                > <msup
+                  > <mrow
+                    > <mo
+                      >(</mo
+                    > <msub
+                      > <mi
+                        >s</mi
+                      > <mn
+                        >2</mn
+                      > </msub
+                    > <mo
+                      >)</mo
+                    > </mrow
+                  > <mn
+                    >2</mn
+                  > </msup
+                > <msub
+                  > <mi
+                    >n</mi
+                  > <mn
+                    >2</mn
+                  > </msub
+                > </mfrac
+              > <mo
+                >]</mo
+              > </mrow
+            > <mn
+              >2</mn
+            > </msup
+          > <mrow
+            > <mfrac
+              > <mn
+                >1</mn
+              > <mrow
+                > <msub
+                  > <mi
+                    >n</mi
+                  > <mn
+                    >1</mn
+                  > </msub
+                > <mo
+                  >&#x2212;</mo
+                > <mn
+                  >1</mn
+                > </mrow
+              > </mfrac
+            > <mo
+              >&#xB7;</mo
+            > <msup
+              > <mrow
+                > <mo
+                  >[</mo
+                > <mfrac
+                  > <msup
+                    > <mrow
+                      > <mo
+                        >(</mo
+                      > <msub
+                        > <mi
+                          >s</mi
+                        > <mn
+                          >1</mn
+                        > </msub
+                      > <mo
+                        >)</mo
+                      > </mrow
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > <msub
+                    > <mi
+                      >n</mi
+                    > <mn
+                      >1</mn
+                    > </msub
+                  > </mfrac
+                > <mo
+                  >]</mo
+                > </mrow
+              > <mn
+                >2</mn
+              > </msup
+            > <mo
+              >+</mo
+            > <mfrac
+              > <mn
+                >1</mn
+              > <mrow
+                > <msub
+                  > <mi
+                    >n</mi
+                  > <mn
+                    >2</mn
+                  > </msub
+                > <mo
+                  >&#x2212;</mo
+                > <mn
+                  >1</mn
+                > </mrow
+              > </mfrac
+            > <mo
+              >&#xB7;</mo
+            > <msup
+              > <mrow
+                > <mo
+                  >[</mo
+                > <mfrac
+                  > <msup
+                    > <mrow
+                      > <mo
+                        >(</mo
+                      > <msub
+                        > <mi
+                          >s</mi
+                        > <mn
+                          >2</mn
+                        > </msub
+                      > <mo
+                        >)</mo
+                      > </mrow
+                    > <mn
+                      >2</mn
+                    > </msup
+                  > <msub
+                    > <mi
+                      >n</mi
+                    > <mn
+                      >2</mn
+                    > </msub
+                  > </mfrac
+                > <mo
+                  >]</mo
+                > </mrow
+              > <mn
+                >2</mn
+              > </msup
+            > </mrow
+          > </mfrac
+        > </math
+      > </div
+    ></p
+  ><p
+      class="para"
+      id="element-316"
+    >When both sample sizes <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >n</mi
+        ><mn
+          >1</mn
+        ></msub
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msub
+        ><mi
+          >n</mi
+        ><mn
+          >2</mn
+        ></msub
+      ></math
+    > are five or larger, the student's-t approximation is very good. Notice that the sample variances <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msup
+        > <msub
+          > <mi
+            >s</mi
+          > <mn
+            >1</mn
+          > </msub
+        > <mn
+          >2</mn
+        > </msup
+      ></math
+    > and <math
+        xmlns="http://www.w3.org/1998/Math/MathML"
+      ><msup
+        > <msub
+          > <mi
+            >s</mi
+          > <mn
+            >2</mn
+          > </msub
+        > <mn
+          >2</mn
+        > </msup
+      ></math
+    > are not pooled. (If the question comes up, do not pool the variances.) <div
+        class="note"
+        id="id10169754"
+      > It is not necessary to compute this by hand. A calculator or computer easily computes it.</div
+    ></p
+  ><div
+      class="example"
+      id="element-208"
+    ><div
+        class="title"
+      >Independent groups</div
+    ><p
+        class="para"
+        id="element-687"
+      >The average amount of time boys and girls ages 7 through 11 spend playing sports each day is believed to be the same. An experiment is done, data is collected, resulting in the table below. Both populations have a normal distribution. </p
+    ><table
+        id="uid888"
+        summary="This table presents the sample size in the second column, average hours a day in the third column, and the sample standard deviation in the fourth column. The first row is for girls and the second row is for boys."
+      ><thead
+          valign="top"
+        > <tr
+          > <td
+          /> <td
+            >Sample Size</td
+          > <td
+            >Average Number of Hours Playing Sports Per Day</td
+          > <td
+            >Sample Standard Deviation</td
+          > </tr
+        > </thead
+      ><tbody
+          valign="top"
+        > <tr
+          > <td
+            >Girls</td
+          > <td
+            >9</td
+          > <td
+            >2 hours</td
+          > <td
+            ><math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msqrt
+                ><mn
+                  >0.75</mn
+                ></msqrt
+              ></math
+            ></td
+          > </tr
+        > <tr
+          > <td
+            >Boys</td
+          > <td
+            >16</td
+          > <td
+            >3.2 hours</td
+          > <td
+            >1.00</td
+          > </tr
+        > </tbody
+      ></table
+    ><div
+        class="exercise"
+        id="element-114"
+      ><div
+          class="problem"
+          id="id6322791"
+        > <p
+            class="para"
+            id="element-939"
+          >Is there a difference in the mean amount of time boys and girls ages 7 through 11 play sports each day? Test at the 5% level of significance. </p
+        ></div
+      > <div
+          class="solution"
+          id="id21329984"
+        > <p
+            class="para"
+            id="element-296"
+          ><strong
+              class="emphasis"
+            >The population standard deviations are not known.</strong
+          > Let <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >g</mi
+            ></math
+          > be the subscript for girls and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >b</mi
+            ></math
+          > be the subscript for boys. Then, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >&#x3BC;</mi
+              ><mi
+                >g</mi
+              ></msub
+            ></math
+          > is the population mean for girls and <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><msub
+              ><mi
+                >&#x3BC;</mi
+              ><mi
+                >b</mi
+              ></msub
+            ></math
+          > is the population mean for boys. This is a test of two <strong
+              class="emphasis"
+            >independent groups</strong
+          >, two population <strong
+              class="emphasis"
+            >means</strong
+          >. </p
+        ><p
+            class="para"
+            id="element-221"
+          ><term
+              xmlns="http://cnx.rice.edu/cnxml"
+              data-target-id="variable"
+            >Random variable</term
+          >: <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >X</ci
+                > <ci
+                  >g</ci
+                > </msub
+              > </apply
+            > <mo
+              >-</mo
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >X</ci
+                > <ci
+                  >b</ci
+                > </msub
+              > </apply
+            > </math
+          > = difference in the sample mean amount of time girls and boys play sports each day.</p
+        ><p
+            class="para"
+            id="element-181"
+          ><strong
+              class="emphasis"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                > <mi
+                  >H</mi
+                > <mi
+                  >o</mi
+                > </msub
+              > </math
+            >:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >g</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >b</mi
+              > </msub
+            > <mspace
+                width="50pt"
+            /> <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >g</mi
+              > </msub
+            > <mo
+              >&#x2212;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >b</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <mn
+              >0</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-721"
+          ><strong
+              class="emphasis"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <msub
+                > <mi
+                  >H</mi
+                > <mi
+                  >a</mi
+                > </msub
+              > </math
+            >:</strong
+          > <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >g</mi
+              > </msub
+            > <mo
+              >&#x2260;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >b</mi
+              > </msub
+            > <mspace
+                width="50pt"
+            /> <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >g</mi
+              > </msub
+            > <mo
+              >&#x2212;</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >b</mi
+              > </msub
+            > <mo
+              >&#x2260;</mo
+            > <mn
+              >0</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-483"
+          >The words <strong
+              class="emphasis"
+            >"the same"</strong
+          > tell you <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          > has an "=". Since there are no other words to indicate <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >a</mi
+              > </msub
+            > </math
+          >, then assume <strong
+              class="emphasis"
+            >"is different."</strong
+          > This is a two-tailed test.</p
+        ><p
+            class="para"
+            id="element-529"
+          ><strong
+              class="emphasis"
+            >Distribution for the test:</strong
+          > Use <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >t</mi
+              > <mi
+                >df</mi
+              > </msub
+            > </math
+          > where <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >df</mi
+            > </math
+          > is calculated using the <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >df</mi
+            > </math
+          > formula for independent groups, two population means. Using a calculator, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <mi
+              >df</mi
+            > </math
+          > is approximately 18.8462. <strong
+              class="emphasis"
+            >Do not pool the variances.</strong
+          ></p
+        ><p
+            class="para"
+            id="element-573"
+          ><strong
+              class="emphasis"
+            >Calculate the p-value using a student's-t distribution:</strong
+          > p-value = 0.0054</p
+        ><p
+            class="para"
+            id="element-90"
+          ><strong
+              class="emphasis"
+            >Graph:</strong
+          ></p
+        ><p
+            class="para"
+            id="element-210"
+          ><figure
+              id="hyptest22_cmp1"
+            ><span
+                class="media"
+                id="id18963169"
+                data-alt="Normal distribution curve of the difference in the average amount of time girls and boys play sports all day with values of -1.2, 0, and 1.2 on the x-axis. Two vertical upward lines extend from points -1.2 and 1.2 to the curve. The 1/2(p-values) areas are indicated on either side of these values."
+              ><image
+                  xmlns="http://cnx.rice.edu/cnxml"
+                  print-width="3in"
+              /></span
+            ></figure
+          ></p
+        ><p
+            class="para"
+            id="element-222"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >s</mi
+              > <mi
+                >g</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <msqrt
+              > <mn
+                >0.75</mn
+              > </msqrt
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-806"
+          ><math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >s</mi
+              > <mi
+                >b</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <mn
+              >1</mn
+            > </math
+          ></p
+        ><p
+            class="para"
+            id="element-630"
+          >So, <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >x</ci
+                > <mi
+                  >g</mi
+                > </msub
+              > </apply
+            > <mo
+              >-</mo
+            > <apply
+              > <conjugate
+              /> <msub
+                > <ci
+                  >x</ci
+                > <mi
+                  >b</mi
+                > </msub
+              > </apply
+            > <mo
+              >=</mo
+            > <mn
+              >2</mn
+            > <mo
+              >-</mo
+            > <mn
+              >3.2</mn
+            > <mo
+              >=</mo
+            > <mo
+              >-</mo
+            > <mn
+              >1.2</mn
+            > </math
+          > </p
+        ><p
+            class="para"
+            id="element-987"
+          >Half the p-value is below -1.2 and half is above 1.2.</p
+        ><p
+            class="para"
+            id="element-823"
+          ><strong
+              class="emphasis"
+            >Make a decision:</strong
+          > Since <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi
+              >&#x3B1;</mi
+            ><mo
+              >&gt;</mo
+            ></math
+          > p-value, reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >H</mi
+              > <mi
+                >o</mi
+              > </msub
+            > </math
+          >.</p
+        ><p
+            class="para"
+            id="element-435"
+          >This means you reject <math
+              xmlns="http://www.w3.org/1998/Math/MathML"
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >g</mi
+              > </msub
+            > <mo
+              >=</mo
+            > <msub
+              > <mi
+                >&#x3BC;</mi
+              > <mi
+                >b</mi
+              > </msub
+            > </math
+          >. The means are different.</p
+        ><p
+            class="para"
+            id="element-914"
+          ><strong
+              class="emphasis"
+            >Conclusion:</strong
+          > At the 5% level of significance, the sample data show there is sufficient evidence to conclude that the mean number of hours that girls and boys aged 7 through 11 play sports per day is different (mean number of hours boys aged 7 through 11 play sports per day is greater than the mean number of hours played by girls OR the mean number of hours girls aged 7 through 11 play sports per day is greater than the mean number of hours played by boys). </p
+        ><div
+            class="note"
+            id="id18944476"
+          >TI-83+ and TI-84: Press <code
+              class="code"
+            >STAT</code
+          >. Arrow over to <code
+              class="code"
+            >TESTS</code
+          > and press <code
+              class="code"
+            >4:2-SampTTest</code
+          >. Arrow over to Stats and press <code
+              class="code"
+            >ENTER</code
+          >. Arrow down and enter <code
+              class="code"
+            >2</code
+          > for the first sample mean, <code
+              class="code"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              ><msqrt
+                > <mn
+                  >0.75</mn
+                > </msqrt
+              ></math
+            > </code
+          > for Sx1, <code
+              class="code"
+            >9</code
+          > for n1, <code
+              class="code"
+            >3.2</code
+          > for the second sample mean, <code
+              class="code"
+            >1</code
+          > for Sx2, and <code
+              class="code"
+            >16</code
+          > for n2. Arrow down to &#x3BC;1: and arrow to <code
+              class="code"
+            >does not equal</code
+          > &#x3BC;2. Press <code
+              class="code"
+            >ENTER</code
+          >. Arrow down to Pooled: and <code
+              class="code"
+            >No</code
+          >. Press <code
+              class="code"
+            >ENTER</code
+          >. Arrow down to <code
+              class="code"
+            >Calculate</code
+          > and press <code
+              class="code"
+            >ENTER</code
+          >. The p-value is p = 0.0054, the dfs are approximately 18.8462, and the test statistic is -3.14. Do the procedure again but instead of Calculate do Draw.</div
+        > </div
+      > </div
+    ></div
+  ><div
+      class="example"
+      id="element-968"
+    ><p
+        class="para"
+        id="element-980"
+      >A study is done by a community group in two neighboring colleges to determine which one graduates students with more math classes. College A samples 11 graduates. Their average is 4 math classes with a standard deviation of 1.5 math classes. College B samples 9 graduates. Their average is 3.5 math classes with a standard deviation of 1 math class. The community group believes that a student who graduates from college A <strong
+          class="emphasis"
+        >has taken more math classes,</strong
+      > on the average. Both populations have a normal distribution. Test at a 1% significance level. Answer the following questions. <div
+          class="exercise"
+          id="ex1021"
+        > <div
+            class="problem"
+            id="id22055352"
+          ><p
+              class="para"
+              id="pp1"
+            >Is this a test of two means or two proportions?</p
+          ></div
+        ><div
+            class="solution"
+            id="id9777082"
+            print-placement="end"
+          ><p
+              class="para"
+              id="ps1"
+            >two means</p
+          ></div
+        > </div
+      > <div
+          class="exercise"
+          id="ex1022"
+        > <div
+            class="problem"
+            id="id13323228"
+          ><p
+              class="para"
+              id="pp2"
+            >Are the populations standard deviations known or unknown?</p
+          ></div
+        ><div
+            class="solution"
+            id="id21134408"
+            print-placement="end"
+          ><p
+              class="para"
+              id="ps2"
+            >unknown</p
+          ></div
+        > </div
+      > <div
+          class="exercise"
+          id="ex1023"
+        > <div
+            class="problem"
+            id="id14688537"
+          ><p
+              class="para"
+              id="pp3"
+            >Which distribution do you use to perform the test?</p
+          ></div
+        ><div
+            class="solution"
+            id="id14688553"
+            print-placement="end"
+          ><p
+              class="para"
+              id="ps3"
+            >student's-t</p
+          ></div
+        ></div
+      > <div
+          class="exercise"
+          id="ex102"
+        > <div
+            class="problem"
+            id="id12801899"
+          > <p
+              class="para"
+              id="p20"
+            > What is the random variable?</p
+          > </div
+        > <div
+            class="solution"
+            id="id18473559"
+            print-placement="end"
+          ><p
+              class="para"
+              id="solnm"
+            > <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              > <apply
+                > <conjugate
+                /> <msub
+                  > <ci
+                    >X</ci
+                  > <mi
+                    >A</mi
+                  > </msub
+                > </apply
+              > <mo
+                >-</mo
+              > <apply
+                > <conjugate
+                /> <msub
+                  > <ci
+                    >X</ci
+                  > <mi
+                    >B</mi
+                  > </msub
+                > </apply
+              > </math
+            ></p
+          ></div
+        ></div
+      > <div
+          class="exercise"
+          id="exnull"
+        ><div
+            class="problem"
+            id="id18385916"
+          ><p
+              class="para"
+              id="whathyp"
+            >What are the null and alternate hypothesis?</p
+          ></div
+        ><div
+            class="solution"
+            id="id13419917"
+            print-placement="end"
+          > <ul
+              class="list"
+              data-id="li_na"
+            ><li
+                class="item"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <msub
+                  > <mi
+                    >H</mi
+                  > <mi
+                    >o</mi
+                  > </msub
+                > <mo
+                  >:</mo
+                > <msub
+                  > <mi
+                    >&#x3BC;</mi
+                  > <mi
+                    >A</mi
+                  > </msub
+                > <mo
+                  >&#x2264;</mo
+                > <msub
+                  > <mi
+                    >&#x3BC;</mi
+                  > <mi
+                    >B</mi
+                  > </msub
+                > </math
+              > </li
+            > <li
+                class="item"
+              > <math
+                  xmlns="http://www.w3.org/1998/Math/MathML"
+                > <msub
+                  > <mi
+                    >H</mi
+                  > <mi
+                    >a</mi
+                  > </msub
+                > <mo
+                  >:</mo
+                > <msub
+                  > <mi
+                    >&#x3BC;</mi
+                  > <mi
+                    >A</mi
+                  > </msub
+                > <mo
+                  >&gt;</mo
+                > <msub
+                  > <mi
+                    >&#x3BC;</mi
+                  > <mi
+                    >B</mi
+                  > </msub
+                > </math
+              > </li
+            > </ul
+          ></div
+        ></div
+      > <div
+          class="exercise"
+          id="tails"
+        > <div
+            class="problem"
+            id="id24161967"
+          ><p
+              class="para"
+              id="pp4"
+            >Is this test right, left, or two tailed?</p
+          ></div
+        ><div
+            class="solution"
+            id="id18689441"
+            print-placement="end"
+          ><p
+              class="para"
+              id="ps4"
+            >right</p
+          ></div
+        ></div
+      > <div
+          class="exercise"
+          id="pvalue"
+        ><div
+            class="problem"
+            id="id12470111"
+          ><p
+              class="para"
+              id="pp5"
+            >What is the p-value?</p
+          ></div
+        ><div
+            class="solution"
+            id="id16062000"
+            print-placement="end"
+          ><p
+              class="para"
+              id="ps5"
+            >0.1928</p
+          ></div
+        ></div
+      > <div
+          class="exercise"
+          id="exreject"
+        ><div
+            class="problem"
+            id="id19898911"
+          ><p
+              class="para"
+              id="phyp"
+            >Do you reject or not reject the null hypothesis?</p
+          ></div
+        ><div
+            class="solution"
+            id="id8442418"
+            print-placement="end"
+          ><p
+              class="para"
+              id="noreject"
+            >Do not reject.</p
+          ></div
+        ></div
+      ></p
+    ><p
+        class="para"
+        id="element-928"
+      ><span
+          class="title"
+        >Conclusion:</span
+      >At the 1% level of significance, from the sample data, there is not sufficient evidence to conclude that a student who graduates from college A has taken more math classes, on the average, than a student who graduates from college B.</p
+    ></div
+  > </body
+>
+</html>
